@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="shortcut icon"  />
+
+    <!-- Default title -->
+    {% block title %}
+    <title>SafeNetworking - Palo Alto Networks</title>
+    {% endblock %}
+
+    <!-- Bootstrap core CSS -->
+    {% block head %}
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    {% endblock %}
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/pan.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/prototype.css') }}" rel="stylesheet">
+
+<!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|Open+Sans" rel="stylesheet">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+      if(window.location.href.indexOf("color-me") > -1) {
+         $("#nav-color-app-specific").click();
+      }
+
+      if(window.location.href.indexOf("nav-blue") > -1) {
+         $("#nav-color-blue").click();
+      }
+
+
+      var e = $('.clone-me');
+            for (var i = 0; i < 5; i++) {
+              e.clone().insertAfter(e);
+            }
+
+      var ea = $('.clone-me-10');
+            for (var i = 0; i < 9; i++) {
+              ea.clone().insertAfter(ea);
+            }
+
+      var eb = $('.clone-me-25');
+            for (var i = 0; i < 24; i++) {
+              eb.clone().insertAfter(eb);
+            }
+
+            $(function () { $("[data-toggle='tooltip']").tooltip(); });
+
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+          trigger: 'hover'
+        })
+      })
+
+        });
+        </script>
+
+        <!-- Gridstack -->
+    <script type="text/javascript">
+    $(function () {
+        var options = {
+            cellHeight: 80,
+        };
+        $('.grid-stack').gridstack(options);
+    });
+    </script>
+        <style type="text/css">
+
+
+
+    </style>
+        <!-- InstanceBeginEditable name="head" -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+      $("#app-name").text("SafeNetworking");
+      $("#nav-search").addClass("active");
+      $("body").addClass("safenetworking");
+
+     /* Tab and subtab behavior */
+
+
+      $("#navbar-brand-container").mouseenter(function(){
+          $(".navbar-brand").addClass("active");
+          $("#logo-white").show();
+          $("#logo-black").hide();
+      });
+
+
+      $("#navbar-brand-container").mouseleave(function(){
+         $(".navbar-brand").removeClass("active");
+          $("#logo-white").hide();
+          $("#logo-black").show();
+      });
+
+
+
+    });
+    </script>
+
+    <style type="text/css">
+    .panos .al-sidebar-sublist a.al-sidebar-list-link {
+        color: #555;
+        font-size: 13px;
+        font-weight: 400;
+        opacity: 1;
+      }
+
+      .panos .al-sidebar-sublist a.al-sidebar-list-link {
+        padding-left: 30px;
+      }
+
+      .panos .al-sidebar-sublist a.al-sidebar-list-link .expand-icon {
+        left: 10px;
+      }
+    </style>
+
+
+    <!-- InstanceEndEditable -->
+
+
+</head>
+
+<body>
+
+      <div class="control-panel">
+
+        <i class="fa fa-times-circle" aria-hidden="true" id="close-control-panel" style="font-size: 18px; cursor: pointer; position: absolute; top: -5px; right: -5px; color: #777;"></i>
+
+        <div style="font-weight: bold;" class="mb-2">Variations:</div>
+        <div class="mb-1">
+          Top Nav: <a href="#" id="nav-color-black" class="control-on">Black</a>, <a href="#" id="nav-color-blue">Blue</a>, <a href="#" id="nav-color-app-specific">App-specific</a>
+        </div>
+      </div>
+
+    <nav id="uber-nav" class="d-flex navbar navbar-inverse navbar-toggleable-sm" >
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+       <span id="navbar-brand-container" class="dropdown">
+         <a class="navbar-brand" id="brandarea" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <img src="images/logo-pan-bg.png" id="logo-pan-bg" alt=""/>
+           <span id="app-name">App Name</span> <span class="fa fa-chevron-down" style="font-size: 12px; position: relative; top: -3px; margin-left: 5px;"></span>
+         </a>
+         <div id="brand-dropdown" class="dropdown-menu" aria-labelledby="brandarea" style="padding: 20px; width: 400px; box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1); ">
+           <div style="font-weight: bold; font-size: 15px; margin-bottom: 8px;">Palo Alto Networks Applications</div>
+           <div class="app-menu">
+            <div>
+              <a href="aperture.html" class="app-link">Aperture</a> <span class="app-pages"><a href="aperture.html" class="app-link">Dashboard</a> <span style="color: #999">|</span> <a href="aperture-assets.html" class="app-link">Assets</a></span>
+            </div>
+            <div>
+                <a href="autofocus.html" class="app-link">AutoFocus</a> <span class="app-pages"><a href="autofocus.html" class="app-link">Dashboard</a> <span style="color: #999">|</span> <a href="autofocus-search.html" class="app-link">Search</a></span>
+            </div>
+            <div>
+              <a href="magna.html" class="app-link">Magna</a>
+              <span class="app-pages">
+                <a href="magna.html" class="app-link">Dashboard</a>
+                <span style="color: #999">|</span>
+                <a href="magna-hostDetails.html" class="app-link">Host Details</a>
+                <span style="color: #999">|</span>
+                <a href="magna-triage.html" class="app-link">Triage</a>
+              </span>
+            </div>
+            <div>
+              <a href="panos.html" class="app-link">Panorama</a> <span class="app-pages"><a href="panos.html" class="app-link">Dashboard</a> <span style="color: #999">|</span> <a href="panos-monitor.html" class="app-link">Monitor</a></span>
+            </div>
+            <div>
+              <a href="traps.html" class="app-link">Traps</a> <span class="app-pages"><a href="traps.html" class="app-link">Dashboard</a> <span style="color: #999">|</span> <a href="traps-devices.html" class="app-link">Devices</a></span>
+             </div>
+           </div>
+           <hr/>
+           <div style="font-weight: bold; font-size: 15px; margin-bottom: 8px;">Extensions</div>
+           <div class="app-menu">
+             <div>
+               <img src="images/logo-minemeld.png" style="width: 34px; margin-right: 12px;"/>MineMeld</div>
+           </div>
+         </div>
+        </span>
+
+        <!-- InstanceBeginEditable name="uber-middle" --><!-- InstanceEndEditable -->
+
+
+
+
+
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul id="utility-bar" class="navbar-nav utility-bar" style="margin-left: auto;">
+
+          <li class="nav-item"> <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Search" > <i class="fa fa-search" ></i> </a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Settings" > <i class="fa fa-cog" ></i> </a> </li>
+          <li class="nav-item"> <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Help" > <i class="fa fa-question-circle" ></i> </a> </li>
+          <li class="nav-item nav-item-user"> <a href="#" class="nav-link">Sylvia Poggioli <i class="fa fa-chevron-down" aria-hidden="true"></i></a> </li>
+        </ul>
+        </div>
+
+
+
+      </nav>
+
+      <div id="nav-container" class="d-flex top-nav">
+        <nav id="main-nav" class="d-flex navbar" >
+    <!-- InstanceBeginEditable name="Main Tabs" --><!-- #BeginLibraryItem "/Library/nav-autofocus.lbi" -->
+<ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a id="nav-dashboard" class="nav-link" href="autofocus.html" title="Dashboard" aria-haspopup="false">
+                        <span class="nav-icon"><i class="fa fa-tachometer item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Dashboard</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-search" class="nav-link" href="autofocus-search.html" aria-haspopup="false">
+                        <span class="nav-icon"><i class="fa fa-search item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Search</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Library/autofocus-search.html">
+                        <span class="nav-icon"><i class="fa fa-tag item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Tags</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Library/autofocus-search.html">
+                        <span class="nav-icon"><i class="fa fa-bullseye item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Indicators</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Library/autofocus-search.html">
+                        <span class="nav-icon"><i class="fa fa-arrow-circle-right item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Exports</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Library/autofocus-search.html">
+                        <span class="nav-icon"><i class="fa fa-file item-icon" aria-hidden="true"></i></span>
+                        <span class="nav-label">Reports</span>
+                    </a>
+                  </li>
+                </ul><!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+    </nav>
+        <div id="container" class="d-flex"><!-- InstanceBeginEditable name="Main Page" -->
+
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h1 style="display: inline-block;" class="mb-0">Search </h1>
+
+
+
+          </div>
+
+          <div class="content">
+
+                      <div class="card card-inverse search-form" style="margin-bottom: 20px;">
+                          <div class="search-rows">
+                            <div class="search-form-row">
+                              <div class="search-form-button-col">
+                                <div class="btn btn-xs btn-invisible btn-af-search btn-add">
+                                  <i class="fa fa-plus"></i>
+                                </div>
+                                <div class="btn btn-xs btn-invisible btn-af-search">
+                                  <i class="fa fa-minus"></i>
+                                </div>
+                                <div class="btn btn-sm btn-invisible btn-af-search more-btn">
+                                  <i class="fa fa-ellipsis-v"></i>
+                               </div>
+                             </div>
+                              <div class="row-body">
+
+                    <select id="menu-field" class="form-control input-sm selectpicker" title="-- Choose --" style="margin-top: 0px;">
+                        <option>Domain</option>
+                        <option>Email Address</option>
+                        <option>Filename</option>
+                        <option>Hash</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                        <option>etc</option>
+                      </select>
+                      <select id="menu-operator" class="form-control input-sm selectpicker" title="is" style="margin-top: 0px;">
+                        <option>is</option>
+                        <option>is not</option>
+                        <option>contains</option>
+                      </select>
+                      <input type="text" class="form-control form-control-sm  calculated-width" style="display: inline-block;">
+                </div>
+
+                            </div>
+                            </div>
+                          <div class="toolbar">
+                          <div class="btn btn-primary">Search</div>
+                          <div class="btn btn-secondary">Remote Search</div>
+                          <div class="btn btn-default btn-invisible btn-with-icon"><i class="fa fa-fw fa-history fa-mg"></i></div>
+                          <div class="btn-group">
+                              <div class="btn btn-default btn-with-icon btn-invisible"><i class="fa fa-fw fa-save fa-mg"></i></div>
+                              <div class="btn btn-default btn-with-icon btn-invisible"><i class="fa fa-fw fa-folder-open-o fa-mg"></i></div>
+                            </div>
+                          <div class="btn btn-default btn-with-icon btn-invisible"><i class="fa fa-fw fa-tags fa-mg"></i></div>
+                          <div class="btn-group">
+                              <div class="btn btn-default btn-with-icon btn-invisible"><i class="fa fa-fw fa-download fa-mg"></i></div>
+                              <div class="btn btn-default btn-with-icon btn-invisible"><i class="fa fa-fw fa-upload fa-mg"></i></div>
+                            </div>
+
+
+                        </div>
+                        </div>
+
+
+
+
+
+                        <div class="card ">
+                          <div class="card-header">
+                              <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Samples</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Sessions</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link " href="#">Statistics</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link " href="#">Indicators</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link " href="#">Domain, URL &amp; IP Address Info</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                              <div class="card-block" style="padding: 10px;">
+
+<ul class="nav nav-pills nav-pills-sm">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">My Samples</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Public Samples</a>
+  </li>
+</ul>
+                            </div>
+                          <table class="table table-condensed">
+                              <thead>
+                                  <tr>
+                                        <th>
+                                            First Seen <span class="caret"></span>
+                                        </th>
+                                        <th>
+                                            WildFire Verdict
+                                        </th>
+                                        <th>
+                                            SHA256
+                                        </th>
+                                        <th>
+                                            File Size (Bytes)
+                                        </th>
+                                        <th>
+                                            File Type
+                                        </th>
+                                        <th>
+                                            Tags
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="clone-me">
+                                      <td>
+                                          03/21/2017 12:16:51pm
+                                        </td>
+                                        <td>
+                                          Malware
+                                        </td>
+                                        <td>
+                                          <a href="#/">202196645cbfb2c225ab594575957dce411718b67c531a76b4431d16ccc392e4</a>
+                                        </td>
+                                        <td>
+                                          55,296
+                                        </td>
+                                        <td>
+                                          PE
+                                        </td>
+                                        <td>
+                                          <div class="badge badge-default">WildFireTest</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+          </div>
+
+          <div class="content" style="margin-top: 40px;">
+          </div>
+
+
+      </div>
+
+
+    <!-- InstanceEndEditable -->
+
+
+        </div>
+      </div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.js"></script>
+
+<!-- Tether.js, for tooltip positioning -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/tether.min.js') }}"></script>
+
+<!-- Bootstrap -->
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+<!-- Gridstack -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+<script src="{{ url_for('static', filename='js/gridstack.js') }}"></script>
+<script src="{{ url_for('static', filename='js/gridstack.jQueryUI.js') }}"></script>
+
+<!-- Additional Javascript (for Prototype) -->
+<script src="{{ url_for('static', filename='js/prototype.js') }}"></script>
+
+
+
+
+<!-- Bootstrap Select -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+<!-- Bootstrap Multiselect -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap-multiselect.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-multiselect.css') }}" type="text/css"/>
+
+<!-- Gridstack CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gridstack.css') }}"/>
+
+<!-- Slide Panel -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.slidereveal.js') }}"></script>
+
+</body>
+<!-- InstanceEnd --></html>

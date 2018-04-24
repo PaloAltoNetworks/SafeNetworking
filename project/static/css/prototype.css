@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Control Panel */
+
+.control-panel {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 14px;
+  background-color: #F0EABE;
+  border: 1px solid #ccc;
+  z-index: 200;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+.control-on {
+  color: #555;
+  font-weight: bold;
+}
+
+.app-pages {
+  font-size: 11px;
+  margin-left: 20px;
+  color: #dadada;
+  float: right;
+}
+
+
+/* Added to enable Flask-Flash alerts */
+.fade.in {
+  opacity: 1;
+}
+
+.alert-error {
+  color: #ffffff;
+  background-color: #81060f;
+  border-color: #ce2029;
+}
+.alert-warning {
+  color: #000000;
+  background-color: #fbff00;
+  border-color: #e2e20e;
+}
+.alert-success {
+  color: #36f806;
+  background-color: #02811c;
+  border-color: #00ff37;
+}
+.alert-info {
+  color: #0a06f8;
+  background-color: #1cb5f1;
+  border-color: #03129c;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+/* End Flask-Flash alert settings */

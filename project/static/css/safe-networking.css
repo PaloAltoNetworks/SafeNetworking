@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  font-family: "lato", "helvetica", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "lato", "helvetica", sans-serif;
+}
+
+#app {
+  /* display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 100%; */
+  position: relative;
+}
+
+#iframe-container {
+  height: calc(100% - 60px);
+}
+
+#iframe-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+header#main {
+  background: #444;
+  height: 60px;
+  width: 100%;
+  flex: 0 0 auto;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  display: flex;
+}
+header#main ul {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+header#main ul li {
+  list-style: none;
+  color: #fff;
+}
+header#main ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  height: 100%;
+  display: block;
+  color: #fff;
+  opacity: 0.666;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-bottom: solid 5px transparent;
+}
+header#main ul li a.active {
+  border-bottom: solid 5px #0e9ac8;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+header#main ul li a:hover {
+  opacity: 1;
+}
+
+#main-dropdown {
+  height: 100%;
+  width: 340px;
+  display: inline-block;
+  position: relative;
+  background-color: #444;
+}
+#main-dropdown:hover {
+  background-color: #222;
+}
+
+#main-dropdown #brand-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#main-dropdown #brand-area:before {
+  content: " ";
+  display: block;
+  background: url("/static/images/logo-pan-bg.png") no-repeat 20px center;
+  background-size: 55px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+
+#main-dropdown #brand-area p {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 60px;
+  margin-left: 33px;
+}
+
+#brand-area-arrow {
+  width: 20px;
+  height: 20px;
+  left: 215px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  transition: all ease 0.2s;
+}
+#brand-area-arrow.active {
+  transform: translateY(-50%) rotate(180deg);
+}
+#brand-area-arrow i {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdown-drawer {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  transition: all ease 0.3s;
+  transform: translateY(-100%);
+  z-index: -1;
+}
+#dropdown-drawer.active {
+  transform: translateY(0%);
+}
+
+#utility-bar {
+  height: 100%;
+  width: auto;
+  margin-left: auto;
+}
+#utility-bar .utility-button {
+  height: 100%;
+  width: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+#utility-bar .utility-button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+#utility-bar .utility-button:hover span {
+  opacity: 1;
+  visiblity: visible;
+  transform: translateY(0);
+}
+#utility-bar .utility-button span {
+  position: absolute;
+  top: 110%;
+  background: #000;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 0px 10px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  transition: all ease 0.3s;
+  opacity: 0;
+  visiblity: hidden;
+  transform: translateY(20%);
+  font-family: "helvetica";
+}
+#utility-bar .utility-button span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 6px transparent;
+  border-bottom: solid 6px #000;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 100%;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background: #fff;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.card iframe {
+  width: 100%;
+  height: 100%;
+}

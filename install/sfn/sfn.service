@@ -1,0 +1,9 @@
+[Unit]
+Description="SafeNetworking Service"
+
+[Service]
+ExecStartPre=/bin/sleep 60
+ExecStart=/usr/local/bin/sfn.sh
+
+[Install]
+WantedBy=default.target

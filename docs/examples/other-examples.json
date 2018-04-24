@@ -1,0 +1,481 @@
+# ElasticSearch stats and counters
+GET /sfn-dns-event/_stats/
+
+
+########################################################
+###               DELETE STUFF
+########################################################
+DELETE sfn-dns-event
+DELETE sfn-dns-unknown
+DELETE sfn-domain-details
+DELETE sfn-tag-details
+DELETE af-details
+
+
+# Delete any doc that has a current processed value of 17.
+# DON'T DO THIS WHILE SFN IS RUNNING OR YOU WILL HOSE STUFF UP
+POST sfn-dns-event/_delete_by_query
+{
+  "query": {
+    "match": {"processed": 17}
+  }
+}
+
+
+POST sfn-domain-details/_delete_by_query
+{
+  "query": {
+    "match": {"name": "mytest.net"}
+  }
+}
+
+
+########################################################
+###             END DELETE STUFF
+########################################################
+
+
+########################################################
+###                SFN-DNS-EVENT
+########################################################
+# Get mappings
+GET sfn-dns-event
+
+
+# Get all docs (random order)
+GET sfn-dns-event/_search
+
+
+# Get all docs that are not processed (processed = 0)
+# Sort by newest first
+GET sfn-dns-event/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "threat_category": "dns-wildfire"
+          }
+        },
+        {
+          "match": {
+            "processed": "0"
+          }
+        }
+      ]
+    }
+  },
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+# Get all docs that are processed (processed = 1)
+# Sort by last updated first and limited to last 100
+GET sfn-dns-event/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "threat_category": "dns-wildfire"
+          }
+        },
+        {
+          "match": {
+            "processed": "1"
+          }
+        }
+      ]
+    }
+  },
+  "size": 100,
+  "sort": [
+    {
+      "updated_at": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+
+
+# Get all docs that are processed but there were no tags for the domain  (processed = 55)
+# Sort by newest first and limited to top 1000
+GET sfn-dns-event/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "threat_category": "dns-wildfire"
+          }
+        },
+        {
+          "match": {
+            "processed": "55"
+          }
+        }
+      ]
+    }
+  },
+  "size": 1000,
+  "sort": [
+    {
+      "updated_at": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+
+# Get the number of unique domain names in the events - i.e. how many domain
+# docs should we eventually have if the events stop at this current time.
+GET sfn-dns-event/_search
+{
+    "aggs" : {
+        "number-of-unique-domains" : {
+            "cardinality" : {
+                "field" : "domain_name.keyword"
+            }
+        }
+    },
+    "size":0
+}
+
+
+# Get number of representative details docs.  This shows how many events per domain
+GET sfn-dns-event/_search
+{
+    "aggs" : {
+        "domain-details" : {
+            "terms" : {
+              "field" : "domain_name.keyword",
+              "size":10000
+            }
+        }
+    },
+    "size" : 0
+}
+
+# Get number of representative details docs.  This shows how many events per domains
+# return with nothing in the time/completion-percentage alloted (processed = 55)
+GET sfn-dns-event/_search
+{
+    "aggs" : {
+        "domain-details" : {
+            "terms" : {
+              "field" : "domain_name.keyword",
+              "size":10000
+            }
+        }
+    },
+    "size" : 0,
+    "query": {
+      "match": {"processed":55}
+    }
+}
+
+# Get event doc by _id
+GET sfn-dns-event/_search
+{
+"query": {
+    "terms": {
+      "_id": [ "Dh9V3WABApV8EYR8CMn-"]
+    }
+  }
+}
+
+
+# Get event doc by threat_name field
+GET sfn-dns-event/_search
+{
+"query": {
+    "match": { "threat_name":"Bogus.data"}
+  }
+}
+
+# Change all of the "stuck" event docs back to processed of 0 so they get
+# picked up again
+POST sfn-dns-event/_update_by_query
+{
+  "script": {
+    "source": "ctx._source.processed = 0",
+    "lang": "painless"
+  },
+  "query": {
+    "term": {
+      "processed": 55
+    }
+  }
+}
+########################################################
+###          END SFN-DNS-EVENT
+########################################################
+
+
+########################################################
+###          SFN-DOMAIN-DETAILS
+########################################################
+# Get mappings
+GET sfn-domain-details
+# Get all docs (random order and limited to top 10)
+GET sfn-domain-details/_search
+
+
+# Get all docs (ordered by newest first and limited to 1000)
+GET sfn-domain-details/_search
+{
+  "query": {
+    "match_all":{}
+  },
+  "size": 1000,
+  "sort": [
+    {
+      "doc_updated": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+
+
+# Get docs where sample_tags[tag_class] is "malware_family"
+# Returns any doc with that in it
+GET sfn-domain-details/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "tags.tag_class": "malware_family"
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+# Get number of representative details docs.  If any of these
+# are more than 1, we have created too many and needs to be dealt with
+GET sfn-domain-details/_search
+{
+    "aggs" : {
+        "domain-details" : {
+            "terms" : {
+              "field" : "name.keyword",
+              "size":10000
+            }
+        }
+    },
+    "size" : 0
+}
+
+
+
+# Get details doc where name matches entry
+GET sfn-details/_search
+{
+  "query": {
+    "bool": {
+       "must": [{"match": {"name": "orrent-port5478.ddns.net"}}]
+    }
+  }
+}
+
+
+
+# Example push of info to a new domain-doc
+POST sfn-domain-details/doc/mytest.net
+{
+  "name": "mytest.net",
+  "doc_updated": "2017-12-15 22:02:47",
+  "processed": 0
+}
+
+########################################################
+###        END SFN-DOMAIN-DETAILS
+########################################################
+
+########################################################
+###          SFN-TAG-DETAILS
+########################################################
+# Get mappings
+GET sfn-tag-details
+
+# Get all docs (random order and limited to top 10)
+GET sfn-tag-details/_search
+
+
+# Get all docs (ordered by newest first and limited to 1000)
+GET sfn-tag-details/_search
+{
+  "query": {
+    "match_all":{}
+  },
+  "size": 100,
+  "sort": [
+    {
+      "doc_updated": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+
+# Get tag-docs with name matching domain entered
+GET sfn-tag-details/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "name.keyword": "Unit42.DisableFileOpenWarning"
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+# Get docs where tag[tag_class] is "malware_family"
+# Returns any doc with that in it
+GET sfn-tag-details/_search
+{
+  "query": {
+    "nested": {
+      "path": "tag",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "tag.tag_class": "malware_family"
+              }
+            }
+          ]
+        }
+      },
+      "inner_hits": {
+        "highlight": {
+          "fields": {
+            "tag.tag_class": {}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+# Get number of representative details docs.  If any of these
+# are more than 1, we have created too many and needs to be dealt with
+GET sfn-tag-details/_search
+{
+    "aggs" : {
+        "domain-details" : {
+            "terms" : {
+              "field" : "name.keyword",
+              "size":10000
+            }
+        }
+    },
+    "size" : 0
+}
+
+
+# Get details doc where name matches entry
+GET sfn-tag-details/_search
+{
+  "query": {
+    "bool": {
+       "must": [{"match": {"title": "Hello World!"}}]
+    }
+  }
+}
+
+
+# Example push of info to a new domain-doc
+POST sfn-tag-details/doc/Unit42.SPSolutionsTest
+{
+  "name": "mytest.net",
+  "last_updated": "2017-12-15 22:02:47",
+  "processed": 100
+}
+
+########################################################
+###        END SFN-TAG-DETAILS
+########################################################
+
+########################################################
+###         SFN-DNS-UNKNOWN
+########################################################
+
+# Get all docs (random order limited to top 10)
+GET sfn-dns-unknown/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+# Get all docs (ordered by newest first and limited to top 1000)
+GET sfn-dns-unknown/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "size": 1000,
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+
+# Example push of info to a new unknown doc
+POST sfn-dns-unknown/doc
+{
+  "@timestamp":"2020-12-06T13:22:13.000Z",
+               "host":"192.168.86.140",
+        "device_name": "PA-VM",
+               "rule":"ScriptGen - Endpoint DNS",
+        "domain_name": "privatemail.website",
+            "sig_num": "3800081",
+    "threat_category":"dns-wildfire",
+          "processed": "0"
+
+}
+
+########################################################
+###             END SFN-DNS-UNKNOWN
+########################################################
+
+GET af-details
+GET af-details/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+}
