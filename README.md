@@ -1,6 +1,6 @@
-### This is the development branch of SafeNetworking.  It is suggest that you use the [latest release](https://github.com/PaloAltoNetworks/safe-networking-sp/releases) unless you know what you are doing with the develop release
-[![GitHub release](https://img.shields.io/github/release/PaloAltoNetworks/safe-networking-sp.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking-sp/releases/tag/v2.1.0)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/PaloAltoNetworks/safe-networking-sp.svg?style=for-the-badge)
+### This is the development branch of SafeNetworking 3.0.  It is suggested that you use the [latest release](https://github.com/PaloAltoNetworks/safe-networking-sp/releases) unless you know what you are doing with this development release
+[![GitHub release](https://img.shields.io/github/release/PaloAltoNetworks/safe-networking-sp.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking/releases/tag/v3.0-beta)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/PaloAltoNetworks/safe-networking.svg?style=for-the-badge)
 
 SafeNetworking is a software application that recevies events (DNS queries to known, malicious domains) from Palo Alto Networks NGFWs.  Using the Palo Alto Networks Threat Intelligence Cloud, SafeNetworking is able to correlate these DNS queries with malware known to be associated with the domain in question.  SafeNetworking utilizes ElasticStack's open-source version to gather, store and visualize these enriched events.
 
