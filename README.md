@@ -14,7 +14,7 @@ For the latest information and release specific notes view the [release notes](d
 
 3.) [Configure SafeNetworking for your installation](https://github.com/PaloAltoNetworks/safe-networking/wiki/Configuring-SafeNetworking)
 
-4.) [NGFW Configuration](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration)
+4.) [NGFW Configuration](https://github.com/PaloAltoNetworks/safe-networking/wiki/Home#config-ngfw)
 
 5.) [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking)
 
