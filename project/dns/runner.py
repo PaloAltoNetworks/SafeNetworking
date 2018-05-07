@@ -2,12 +2,10 @@ import time
 import datetime
 from project import app
 from elasticsearch_dsl import Search
-#from multiprocessing import cpu_count
 from multiprocessing.dummy import Pool
 from project.dns.dns import DNSEventDoc
 from elasticsearch import TransportError
 from elasticsearch_dsl import connections
-#from elasticsearch.exceptions import NotFoundError
 from project.dns.dnsutils import getDomainDoc, assessTags
 
 
@@ -32,7 +30,7 @@ def processDNS():
 
     # Create search for all unprocessed events
     eventSearch = Search(index="threat-*") \
-                .query("match", tags="SFN-DNS") \
+                .query("match", tags="DNS") \
                 .query("match", ** { "SFN.processed":0})  \
                 .sort({"@timestamp": {"order" : "desc"}})
 
@@ -40,6 +38,8 @@ def processDNS():
     # then exec the search
     eventSearch = eventSearch[:qSize]
     searchResponse = eventSearch.execute()
+
+    print(searchResponse)
 
     # For each hit, classify the event as either primary (we have the domain
     # info cached) or secondary (need to look it up).
