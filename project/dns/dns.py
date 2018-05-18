@@ -138,6 +138,7 @@ class TagDetailsDoc(DocType):
     '''
     name = Text(analyzer='snowball', fields={'raw': Keyword()})
     tag = Keyword()
+    tag_groups = Keyword()
     doc_created = Date()
     doc_updated = Date()
     processed = Integer()
@@ -155,6 +156,7 @@ class TagDetailsDoc(DocType):
             id=obj.id,
             name=obj.name,
             tag=obj.tag,
+            tag_groups=obj.tag_groups,
             doc_created=obj.doc_created,
             doc_updated=obj.doc_updated,
             processed=obj.processed,

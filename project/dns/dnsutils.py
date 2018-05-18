@@ -105,7 +105,6 @@ def getTagInfo(tagName):
 
     '''
     searchURL = app.config["AUTOFOCUS_TAG_URL"] + f"{tagName}"
-    print(searchURL)
     headers = {"Content-Type": "application/json"}
     data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
 
@@ -197,6 +196,7 @@ def processTag(tagName):
 
             tagDoc = TagDetailsDoc(meta={'id': tagName},name=tagName)
             tagDoc.tag = afTagData['tag']
+            tagDoc.tag_groups = afTagData['tag_groups']
             tagDoc.doc_updated = now
             tagDoc.type_of_doc = "tag-doc"
             tagDoc.processed = 1
