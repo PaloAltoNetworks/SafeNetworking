@@ -215,10 +215,10 @@ def processTag(tagName):
             return False
 
     app.logger.debug(f"processTag() returns: " +
-                     f"{(tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],tagDoc.tag['tag_class'])}")
+                     f"{(tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],tagDoc.tag['tag_class']),tagDoc.tag_groups['tag_group_name']}")
 
     return (tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],
-            tagDoc.tag['tag_class'])
+            tagDoc.tag['tag_class'],tagDoc.tag_groups['tag_group_name'])
 
 
 
