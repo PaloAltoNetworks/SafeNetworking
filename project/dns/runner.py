@@ -163,10 +163,11 @@ def searchDomain(event):
                 eventDoc.SFN.tag_name = eventTag['tag_name']
                 eventDoc.SFN.public_tag_name = eventTag['public_tag_name']
                 eventDoc.SFN.tag_class = eventTag['tag_class']
-                eventDoc.SFN.tag_group = eventTag['tag_group_name']
+                eventDoc.SFN.tag_group = eventTag['tag_group']
                 eventDoc.SFN.confidence_level = eventTag['confidence_level']
                 eventDoc.SFN.sample_date = eventTag['sample_date']
                 eventDoc.SFN.file_type = eventTag['file_type']
+                eventDoc.SFN.tag_description = eventTag['description']
                 eventDoc.SFN.updated_at = datetime.datetime.now()
                 eventDoc.SFN.processed = processedValue
                 eventDoc.save(id=eventID,index=eventIndex)
