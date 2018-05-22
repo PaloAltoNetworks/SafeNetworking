@@ -1257,6 +1257,15 @@
                 }
               }
             },
+            "tag_description": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
             "event_type": {
               "type": "text",
               "fields": {

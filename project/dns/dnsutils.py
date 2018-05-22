@@ -105,7 +105,6 @@ def getTagInfo(tagName):
 
     '''
     searchURL = app.config["AUTOFOCUS_TAG_URL"] + f"{tagName}"
-    print(searchURL)
     headers = {"Content-Type": "application/json"}
     data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
 
@@ -155,11 +154,12 @@ def processTag(tagName):
     tagDoc = False
     updateDetails = False
     afApiKey = app.config['AUTOFOCUS_API_KEY']
-    #cacheTimeout = app.config['AF_TAG_INFO_MAX_AGE']
     retStatusFail = f'Failed to get info for {tagName} - FAIL'
     now = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
     timeLimit = (datetime.datetime.now() -
-                    datetime.timedelta(days=app.config['DOMAIN_TAG_INFO_MAX_AGE']))
+                 datetime.timedelta(days=app.config['DOMAIN_TAG_INFO_MAX_AGE']))
+    tagGroupDict = {"tag_group_name": "Undefined",
+                    "description": "No related tags"}
 
     app.logger.debug(f"Querying local cache for {tagName}")
 
@@ -201,6 +201,13 @@ def processTag(tagName):
             tagDoc.type_of_doc = "tag-doc"
             tagDoc.processed = 1
 
+                        
+            # If the tag groups are empty send back Undefined
+            if not afTagData['tag_groups'] or afTagData['tag_groups'] == "":
+                tagDoc.tag_groups = tagGroupDict
+            else:
+                tagDoc.tag_groups = afTagData['tag_groups']
+                
             # Only set the doc_created attribute if we aren't updating
             if updateType == "Creating":
                 tagDoc.doc_created = now
@@ -215,10 +222,13 @@ def processTag(tagName):
             return False
 
     app.logger.debug(f"processTag() returns: " +
-                     f"{(tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],tagDoc.tag['tag_class'])}")
+                     f"{(tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'])}" +
+                     f"{(tagDoc.tag['tag_class'],tagDoc.tag_groups['tag_group_name'])}" +
+                     f"{(tagDoc.tag['description'])}")
 
     return (tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],
-            tagDoc.tag['tag_class'])
+            tagDoc.tag['tag_class'],tagDoc.tag_groups['tag_group_name'],
+            tagDoc.tag['description'])
 
 
 
@@ -249,6 +259,8 @@ def assessTags(tagsObj):
             for tag in entry[2]:
                 tagName = tag[1]
                 tagClass = tag[2]
+                tagGroup = tag[3]
+                tagDesc = tag[4]
 
                 app.logger.debug(f"Working on tag {tagName} " +
                                  f"with class of {tagClass}")
@@ -256,8 +268,8 @@ def assessTags(tagsObj):
                 if tagClass == "campaign":
                     tagInfo = {"tag_name":tagName,"public_tag_name":tag[0],
                                "tag_class":tagClass,"sample_date":sampleDate,
-                               "file_type":sampleFileType,
-                               "confidence_level":90}
+                               "file_type":sampleFileType,"tag_group":tagGroup,
+                               "description":tagDesc,"confidence_level":90}
                     taggedEvent = True
                     app.logger.debug(f"Tag info for {tagName}: {tagInfo}")
                     break   # This the grand daddy of all tags
@@ -266,8 +278,8 @@ def assessTags(tagsObj):
                 elif tagClass == "actor":
                     tagInfo = {"tag_name":tagName,"public_tag_name":tag[0],
                                "tag_class":tagClass,"sample_date":sampleDate,
-                               "file_type":sampleFileType,
-                               "confidence_level":90}
+                               "file_type":sampleFileType,"tag_group":tagGroup,
+                               "description":tagDesc,"confidence_level":90}
                     taggedEvent = True
                     app.logger.debug(f"Tag info for {tagName}: {tagInfo}")
 
@@ -300,8 +312,8 @@ def assessTags(tagsObj):
 
                     tagInfo = {"tag_name":tagName,"public_tag_name":tag[0],
                                 "tag_class":tagClass,"sample_date":sampleDate,
-                                "file_type":sampleFileType,
-                                "confidence_level":confLevel}
+                                "file_type":sampleFileType,"tag_group":tagGroup,
+                               "description":tagDesc,"confidence_level":confLevel}
                     taggedEvent = True
                     app.logger.debug(f"Tag info for {tagName}: {tagInfo}")
 
@@ -312,6 +324,8 @@ def assessTags(tagsObj):
                             "tag_class":"Low Priority Tags",
                             "sample_date":"2000-01-01T00:00:00",
                             "file_type":"Low Priority Tags",
+                            "tag_group":"Low Priority Tags",
+                            "description":"Low Priority Tags",
                             "confidence_level":0}
                 taggedEvent = True
 
@@ -347,7 +361,7 @@ def getDomainInfo(threatDomain):
                             "field":"alias.domain",
                             "operator":"contains",
                             "value": threatDomain}]},
-                    "size": 10,
+                    "size": 100,
                     "from": 0,
                     "sort": {"create_date": {"order": "desc"}},
                     "scope": "global",
@@ -355,6 +369,7 @@ def getDomainInfo(threatDomain):
 
     # Query AF and it returns a "cookie" that we use to view the resutls of the
     # search
+
     app.logger.debug(f'Gathering domain info for {threatDomain}')
     queryResponse = requests.post(url=searchURL,headers=headers,
                                   data=json.dumps(searchData))

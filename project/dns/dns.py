@@ -34,17 +34,6 @@ class DomainDetailsDoc(DocType):
         return super(DomainDetailsDoc, self).save(**kwargs)
 
 
-# class EventTag(InnerDoc):
-#     '''
-#     Tag info that is pushed to sfn-dns-event doc
-#     '''
-#     tag_name = Text(fields={'raw': Keyword()})
-#     public_tag_name = Text(analyzer='snowball')
-#     tag_class = Text(fields={'raw': Keyword()})
-#     confidence_level = Integer()
-#     sample_date = Date()
-#     file_type = Text(fields={'raw': Keyword()})
-
 class SFNDNS(InnerDoc):
     event_type = Text()
     domain_name = Text(analyzer='snowball', fields={'raw': Keyword()})
@@ -53,8 +42,10 @@ class SFNDNS(InnerDoc):
     threat_id = Text(analyzer='snowball')
     threat_name = Text(analyzer='snowball')
     tag_name = Text(fields={'raw': Keyword()})
-    public_tag_name = Text(analyzer='snowball')
     tag_class = Text(fields={'raw': Keyword()})
+    tag_group = Text(fields={'raw': Keyword()})
+    tag_description = Text(analyzer='snowball')
+    public_tag_name = Text(analyzer='snowball')
     confidence_level = Integer()
     sample_date = Date()
     file_type = Text(fields={'raw': Keyword()})
@@ -138,6 +129,7 @@ class TagDetailsDoc(DocType):
     '''
     name = Text(analyzer='snowball', fields={'raw': Keyword()})
     tag = Keyword()
+    tag_groups = Keyword()
     doc_created = Date()
     doc_updated = Date()
     processed = Integer()
@@ -155,6 +147,7 @@ class TagDetailsDoc(DocType):
             id=obj.id,
             name=obj.name,
             tag=obj.tag,
+            tag_groups=obj.tag_groups,
             doc_created=obj.doc_created,
             doc_updated=obj.doc_updated,
             processed=obj.processed,
