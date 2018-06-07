@@ -1,12 +1,15 @@
-### This is the development branch of SafeNetworking 3.0.  It is suggested that you use the [latest release](https://github.com/PaloAltoNetworks/safe-networking-sp/releases) unless you know what you are doing with this development release
+# SafeNetworking
+
 [![GitHub release](https://img.shields.io/github/release/PaloAltoNetworks/safe-networking.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking/releases)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking)
 
-SafeNetworking is a software application that recevies events (DNS queries to known, malicious domains) from Palo Alto Networks NGFWs.  Using the Palo Alto Networks Threat Intelligence Cloud, SafeNetworking is able to correlate these DNS queries with malware known to be associated with the domain in question.  SafeNetworking utilizes ElasticStack's open-source version to gather, store and visualize these enriched events.
+SafeNetworking is a software application that recevies both THREAT and TRAFFIC syslogs events from Palo Alto Networks NGFWs.  Using the Palo Alto Networks Threat Intelligence Cloud, SafeNetworking is able to correlate some of the threat logs (DNS queires mainly) with malware known to be associated with the event in question.  SafeNetworking utilizes ElasticStack's open-source version to gather, store and visualize these enriched events.
 
 Before using SafeNetworking, please read and understand our [Support Policy](https://github.com/PaloAltoNetworks/safe-networking/wiki/Support-Policy)<br/>
 For a more detailed introduction to SafeNetworking, see [What is SafeNetworking?](https://github.com/PaloAltoNetworks/safe-networking/wiki/What-is-SafeNetworking%3F)<br/>
 For the latest information and release specific notes view the [release notes](docs/release-notes.md)
+
+To install, follow the directions below.  There is also a VM that can be obtained from your Palo Alto Networks account team that can be used for a proof-of-concept of SafeNetworking and comes pre-installed and ready to go.  
 
 #### NOTE: If you already have an ElasticStack cluster (i.e. ElasticCloud or a local install) skip to step 2
 1.) [Infrastructure Setup Instructions](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup)
