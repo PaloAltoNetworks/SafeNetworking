@@ -25,6 +25,7 @@ services:
       - ./log/elasticsearch/:/var/log/elasticsearch/
       - ./elasticsearch/data/:/usr/share/elasticsearch/data
       - ./elasticsearch/backups/:/usr/share/elasticsearch/backups
+      - ./elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/config/elasticsearch.yml
     environment: 
       - http.host=0.0.0.0
       - transport.host=127.0.0.1
