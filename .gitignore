@@ -118,3 +118,12 @@ node_modules/
 # Logfiles
 log/*
 !log/.gitkeep
+
+# Infrastructure containers
+infra/log/*
+!infra/log/.gitkeep
+infra/elasticsearch/backups/*
+!infra/elasticsearch/backups/.gitkeep
+infra/elasticsearch/data/*
+!infra/elasticsearch/data/.gitkeep
+
