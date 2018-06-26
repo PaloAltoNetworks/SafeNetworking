@@ -22,7 +22,7 @@ services:
     container_name: sfn-elasticsearch
     restart: always
     volumes:
-      - ./log/elasticsearch/:/var/log/elasticsearch
+      - ./log/elasticsearch/:/var/log/elasticsearch/
       - ./elasticsearch/data/:/usr/share/elasticsearch/data
       - ./elasticsearch/backups/:/usr/share/elasticsearch/backups
     environment: 

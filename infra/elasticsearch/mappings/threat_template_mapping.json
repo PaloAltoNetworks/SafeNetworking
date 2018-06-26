@@ -145,7 +145,7 @@
               "type": "text",
               "fields": {
                 "keyword": {
-                  "type": "short"
+                  "type": "keyword"
                 }
               }
             },
@@ -454,7 +454,12 @@
               "type": "date"
             },
             "sig_num": {
-              "type": "integer"
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "integer"
+                }
+              }
             },
             "tag_class": {
               "type": "text",
@@ -973,7 +978,7 @@
               "type": "text",
               "fields": {
                 "keyword": {
-                  "type": "short"
+                  "type": "keyword"
                 }
               }
             },
