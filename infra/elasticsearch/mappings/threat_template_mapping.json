@@ -454,13 +454,7 @@
               "type": "date"
             },
             "sig_num": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
+              "type": "integer"
             },
             "tag_class": {
               "type": "text",
