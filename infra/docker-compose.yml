@@ -20,10 +20,11 @@ services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
     container_name: sfn-elasticsearch
+    restart: always
     volumes:
       - ./log/elasticsearch/:/var/log/elasticsearch
       - ./elasticsearch/data/:/usr/share/elasticsearch/data
-      - ./elasticsearch/backups/:/usr/share/elasti
+      - ./elasticsearch/backups/:/usr/share/elasticsearch/backups
     environment: 
       - http.host=0.0.0.0
       - transport.host=127.0.0.1
@@ -35,6 +36,7 @@ services:
   kibana:
     image: docker.elastic.co/kibana/kibana:${TAG}
     container_name: sfn-kibana
+    restart: always
     ports: ['127.0.0.1:5601:5601']
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
@@ -42,6 +44,7 @@ services:
   logstash:
     image: docker.elastic.co/logstash/logstash:${TAG}
     container_name: sfn-logstash
+    restart: always
     # Provide a simple pipeline configuration for Logstash with a bind-mounted file.
     volumes:
       - ./logstash/pan-sfn.conf:/usr/share/logstash/pipeline/pan-sfn.conf

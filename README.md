@@ -12,7 +12,11 @@ For the latest information and release specific notes view the [release notes](d
 To install, follow the directions below.  There is also a VM that can be obtained from your Palo Alto Networks account team that can be used for a proof-of-concept of SafeNetworking and comes pre-installed and ready to go.  
 
 #### NOTE: If you already have an ElasticStack cluster (i.e. ElasticCloud or a local install) skip to step 2
-1.) [Infrastructure Setup Instructions](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup)
+There are documented ways to install the infrastructure.  Included is a docker-compose setup that installs and configures the ELK stack for you.  Optionally, you can install the ELK components "locally" and use those.  Docker is much easier.<br/><br/>
+
+1.) Choose one of the following:<br/>
+[Infrastructure Setup Instructions - DOCKER](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup---DOCKER) - OR - [Infrastructure Setup Instructions - LOCAL](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup)
+<br/>
 
 2.) [Install SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Installing-the-SafeNetworking-Software)
 
