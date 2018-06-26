@@ -134,6 +134,7 @@ def searchDomain(event):
     
     try:
         app.logger.debug(f"calling getDomainDoc() for {eventDomainName}")
+        
         domainDoc = getDomainDoc(eventDomainName)
         app.logger.debug(f"domainDoc is {domainDoc}")
 
@@ -149,6 +150,8 @@ def searchDomain(event):
                 eventTag = {'tag_name': 'No tags found for domain',
                             'public_tag_name': 'No tags found for domain',
                             'tag_class': 'No tags found for domain',
+                            'tag_group': 'No tags found for domain',
+                            'description': 'No tags found for domain',
                             'sample_date': '2000-01-01T00:00:00',
                             'file_type': 'NA',
                             'confidence_level': 0}

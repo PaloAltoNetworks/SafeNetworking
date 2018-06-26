@@ -158,8 +158,8 @@ def processTag(tagName):
     now = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
     timeLimit = (datetime.datetime.now() -
                  datetime.timedelta(days=app.config['DOMAIN_TAG_INFO_MAX_AGE']))
-    tagGroupDict = {"tag_group_name": "Undefined",
-                    "description": "No related tags"}
+    tagGroupDict = [{"tag_group_name": "Undefined",
+                     "description": "Tag has not been assigned to a group"}]
 
     app.logger.debug(f"Querying local cache for {tagName}")
 
@@ -222,12 +222,12 @@ def processTag(tagName):
             return False
 
     app.logger.debug(f"processTag() returns: " +
-                     f"{(tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'])}" +
-                     f"{(tagDoc.tag['tag_class'],tagDoc.tag_groups['tag_group_name'])}" +
-                     f"{(tagDoc.tag['description'])}")
-
+                     f"{tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name']}" +
+                     f"{tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name']}," +
+                     f"{tagDoc.tag['description']}")
+    
     return (tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name'],
-            tagDoc.tag['tag_class'],tagDoc.tag_groups['tag_group_name'],
+            tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name'],
             tagDoc.tag['description'])
 
 
@@ -265,6 +265,7 @@ def assessTags(tagsObj):
                 app.logger.debug(f"Working on tag {tagName} " +
                                  f"with class of {tagClass}")
 
+                #import pdb;pdb.set_trace()
                 if tagClass == "campaign":
                     tagInfo = {"tag_name":tagName,"public_tag_name":tag[0],
                                "tag_class":tagClass,"sample_date":sampleDate,
@@ -343,8 +344,10 @@ def getDomainInfo(threatDomain):
     either of those values are triggered
     '''
     domainObj = list()
-    domainObj.append(('2000-01-01T00:00:00','None',
+    domainObj.append(('2000-01-01T00:00:00','NA',
                       [('No Samples Returned for Domain',
+                        'No Samples Returned for Domain',
+                        'No Samples Returned for Domain',
                         'No Samples Returned for Domain',
                         'No Samples Returned for Domain')]))
     apiKey= app.config['AUTOFOCUS_API_KEY']
@@ -405,7 +408,7 @@ def getDomainInfo(threatDomain):
         # check every minute anyway, in case the search completed as the cookie
         # is only valid for 2 minutes after it completes.
         for timer in range(lookupTimeout):
-            time.sleep(60)
+            time.sleep(61)
             cookieResults = requests.post(url=cookieURL,headers=headers,
                                         data=json.dumps(resultData))
             domainData = cookieResults.json()
@@ -434,7 +437,6 @@ def getDomainInfo(threatDomain):
     else:
         app.logger.error(f"Unable to retrieve domain info from AutoFocus. "
                          f"The AF query returned {queryData}")
-
 
     app.logger.debug(f"getDomainInfo() returns: {domainObj}")
 
