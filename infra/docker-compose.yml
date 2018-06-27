@@ -25,7 +25,7 @@ services:
       - ./log/elasticsearch/:/var/log/elasticsearch/
       - ./elasticsearch/data/:/usr/share/elasticsearch/data
       - ./elasticsearch/backups/:/usr/share/elasticsearch/backups
-      - ./elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/config/elasticsearch.yml
+      - ./elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml
     environment: 
       - http.host=0.0.0.0
       - transport.host=127.0.0.1
@@ -50,7 +50,7 @@ services:
     volumes:
       - ./logstash/pan-sfn.conf:/usr/share/logstash/pipeline/pan-sfn.conf
       - ./log/logstash/:/var/log/logstash
-    ports: ['127.0.0.1:5514:5514']
+    ports: ['5514:5514']
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
 

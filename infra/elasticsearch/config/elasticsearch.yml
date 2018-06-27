@@ -89,3 +89,5 @@ http.port: 9200
 # Require explicit names when deleting indices:
 #
 #action.destructive_requires_name: true
+#  Get rid of courier fetch errors in visualizations by upping the queue
+threadpool.search.queue_size: 10000
