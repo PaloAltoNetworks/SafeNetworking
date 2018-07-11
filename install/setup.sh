@@ -2,12 +2,12 @@
 # NOTE: If you are using something other than the default install, you may need
 # change the localhost settings below to your IP address
 echo "Installing index mappings into ElasticSearch"
-# curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/af-details/' -d @../infra/elasticsearch/mappings/af-details.json
-# curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/traffic?pretty' -d @../infra/elasticsearch/mappings/traffic_template_mapping.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/af-details/' -d @../infra/elasticsearch/mappings/af-details.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/traffic?pretty' -d @../infra/elasticsearch/mappings/traffic_template_mapping.json
 curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/threat?pretty' -d @../infra/elasticsearch/mappings/threat_template_mapping.json
-# curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-domain-details/' -d @../infra/elasticsearch/mappings/sfn-domain-details.json
-# curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-tag-details/' -d @../infra/elasticsearch/mappings/sfn-tag-details.json
-# curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' -d '{"index" : {"number_of_replicas" : 0}}'
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-domain-details/' -d @../infra/elasticsearch/mappings/sfn-domain-details.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-tag-details/' -d @../infra/elasticsearch/mappings/sfn-tag-details.json
+curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' -d '{"index" : {"number_of_replicas" : 0}}'
 
 echo "\n"
 
