@@ -31,14 +31,14 @@ services:
       - transport.host=127.0.0.1
       - bootstrap.memory_lock=true
       - ES_JAVA_OPTS=-Xms4g -Xmx4g
-    ports: ['127.0.0.1:9200:9200']
+    ports: ['9200:9200']
     networks: ['sfn-stack']
 
   kibana:
     image: docker.elastic.co/kibana/kibana:${TAG}
     container_name: sfn-kibana
     restart: always
-    ports: ['127.0.0.1:5601:5601']
+    ports: ['5601:5601']
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
 
@@ -54,5 +54,23 @@ services:
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
 
-  
+  setup_elasticsearch:
+    image: centos:7
+    container_name: setup_elasticsearch
+    volumes:
+      - ./elasticsearch/mappings:/infra/elasticsearch/mappings
+      - ../install/setup.sh:/app/setup.sh
+    command: ['/bin/bash', '-c', 'chmod +x /app/setup.sh && /app/setup.sh']
+    networks: ['sfn-stack']
+    depends_on: ['elasticsearch']
+
+  sfn:
+    image: nembery/sfn:v3.1.2
+    container_name: sfn
+    volumes:
+      - ~/.panrc:/app/project/.panrc
+      - ../log:/app/log
+    networks: ['sfn-stack']
+    depends_on: ['elasticsearch']
+
 networks: {sfn-stack: {}}
