@@ -1,4 +1,5 @@
-
+# Note run with
+# ocker run -d -p 9000:9000 -v /Users/nembery/.panrc:/app/project/.panrc nembery/sfn:v3.1
 FROM python:alpine
 
 LABEL description="Safe Networking"
@@ -17,5 +18,5 @@ COPY sfn /app/sfn.py
 EXPOSE 9000
 ENV FLASK_APP=/app/sfn.py
 
-#ENTRYPOINT ["python"]
-CMD ["flask", "run", "--host=0.0.0.0", "--port=9000"]
+ENTRYPOINT ["python", "/app/sfn.py"]
+#CMD ["flask", "run", "--host=0.0.0.0", "--port=9000"]
