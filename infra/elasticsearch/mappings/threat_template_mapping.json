@@ -354,7 +354,7 @@
           }
         },
         "PCAP_ID": {
-          "type": "integer"
+          "type": "long"
         },
         "ParentSessionID": {
           "type": "integer"
@@ -1211,7 +1211,7 @@
           }
         },
         "PCAP_ID": {
-          "type": "integer"
+          "type": "long"
         },
         "ParentSessionID": {
           "type": "integer"
