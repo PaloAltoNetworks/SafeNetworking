@@ -45,28 +45,28 @@ services:
       - 9300:9300
     networks: ['sfn-stack']
 
-  # elasticsearch2:
-  #   image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
-  #   container_name: sfn-elasticsearch2
-  #   restart: always
-  #   ulimits:
-  #     nproc: 65535
-  #     memlock:
-  #       soft: -1
-  #       hard: -1
-  #   cap_add:
-  #     - ALL
-  #   privileged: true
-  #   volumes:
-  #     - esdata2:/usr/share/elasticsearch/data
-  #   environment: 
-  #     - http.host=0.0.0.0
-  #     - transport.host=127.0.0.1
-  #     - node.name=es02
-  #     - cluster.name=sfn-es-cluster
-  #     - bootstrap.memory_lock=true
-  #     - ES_JAVA_OPTS=-Xms4g -Xmx4g
-  #     - "discovery.zen.ping.unicast.hosts=elasticsearch"
+  elasticsearch2:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
+    container_name: sfn-elasticsearch2
+    restart: always
+    ulimits:
+      nproc: 65535
+      memlock:
+        soft: -1
+        hard: -1
+    cap_add:
+      - ALL
+    privileged: true
+    volumes:
+      - ./elasticsearch/es2/data:/usr/share/elasticsearch/data
+    environment: 
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+      - node.name=es02
+      - cluster.name=sfn-es-cluster
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms4g -Xmx4g
+      - "discovery.zen.ping.unicast.hosts=elasticsearch"
     
   kibana:
     image: docker.elastic.co/kibana/kibana:${TAG}
@@ -83,8 +83,10 @@ services:
     # Provide a simple pipeline configuration for Logstash with a bind-mounted file.
     volumes:
       - ./logstash/pan-sfn.conf:/usr/share/logstash/pipeline/pan-sfn.conf
-      - ./log/logstash/:/var/log/logstash
-    ports: ['5514:5514']
+      - ./logstash/customer.conf:/usr/share/logstash/pipeline/customer.conf
+    ports: 
+      - 5514:5514
+      - 5515:5515
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
 
