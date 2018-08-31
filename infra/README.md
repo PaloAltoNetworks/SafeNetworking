@@ -11,8 +11,8 @@ Ensure your docker environment has at least 4GB of memory. Default is 2.0GB for 
 
 > Some users report 4GB may not be enough for latest versions of elasticsearch. 6.0GB seems to work fine
 
-## Bringing up the containers
+## Bringing up the containers - you must be in the safe-networking/infra directory
 
 ```bash
-TAG=6.2.1 docker-compose up
+docker-compose up
 ```
