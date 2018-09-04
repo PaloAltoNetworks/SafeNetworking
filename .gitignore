@@ -120,12 +120,5 @@ log/*
 !log/.gitkeep
 
 # Infrastructure containers
-infra/log/*
-!infra/log/.gitkeep
-infra/elasticsearch/backups/*
-!infra/elasticsearch/backups/.gitkeep
-infra/elasticsearch/es1/data/*
-!infra/elasticsearch/es1/data/.gitkeep
-infra/elasticsearch/es2/data/*
-!infra/elasticsearch/es2/data/.gitkeep
+!infra/.env
 
