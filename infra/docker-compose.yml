@@ -21,6 +21,13 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
     container_name: sfn-elasticsearch1
     restart: always
+    environment: 
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+      - node.name=es01
+      - cluster.name=sfn-es-cluster
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms4g -Xmx4g
     ulimits:
       nproc: 65535
       memlock:
@@ -30,16 +37,9 @@ services:
       - ALL
     privileged: true
     volumes:
-      - ./elasticsearch/backups/:/usr/share/elasticsearch/backups
+      - sfn-es1-data:/usr/share/elasticsearch/data
+      - es_backups:/usr/share/elasticsearch/backups
       - ./elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml
-      - ./elasticsearch/es1/data:/usr/share/elasticsearch/data
-    environment: 
-      - http.host=0.0.0.0
-      - transport.host=127.0.0.1
-      - node.name=es01
-      - cluster.name=sfn-es-cluster
-      - bootstrap.memory_lock=true
-      - ES_JAVA_OPTS=-Xms4g -Xmx4g
     ports:
       - 9200:9200
       - 9300:9300
@@ -49,6 +49,12 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
     container_name: sfn-elasticsearch2
     restart: always
+    environment: 
+      - node.name=es02
+      - cluster.name=sfn-es-cluster
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms4g -Xmx4g
+      - "discovery.zen.ping.unicast.hosts=elasticsearch"
     ulimits:
       nproc: 65535
       memlock:
@@ -58,15 +64,9 @@ services:
       - ALL
     privileged: true
     volumes:
-      - ./elasticsearch/es2/data:/usr/share/elasticsearch/data
-    environment: 
-      - http.host=0.0.0.0
-      - transport.host=127.0.0.1
-      - node.name=es02
-      - cluster.name=sfn-es-cluster
-      - bootstrap.memory_lock=true
-      - ES_JAVA_OPTS=-Xms4g -Xmx4g
-      - "discovery.zen.ping.unicast.hosts=elasticsearch"
+      - sfn-es2-data:/usr/share/elasticsearch/data
+    networks: ['sfn-stack']
+    depends_on: ['elasticsearch']
     
   kibana:
     image: docker.elastic.co/kibana/kibana:${TAG}
@@ -87,6 +87,7 @@ services:
     ports: 
       - 5514:5514
       - 5515:5515
+      - 6102:6102
     networks: ['sfn-stack']
     depends_on: ['elasticsearch']
 
