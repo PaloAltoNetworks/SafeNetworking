@@ -387,8 +387,20 @@ def getDomainInfo(threatDomain):
     # If the response has a message in it, it most likely means we ran out of
     # AF points.
     if 'message' in queryData:
-        if "Bucket Exceeded" in queryData['message']:
+        if "Daily Bucket Exceeded" in queryData['message']:
             app.logger.error(f"We have exceeded the daily allotment of points "
+                             f"for AutoFocus - going into hibernation mode.")
+            checkAfPoints(queryData['bucket_info'])
+            # The checkAfPoints will eventually return after the points reset.
+            # When they do, reurn the AF query so we don't lose it.
+            app.logger.debug(f'Gathering domain info for {threatDomain}')
+            queryResponse = requests.post(url=searchURL, headers=headers,
+                                          data=json.dumps(searchData))
+            app.logger.debug(f"Initial AF domain query returned "
+                             f"{queryResponse.json()}")
+            queryData = queryResponse.json()
+        elif "Minute Bucket Exceeded" in queryData['message']:
+            app.logger.error(f"We have exceeded the minute allotment of points "
                              f"for AutoFocus - going into hibernation mode.")
             checkAfPoints(queryData['bucket_info'])
             # The checkAfPoints will eventually return after the points reset.
