@@ -23,7 +23,7 @@ def processDNS():
     secDocIds = list()
     qSize = app.config["DNS_EVENT_QUERY_SIZE"]
     
-    app.logger.debug(f"Gathering {qSize} sfn-dns-events from ElasticSearch")
+    app.logger.debug(f"Gathering {qSize} THREAT events from ElasticSearch")
 
     # Define the default Elasticsearch client
     connections.create_connection(hosts=[app.config['ELASTICSEARCH_HOST']])
@@ -39,7 +39,7 @@ def processDNS():
     eventSearch = eventSearch[:qSize]
     searchResponse = eventSearch.execute()
 
-    print(searchResponse)
+    app.logger.debug(searchResponse)
 
     # For each hit, classify the event as either primary (we have the domain
     # info cached) or secondary (need to look it up).
@@ -86,7 +86,7 @@ def processDNS():
         with Pool(multiProcNum) as pool:
             results = pool.map(searchDomain, priDocIds)
 
-        app.logger.debug(f"Results for processing primary events {results}")
+        #app.logger.debug(f"Results for processing primary events {results}")
 
         # Do the same with the generic/secondary keys and pace so we don't kill AF
         app.logger.debug(f"Running sec-keys through on {multiProcNum} processes")
@@ -139,14 +139,16 @@ def searchDomain(event):
         app.logger.debug(f"domainDoc is {domainDoc}")
 
         if "NULL" in domainDoc:
-            app.logger.warning(f"Unable to process event {eventID} beacause" +
+            app.logger.error(f"Unable to process event {eventID} beacause" +
                                f" of problem with domain-doc for" + 
                                f" {eventDomainName}")
+            app.logger.error(f"Domain doc for {eventDomainName}")
         else:
             app.logger.debug(f"Assessing tags for domain-doc {domainDoc.name}")
             
             #  Set dummy info if no tags were found
             if (domainDoc.tags == None) or ("2000-01-01T00:00:00" in str(domainDoc.tags)):
+                app.logger.debug(f"No tags found for domain {domainDoc.name}")
                 eventTag = {'tag_name': 'No tags found for domain',
                             'public_tag_name': 'No tags found for domain',
                             'tag_class': 'No tags found for domain',
@@ -157,6 +159,7 @@ def searchDomain(event):
                             'confidence_level': 0}
                 processedValue = 55
             else:
+                app.logger.debug(f"calling assessTags({domainDoc.tags})")
                 eventTag = assessTags(domainDoc.tags)
                 processedValue = 1
 

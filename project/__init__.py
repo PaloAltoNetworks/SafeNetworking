@@ -42,7 +42,7 @@ app = Flask(__name__)
 # ---------- APPLICATION SETTINGS --------------
 #
 # Current version number of SafeNetworking
-app.config['VERSION'] = "2.1-dev"
+app.config['VERSION'] = "3.3-dev"
 #
 # When set to True, this slows down the logging by only processing 1 event at a
 # time and allows us to see what is going on if there are bugs
@@ -56,6 +56,7 @@ app.config['SECRET_KEY'] = "\xfd{H\xe5<\x95\xf9\xe3\x96.5\xd1\x01O<!\xd5"
 #
 # Sets the base directory for the application
 app.config['BASE_DIR'] = os.path.abspath(os.path.dirname(__file__))
+print(app.config['BASE_DIR'])
 #
 # Set the number of seconds for multi-threading to wait between processing calls
 app.config['DNS_POOL_TIME'] = 10
@@ -184,7 +185,7 @@ es = Elasticsearch(f"{app.config['ELASTICSEARCH_HOST']}:{app.config['ELASTICSEAR
 
 # Set up logging for the application - we may want to revisit this
 # see issue #10 in repo
-handler = RotatingFileHandler('log/sfn.log',
+handler = RotatingFileHandler(f"{app.config['BASE_DIR']}/../log/sfn.log",
                             maxBytes=app.config['LOG_SIZE'],
                             backupCount=app.config['LOG_BACKUPS'])
 sfnFormatter = SFNFormatter()

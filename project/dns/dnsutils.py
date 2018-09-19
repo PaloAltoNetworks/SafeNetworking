@@ -115,7 +115,7 @@ def getTagInfo(tagName):
     data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
 
     # Query AF and get the tag info to be stored in our local ES cache
-    app.logger.debug(f'Gathering tag info for {tagName}')
+    app.logger.debug(f'Gathering tag info for {tagName} (2 points)')
     queryResponse = requests.post(url=searchURL, headers=headers,
                                   data=json.dumps(data))
     queryData = queryResponse.json()
@@ -139,8 +139,6 @@ def processTagList(tagObj):
 
             tagData = processTag(tagName)
             tagList.append(tagData)
-
-            app.logger.debug(f"Tag data returned from processTag(): {tagData}")
     else:
         tagData = "NULL"
 
@@ -166,10 +164,12 @@ def processTag(tagName):
                      "description": "Tag has not been assigned to a group"}]
 
     app.logger.debug(f"Querying local cache for {tagName}")
-
+    # import pdb
+    # pdb.set_trace()
     try:
         tagDoc = TagDetailsDoc.get(id=tagName)
-
+        
+        
         # check age of doc and set to update the details
         if timeLimit > tagDoc.doc_updated:
             app.logger.debug(f"Last updated can't be older than {timeLimit} " +
@@ -178,20 +178,26 @@ def processTag(tagName):
             updateDetails = True
             updateType = "Updating"
         else:
+            # If the tag groups are empty send back Undefined
+            if not tagDoc.tag_groups or tagDoc.tag_groups == "":
+                app.logger.debug(f"No tag group found, setting to undefined")
+                tagDoc.tag_groups = tagGroupDict
+            # else:
+            #     tagDoc.tag_groups = afTagData['tag_groups']
+
             app.logger.debug(f"Last updated can't be older than {timeLimit} " +
-                             f"and {tagDoc.doc_updated} is not, so don't need" +
-                             f" to update cache")
+                             f"and {tagDoc.doc_updated} isn't, will not update cache")
 
 
     except NotFoundError as nfe:
         app.logger.info(f"No local cache found for tag {tagName} - Creating")
         updateDetails = True
         updateType = "Creating"
+        
+        
 
     if updateDetails:
-
         afTagData = getTagInfo(tagName)
-
         # If we get the word 'message' in the return it means something went
         # wrong, so just return False
         if "message" not in afTagData:
@@ -221,7 +227,7 @@ def processTag(tagName):
 
         else:
             return False
-
+    app.logger.debug(f"{tagDoc}")
     app.logger.debug(f"processTag() returns: " +
                      f"{tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name']}" +
                      f"{tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name']}," +
@@ -250,7 +256,7 @@ def assessTags(tagsObj):
     #  Find the *first* malware
     #    Set the tagInfo to this but keep going in case we find a campaign
     #      or an actor
-
+    #import pdb;pdb.set_trace()
     for entry in tagsObj:
         while not taggedEvent:
             sampleDate = entry[0]
@@ -264,7 +270,7 @@ def assessTags(tagsObj):
                 app.logger.debug(f"Working on tag {tagName} " +
                                  f"with class of {tagClass}")
 
-                # import pdb;pdb.set_trace()
+                #import pdb;pdb.set_trace()
                 if tagClass == "campaign":
                     tagInfo = {"tag_name": tagName, "public_tag_name": tag[0],
                                "tag_class": tagClass, "sample_date": sampleDate,
@@ -371,7 +377,7 @@ def getDomainInfo(threatDomain):
     # Query AF and it returns a "cookie" that we use to view the resutls of the
     # search
 
-    app.logger.debug(f'Gathering domain info for {threatDomain}')
+    app.logger.debug(f'Gathering domain info for {threatDomain} (10 points)')
     queryResponse = requests.post(url=searchURL, headers=headers,
                                   data=json.dumps(searchData))
     app.logger.debug(f"Initial AF domain query returned {queryResponse.json()}")
@@ -410,6 +416,7 @@ def getDomainInfo(threatDomain):
             cookieResults = requests.post(url=cookieURL, headers=headers,
                                           data=json.dumps(resultData))
             domainData = cookieResults.json()
+            app.logger.debug(f"Checking cookie {cookie} (2 points))
             if domainData['af_complete_percentage'] >= maxPercentage:
                 break
             else:
@@ -420,6 +427,7 @@ def getDomainInfo(threatDomain):
 
         if domainData['total'] != 0:
             for hits in domainData['hits']:
+                app.logger.debug(f"calling processTagList({hits})")
                 tagList = processTagList(hits)
                 # reset domainObj to empty then add the returned tagList
                 domainObj = list()
@@ -480,6 +488,7 @@ def getDomainDoc(domainName):
         app.logger.info(f"{updateType} domain doc for domain {domainName}")
         try:
             afDomainData = getDomainInfo(domainName)
+            app.logger.debug(f"Return from getDomainInfo() is: {afDomainData}")
             domainDoc = DomainDetailsDoc(meta={'id': domainName}, name=domainName)
             domainDoc.tags = afDomainData
             domainDoc.doc_updated = now
