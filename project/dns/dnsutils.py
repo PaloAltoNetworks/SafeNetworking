@@ -388,7 +388,7 @@ def getDomainInfo(threatDomain):
     # AF points.
     if 'message' in queryData:
         if "Daily Bucket Exceeded" in queryData['message']:
-            app.logger.error(f"We have exceeded the daily allotment of points "
+            app.logger.warning(f"We have exceeded the daily allotment of points "
                              f"for AutoFocus - going into hibernation mode.")
             checkAfPoints(queryData['bucket_info'])
             # The checkAfPoints will eventually return after the points reset.
@@ -400,7 +400,7 @@ def getDomainInfo(threatDomain):
                              f"{queryResponse.json()}")
             queryData = queryResponse.json()
         elif "Minute Bucket Exceeded" in queryData['message']:
-            app.logger.error(f"We have exceeded the minute allotment of points "
+            app.logger.warning(f"We have exceeded the minute allotment of points "
                              f"for AutoFocus - going into hibernation mode.")
             checkAfPoints(queryData['bucket_info'])
             # The checkAfPoints will eventually return after the points reset.
