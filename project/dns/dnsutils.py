@@ -33,6 +33,7 @@ def updateAfStats():
     # The AF Doc should exist by now
 
     # Just grab a tag that we know exists so we can get the rolling point total
+    app.logger.debug(f"Query to update AF points totals (2 API-points)")
     returnData = getTagInfo("WildFireTest")
     afInfo = returnData['bucket_info']
 
@@ -115,7 +116,7 @@ def getTagInfo(tagName):
     data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
 
     # Query AF and get the tag info to be stored in our local ES cache
-    app.logger.debug(f'Gathering tag info for {tagName} (2 points)')
+    app.logger.debug(f'Gathering tag info for {tagName} (2 API-points)')
     queryResponse = requests.post(url=searchURL, headers=headers,
                                   data=json.dumps(data))
     queryData = queryResponse.json()
@@ -377,7 +378,7 @@ def getDomainInfo(threatDomain):
     # Query AF and it returns a "cookie" that we use to view the resutls of the
     # search
 
-    app.logger.debug(f'Gathering domain info for {threatDomain} (10 points)')
+    app.logger.debug(f'Gathering domain info for {threatDomain} (10 API-points)')
     queryResponse = requests.post(url=searchURL, headers=headers,
                                   data=json.dumps(searchData))
     app.logger.debug(f"Initial AF domain query returned {queryResponse.json()}")
@@ -416,7 +417,7 @@ def getDomainInfo(threatDomain):
             cookieResults = requests.post(url=cookieURL, headers=headers,
                                           data=json.dumps(resultData))
             domainData = cookieResults.json()
-            app.logger.debug(f"Checking cookie {cookie} (2 points))
+            app.logger.debug(f"Checking cookie {cookie} (2 API-points)")
             if domainData['af_complete_percentage'] >= maxPercentage:
                 break
             else:
