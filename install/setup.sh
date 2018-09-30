@@ -4,13 +4,13 @@
 # change the elasticsearch settings below to your IP address
 printf "$(tput setaf 6)Installing index mappings into ElasticSearch$(tput sgr 0)\n"
 printf "\n$(tput setaf 6)Installing af-details mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/af-details/' -d @../infra/elasticsearch/mappings/af-details.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/af-details/' -d @./install/elasticsearch/mappings/af-details.json
 printf "\n\n$(tput setaf 6)Installing threat mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/threat?pretty' -d @../infra/elasticsearch/mappings/threat_template_mapping.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/threat?pretty' -d @./install/elasticsearch/mappings/threat_template_mapping.json
 printf "\n$(tput setaf 6)Installing domain detail mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-domain-details/' -d @../infra/elasticsearch/mappings/sfn-domain-details.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-domain-details/' -d @./install/elasticsearch/mappings/sfn-domain-details.json
 printf "\n\n$(tput setaf 6)Installing tag mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-tag-details/' -d @../infra/elasticsearch/mappings/sfn-tag-details.json
+curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-tag-details/' -d @./install/elasticsearch/mappings/sfn-tag-details.json
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' -d '{"index" : {"number_of_replicas" : 0}}'
 # The traffic mappings are not installed by default - but here is the command if you want it
