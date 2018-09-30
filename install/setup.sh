@@ -1,47 +1,56 @@
 #!/usr/bin/env bash
+
+################################################################################
+#                          SYSTEM SETUP
+################################################################################
+# Create backup directory and make world writeable so elasticsearch can use it.
+install -d -m 0777 -o pan -g admin /home/pan/es_backup
+
+################################################################################
+#                           ELASTICSTACK SETUP
+################################################################################
 # Push the ElasticSearch index mappings into the ElasticSearch DB
 # NOTE: If you are using something other than the default install, you may need
 # change the elasticsearch settings below to your IP address
+#
 printf "$(tput setaf 6)Installing index mappings into ElasticSearch$(tput sgr 0)\n"
 printf "\n$(tput setaf 6)Installing af-details mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/af-details/' -d @../infra/elasticsearch/mappings/af-details.json
+curl -XPUT -H'Content-Type: application/json' \
+    'http://localhost:9200/af-details/' \
+    -d @./install/elasticsearch/mappings/af-details.json
+
 printf "\n\n$(tput setaf 6)Installing threat mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/threat?pretty' -d @../infra/elasticsearch/mappings/threat_template_mapping.json
+curl -XPUT -H'Content-Type: application/json' \
+    'http://localhost:9200/_template/threat?pretty' \
+    -d @./install/elasticsearch/mappings/threat_template_mapping.json
+
 printf "\n$(tput setaf 6)Installing domain detail mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-domain-details/' -d @../infra/elasticsearch/mappings/sfn-domain-details.json
+curl -XPUT -H'Content-Type: application/json' \
+    'http://localhost:9200/sfn-domain-details/' \
+    -d @./install/elasticsearch/mappings/sfn-domain-details.json
+
 printf "\n\n$(tput setaf 6)Installing tag mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/sfn-tag-details/' -d @../infra/elasticsearch/mappings/sfn-tag-details.json
+curl -XPUT -H'Content-Type: application/json' \
+    'http://localhost:9200/sfn-tag-details/' \
+    -d @./install/elasticsearch/mappings/sfn-tag-details.json
+
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' -d '{"index" : {"number_of_replicas" : 0}}'
+curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' \
+    -d '{"index" : {"number_of_replicas" : 0}}'
 # The traffic mappings are not installed by default - but here is the command if you want it
 # curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/traffic?pretty' -d @../infra/elasticsearch/mappings/traffic_template_mapping.json
 
-# Set up the Elasticsearch heap size
-HEAP_SIZE=8g
-EXPORT_LINE="export ES_HEAP_SIZE=${HEAP_SIZE}"
-printf "\n\n$(tput setaf 6)Setting ElasticSearch heap size to 8GB in environment$(tput sgr 0)\n"
-# Check to see if the env var is already set in the .bashrc, if it is just 
-# force it in the .bashrc to our setting here, if not, add it.  
-grep ES_HEAP_SIZE ~/.bashrc
-if [ $? == 0 ]; then
-    unset ES_HEAP_SIZE
-    echo "Found pre-set heap size, changing to ${HEAP_SIZE}"
-    sed -i -E "s/(.+ES_HEAP_SIZE.+)/${EXPORT_LINE}/g" ~/.bashrc
-else
-    echo "export ES_HEAP_SIZE=${HEAP_SIZE}" >>~/.bashrc
-fi    
+#
+# Copy over the config files that are needed for SFN to work in a PoC env
+printf "\n\n$(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)\n"
+cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
+cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
+printf "\n\n$(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)\n"
+cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
+printf "\n\n$(tput setaf 6)Installing logstash config files$(tput sgr 0)\n"
+cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
 
-# Source the .bashrc so the heap size setting is in the env
-echo "Reading environment"
-source ~/.bashrc
-grep "export ES_HEAP_SIZE=${HEAP_SIZE}" ~/.bashrc
-if [ $? == 0 ]; then
-    echo "$(tput setaf 2)$(tput bold)The ElasticSearch heap size has been set in the .bashrc file"
-    echo "For the environment to have the appropriate settings, run 'source ~/.bashrc'$(tput sgr 0)"
-else
-    echo "$(tput set af1)$(tput bold)You may need to edit the .bashrc and manually put" 
-    echo "'export ES_HEAP_SIZE=${HEAP_SIZE}' in it to set the heap size.$(tput sgr 0)"
-fi
 ################################################################################
 # THE FOLLOWING IS DEPRECATED AND THE SFN APPLICATION WILL NO LONGER BE RUN AS
 # A SERVICE IN FUTURE RELEASES.  IT IS LEFT HERE IN CASE YOU WANT TO TRY AND 
