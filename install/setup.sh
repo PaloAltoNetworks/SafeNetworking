@@ -9,6 +9,84 @@ install -d -m 0777 -o pan -g admin /home/pan/es_backup
 ################################################################################
 #                           ELASTICSTACK SETUP
 ################################################################################
+####   ELASTICSEARCH SETUP
+#
+# Copy over the config files that are needed for SFN to work in a PoC env
+printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
+# cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
+# cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
+printf " - COMPLETE\n"
+printf ">>> $(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)"
+# cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+# cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
+printf " - COMPLETE\n"
+printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
+# cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
+printf " - COMPLETE\n"
+printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
+# cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
+printf " - COMPLETE\n"
+printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
+# cp ./install/kibana/kibana.yml /etc/kibana/kibana.yml
+printf " - COMPLETE\n"
+
+printf "\n>>> $(tput setaf 6)Setting up ELK services$(tput sgr 0)\n"
+printf "  >>> $(tput setaf 6)Setting up Elasticsearch auto-start$(tput sgr 0)\n"
+/bin/systemctl daemon-reload
+/bin/systemctl enable elasticsearch.service
+/bin/systemctl start elasticsearch.service
+
+# sleep for 10 seconds so ES can come up
+printf "\t- Waiting 10 seconds for Elasticsearch to start\n"
+sleep 10
+
+curl 127.0.0.1:9200 >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+    printf "\t* $(tput setaf 10)Elasticsearch is up and running$(tput sgr 0)\n"
+else
+    printf "\t- Elasticsearch not up yet, waiting 10 more seconds\n"
+    sleep 10
+    curl 127.0.0.1:9200 >/dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        printf "\t* $(tput setaf 10)Elasticsearch is up and running$(tput sgr 0) - COMPLETE\n"
+    else
+        printf "\t* $(tput setaf 9)Elasticsearch is NOT running - EXITING$(tput sgr 0)\n"
+        exit 7
+    fi
+fi
+
+printf "  >>> $(tput setaf 6)Setting up logstash auto-start$(tput sgr 0)\n"
+/bin/systemctl daemon-reload
+/bin/systemctl enable logstash.service
+/bin/systemctl start logstash.service
+# sleep for 30 seconds so logstash can come up
+printf "\t- Waiting 30 seconds for Logstash to start\n"
+sleep 30
+(echo >/dev/tcp/localhost/5514) >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+    printf "\t* $(tput setaf 10)Logstash is up and running on port 5514"
+    printf "$(tput sgr 0) - COMPLETE\n"
+else
+    printf "\t- Logstash not up yet, waiting 30 more seconds\n"
+    sleep 30
+    (echo >/dev/tcp/localhost/5514) >/dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        printf "\t* $(tput setaf 10)Logstash is up and running on port 5514"
+        printf "$(tput sgr 0) - COMPLETE\n"
+    else
+        printf "\t* $(tput setaf 9)Logstash is NOT running $(tput sgr 0)"
+        printf " - view /var/log/logstash/logstash-plain.log for troubleshooting\n"
+    fi
+fi
+
+printf "  >>> $(tput setaf 6)Setting up kibana auto-start$(tput sgr 0)\n"
+/bin/systemctl daemon-reload
+/bin/systemctl enable kibana.service
+/bin/systemctl start kibana.service
+printf "  >>> Kibana service installed. To test, goto http://<your-ip> to verify\n"
+
+
+
 # Push the ElasticSearch index mappings into the ElasticSearch DB
 # NOTE: If you are using something other than the default install, you may need
 # change the elasticsearch settings below to your IP address
@@ -40,16 +118,6 @@ curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' \
 # The traffic mappings are not installed by default - but here is the command if you want it
 # curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/traffic?pretty' -d @../infra/elasticsearch/mappings/traffic_template_mapping.json
 
-#
-# Copy over the config files that are needed for SFN to work in a PoC env
-printf "\n\n$(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)\n"
-cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
-cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
-printf "\n\n$(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)\n"
-cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
-cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
-printf "\n\n$(tput setaf 6)Installing logstash config files$(tput sgr 0)\n"
-cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
 
 ################################################################################
 # THE FOLLOWING IS DEPRECATED AND THE SFN APPLICATION WILL NO LONGER BE RUN AS
