@@ -145,7 +145,7 @@
               "type": "text",
               "fields": {
                 "keyword": {
-                  "type": "short"
+                  "type": "keyword"
                 }
               }
             },
@@ -354,7 +354,7 @@
           }
         },
         "PCAP_ID": {
-          "type": "integer"
+          "type": "long"
         },
         "ParentSessionID": {
           "type": "integer"
@@ -457,8 +457,7 @@
               "type": "text",
               "fields": {
                 "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
+                  "type": "integer"
                 }
               }
             },
@@ -477,6 +476,24 @@
                 "keyword": {
                   "type": "keyword",
                   "ignore_above": 256
+                }
+              }
+            },
+            "tag_group": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "tag_description": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 1024
                 }
               }
             },
@@ -509,6 +526,109 @@
             },
             "updated_at": {
               "type": "date"
+            }
+          }
+        },
+        "CUSTOMER": {
+          "properties": {
+            "acct_number": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "address": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "city": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "email": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "imei": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "imsi": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ip_addr": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "name": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "phone": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "zip": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
             }
           }
         },
@@ -546,7 +666,13 @@
           }
         },
         "SourceIP": {
-          "type": "ip"
+          "type": "ip",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         },
         "SourceIPGeo": {
           "properties": {
@@ -979,7 +1105,7 @@
               "type": "text",
               "fields": {
                 "keyword": {
-                  "type": "short"
+                  "type": "keyword"
                 }
               }
             },
@@ -1188,7 +1314,7 @@
           }
         },
         "PCAP_ID": {
-          "type": "integer"
+          "type": "long"
         },
         "ParentSessionID": {
           "type": "integer"
@@ -1243,109 +1369,6 @@
             }
           }
         },
-        "SFN": {
-          "properties": {
-            "confidence_level": {
-              "type": "long"
-            },
-            "domain_name": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "tag_description": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "event_type": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "file_type": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "processed": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "public_tag_name": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "sample_date": {
-              "type": "date"
-            },
-            "sig_num": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "tag_class": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "tag_name": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "threat_name": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "updated_at": {
-              "type": "date"
-            }
-          }
-        },
         "Sender": {
           "type": "text",
           "fields": {
@@ -1380,7 +1403,13 @@
           }
         },
         "SourceIP": {
-          "type": "ip"
+          "type": "ip",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         },
         "SourceIPGeo": {
           "properties": {
