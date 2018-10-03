@@ -17,17 +17,17 @@ cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.ori
 cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)"
-cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
-cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
+cp ./elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+cp ./elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
-cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
+cp ./logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
 printf " - COMPLETE\n"
 printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
 cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
-cp ./install/kibana/kibana.yml /etc/kibana/kibana.yml
+cp ./kibana/kibana.yml /etc/kibana/kibana.yml
 printf " - COMPLETE\n"
 
 printf "\n>>> $(tput setaf 6)Setting up ELK services$(tput sgr 0)\n"
