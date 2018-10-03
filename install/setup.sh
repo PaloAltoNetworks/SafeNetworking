@@ -113,7 +113,7 @@ curl -XPUT -H'Content-Type: application/json' \
     -d @./elasticsearch/mappings/sfn-tag-details.json
 
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' \
+curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
     -d '{"index" : {"number_of_replicas" : 0}}'
 
 ################################################################################
