@@ -9,32 +9,32 @@ install -d -m 0777 -o pan -g admin /home/pan/es_backup
 ################################################################################
 #                           ELASTICSTACK SETUP
 ################################################################################
-####   ELASTICSEARCH SETUP
+#                       ELASTICSEARCH SETUP
 #
 # Copy over the config files that are needed for SFN to work in a PoC env
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
-# cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
-# cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
+cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
+cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)"
-# cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
-# cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
+cp ./install/elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+cp ./install/elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
-# cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
+cp ./install/logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
 printf " - COMPLETE\n"
 printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
-# cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
+cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
-# cp ./install/kibana/kibana.yml /etc/kibana/kibana.yml
+cp ./install/kibana/kibana.yml /etc/kibana/kibana.yml
 printf " - COMPLETE\n"
 
 printf "\n>>> $(tput setaf 6)Setting up ELK services$(tput sgr 0)\n"
 printf "  >>> $(tput setaf 6)Setting up Elasticsearch auto-start$(tput sgr 0)\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable elasticsearch.service
-/bin/systemctl start elasticsearch.service
+/bin/systemctl restart elasticsearch.service
 
 # sleep for 10 seconds so ES can come up
 printf "\t- Waiting 10 seconds for Elasticsearch to start\n"
@@ -58,7 +58,7 @@ fi
 printf "  >>> $(tput setaf 6)Setting up logstash auto-start$(tput sgr 0)\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable logstash.service
-/bin/systemctl start logstash.service
+/bin/systemctl restart logstash.service
 # sleep for 30 seconds so logstash can come up
 printf "\t- Waiting 30 seconds for Logstash to start\n"
 sleep 30
@@ -82,7 +82,7 @@ fi
 printf "  >>> $(tput setaf 6)Setting up kibana auto-start$(tput sgr 0)\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable kibana.service
-/bin/systemctl start kibana.service
+/bin/systemctl restart kibana.service
 printf "  >>> Kibana service installed. To test, goto http://<your-ip> to verify\n"
 
 
@@ -95,28 +95,33 @@ printf "$(tput setaf 6)Installing index mappings into ElasticSearch$(tput sgr 0)
 printf "\n$(tput setaf 6)Installing af-details mapping$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/af-details/' \
-    -d @./install/elasticsearch/mappings/af-details.json
+    -d @./elasticsearch/mappings/af-details.json
 
 printf "\n\n$(tput setaf 6)Installing threat mapping$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/_template/threat?pretty' \
-    -d @./install/elasticsearch/mappings/threat_template_mapping.json
+    -d @./elasticsearch/mappings/threat_template_mapping.json
 
 printf "\n$(tput setaf 6)Installing domain detail mapping$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/sfn-domain-details/' \
-    -d @./install/elasticsearch/mappings/sfn-domain-details.json
+    -d @./elasticsearch/mappings/sfn-domain-details.json
 
 printf "\n\n$(tput setaf 6)Installing tag mapping$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/sfn-tag-details/' \
-    -d @./install/elasticsearch/mappings/sfn-tag-details.json
+    -d @./elasticsearch/mappings/sfn-tag-details.json
 
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' 'elasticsearch:9200/_settings' \
     -d '{"index" : {"number_of_replicas" : 0}}'
-# The traffic mappings are not installed by default - but here is the command if you want it
-# curl -XPUT -H'Content-Type: application/json' 'http://localhost:9200/_template/traffic?pretty' -d @../infra/elasticsearch/mappings/traffic_template_mapping.json
+
+################################################################################
+# The traffic mappings are not installed by default
+# but here is the command if you want it  (not recommended)
+# curl -XPUT -H'Content-Type: application/json' \
+#      'http://localhost:9200/_template/traffic?pretty' \
+#      -d @./elasticsearch/mappings/traffic_template_mapping.json
 
 
 ################################################################################
