@@ -4,7 +4,7 @@
 #                          SYSTEM SETUP
 ################################################################################
 # Create backup directory and make world writeable so elasticsearch can use it.
-install -d -m 0777 -o pan -g admin /home/pan/es_backup
+install -d -m 0777 -o pan -g pan /home/pan/es_backup
 
 ################################################################################
 #                           ELASTICSTACK SETUP
