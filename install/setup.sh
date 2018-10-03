@@ -44,8 +44,8 @@ curl 127.0.0.1:9200 >/dev/null 2>&1
 if [ $? -eq 0 ]; then
     printf "\t* $(tput setaf 10)Elasticsearch is up and running$(tput sgr 0)\n"
 else
-    printf "\t- Elasticsearch not up yet, waiting 10 more seconds\n"
-    sleep 10
+    printf "\t- Elasticsearch not up yet, waiting 15 more seconds\n"
+    sleep 15
     curl 127.0.0.1:9200 >/dev/null 2>&1
     if [ $? -eq 0 ]; then
         printf "\t* $(tput setaf 10)Elasticsearch is up and running$(tput sgr 0) - COMPLETE\n"
