@@ -90,4 +90,4 @@ http.port: 9200
 #
 #action.destructive_requires_name: true
 #  Get rid of courier fetch errors in visualizations by upping the queue
-threadpool.search.queue_size: 10000
+thread_pool.search.queue_size: 10000
