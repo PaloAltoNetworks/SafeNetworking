@@ -42,7 +42,7 @@ app = Flask(__name__)
 # ---------- APPLICATION SETTINGS --------------
 #
 # Current version number of SafeNetworking
-app.config['VERSION'] = "v3.3.2"
+app.config['VERSION'] = "v3.4"
 #
 # When set to True, this slows down the logging by only processing 1 event at a
 # time and allows us to see what is going on if there are bugs
@@ -153,7 +153,7 @@ app.config['ELASTICSEARCH_PORT'] = "9200"
 app.config['ELASTICSEARCH_HTTP_AUTH'] = ""
 app.config['KIBANA_HOST'] = "localhost"
 app.config['KIBANA_PORT'] = "5601"
-app.config['ELASTICSTACK_VERSION'] = "6.1.1"
+app.config['ELASTICSTACK_VERSION'] = "6.4"
 #
 #
 #
@@ -177,7 +177,7 @@ app.config['AUTOFOCUS_TAG_URL'] = "https://autofocus.paloaltonetworks.com/api/v1
 #
 
 # Set instance config parameters
-app.config.from_pyfile('.panrc')
+app.config.from_pyfile('~/.panrc')
 # Add bootstrap object for Flask served pages
 bs = Bootstrap(app)
 # Add Elasticsearch object for our instance of ES
