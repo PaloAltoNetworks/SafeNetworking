@@ -177,7 +177,7 @@ app.config['AUTOFOCUS_TAG_URL'] = "https://autofocus.paloaltonetworks.com/api/v1
 #
 
 # Set instance config parameters
-app.config.from_pyfile('~/.panrc')
+app.config.from_pyfile('.panrc')
 # Add bootstrap object for Flask served pages
 bs = Bootstrap(app)
 # Add Elasticsearch object for our instance of ES
