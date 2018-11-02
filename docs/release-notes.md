@@ -13,7 +13,6 @@ Release Date: 01 Nov 2018
 [Unused portal example code](https://github.com/PaloAltoNetworks/safe-networking/issues/41)<br/>
 [Installation issues while using documentation](https://github.com/PaloAltoNetworks/safe-networking/issues/40)<br/>
 [Shard errors due to too many indexes searched per visualization](https://github.com/PaloAltoNetworks/safe-networking/issues/35)<br/>
-
 [Unable to index dns sinkhole events to elasticsearch when pcap is enabled on Anti-Spyware profile ](https://github.com/PaloAltoNetworks/safe-networking/issues/34)<br/>
 [Tag group not populating correctly in event document](https://github.com/PaloAltoNetworks/safe-networking/issues/24)<br/>
 [Domain resolution in event document](https://github.com/PaloAltoNetworks/safe-networking/issues/9)<br/>
