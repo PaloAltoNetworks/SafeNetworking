@@ -21,7 +21,8 @@ cp ./elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 cp ./elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
-cp ./logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
+cp ./logstash/pan-threat-sfn.conf /etc/logstash/conf.d/pan-threat-sfn.conf
+cp ./logstash/pan-ext-iot-sfn.conf /etc/logstash/conf.d/pan-ext-iot-sfn.conf
 printf " - COMPLETE\n"
 printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
 cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
