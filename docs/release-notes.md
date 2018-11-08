@@ -1,3 +1,19 @@
+# Version 3.5
+Release Date: TBD
+<br/>
+### New Features
+1.) Support for non-PANOS IoT known threat events parsed through logstash and tagged in elasticsearch<br/>
+2.) <br/>
+3.) <br/>
+4.) <br/>
+5.) <br/>
+6.) <br/>
+
+### Issues resolved
+[Use pipeline functionality in logstash to separate listeners to individual pipelines](https://github.com/PaloAltoNetworks/safe-networking/issues/48)<br/>
+[Installation issues while using documentation](https://github.com/PaloAltoNetworks/safe-networking/issues/40)<br/>
+
+
 # Version 3.4
 Release Date: 01 Nov 2018
 <br/>
@@ -19,6 +35,7 @@ Release Date: 01 Nov 2018
 ['None' Type is not subscriptable in write of domain document](https://github.com/PaloAltoNetworks/safe-networking/issues/8)<br/>
 [Unable to index msg because Destination Postal Code is not a short](https://github.com/PaloAltoNetworks/safe-networking/issues/3)<br/>
 [Rename repository to safe-networking from safe-networking-sp and port all issues](https://github.com/PaloAltoNetworks/safe-networking/issues/5)<br/>
+[Custom DNS Signatures Block List with Threat ID 12000000 - take domain name from file name field](https://github.com/PaloAltoNetworks/safe-networking/issues/14)<br/>
 
 ### Issues partially-resolved
 [Determine SFN processing routes for different EDL types](https://github.com/PaloAltoNetworks/safe-networking/issues/23)<br/>
