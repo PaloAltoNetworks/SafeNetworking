@@ -13,22 +13,21 @@ install -d -m 0777 -o pan -g pan /home/pan/es_backup
 #
 # Copy over the config files that are needed for SFN to work in a PoC env
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
-cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
-cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
+cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.$(date +%F_%R)
+cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.$(date +%F_%R)
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)"
 cp ./elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 cp ./elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
-printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
-cp ./logstash/01-input.conf /etc/logstash/conf.d/01-input.conf
-cp ./logstash/10-PAN-OS_syslog.conf /etc/logstash/conf.d/10-PAN-OS_syslog.conf
-cp ./logstash/11-IOT-IP_syslog.conf /etc/logstash/conf.d/11-IOT-IP_syslog.conf
-cp ./logstash/25-CUSTOMER_syslog.conf /etc/logstash/conf.d/25-CUSTOMER_syslog.conf
-cp ./logstash/30-output.conf /etc/logstash/conf.d/30-output.conf
+printf ">>> $(tput setaf 6)Installing logstash pipelines and config files$(tput sgr 0)"
+install -d -m 0777 -o pan -g pan /etc/logstash/pipelines 
+cp ./logstash/*.conf /etc/logstash/pipelines/
+cp /etc/logstash/logstash.yml /etc/logstash/logstash.yml.$(date +%F_%R)
+cp ./logstash/logstash.yml /etc/logstash/logstash.yml
 printf " - COMPLETE\n"
 printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
-cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
+cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.$(date +%F_%R)
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
 cp ./kibana/kibana.yml /etc/kibana/kibana.yml
