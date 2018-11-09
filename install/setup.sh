@@ -23,6 +23,8 @@ printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing logstash pipelines and config files$(tput sgr 0)"
 install -d -m 0777 -o pan -g pan /etc/logstash/pipelines 
 cp ./logstash/*.conf /etc/logstash/pipelines/
+cp /etc/logstash/pipelines.yml /etc/logstash/pipelines.yml.$(date +%F_%R)
+cp ./logstash/pipelines.yml /etc/logstash/pipelines.yml
 cp /etc/logstash/logstash.yml /etc/logstash/logstash.yml.$(date +%F_%R)
 cp ./logstash/logstash.yml /etc/logstash/logstash.yml
 printf " - COMPLETE\n"
