@@ -11,7 +11,7 @@ Release Date: TBD
 
 ### Issues resolved
 [Use pipeline functionality in logstash to separate listeners to individual pipelines](https://github.com/PaloAltoNetworks/safe-networking/issues/48)<br/>
-[Installation issues while using documentation](https://github.com/PaloAltoNetworks/safe-networking/issues/40)<br/>
+[FILLER](https://github.com/PaloAltoNetworks/safe-networking/issues/40)<br/>
 
 
 # Version 3.4
