@@ -283,10 +283,6 @@
             }
           }
         },
-        "GeneratedTime": {
-          "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
-        },
         "HTTPMethod": {
           "type": "text",
           "fields": {
@@ -361,7 +357,7 @@
         },
         "ParentStartTime": {
           "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd HH:mm||yyyy/MM/dd||epoch_millis"
         },
         "Protocol": {
           "type": "text",
@@ -374,7 +370,7 @@
         },
         "ReceiveTime": {
           "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd HH:mm||yyyy/MM/dd||epoch_millis"
         },
         "Recipient": {
           "type": "text",
@@ -1243,10 +1239,6 @@
             }
           }
         },
-        "GeneratedTime": {
-          "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
-        },
         "HTTPMethod": {
           "type": "text",
           "fields": {
@@ -1321,7 +1313,7 @@
         },
         "ParentStartTime": {
           "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd HH:mm||yyyy/MM/dd||epoch_millis"
         },
         "Protocol": {
           "type": "text",
@@ -1334,7 +1326,7 @@
         },
         "ReceiveTime": {
           "type": "date",
-          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd HH:mm||yyyy/MM/dd||epoch_millis"
         },
         "Recipient": {
           "type": "text",
