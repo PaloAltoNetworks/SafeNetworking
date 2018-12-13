@@ -20,9 +20,6 @@ fi
 # Copy over the config files that are needed for SFN to work in a PoC env
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
 find ./elasticsearch/config/elasticsearch_template.yml -exec sed "s#_USER_HOME_#$userHome#g" {} \; > ./elasticsearch/config/elasticsearch.yml 
-
-exit
-
 cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.$(date +%F_%R)
 cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.$(date +%F_%R)
 printf " - COMPLETE\n"

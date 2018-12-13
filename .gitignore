@@ -110,6 +110,7 @@ instance/.panrc
 project/.panrc
 .panrc
 install/sfn/sfn.sh
+install/elasticsearch/config/elasticsearch.yml
 project/utils/udc*
 
 # Node + npm Stuff
