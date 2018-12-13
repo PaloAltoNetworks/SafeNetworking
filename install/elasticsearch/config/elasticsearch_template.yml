@@ -37,7 +37,7 @@ path.data: /var/lib/elasticsearch
 path.logs: /var/log/elasticsearch
 #
 # Path to repos
-path.repo: /home/pan/es_backup
+path.repo: _USER_HOME_/es_backup
 #
 # ----------------------------------- Memory -----------------------------------
 #

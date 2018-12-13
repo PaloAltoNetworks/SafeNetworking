@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
+# Figure out who we are so we write the correct paths
+userName=$(echo $SUDO_USER)
+userHome=$(eval echo "~$userName" )
+printf "\n>>> $(tput setaf 3)Setting up for user $userName in $userHome directory $(tput sgr 0)\n"
 ################################################################################
 #                          SYSTEM SETUP
 ################################################################################
 # Create backup directory and make world writeable so elasticsearch can use it.
-install -d -m 0777 -o pan -g pan /home/pan/es_backup
+if [ ! -d "$DIRECTORY" ]; then
+  install -d -m 0777 -o $userName -g $(id -gn $userName) $userHome/es_backup
+fi
 
 ################################################################################
 #                           ELASTICSTACK SETUP
@@ -13,6 +19,10 @@ install -d -m 0777 -o pan -g pan /home/pan/es_backup
 #
 # Copy over the config files that are needed for SFN to work in a PoC env
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
+find ./elasticsearch/config/elasticsearch_template.yml -exec sed "s#_USER_HOME_#$userHome#g" {} \; > ./elasticsearch/config/elasticsearch.yml 
+
+exit
+
 cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.$(date +%F_%R)
 cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.$(date +%F_%R)
 printf " - COMPLETE\n"
