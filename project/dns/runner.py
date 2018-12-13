@@ -48,6 +48,7 @@ def processDNS():
     # the event and the doc ID for that event.
     for hit in searchResponse.hits:
         entry = dict()
+        app.logger.debug(f"Working with {hit}")
         domainName = hit['SFN']['domain_name']
         eventDoc = hit.meta.id
         eventIndex = hit.meta.index
