@@ -8,7 +8,7 @@ printf "\n>>> $(tput setaf 3)Setting up for user $userName in $userHome director
 #                          SYSTEM SETUP
 ################################################################################
 # Create backup directory and make world writeable so elasticsearch can use it.
-if [ ! -d "$DIRECTORY" ]; then
+if [ ! -d "$userHome/es_backup" ]; then
   install -d -m 0777 -o $userName -g $(id -gn $userName) $userHome/es_backup
 fi
 
@@ -18,6 +18,7 @@ fi
 #                       ELASTICSEARCH SETUP
 #
 # Copy over the config files that are needed for SFN to work in a PoC env
+# First thing we do is 
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
 find ./elasticsearch/config/elasticsearch_template.yml -exec sed "s#_USER_HOME_#$userHome#g" {} \; > ./elasticsearch/config/elasticsearch.yml 
 cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.$(date +%F_%R)
@@ -28,7 +29,9 @@ cp ./elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 cp ./elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing logstash pipelines and config files$(tput sgr 0)"
-install -d -m 0777 -o pan -g pan /etc/logstash/pipelines 
+if [ ! -d "/etc/logstash/pipelines" ]; then
+    install -d -m 0777 -o $userName -g $(id -gn $userName) /etc/logstash/pipelines 
+fi
 cp ./logstash/*.conf /etc/logstash/pipelines/
 cp /etc/logstash/pipelines.yml /etc/logstash/pipelines.yml.$(date +%F_%R)
 cp ./logstash/pipelines.yml /etc/logstash/pipelines.yml
