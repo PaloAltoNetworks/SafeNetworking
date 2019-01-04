@@ -1,0 +1,125 @@
+414200, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved
+414201, Invalid TEID in GTPv2 header (non-existent tunnel), Echo Request
+414202, Invalid TEID in GTPv2 header (non-existent tunnel), Echo Response
+414203, Invalid TEID in GTPv2 header (non-existent tunnel), Version Not Supported Indication
+414204, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414205, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414206, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414207, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414208, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414209, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420a, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420b, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420c, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420d, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420e, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+41420f, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414210, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S101 interface
+414211, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414212, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414213, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414214, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414215, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414216, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414217, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414218, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for S121 interface
+414219, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421a, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421b, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421c, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421d, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421e, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+41421f, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface
+414220, Invalid TEID in GTPv2 header (non-existent tunnel), Create Session Request
+414221, Invalid TEID in GTPv2 header (non-existent tunnel), Create Session Response
+414224, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Session Request
+414225, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Session Response
+414222, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Bearer Request
+414223, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Bearer Response
+414228, Invalid TEID in GTPv2 header (non-existent tunnel), Remote UE Report Notification
+414229, Invalid TEID in GTPv2 header (non-existent tunnel), Remote UE Report Acknowledge
+414226, Invalid TEID in GTPv2 header (non-existent tunnel), Change Notification Request
+414227, Invalid TEID in GTPv2 header (non-existent tunnel), Change Notification Response
+41422a, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142a4, Invalid TEID in GTPv2 header (non-existent tunnel), Resume Notification
+4142a5, Invalid TEID in GTPv2 header (non-existent tunnel), Resume Acknowledge
+414240, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414241, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414242, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Bearer Command (MME/SGSN to PGW – S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S5/S8)
+414243, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S11/S4))
+414244, Invalid TEID in GTPv2 header (non-existent tunnel), Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414245, Invalid TEID in GTPv2 header (non-existent tunnel), Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414246, Invalid TEID in GTPv2 header (non-existent tunnel), Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+414247, Invalid TEID in GTPv2 header (non-existent tunnel), Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414248, Invalid TEID in GTPv2 header (non-existent tunnel), Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Invalid TEID in GTPv2 header (non-existent tunnel), S5/S8, Invalid TEID in GTPv2 header (non-existent tunnel), S2a, Invalid TEID in GTPv2 header (non-existent tunnel), S2b)
+414249, Invalid TEID in GTPv2 header (non-existent tunnel), Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+41424a, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+41425f, Invalid TEID in GTPv2 header (non-existent tunnel), Create Bearer Request
+414260, Invalid TEID in GTPv2 header (non-existent tunnel), Create Bearer Response
+414261, Invalid TEID in GTPv2 header (non-existent tunnel), Update Bearer Request
+414262, Invalid TEID in GTPv2 header (non-existent tunnel), Update Bearer Response
+414263, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Bearer Request
+414264, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Bearer Response
+414265, Invalid TEID in GTPv2 header (non-existent tunnel), Delete PDN Connection Set Request
+414266, Invalid TEID in GTPv2 header (non-existent tunnel), Delete PDN Connection Set Response
+414267, Invalid TEID in GTPv2 header (non-existent tunnel), PGW Downlink Triggering Notification
+414268, Invalid TEID in GTPv2 header (non-existent tunnel), PGW Downlink Triggering Acknowledge
+414269, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+414280, Invalid TEID in GTPv2 header (non-existent tunnel), Identification Request
+414281, Invalid TEID in GTPv2 header (non-existent tunnel), Identification Response
+414282, Invalid TEID in GTPv2 header (non-existent tunnel), Context Request
+414283, Invalid TEID in GTPv2 header (non-existent tunnel), Context Response
+414284, Invalid TEID in GTPv2 header (non-existent tunnel), Context Acknowledge
+414285, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Relocation Request
+414286, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Relocation Response
+414287, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Relocation Complete Notification
+414288, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Relocation Complete Acknowledge
+414289, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Access Context Notification
+41428a, Invalid TEID in GTPv2 header (non-existent tunnel), Forward Access Context Acknowledge
+41428b, Invalid TEID in GTPv2 header (non-existent tunnel), Relocation Cancel Request
+41428c, Invalid TEID in GTPv2 header (non-existent tunnel), Relocation Cancel Response
+41428d, Invalid TEID in GTPv2 header (non-existent tunnel), Configuration Transfer Tunnel
+41428e, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+414298, Invalid TEID in GTPv2 header (non-existent tunnel), RAN Information Relay
+414295, Invalid TEID in GTPv2 header (non-existent tunnel), Detach Notification
+414296, Invalid TEID in GTPv2 header (non-existent tunnel), Detach Acknowledge
+414297, Invalid TEID in GTPv2 header (non-existent tunnel), CS Paging Indication
+414299, Invalid TEID in GTPv2 header (non-existent tunnel), Alert MME Notification
+41429a, Invalid TEID in GTPv2 header (non-existent tunnel), Alert MME Acknowledge
+41429b, Invalid TEID in GTPv2 header (non-existent tunnel), UE Activity Notification
+41429c, Invalid TEID in GTPv2 header (non-existent tunnel), UE Activity Acknowledge
+41429d, Invalid TEID in GTPv2 header (non-existent tunnel), ISR Status Indication
+41429e, Invalid TEID in GTPv2 header (non-existent tunnel), UE Registration Query Request
+41429f, Invalid TEID in GTPv2 header (non-existent tunnel), UE Registration Query Response
+4142a2, Invalid TEID in GTPv2 header (non-existent tunnel), Suspend Notification
+4142a3, Invalid TEID in GTPv2 header (non-existent tunnel), Suspend Acknowledge
+4142a0, Invalid TEID in GTPv2 header (non-existent tunnel), Create Forwarding Tunnel Request
+4142a1, Invalid TEID in GTPv2 header (non-existent tunnel), Create Forwarding Tunnel Response
+4142a6, Invalid TEID in GTPv2 header (non-existent tunnel), Create Indirect Data Forwarding Tunnel Request
+4142a7, Invalid TEID in GTPv2 header (non-existent tunnel), Create Indirect Data Forwarding Tunnel Response
+4142a8, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Indirect Data Forwarding Tunnel Request
+4142a9, Invalid TEID in GTPv2 header (non-existent tunnel), Delete Indirect Data Forwarding Tunnel Response
+4142aa, Invalid TEID in GTPv2 header (non-existent tunnel), Release Access Bearers Request
+4142ab, Invalid TEID in GTPv2 header (non-existent tunnel), Release Access Bearers Response
+4142ac, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142b0, Invalid TEID in GTPv2 header (non-existent tunnel), Downlink Data Notification
+4142b1, Invalid TEID in GTPv2 header (non-existent tunnel), Downlink Data Notification Acknowledge
+4142b3, Invalid TEID in GTPv2 header (non-existent tunnel), PGW Restart Notification
+4142b4, Invalid TEID in GTPv2 header (non-existent tunnel), PGW Restart Notification Acknowledge
+4142b2, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved. Allocated in earlier version of the specification.
+4142b5, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142c8, Invalid TEID in GTPv2 header (non-existent tunnel), Update PDN Connection Set Request
+4142c9, Invalid TEID in GTPv2 header (non-existent tunnel), Update PDN Connection Set Response
+4142ca, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142d3, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Access Bearers Request
+4142d4, Invalid TEID in GTPv2 header (non-existent tunnel), Modify Access Bearers Response
+4142d5, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142e7, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Start Request
+4142e8, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Start Response
+4142e9, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Update Request
+4142ea, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Update Response
+4142eb, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Stop Request
+4142ec, Invalid TEID in GTPv2 header (non-existent tunnel), MBMS Session Stop Response
+4142ed, Invalid TEID in GTPv2 header (non-existent tunnel), For future use
+4142f0, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved for Sv interface (see also types 25 to 31)
+4142f8, Invalid TEID in GTPv2 header (non-existent tunnel), For future use

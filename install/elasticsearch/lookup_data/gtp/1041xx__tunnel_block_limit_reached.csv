@@ -1,0 +1,135 @@
+104100, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104101, Tunnel block limit reached, Echo Request
+104102, Tunnel block limit reached, Echo Response
+104103, Tunnel block limit reached, Version Not Supported
+104104, Tunnel block limit reached, Node Alive Request
+104105, Tunnel block limit reached, Node Alive Response
+104106, Tunnel block limit reached, Redirection Request
+104107, Tunnel block limit reached, Redirection Response
+104108, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104109, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10410f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104110, Tunnel block limit reached, Create PDP Context Request
+104111, Tunnel block limit reached, Create PDP Context Response
+104112, Tunnel block limit reached, Update PDP Context Request
+104113, Tunnel block limit reached, Update PDP Context Response
+104114, Tunnel block limit reached, Delete PDP Context Request
+104115, Tunnel block limit reached, Delete PDP Context Response
+104116, Tunnel block limit reached, Initiate PDP Context Activation Request
+104117, Tunnel block limit reached, Initiate PDP Context Activation Response
+104118, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104119, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10411a, Tunnel block limit reached, Error Indication
+10411b, Tunnel block limit reached, PDU Notification Request
+10411c, Tunnel block limit reached, PDU Notification Response
+10411d, Tunnel block limit reached, PDU Notification Reject Request
+10411e, Tunnel block limit reached, PDU Notification Reject Response
+10411f, Tunnel block limit reached, Supported Extension Headers Notification
+104120, Tunnel block limit reached, Send Routeing Information for GPRS Request
+104141, Tunnel block limit reached, Send Routeing Information for GPRS Response
+104122, Tunnel block limit reached, Failure Report Request
+104123, Tunnel block limit reached, Failure Report Response
+104124, Tunnel block limit reached, Note MS GPRS Present Request
+104125, Tunnel block limit reached, Note MS GPRS Present Response
+104126, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104127, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104128, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104129, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10412f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104130, Tunnel block limit reached, Identification Request
+104131, Tunnel block limit reached, Identification Response
+104132, Tunnel block limit reached, SGSN Context Request
+104133, Tunnel block limit reached, SGSN Context Response
+104134, Tunnel block limit reached, SGSN Context Acknowledge
+104135, Tunnel block limit reached, Forward Relocation Request
+104136, Tunnel block limit reached, Forward Relocation Response
+104137, Tunnel block limit reached, Forward Relocation Complete
+104138, Tunnel block limit reached, Relocation Cancel Request
+104139, Tunnel block limit reached, Relocation Cancel Response
+10413a, Tunnel block limit reached, Forward SRNS Context
+10413b, Tunnel block limit reached, Forward Relocation Complete Acknowledge
+10413c, Tunnel block limit reached, Forward SRNS Context Acknowledge
+10413d, Tunnel block limit reached, UE Registration Query Request
+10413e, Tunnel block limit reached, UE Registration Query Response
+10413f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104140, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104141, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104142, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104143, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104144, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104145, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104146, Tunnel block limit reached, RAN Information Relay
+104147, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104148, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104149, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10414f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104150, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104152, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104153, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104154, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104155, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104156, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104157, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104158, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104159, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10415f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104160, Tunnel block limit reached, MBMS Notification Request
+104161, Tunnel block limit reached, MBMS Notification Response
+104162, Tunnel block limit reached, MBMS Notification Reject Request
+104163, Tunnel block limit reached, MBMS Notification Reject Response
+104164, Tunnel block limit reached, Create MBMS Context Request
+104165, Tunnel block limit reached, Create MBMS Context Response
+104166, Tunnel block limit reached, Update MBMS Context Request
+104167, Tunnel block limit reached, Update MBMS Context Response
+104168, Tunnel block limit reached, Delete MBMS Context Request
+104169, Tunnel block limit reached, Delete MBMS Context Response
+10416a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10416b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10416c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10416d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10416e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+10416f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+104170, Tunnel block limit reached, MBMS Registration Request
+104171, Tunnel block limit reached, MBMS Registration Response
+104172, Tunnel block limit reached, MBMS De-Registration Request
+104173, Tunnel block limit reached, MBMS De-Registration Response
+104174, Tunnel block limit reached, MBMS Session Start Request
+104175, Tunnel block limit reached, MBMS Session Start Response
+104176, Tunnel block limit reached, MBMS Session Stop Request
+104177, Tunnel block limit reached, MBMS Session Stop Response
+104178, Tunnel block limit reached, MBMS Session Update Request
+104179, Tunnel block limit reached, MBMS Session Update Response
+10417a, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+10417b, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+10417c, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+10417d, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+10417e, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+10417f, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message
+104180, Tunnel block limit reached, MS Info Change Notification Request
+104181, Tunnel block limit reached, MS Info Change Notification Response
+104182, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+1041f0, Tunnel block limit reached, Data Record Transfer Request
+1041f1, Tunnel block limit reached, Data Record Transfer Response
+1041f2, Tunnel block limit reached, For future use. Shall not be sent. If received, Tunnel block limit reached, shall be treated as an Unknown message.
+1041fe, Tunnel block limit reached, End Marker
+1041ff, Tunnel block limit reached, G-PDU

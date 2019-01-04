@@ -1,0 +1,127 @@
+104200, Tunnel block limit reached, Reserved
+104201, Tunnel block limit reached, Echo Request
+104202, Tunnel block limit reached, Echo Response
+104203, Tunnel block limit reached, Version Not Supported Indication
+104204, Tunnel block limit reached, Reserved for S101 interface
+104205, Tunnel block limit reached, Reserved for S101 interface
+104206, Tunnel block limit reached, Reserved for S101 interface
+104207, Tunnel block limit reached, Reserved for S101 interface
+104208, Tunnel block limit reached, Reserved for S101 interface
+104209, Tunnel block limit reached, Reserved for S101 interface
+10420a, Tunnel block limit reached, Reserved for S101 interface
+10420b, Tunnel block limit reached, Reserved for S101 interface
+10420c, Tunnel block limit reached, Reserved for S101 interface
+10420d, Tunnel block limit reached, Reserved for S101 interface
+10420e, Tunnel block limit reached, Reserved for S101 interface
+10420f, Tunnel block limit reached, Reserved for S101 interface
+104210, Tunnel block limit reached, Reserved for S101 interface
+104211, Tunnel block limit reached, Reserved for S121 interface
+104212, Tunnel block limit reached, Reserved for S121 interface
+104213, Tunnel block limit reached, Reserved for S121 interface
+104214, Tunnel block limit reached, Reserved for S121 interface
+104215, Tunnel block limit reached, Reserved for S121 interface
+104216, Tunnel block limit reached, Reserved for S121 interface
+104217, Tunnel block limit reached, Reserved for S121 interface
+104218, Tunnel block limit reached, Reserved for S121 interface
+104219, Tunnel block limit reached, Reserved for Sv interface
+10421a, Tunnel block limit reached, Reserved for Sv interface
+10421b, Tunnel block limit reached, Reserved for Sv interface
+10421c, Tunnel block limit reached, Reserved for Sv interface
+10421d, Tunnel block limit reached, Reserved for Sv interface
+10421e, Tunnel block limit reached, Reserved for Sv interface
+10421f, Tunnel block limit reached, Reserved for Sv interface
+104220, Tunnel block limit reached, Create Session Request
+104221, Tunnel block limit reached, Create Session Response
+104224, Tunnel block limit reached, Delete Session Request
+104225, Tunnel block limit reached, Delete Session Response
+104222, Tunnel block limit reached, Modify Bearer Request
+104223, Tunnel block limit reached, Modify Bearer Response
+104228, Tunnel block limit reached, Remote UE Report Notification
+104229, Tunnel block limit reached, Remote UE Report Acknowledge
+104226, Tunnel block limit reached, Change Notification Request
+104227, Tunnel block limit reached, Change Notification Response
+10422a, Tunnel block limit reached, For future use
+1042a4, Tunnel block limit reached, Resume Notification
+1042a5, Tunnel block limit reached, Resume Acknowledge
+104240, Tunnel block limit reached, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel block limit reached, S5/S8, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104241, Tunnel block limit reached, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Tunnel block limit reached, S11/S4, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104242, Tunnel block limit reached, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Tunnel block limit reached, S5/S8)
+104243, Tunnel block limit reached, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Tunnel block limit reached, S11/S4))
+104244, Tunnel block limit reached, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Tunnel block limit reached, S5/S8, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104245, Tunnel block limit reached, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Tunnel block limit reached, S11/S4, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104246, Tunnel block limit reached, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+104247, Tunnel block limit reached, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel block limit reached, S5/S8, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104248, Tunnel block limit reached, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel block limit reached, S5/S8, Tunnel block limit reached, S2a, Tunnel block limit reached, S2b)
+104249, Tunnel block limit reached, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+10424a, Tunnel block limit reached, For future use
+10425f, Tunnel block limit reached, Create Bearer Request
+104260, Tunnel block limit reached, Create Bearer Response
+104261, Tunnel block limit reached, Update Bearer Request
+104262, Tunnel block limit reached, Update Bearer Response
+104263, Tunnel block limit reached, Delete Bearer Request
+104264, Tunnel block limit reached, Delete Bearer Response
+104265, Tunnel block limit reached, Delete PDN Connection Set Request
+104266, Tunnel block limit reached, Delete PDN Connection Set Response
+104267, Tunnel block limit reached, PGW Downlink Triggering Notification
+104268, Tunnel block limit reached, PGW Downlink Triggering Acknowledge
+104269, Tunnel block limit reached, For future use
+104280, Tunnel block limit reached, Identification Request
+104281, Tunnel block limit reached, Identification Response
+104282, Tunnel block limit reached, Context Request
+104283, Tunnel block limit reached, Context Response
+104284, Tunnel block limit reached, Context Acknowledge
+104285, Tunnel block limit reached, Forward Relocation Request
+104286, Tunnel block limit reached, Forward Relocation Response
+104287, Tunnel block limit reached, Forward Relocation Complete Notification
+104288, Tunnel block limit reached, Forward Relocation Complete Acknowledge
+104289, Tunnel block limit reached, Forward Access Context Notification
+10428a, Tunnel block limit reached, Forward Access Context Acknowledge
+10428b, Tunnel block limit reached, Relocation Cancel Request
+10428c, Tunnel block limit reached, Relocation Cancel Response
+10428d, Tunnel block limit reached, Configuration Transfer Tunnel
+10428e, Tunnel block limit reached, For future use
+104298, Tunnel block limit reached, RAN Information Relay
+104295, Tunnel block limit reached, Detach Notification
+104296, Tunnel block limit reached, Detach Acknowledge
+104297, Tunnel block limit reached, CS Paging Indication
+104299, Tunnel block limit reached, Alert MME Notification
+10429a, Tunnel block limit reached, Alert MME Acknowledge
+10429b, Tunnel block limit reached, UE Activity Notification
+10429c, Tunnel block limit reached, UE Activity Acknowledge
+10429d, Tunnel block limit reached, ISR Status Indication
+10429e, Tunnel block limit reached, UE Registration Query Request
+10429f, Tunnel block limit reached, UE Registration Query Response
+1042a2, Tunnel block limit reached, Suspend Notification
+1042a3, Tunnel block limit reached, Suspend Acknowledge
+1042a0, Tunnel block limit reached, Create Forwarding Tunnel Request
+1042a1, Tunnel block limit reached, Create Forwarding Tunnel Response
+1042a6, Tunnel block limit reached, Create Indirect Data Forwarding Tunnel Request
+1042a7, Tunnel block limit reached, Create Indirect Data Forwarding Tunnel Response
+1042a8, Tunnel block limit reached, Delete Indirect Data Forwarding Tunnel Request
+1042a9, Tunnel block limit reached, Delete Indirect Data Forwarding Tunnel Response
+1042aa, Tunnel block limit reached, Release Access Bearers Request
+1042ab, Tunnel block limit reached, Release Access Bearers Response
+1042ac, Tunnel block limit reached, For future use
+1042b0, Tunnel block limit reached, Downlink Data Notification
+1042b1, Tunnel block limit reached, Downlink Data Notification Acknowledge
+1042b3, Tunnel block limit reached, PGW Restart Notification
+1042b4, Tunnel block limit reached, PGW Restart Notification Acknowledge
+1042b2, Tunnel block limit reached, Reserved. Allocated in earlier version of the specification.
+1042b5, Tunnel block limit reached, For future use
+1042c8, Tunnel block limit reached, Update PDN Connection Set Request
+1042c9, Tunnel block limit reached, Update PDN Connection Set Response
+1042ca, Tunnel block limit reached, For future use
+1042d3, Tunnel block limit reached, Modify Access Bearers Request
+1042d4, Tunnel block limit reached, Modify Access Bearers Response
+1042d5, Tunnel block limit reached, For future use
+1042e7, Tunnel block limit reached, MBMS Session Start Request
+1042e8, Tunnel block limit reached, MBMS Session Start Response
+1042e9, Tunnel block limit reached, MBMS Session Update Request
+1042ea, Tunnel block limit reached, MBMS Session Update Response
+1042eb, Tunnel block limit reached, MBMS Session Stop Request
+1042ec, Tunnel block limit reached, MBMS Session Stop Response
+1042ed, Tunnel block limit reached, For future use
+1042f0, Tunnel block limit reached, Reserved for Sv interface (see also types 25 to 31)
+1042f8, Tunnel block limit reached, For future use
+
+**************************************************************************************************************

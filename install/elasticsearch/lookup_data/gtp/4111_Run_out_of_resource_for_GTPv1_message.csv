@@ -1,0 +1,135 @@
+411100, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411101, Run out of resource for GTPv1 message, Echo Request
+411102, Run out of resource for GTPv1 message, Echo Response
+411103, Run out of resource for GTPv1 message, Version Not Supported
+411104, Run out of resource for GTPv1 message, Node Alive Request
+411105, Run out of resource for GTPv1 message, Node Alive Response
+411106, Run out of resource for GTPv1 message, Redirection Request
+411107, Run out of resource for GTPv1 message, Redirection Response
+411108, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411109, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41110f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411110, Run out of resource for GTPv1 message, Create PDP Context Request
+411111, Run out of resource for GTPv1 message, Create PDP Context Response
+411112, Run out of resource for GTPv1 message, Update PDP Context Request
+411113, Run out of resource for GTPv1 message, Update PDP Context Response
+411114, Run out of resource for GTPv1 message, Delete PDP Context Request
+411115, Run out of resource for GTPv1 message, Delete PDP Context Response
+411116, Run out of resource for GTPv1 message, Initiate PDP Context Activation Request
+411117, Run out of resource for GTPv1 message, Initiate PDP Context Activation Response
+411118, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411119, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41111a, Run out of resource for GTPv1 message, Error Indication
+41111b, Run out of resource for GTPv1 message, PDU Notification Request
+41111c, Run out of resource for GTPv1 message, PDU Notification Response
+41111d, Run out of resource for GTPv1 message, PDU Notification Reject Request
+41111e, Run out of resource for GTPv1 message, PDU Notification Reject Response
+41111f, Run out of resource for GTPv1 message, Supported Extension Headers Notification
+411120, Run out of resource for GTPv1 message, Send Routeing Information for GPRS Request
+411121, Run out of resource for GTPv1 message, Send Routeing Information for GPRS Response
+411122, Run out of resource for GTPv1 message, Failure Report Request
+411123, Run out of resource for GTPv1 message, Failure Report Response
+411124, Run out of resource for GTPv1 message, Note MS GPRS Present Request
+411125, Run out of resource for GTPv1 message, Note MS GPRS Present Response
+411126, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411127, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411128, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411129, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41112f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411130, Run out of resource for GTPv1 message, Identification Request
+411131, Run out of resource for GTPv1 message, Identification Response
+411132, Run out of resource for GTPv1 message, SGSN Context Request
+411133, Run out of resource for GTPv1 message, SGSN Context Response
+411134, Run out of resource for GTPv1 message, SGSN Context Acknowledge
+411135, Run out of resource for GTPv1 message, Forward Relocation Request
+411136, Run out of resource for GTPv1 message, Forward Relocation Response
+411137, Run out of resource for GTPv1 message, Forward Relocation Complete
+411138, Run out of resource for GTPv1 message, Relocation Cancel Request
+411139, Run out of resource for GTPv1 message, Relocation Cancel Response
+41113a, Run out of resource for GTPv1 message, Forward SRNS Context
+41113b, Run out of resource for GTPv1 message, Forward Relocation Complete Acknowledge
+41113c, Run out of resource for GTPv1 message, Forward SRNS Context Acknowledge
+41113d, Run out of resource for GTPv1 message, UE Registration Query Request
+41113e, Run out of resource for GTPv1 message, UE Registration Query Response
+41113f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411140, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411141, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411142, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411143, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411144, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411145, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411146, Run out of resource for GTPv1 message, RAN Information Relay
+411147, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411148, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411149, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41114f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411150, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411152, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411153, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411154, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411155, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411156, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411157, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411158, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411159, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41115f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411160, Run out of resource for GTPv1 message, MBMS Notification Request
+411161, Run out of resource for GTPv1 message, MBMS Notification Response
+411162, Run out of resource for GTPv1 message, MBMS Notification Reject Request
+411163, Run out of resource for GTPv1 message, MBMS Notification Reject Response
+411164, Run out of resource for GTPv1 message, Create MBMS Context Request
+411165, Run out of resource for GTPv1 message, Create MBMS Context Response
+411166, Run out of resource for GTPv1 message, Update MBMS Context Request
+411167, Run out of resource for GTPv1 message, Update MBMS Context Response
+411168, Run out of resource for GTPv1 message, Delete MBMS Context Request
+411169, Run out of resource for GTPv1 message, Delete MBMS Context Response
+41116a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41116b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41116c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41116d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41116e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+41116f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+411170, Run out of resource for GTPv1 message, MBMS Registration Request
+411171, Run out of resource for GTPv1 message, MBMS Registration Response
+411172, Run out of resource for GTPv1 message, MBMS De-Registration Request
+411173, Run out of resource for GTPv1 message, MBMS De-Registration Response
+411174, Run out of resource for GTPv1 message, MBMS Session Start Request
+411175, Run out of resource for GTPv1 message, MBMS Session Start Response
+411176, Run out of resource for GTPv1 message, MBMS Session Stop Request
+411177, Run out of resource for GTPv1 message, MBMS Session Stop Response
+411178, Run out of resource for GTPv1 message, MBMS Session Update Request
+411179, Run out of resource for GTPv1 message, MBMS Session Update Response
+41117a, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+41117b, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+41117c, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+41117d, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+41117e, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+41117f, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message
+411180, Run out of resource for GTPv1 message, MS Info Change Notification Request
+411181, Run out of resource for GTPv1 message, MS Info Change Notification Response
+411182, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+4111f0, Run out of resource for GTPv1 message, Data Record Transfer Request
+4111f1, Run out of resource for GTPv1 message, Data Record Transfer Response
+4111f2, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
+4111fe, Run out of resource for GTPv1 message, End Marker
+4111ff, Run out of resource for GTPv1 message, G-PDU

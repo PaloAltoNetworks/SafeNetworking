@@ -1,0 +1,135 @@
+181100, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181101, Unknown GTPv1-C message, Echo Request
+181102, Unknown GTPv1-C message, Echo Response
+181103, Unknown GTPv1-C message, Version Not Supported
+181104, Unknown GTPv1-C message, Node Alive Request
+181105, Unknown GTPv1-C message, Node Alive Response
+181106, Unknown GTPv1-C message, Redirection Request
+181107, Unknown GTPv1-C message, Redirection Response
+181108, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181109, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18110f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181110, Unknown GTPv1-C message, Create PDP Context Request
+181111, Unknown GTPv1-C message, Create PDP Context Response
+181112, Unknown GTPv1-C message, Update PDP Context Request
+181113, Unknown GTPv1-C message, Update PDP Context Response
+181114, Unknown GTPv1-C message, Delete PDP Context Request
+181115, Unknown GTPv1-C message, Delete PDP Context Response
+181116, Unknown GTPv1-C message, Initiate PDP Context Activation Request
+181117, Unknown GTPv1-C message, Initiate PDP Context Activation Response
+181118, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181119, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18111a, Unknown GTPv1-C message, Error Indication
+18111b, Unknown GTPv1-C message, PDU Notification Request
+18111c, Unknown GTPv1-C message, PDU Notification Response
+18111d, Unknown GTPv1-C message, PDU Notification Reject Request
+18111e, Unknown GTPv1-C message, PDU Notification Reject Response
+18111f, Unknown GTPv1-C message, Supported Extension Headers Notification
+181120, Unknown GTPv1-C message, Send Routeing Information for GPRS Request
+181121, Unknown GTPv1-C message, Send Routeing Information for GPRS Response
+181122, Unknown GTPv1-C message, Failure Report Request
+181123, Unknown GTPv1-C message, Failure Report Response
+181124, Unknown GTPv1-C message, Note MS GPRS Present Request
+181125, Unknown GTPv1-C message, Note MS GPRS Present Response
+181126, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181127, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181128, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181129, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18112f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181130, Unknown GTPv1-C message, Identification Request
+181131, Unknown GTPv1-C message, Identification Response
+181132, Unknown GTPv1-C message, SGSN Context Request
+181133, Unknown GTPv1-C message, SGSN Context Response
+181134, Unknown GTPv1-C message, SGSN Context Acknowledge
+181135, Unknown GTPv1-C message, Forward Relocation Request
+181136, Unknown GTPv1-C message, Forward Relocation Response
+181137, Unknown GTPv1-C message, Forward Relocation Complete
+181138, Unknown GTPv1-C message, Relocation Cancel Request
+181139, Unknown GTPv1-C message, Relocation Cancel Response
+18113a, Unknown GTPv1-C message, Forward SRNS Context
+18113b, Unknown GTPv1-C message, Forward Relocation Complete Acknowledge
+18113c, Unknown GTPv1-C message, Forward SRNS Context Acknowledge
+18113d, Unknown GTPv1-C message, UE Registration Query Request
+18113e, Unknown GTPv1-C message, UE Registration Query Response
+18113f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181140, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181141, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181142, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181143, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181144, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181145, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181146, Unknown GTPv1-C message, RAN Information Relay
+181147, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181148, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181149, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18114f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181150, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181152, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181153, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181154, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181155, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181156, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181157, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181158, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181159, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18115f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181160, Unknown GTPv1-C message, MBMS Notification Request
+181161, Unknown GTPv1-C message, MBMS Notification Response
+181162, Unknown GTPv1-C message, MBMS Notification Reject Request
+181163, Unknown GTPv1-C message, MBMS Notification Reject Response
+181164, Unknown GTPv1-C message, Create MBMS Context Request
+181165, Unknown GTPv1-C message, Create MBMS Context Response
+181166, Unknown GTPv1-C message, Update MBMS Context Request
+181167, Unknown GTPv1-C message, Update MBMS Context Response
+181168, Unknown GTPv1-C message, Delete MBMS Context Request
+181169, Unknown GTPv1-C message, Delete MBMS Context Response
+18116a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18116b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18116c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18116d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18116e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+18116f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+181170, Unknown GTPv1-C message, MBMS Registration Request
+181171, Unknown GTPv1-C message, MBMS Registration Response
+181172, Unknown GTPv1-C message, MBMS De-Registration Request
+181173, Unknown GTPv1-C message, MBMS De-Registration Response
+181174, Unknown GTPv1-C message, MBMS Session Start Request
+181175, Unknown GTPv1-C message, MBMS Session Start Response
+181176, Unknown GTPv1-C message, MBMS Session Stop Request
+181177, Unknown GTPv1-C message, MBMS Session Stop Response
+181178, Unknown GTPv1-C message, MBMS Session Update Request
+181179, Unknown GTPv1-C message, MBMS Session Update Response
+18117a, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+18117b, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+18117c, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+18117d, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+18117e, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+18117f, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message
+181180, Unknown GTPv1-C message, MS Info Change Notification Request
+181181, Unknown GTPv1-C message, MS Info Change Notification Response
+181182, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+1811f0, Unknown GTPv1-C message, Data Record Transfer Request
+1811f1, Unknown GTPv1-C message, Data Record Transfer Response
+1811f2, Unknown GTPv1-C message, For future use. Shall not be sent. If received, Unknown GTPv1-C message, shall be treated as an Unknown message.
+1811fe, Unknown GTPv1-C message, End Marker
+1811ff, Unknown GTPv1-C message, G-PDU

@@ -1,0 +1,125 @@
+181200, Unknown GTPv2-C message, Reserved
+181201, Unknown GTPv2-C message, Echo Request
+181202, Unknown GTPv2-C message, Echo Response
+181203, Unknown GTPv2-C message, Version Not Supported Indication
+181204, Unknown GTPv2-C message, Reserved for S101 interface
+181205, Unknown GTPv2-C message, Reserved for S101 interface
+181206, Unknown GTPv2-C message, Reserved for S101 interface
+181207, Unknown GTPv2-C message, Reserved for S101 interface
+181208, Unknown GTPv2-C message, Reserved for S101 interface
+181209, Unknown GTPv2-C message, Reserved for S101 interface
+18120a, Unknown GTPv2-C message, Reserved for S101 interface
+18120b, Unknown GTPv2-C message, Reserved for S101 interface
+18120c, Unknown GTPv2-C message, Reserved for S101 interface
+18120d, Unknown GTPv2-C message, Reserved for S101 interface
+18120e, Unknown GTPv2-C message, Reserved for S101 interface
+18120f, Unknown GTPv2-C message, Reserved for S101 interface
+181210, Unknown GTPv2-C message, Reserved for S101 interface
+181211, Unknown GTPv2-C message, Reserved for S121 interface
+181212, Unknown GTPv2-C message, Reserved for S121 interface
+181213, Unknown GTPv2-C message, Reserved for S121 interface
+181214, Unknown GTPv2-C message, Reserved for S121 interface
+181215, Unknown GTPv2-C message, Reserved for S121 interface
+181216, Unknown GTPv2-C message, Reserved for S121 interface
+181217, Unknown GTPv2-C message, Reserved for S121 interface
+181218, Unknown GTPv2-C message, Reserved for S121 interface
+181219, Unknown GTPv2-C message, Reserved for Sv interface
+18121a, Unknown GTPv2-C message, Reserved for Sv interface
+18121b, Unknown GTPv2-C message, Reserved for Sv interface
+18121c, Unknown GTPv2-C message, Reserved for Sv interface
+18121d, Unknown GTPv2-C message, Reserved for Sv interface
+18121e, Unknown GTPv2-C message, Reserved for Sv interface
+18121f, Unknown GTPv2-C message, Reserved for Sv interface
+181220, Unknown GTPv2-C message, Create Session Request
+181221, Unknown GTPv2-C message, Create Session Response
+181224, Unknown GTPv2-C message, Delete Session Request
+181225, Unknown GTPv2-C message, Delete Session Response
+181222, Unknown GTPv2-C message, Modify Bearer Request
+181223, Unknown GTPv2-C message, Modify Bearer Response
+181228, Unknown GTPv2-C message, Remote UE Report Notification
+181229, Unknown GTPv2-C message, Remote UE Report Acknowledge
+181226, Unknown GTPv2-C message, Change Notification Request
+181227, Unknown GTPv2-C message, Change Notification Response
+18122a, Unknown GTPv2-C message, For future use
+1812a4, Unknown GTPv2-C message, Resume Notification
+1812a5, Unknown GTPv2-C message, Resume Acknowledge
+181240, Unknown GTPv2-C message, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTPv2-C message, S5/S8, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181241, Unknown GTPv2-C message, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Unknown GTPv2-C message, S11/S4, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181242, Unknown GTPv2-C message, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Unknown GTPv2-C message, S5/S8)
+181243, Unknown GTPv2-C message, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Unknown GTPv2-C message, S11/S4))
+181244, Unknown GTPv2-C message, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Unknown GTPv2-C message, S5/S8, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181245, Unknown GTPv2-C message, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Unknown GTPv2-C message, S11/S4, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181246, Unknown GTPv2-C message, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+181247, Unknown GTPv2-C message, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTPv2-C message, S5/S8, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181248, Unknown GTPv2-C message, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTPv2-C message, S5/S8, Unknown GTPv2-C message, S2a, Unknown GTPv2-C message, S2b)
+181249, Unknown GTPv2-C message, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+18124a, Unknown GTPv2-C message, For future use
+18125f, Unknown GTPv2-C message, Create Bearer Request
+181260, Unknown GTPv2-C message, Create Bearer Response
+181261, Unknown GTPv2-C message, Update Bearer Request
+181262, Unknown GTPv2-C message, Update Bearer Response
+181263, Unknown GTPv2-C message, Delete Bearer Request
+181264, Unknown GTPv2-C message, Delete Bearer Response
+181265, Unknown GTPv2-C message, Delete PDN Connection Set Request
+181266, Unknown GTPv2-C message, Delete PDN Connection Set Response
+181267, Unknown GTPv2-C message, PGW Downlink Triggering Notification
+181268, Unknown GTPv2-C message, PGW Downlink Triggering Acknowledge
+181269, Unknown GTPv2-C message, For future use
+181280, Unknown GTPv2-C message, Identification Request
+181281, Unknown GTPv2-C message, Identification Response
+181282, Unknown GTPv2-C message, Context Request
+181283, Unknown GTPv2-C message, Context Response
+181284, Unknown GTPv2-C message, Context Acknowledge
+181285, Unknown GTPv2-C message, Forward Relocation Request
+181286, Unknown GTPv2-C message, Forward Relocation Response
+181287, Unknown GTPv2-C message, Forward Relocation Complete Notification
+181288, Unknown GTPv2-C message, Forward Relocation Complete Acknowledge
+181289, Unknown GTPv2-C message, Forward Access Context Notification
+18128a, Unknown GTPv2-C message, Forward Access Context Acknowledge
+18128b, Unknown GTPv2-C message, Relocation Cancel Request
+18128c, Unknown GTPv2-C message, Relocation Cancel Response
+18128d, Unknown GTPv2-C message, Configuration Transfer Tunnel
+18128e, Unknown GTPv2-C message, For future use
+181298, Unknown GTPv2-C message, RAN Information Relay
+181295, Unknown GTPv2-C message, Detach Notification
+181296, Unknown GTPv2-C message, Detach Acknowledge
+181297, Unknown GTPv2-C message, CS Paging Indication
+181299, Unknown GTPv2-C message, Alert MME Notification
+18129a, Unknown GTPv2-C message, Alert MME Acknowledge
+18129b, Unknown GTPv2-C message, UE Activity Notification
+18129c, Unknown GTPv2-C message, UE Activity Acknowledge
+18129d, Unknown GTPv2-C message, ISR Status Indication
+18129e, Unknown GTPv2-C message, UE Registration Query Request
+18129f, Unknown GTPv2-C message, UE Registration Query Response
+1812a2, Unknown GTPv2-C message, Suspend Notification
+1812a3, Unknown GTPv2-C message, Suspend Acknowledge
+1812a0, Unknown GTPv2-C message, Create Forwarding Tunnel Request
+1812a1, Unknown GTPv2-C message, Create Forwarding Tunnel Response
+1812a6, Unknown GTPv2-C message, Create Indirect Data Forwarding Tunnel Request
+1812a7, Unknown GTPv2-C message, Create Indirect Data Forwarding Tunnel Response
+1812a8, Unknown GTPv2-C message, Delete Indirect Data Forwarding Tunnel Request
+1812a9, Unknown GTPv2-C message, Delete Indirect Data Forwarding Tunnel Response
+1812aa, Unknown GTPv2-C message, Release Access Bearers Request
+1812ab, Unknown GTPv2-C message, Release Access Bearers Response
+1812ac, Unknown GTPv2-C message, For future use
+1812b0, Unknown GTPv2-C message, Downlink Data Notification
+1812b1, Unknown GTPv2-C message, Downlink Data Notification Acknowledge
+1812b3, Unknown GTPv2-C message, PGW Restart Notification
+1812b4, Unknown GTPv2-C message, PGW Restart Notification Acknowledge
+1812b2, Unknown GTPv2-C message, Reserved. Allocated in earlier version of the specification.
+1812b5, Unknown GTPv2-C message, For future use
+1812c8, Unknown GTPv2-C message, Update PDN Connection Set Request
+1812c9, Unknown GTPv2-C message, Update PDN Connection Set Response
+1812ca, Unknown GTPv2-C message, For future use
+1812d3, Unknown GTPv2-C message, Modify Access Bearers Request
+1812d4, Unknown GTPv2-C message, Modify Access Bearers Response
+1812d5, Unknown GTPv2-C message, For future use
+1812e7, Unknown GTPv2-C message, MBMS Session Start Request
+1812e8, Unknown GTPv2-C message, MBMS Session Start Response
+1812e9, Unknown GTPv2-C message, MBMS Session Update Request
+1812ea, Unknown GTPv2-C message, MBMS Session Update Response
+1812eb, Unknown GTPv2-C message, MBMS Session Stop Request
+1812ec, Unknown GTPv2-C message, MBMS Session Stop Response
+1812ed, Unknown GTPv2-C message, For future use
+1812f0, Unknown GTPv2-C message, Reserved for Sv interface (see also types 25 to 31)
+1812f8, Unknown GTPv2-C message, For future use

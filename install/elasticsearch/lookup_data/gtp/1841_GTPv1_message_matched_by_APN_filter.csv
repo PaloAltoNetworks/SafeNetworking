@@ -1,0 +1,135 @@
+184100, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184101, GTPv1 message matched by APN filter, Echo Request
+184102, GTPv1 message matched by APN filter, Echo Response
+184103, GTPv1 message matched by APN filter, Version Not Supported
+184104, GTPv1 message matched by APN filter, Node Alive Request
+184105, GTPv1 message matched by APN filter, Node Alive Response
+184106, GTPv1 message matched by APN filter, Redirection Request
+184107, GTPv1 message matched by APN filter, Redirection Response
+184108, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184109, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18410f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184110, GTPv1 message matched by APN filter, Create PDP Context Request
+184111, GTPv1 message matched by APN filter, Create PDP Context Response
+184112, GTPv1 message matched by APN filter, Update PDP Context Request
+184113, GTPv1 message matched by APN filter, Update PDP Context Response
+184114, GTPv1 message matched by APN filter, Delete PDP Context Request
+184115, GTPv1 message matched by APN filter, Delete PDP Context Response
+184116, GTPv1 message matched by APN filter, Initiate PDP Context Activation Request
+184117, GTPv1 message matched by APN filter, Initiate PDP Context Activation Response
+184118, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184119, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18411a, GTPv1 message matched by APN filter, Error Indication
+18411b, GTPv1 message matched by APN filter, PDU Notification Request
+18411c, GTPv1 message matched by APN filter, PDU Notification Response
+18411d, GTPv1 message matched by APN filter, PDU Notification Reject Request
+18411e, GTPv1 message matched by APN filter, PDU Notification Reject Response
+18411f, GTPv1 message matched by APN filter, Supported Extension Headers Notification
+184120, GTPv1 message matched by APN filter, Send Routeing Information for GPRS Request
+184141, GTPv1 message matched by APN filter, Send Routeing Information for GPRS Response
+184122, GTPv1 message matched by APN filter, Failure Report Request
+184123, GTPv1 message matched by APN filter, Failure Report Response
+184124, GTPv1 message matched by APN filter, Note MS GPRS Present Request
+184125, GTPv1 message matched by APN filter, Note MS GPRS Present Response
+184126, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184127, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184128, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184129, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18412f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184130, GTPv1 message matched by APN filter, Identification Request
+184131, GTPv1 message matched by APN filter, Identification Response
+184132, GTPv1 message matched by APN filter, SGSN Context Request
+184133, GTPv1 message matched by APN filter, SGSN Context Response
+184134, GTPv1 message matched by APN filter, SGSN Context Acknowledge
+184135, GTPv1 message matched by APN filter, Forward Relocation Request
+184136, GTPv1 message matched by APN filter, Forward Relocation Response
+184137, GTPv1 message matched by APN filter, Forward Relocation Complete
+184138, GTPv1 message matched by APN filter, Relocation Cancel Request
+184139, GTPv1 message matched by APN filter, Relocation Cancel Response
+18413a, GTPv1 message matched by APN filter, Forward SRNS Context
+18413b, GTPv1 message matched by APN filter, Forward Relocation Complete Acknowledge
+18413c, GTPv1 message matched by APN filter, Forward SRNS Context Acknowledge
+18413d, GTPv1 message matched by APN filter, UE Registration Query Request
+18413e, GTPv1 message matched by APN filter, UE Registration Query Response
+18413f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184140, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184141, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184142, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184143, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184144, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184145, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184146, GTPv1 message matched by APN filter, RAN Information Relay
+184147, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184148, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184149, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18414f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184150, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184152, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184153, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184154, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184155, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184156, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184157, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184158, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184159, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18415f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184160, GTPv1 message matched by APN filter, MBMS Notification Request
+184161, GTPv1 message matched by APN filter, MBMS Notification Response
+184162, GTPv1 message matched by APN filter, MBMS Notification Reject Request
+184163, GTPv1 message matched by APN filter, MBMS Notification Reject Response
+184164, GTPv1 message matched by APN filter, Create MBMS Context Request
+184165, GTPv1 message matched by APN filter, Create MBMS Context Response
+184166, GTPv1 message matched by APN filter, Update MBMS Context Request
+184167, GTPv1 message matched by APN filter, Update MBMS Context Response
+184168, GTPv1 message matched by APN filter, Delete MBMS Context Request
+184169, GTPv1 message matched by APN filter, Delete MBMS Context Response
+18416a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18416b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18416c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18416d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18416e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+18416f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+184170, GTPv1 message matched by APN filter, MBMS Registration Request
+184171, GTPv1 message matched by APN filter, MBMS Registration Response
+184172, GTPv1 message matched by APN filter, MBMS De-Registration Request
+184173, GTPv1 message matched by APN filter, MBMS De-Registration Response
+184174, GTPv1 message matched by APN filter, MBMS Session Start Request
+184175, GTPv1 message matched by APN filter, MBMS Session Start Response
+184176, GTPv1 message matched by APN filter, MBMS Session Stop Request
+184177, GTPv1 message matched by APN filter, MBMS Session Stop Response
+184178, GTPv1 message matched by APN filter, MBMS Session Update Request
+184179, GTPv1 message matched by APN filter, MBMS Session Update Response
+18417a, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+18417b, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+18417c, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+18417d, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+18417e, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+18417f, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message
+184180, GTPv1 message matched by APN filter, MS Info Change Notification Request
+184181, GTPv1 message matched by APN filter, MS Info Change Notification Response
+184182, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+1841f0, GTPv1 message matched by APN filter, Data Record Transfer Request
+1841f1, GTPv1 message matched by APN filter, Data Record Transfer Response
+1841f2, GTPv1 message matched by APN filter, For future use. Shall not be sent. If received, GTPv1 message matched by APN filter, shall be treated as an Unknown message.
+1841fe, GTPv1 message matched by APN filter, End Marker
+1841ff, GTPv1 message matched by APN filter, G-PDU

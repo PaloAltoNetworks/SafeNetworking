@@ -1,0 +1,125 @@
+108200, Tunnel alert limit reached, Reserved
+108201, Tunnel alert limit reached, Echo Request
+108202, Tunnel alert limit reached, Echo Response
+108203, Tunnel alert limit reached, Version Not Supported Indication
+108204, Tunnel alert limit reached, Reserved for S101 interface
+108205, Tunnel alert limit reached, Reserved for S101 interface
+108206, Tunnel alert limit reached, Reserved for S101 interface
+108207, Tunnel alert limit reached, Reserved for S101 interface
+108208, Tunnel alert limit reached, Reserved for S101 interface
+108209, Tunnel alert limit reached, Reserved for S101 interface
+10820a, Tunnel alert limit reached, Reserved for S101 interface
+10820b, Tunnel alert limit reached, Reserved for S101 interface
+10820c, Tunnel alert limit reached, Reserved for S101 interface
+10820d, Tunnel alert limit reached, Reserved for S101 interface
+10820e, Tunnel alert limit reached, Reserved for S101 interface
+10820f, Tunnel alert limit reached, Reserved for S101 interface
+108210, Tunnel alert limit reached, Reserved for S101 interface
+108211, Tunnel alert limit reached, Reserved for S121 interface
+108212, Tunnel alert limit reached, Reserved for S121 interface
+108213, Tunnel alert limit reached, Reserved for S121 interface
+108214, Tunnel alert limit reached, Reserved for S121 interface
+108215, Tunnel alert limit reached, Reserved for S121 interface
+108216, Tunnel alert limit reached, Reserved for S121 interface
+108217, Tunnel alert limit reached, Reserved for S121 interface
+108218, Tunnel alert limit reached, Reserved for S121 interface
+108219, Tunnel alert limit reached, Reserved for Sv interface
+10821a, Tunnel alert limit reached, Reserved for Sv interface
+10821b, Tunnel alert limit reached, Reserved for Sv interface
+10821c, Tunnel alert limit reached, Reserved for Sv interface
+10821d, Tunnel alert limit reached, Reserved for Sv interface
+10821e, Tunnel alert limit reached, Reserved for Sv interface
+10821f, Tunnel alert limit reached, Reserved for Sv interface
+108220, Tunnel alert limit reached, Create Session Request
+108221, Tunnel alert limit reached, Create Session Response
+108224, Tunnel alert limit reached, Delete Session Request
+108225, Tunnel alert limit reached, Delete Session Response
+108222, Tunnel alert limit reached, Modify Bearer Request
+108223, Tunnel alert limit reached, Modify Bearer Response
+108228, Tunnel alert limit reached, Remote UE Report Notification
+108229, Tunnel alert limit reached, Remote UE Report Acknowledge
+108226, Tunnel alert limit reached, Change Notification Request
+108227, Tunnel alert limit reached, Change Notification Response
+10822a, Tunnel alert limit reached, For future use
+1082a4, Tunnel alert limit reached, Resume Notification
+1082a5, Tunnel alert limit reached, Resume Acknowledge
+108240, Tunnel alert limit reached, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel alert limit reached, S5/S8, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108241, Tunnel alert limit reached, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Tunnel alert limit reached, S11/S4, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108242, Tunnel alert limit reached, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Tunnel alert limit reached, S5/S8)
+108243, Tunnel alert limit reached, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Tunnel alert limit reached, S11/S4))
+108244, Tunnel alert limit reached, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Tunnel alert limit reached, S5/S8, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108245, Tunnel alert limit reached, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Tunnel alert limit reached, S11/S4, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108246, Tunnel alert limit reached, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+108247, Tunnel alert limit reached, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel alert limit reached, S5/S8, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108248, Tunnel alert limit reached, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Tunnel alert limit reached, S5/S8, Tunnel alert limit reached, S2a, Tunnel alert limit reached, S2b)
+108249, Tunnel alert limit reached, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+10824a, Tunnel alert limit reached, For future use
+10825f, Tunnel alert limit reached, Create Bearer Request
+108260, Tunnel alert limit reached, Create Bearer Response
+108261, Tunnel alert limit reached, Update Bearer Request
+108262, Tunnel alert limit reached, Update Bearer Response
+108263, Tunnel alert limit reached, Delete Bearer Request
+108264, Tunnel alert limit reached, Delete Bearer Response
+108265, Tunnel alert limit reached, Delete PDN Connection Set Request
+108266, Tunnel alert limit reached, Delete PDN Connection Set Response
+108267, Tunnel alert limit reached, PGW Downlink Triggering Notification
+108268, Tunnel alert limit reached, PGW Downlink Triggering Acknowledge
+108269, Tunnel alert limit reached, For future use
+108280, Tunnel alert limit reached, Identification Request
+108281, Tunnel alert limit reached, Identification Response
+108282, Tunnel alert limit reached, Context Request
+108283, Tunnel alert limit reached, Context Response
+108284, Tunnel alert limit reached, Context Acknowledge
+108285, Tunnel alert limit reached, Forward Relocation Request
+108286, Tunnel alert limit reached, Forward Relocation Response
+108287, Tunnel alert limit reached, Forward Relocation Complete Notification
+108288, Tunnel alert limit reached, Forward Relocation Complete Acknowledge
+108289, Tunnel alert limit reached, Forward Access Context Notification
+10828a, Tunnel alert limit reached, Forward Access Context Acknowledge
+10828b, Tunnel alert limit reached, Relocation Cancel Request
+10828c, Tunnel alert limit reached, Relocation Cancel Response
+10828d, Tunnel alert limit reached, Configuration Transfer Tunnel
+10828e, Tunnel alert limit reached, For future use
+108298, Tunnel alert limit reached, RAN Information Relay
+108295, Tunnel alert limit reached, Detach Notification
+108296, Tunnel alert limit reached, Detach Acknowledge
+108297, Tunnel alert limit reached, CS Paging Indication
+108299, Tunnel alert limit reached, Alert MME Notification
+10829a, Tunnel alert limit reached, Alert MME Acknowledge
+10829b, Tunnel alert limit reached, UE Activity Notification
+10829c, Tunnel alert limit reached, UE Activity Acknowledge
+10829d, Tunnel alert limit reached, ISR Status Indication
+10829e, Tunnel alert limit reached, UE Registration Query Request
+10829f, Tunnel alert limit reached, UE Registration Query Response
+1082a2, Tunnel alert limit reached, Suspend Notification
+1082a3, Tunnel alert limit reached, Suspend Acknowledge
+1082a0, Tunnel alert limit reached, Create Forwarding Tunnel Request
+1082a1, Tunnel alert limit reached, Create Forwarding Tunnel Response
+1082a6, Tunnel alert limit reached, Create Indirect Data Forwarding Tunnel Request
+1082a7, Tunnel alert limit reached, Create Indirect Data Forwarding Tunnel Response
+1082a8, Tunnel alert limit reached, Delete Indirect Data Forwarding Tunnel Request
+1082a9, Tunnel alert limit reached, Delete Indirect Data Forwarding Tunnel Response
+1082aa, Tunnel alert limit reached, Release Access Bearers Request
+1082ab, Tunnel alert limit reached, Release Access Bearers Response
+1082ac, Tunnel alert limit reached, For future use
+1082b0, Tunnel alert limit reached, Downlink Data Notification
+1082b1, Tunnel alert limit reached, Downlink Data Notification Acknowledge
+1082b3, Tunnel alert limit reached, PGW Restart Notification
+1082b4, Tunnel alert limit reached, PGW Restart Notification Acknowledge
+1082b2, Tunnel alert limit reached, Reserved. Allocated in earlier version of the specification.
+1082b5, Tunnel alert limit reached, For future use
+1082c8, Tunnel alert limit reached, Update PDN Connection Set Request
+1082c9, Tunnel alert limit reached, Update PDN Connection Set Response
+1082ca, Tunnel alert limit reached, For future use
+1082d3, Tunnel alert limit reached, Modify Access Bearers Request
+1082d4, Tunnel alert limit reached, Modify Access Bearers Response
+1082d5, Tunnel alert limit reached, For future use
+1082e7, Tunnel alert limit reached, MBMS Session Start Request
+1082e8, Tunnel alert limit reached, MBMS Session Start Response
+1082e9, Tunnel alert limit reached, MBMS Session Update Request
+1082ea, Tunnel alert limit reached, MBMS Session Update Response
+1082eb, Tunnel alert limit reached, MBMS Session Stop Request
+1082ec, Tunnel alert limit reached, MBMS Session Stop Response
+1082ed, Tunnel alert limit reached, For future use
+1082f0, Tunnel alert limit reached, Reserved for Sv interface (see also types 25 to 31)
+1082f8, Tunnel alert limit reached, For future use

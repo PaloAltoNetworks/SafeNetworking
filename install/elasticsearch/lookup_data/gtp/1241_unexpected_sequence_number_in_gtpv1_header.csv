@@ -1,0 +1,136 @@
+124100, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124101, Unexpected sequence number in GTPv1 header, Echo Request
+124102, Unexpected sequence number in GTPv1 header, Echo Response
+124103, Unexpected sequence number in GTPv1 header, Version Not Supported
+124104, Unexpected sequence number in GTPv1 header, Node Alive Request
+124105, Unexpected sequence number in GTPv1 header, Node Alive Response
+124106, Unexpected sequence number in GTPv1 header, Redirection Request
+124107, Unexpected sequence number in GTPv1 header, Redirection Response
+124108, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124109, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12410f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124110, Unexpected sequence number in GTPv1 header, Create PDP Context Request
+124111, Unexpected sequence number in GTPv1 header, Create PDP Context Response
+124112, Unexpected sequence number in GTPv1 header, Update PDP Context Request
+124113, Unexpected sequence number in GTPv1 header, Update PDP Context Response
+124114, Unexpected sequence number in GTPv1 header, Delete PDP Context Request
+124115, Unexpected sequence number in GTPv1 header, Delete PDP Context Response
+124116, Unexpected sequence number in GTPv1 header, Initiate PDP Context Activation Request
+124117, Unexpected sequence number in GTPv1 header, Initiate PDP Context Activation Response
+124118, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124119, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12411a, Unexpected sequence number in GTPv1 header, Error Indication
+12411b, Unexpected sequence number in GTPv1 header, PDU Notification Request
+12411c, Unexpected sequence number in GTPv1 header, PDU Notification Response
+12411d, Unexpected sequence number in GTPv1 header, PDU Notification Reject Request
+12411e, Unexpected sequence number in GTPv1 header, PDU Notification Reject Response
+12411f, Unexpected sequence number in GTPv1 header, Supported Extension Headers Notification
+124120, Unexpected sequence number in GTPv1 header, Send Routeing Information for GPRS Request
+124141, Unexpected sequence number in GTPv1 header, Send Routeing Information for GPRS Response
+124122, Unexpected sequence number in GTPv1 header, Failure Report Request
+124123, Unexpected sequence number in GTPv1 header, Failure Report Response
+124124, Unexpected sequence number in GTPv1 header, Note MS GPRS Present Request
+124125, Unexpected sequence number in GTPv1 header, Note MS GPRS Present Response
+124126, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124127, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124128, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124129, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12412f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124130, Unexpected sequence number in GTPv1 header, Identification Request
+124131, Unexpected sequence number in GTPv1 header, Identification Response
+124132, Unexpected sequence number in GTPv1 header, SGSN Context Request
+124133, Unexpected sequence number in GTPv1 header, SGSN Context Response
+124134, Unexpected sequence number in GTPv1 header, SGSN Context Acknowledge
+124135, Unexpected sequence number in GTPv1 header, Forward Relocation Request
+124136, Unexpected sequence number in GTPv1 header, Forward Relocation Response
+124137, Unexpected sequence number in GTPv1 header, Forward Relocation Complete
+124138, Unexpected sequence number in GTPv1 header, Relocation Cancel Request
+124139, Unexpected sequence number in GTPv1 header, Relocation Cancel Response
+12413a, Unexpected sequence number in GTPv1 header, Forward SRNS Context
+12413b, Unexpected sequence number in GTPv1 header, Forward Relocation Complete Acknowledge
+12413c, Unexpected sequence number in GTPv1 header, Forward SRNS Context Acknowledge
+12413d, Unexpected sequence number in GTPv1 header, UE Registration Query Request
+12413e, Unexpected sequence number in GTPv1 header, UE Registration Query Response
+12413f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124140, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124141, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124142, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124143, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124144, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124145, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124146, Unexpected sequence number in GTPv1 header, RAN Information Relay
+124147, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124148, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124149, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12414f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124150, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124152, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124153, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124154, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124155, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124156, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124157, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124158, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124159, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12415f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124160, Unexpected sequence number in GTPv1 header, MBMS Notification Request
+124161, Unexpected sequence number in GTPv1 header, MBMS Notification Response
+124162, Unexpected sequence number in GTPv1 header, MBMS Notification Reject Request
+124163, Unexpected sequence number in GTPv1 header, MBMS Notification Reject Response
+124164, Unexpected sequence number in GTPv1 header, Create MBMS Context Request
+124165, Unexpected sequence number in GTPv1 header, Create MBMS Context Response
+124166, Unexpected sequence number in GTPv1 header, Update MBMS Context Request
+124167, Unexpected sequence number in GTPv1 header, Update MBMS Context Response
+124168, Unexpected sequence number in GTPv1 header, Delete MBMS Context Request
+124169, Unexpected sequence number in GTPv1 header, Delete MBMS Context Response
+12416a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12416b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12416c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12416d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12416e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+12416f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+124170, Unexpected sequence number in GTPv1 header, MBMS Registration Request
+124171, Unexpected sequence number in GTPv1 header, MBMS Registration Response
+124172, Unexpected sequence number in GTPv1 header, MBMS De-Registration Request
+124173, Unexpected sequence number in GTPv1 header, MBMS De-Registration Response
+124174, Unexpected sequence number in GTPv1 header, MBMS Session Start Request
+124175, Unexpected sequence number in GTPv1 header, MBMS Session Start Response
+124176, Unexpected sequence number in GTPv1 header, MBMS Session Stop Request
+124177, Unexpected sequence number in GTPv1 header, MBMS Session Stop Response
+124178, Unexpected sequence number in GTPv1 header, MBMS Session Update Request
+124179, Unexpected sequence number in GTPv1 header, MBMS Session Update Response
+12417a, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+12417b, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+12417c, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+12417d, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+12417e, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+12417f, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message
+124180, Unexpected sequence number in GTPv1 header, MS Info Change Notification Request
+124181, Unexpected sequence number in GTPv1 header, MS Info Change Notification Response
+124182, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+1241f0, Unexpected sequence number in GTPv1 header, Data Record Transfer Request
+1241f1, Unexpected sequence number in GTPv1 header, Data Record Transfer Response
+1241f2, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
+1241fe, Unexpected sequence number in GTPv1 header, End Marker
+1241ff, Unexpected sequence number in GTPv1 header, G-PDU
+************************************************************************************************************
