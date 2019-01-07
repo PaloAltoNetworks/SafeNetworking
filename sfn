@@ -1,13 +1,14 @@
 #!/usr/bin/env python
-'''
+"""
  The purpose of SafeNetworking is to provided extended, API driven reporting
  of known malicious behavior and malware for any device within a network.
  SafeNetwork is initially intended for the Service Provider market as it is able
  to show providers what malware and other malicious software is using C&C
  channels to alert external systems that they are, indeed, intact and
  functioning
-'''
+"""
 import time
+import click
 import requests
 import threading
 from project import app
@@ -15,44 +16,78 @@ from project.dns.runner import processDNS
 from project.dns.dnsutils import updateAfStats
 
 
-# This decorator gets kicked off the first time a request is made to the
-# application.  We are forcing it with the initProcs() call so we start
-# processing in the background as soon as the application is started.
+@click.group()
+def cli():
+    """
+    Generic pass if someone just types in "sfn" with nothing under it - prints
+    help message to command line
+    """
+    pass
+
+
+@click.command()
+def start():
+    """
+    Start SafeNetworking 
+    Initializes the background procs - DNS, IOT, etc.
+    The starts the flask app so SFN can take advantage of the processing
+    """
+    app.logger.info(f"INIT - SafeNetworking application initializing with log "
+                    f"level of {app.config['LOG_LEVEL']}")
+    app.logger.info(f"ElasticSearch host is: {app.config['ELASTICSEARCH_HOST']}"
+                    f":{app.config['ELASTICSEARCH_PORT']}")
+    initBackgroundProcs()
+    app.logger.info(f"INIT - Background processes initialized")
+    app.run(host=app.config['FLASK_HOST'],port=app.config['FLASK_PORT'])
+
+@click.command()
+def admin():
+    """
+    Admin CLI for curating SFN 
+    """
+    pass
+
+
 @app.before_first_request
 def activate_job():
+    """
+    This decorator gets kicked off the first time a request is made to the
+    application.  We are forcing it with the initProcs() call so we start
+    processing in the background as soon as the application is started.
+    """
     def runDNS():
-        '''
+        """
         Searches for any unprocessed sfn-dns documents, changes them to in
         process and then sends a call to the dns handler to process them with
         AF, do lookups, etc.
-        '''
+        """
         while True:
             app.logger.debug(f"Processing new DNS events")
             processDNS()
             time.sleep(app.config["DNS_POOL_TIME"])
 
     def runIoT():
-        '''
+        """
         DOES NOTHING AS OF NOW - but will do this eventually:
         Searches for any unprocessed sfn-iot documents and
         then sends a call to the iot handler to process them.
-        '''
+        """
         app.logger.debug(f"Processing new IoT Events")
         pass
 
     def runURL():
-        '''
+        """
         DOES NOTHING AS OF NOW - but will do this eventually:
         Searches for any unprocessed sfn-url documents and
         then sends a call to the url handler to process them.
-        '''
+        """
         app.logger.debug(f"Processing new URL Events")
         pass
 
     def runAfPoints():
-        '''
+        """
         Gets the AutoFocus points total at the given interval of AF_POOL_TIME
-        '''
+        """
         while True:
             app.logger.debug("Querying AutoFocus for point totals")
             updateAfStats()
@@ -73,11 +108,11 @@ def activate_job():
 
 
 def initBackgroundProcs():
-    '''
+    """
     Loops until it can access the first page and then exits.  This is used by
     the @app.before_first_request to start up the background processes for this
     application to have it's data gathered, maniplutated and stored properly.
-    '''
+    """
 
     # Check to make sure we have the API key(s) set first
     if app.config['AUTOFOCUS_API_KEY'] == "NOT-SET":
@@ -95,10 +130,15 @@ def initBackgroundProcs():
                             f"count of {totalProcCount} - you have been warned")
 
     def initProcs():
+        """
+        Function that continuously attempts to attach to the flask port to verify
+        that processing can start. Nothing works until this does.
+        """
         not_started = True
         app.logger.info(f"INIT - Initializing Background Processes")
 
         while not_started:
+            time.sleep(2)
             flaskHost = app.config['FLASK_HOST']
             flaskPort = app.config['FLASK_PORT']
             try:
@@ -117,7 +157,8 @@ def initBackgroundProcs():
 
 from project.views import *
 
+cli.add_command(start)
+cli.add_command(admin)
+
 if __name__ == '__main__':
-    initBackgroundProcs()
-    app.logger.info(f"INIT - Background processes initialized")
-    app.run(host=app.config['FLASK_HOST'],port=app.config['FLASK_PORT'])
+    cli()
