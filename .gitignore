@@ -106,7 +106,7 @@ sfn-env/
 .vscode
 
 # Safe-networking project specific
-scratch
+scratch/
 instance/.panrc
 project/.panrc
 .panrc
