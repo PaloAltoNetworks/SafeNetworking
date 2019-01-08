@@ -1,136 +1,136 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-128100, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128101, Out-of-state GTPv1 message, Echo Request
-128102, Out-of-state GTPv1 message, Echo Response
-128103, Out-of-state GTPv1 message, Version Not Supported
-128104, Out-of-state GTPv1 message, Node Alive Request
-128105, Out-of-state GTPv1 message, Node Alive Response
-128106, Out-of-state GTPv1 message, Redirection Request
-128107, Out-of-state GTPv1 message, Redirection Response
-128108, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128109, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12810f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128110, Out-of-state GTPv1 message, Create PDP Context Request
-128111, Out-of-state GTPv1 message, Create PDP Context Response
-128112, Out-of-state GTPv1 message, Update PDP Context Request
-128113, Out-of-state GTPv1 message, Update PDP Context Response
-128114, Out-of-state GTPv1 message, Delete PDP Context Request
-128115, Out-of-state GTPv1 message, Delete PDP Context Response
-128116, Out-of-state GTPv1 message, Initiate PDP Context Activation Request
-128117, Out-of-state GTPv1 message, Initiate PDP Context Activation Response
-128118, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128119, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12811a, Out-of-state GTPv1 message, Error Indication
-12811b, Out-of-state GTPv1 message, PDU Notification Request
-12811c, Out-of-state GTPv1 message, PDU Notification Response
-12811d, Out-of-state GTPv1 message, PDU Notification Reject Request
-12811e, Out-of-state GTPv1 message, PDU Notification Reject Response
-12811f, Out-of-state GTPv1 message, Supported Extension Headers Notification
-128120, Out-of-state GTPv1 message, Send Routeing Information for GPRS Request
-128121, Out-of-state GTPv1 message, Send Routeing Information for GPRS Response
-128122, Out-of-state GTPv1 message, Failure Report Request
-128123, Out-of-state GTPv1 message, Failure Report Response
-128124, Out-of-state GTPv1 message, Note MS GPRS Present Request
-128125, Out-of-state GTPv1 message, Note MS GPRS Present Response
-128126, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128127, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128128, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128129, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12812f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128130, Out-of-state GTPv1 message, Identification Request
-128131, Out-of-state GTPv1 message, Identification Response
-128132, Out-of-state GTPv1 message, SGSN Context Request
-128133, Out-of-state GTPv1 message, SGSN Context Response
-128134, Out-of-state GTPv1 message, SGSN Context Acknowledge
-128135, Out-of-state GTPv1 message, Forward Relocation Request
-128136, Out-of-state GTPv1 message, Forward Relocation Response
-128137, Out-of-state GTPv1 message, Forward Relocation Complete
-128138, Out-of-state GTPv1 message, Relocation Cancel Request
-128139, Out-of-state GTPv1 message, Relocation Cancel Response
-12813a, Out-of-state GTPv1 message, Forward SRNS Context
-12813b, Out-of-state GTPv1 message, Forward Relocation Complete Acknowledge
-12813c, Out-of-state GTPv1 message, Forward SRNS Context Acknowledge
-12813d, Out-of-state GTPv1 message, UE Registration Query Request
-12813e, Out-of-state GTPv1 message, UE Registration Query Response
-12813f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128140, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128141, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128142, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128143, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128144, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128145, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128146, Out-of-state GTPv1 message, RAN Information Relay
-128147, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128148, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128149, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12814f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128150, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128152, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128153, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128154, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128155, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128156, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128157, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128158, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128159, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12815f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128160, Out-of-state GTPv1 message, MBMS Notification Request
-128161, Out-of-state GTPv1 message, MBMS Notification Response
-128162, Out-of-state GTPv1 message, MBMS Notification Reject Request
-128163, Out-of-state GTPv1 message, MBMS Notification Reject Response
-128164, Out-of-state GTPv1 message, Create MBMS Context Request
-128165, Out-of-state GTPv1 message, Create MBMS Context Response
-128166, Out-of-state GTPv1 message, Update MBMS Context Request
-128167, Out-of-state GTPv1 message, Update MBMS Context Response
-128168, Out-of-state GTPv1 message, Delete MBMS Context Request
-128169, Out-of-state GTPv1 message, Delete MBMS Context Response
-12816a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12816b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12816c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12816d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12816e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-12816f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-128170, Out-of-state GTPv1 message, MBMS Registration Request
-128171, Out-of-state GTPv1 message, MBMS Registration Response
-128172, Out-of-state GTPv1 message, MBMS De-Registration Request
-128173, Out-of-state GTPv1 message, MBMS De-Registration Response
-128174, Out-of-state GTPv1 message, MBMS Session Start Request
-128175, Out-of-state GTPv1 message, MBMS Session Start Response
-128176, Out-of-state GTPv1 message, MBMS Session Stop Request
-128177, Out-of-state GTPv1 message, MBMS Session Stop Response
-128178, Out-of-state GTPv1 message, MBMS Session Update Request
-128179, Out-of-state GTPv1 message, MBMS Session Update Response
-12817a, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-12817b, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-12817c, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-12817d, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-12817e, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-12817f, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message
-128180, Out-of-state GTPv1 message, MS Info Change Notification Request
-128181, Out-of-state GTPv1 message, MS Info Change Notification Response
-128182, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-1281f0, Out-of-state GTPv1 message, Data Record Transfer Request
-1281f1, Out-of-state GTPv1 message, Data Record Transfer Response
-1281f2, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
-1281fe, Out-of-state GTPv1 message, End Marker
-1281ff, Out-of-state GTPv1 message, G-PDU
+128100,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128101,GTPv1,Out-of-state GTPv1 message,,Echo Request
+128102,GTPv1,Out-of-state GTPv1 message,,Echo Response
+128103,GTPv1,Out-of-state GTPv1 message,,Version Not Supported
+128104,GTPv1,Out-of-state GTPv1 message,,Node Alive Request
+128105,GTPv1,Out-of-state GTPv1 message,,Node Alive Response
+128106,GTPv1,Out-of-state GTPv1 message,,Redirection Request
+128107,GTPv1,Out-of-state GTPv1 message,,Redirection Response
+128108,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128109,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12810f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128110,GTPv1,Out-of-state GTPv1 message,,Create PDP Context Request
+128111,GTPv1,Out-of-state GTPv1 message,,Create PDP Context Response
+128112,GTPv1,Out-of-state GTPv1 message,,Update PDP Context Request
+128113,GTPv1,Out-of-state GTPv1 message,,Update PDP Context Response
+128114,GTPv1,Out-of-state GTPv1 message,,Delete PDP Context Request
+128115,GTPv1,Out-of-state GTPv1 message,,Delete PDP Context Response
+128116,GTPv1,Out-of-state GTPv1 message,,Initiate PDP Context Activation Request
+128117,GTPv1,Out-of-state GTPv1 message,,Initiate PDP Context Activation Response
+128118,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128119,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12811a,GTPv1,Out-of-state GTPv1 message,,Error Indication
+12811b,GTPv1,Out-of-state GTPv1 message,,PDU Notification Request
+12811c,GTPv1,Out-of-state GTPv1 message,,PDU Notification Response
+12811d,GTPv1,Out-of-state GTPv1 message,,PDU Notification Reject Request
+12811e,GTPv1,Out-of-state GTPv1 message,,PDU Notification Reject Response
+12811f,GTPv1,Out-of-state GTPv1 message,,Supported Extension Headers Notification
+128120,GTPv1,Out-of-state GTPv1 message,,Send Routeing Information for GPRS Request
+128121,GTPv1,Out-of-state GTPv1 message,,Send Routeing Information for GPRS Response
+128122,GTPv1,Out-of-state GTPv1 message,,Failure Report Request
+128123,GTPv1,Out-of-state GTPv1 message,,Failure Report Response
+128124,GTPv1,Out-of-state GTPv1 message,,Note MS GPRS Present Request
+128125,GTPv1,Out-of-state GTPv1 message,,Note MS GPRS Present Response
+128126,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128127,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128128,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128129,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12812f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128130,GTPv1,Out-of-state GTPv1 message,,Identification Request
+128131,GTPv1,Out-of-state GTPv1 message,,Identification Response
+128132,GTPv1,Out-of-state GTPv1 message,,SGSN Context Request
+128133,GTPv1,Out-of-state GTPv1 message,,SGSN Context Response
+128134,GTPv1,Out-of-state GTPv1 message,,SGSN Context Acknowledge
+128135,GTPv1,Out-of-state GTPv1 message,,Forward Relocation Request
+128136,GTPv1,Out-of-state GTPv1 message,,Forward Relocation Response
+128137,GTPv1,Out-of-state GTPv1 message,,Forward Relocation Complete
+128138,GTPv1,Out-of-state GTPv1 message,,Relocation Cancel Request
+128139,GTPv1,Out-of-state GTPv1 message,,Relocation Cancel Response
+12813a,GTPv1,Out-of-state GTPv1 message,,Forward SRNS Context
+12813b,GTPv1,Out-of-state GTPv1 message,,Forward Relocation Complete Acknowledge
+12813c,GTPv1,Out-of-state GTPv1 message,,Forward SRNS Context Acknowledge
+12813d,GTPv1,Out-of-state GTPv1 message,,UE Registration Query Request
+12813e,GTPv1,Out-of-state GTPv1 message,,UE Registration Query Response
+12813f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128140,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128141,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128142,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128143,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128144,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128145,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128146,GTPv1,Out-of-state GTPv1 message,,RAN Information Relay
+128147,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128148,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128149,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12814f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128150,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128152,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128153,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128154,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128155,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128156,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128157,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128158,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128159,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12815f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128160,GTPv1,Out-of-state GTPv1 message,,MBMS Notification Request
+128161,GTPv1,Out-of-state GTPv1 message,,MBMS Notification Response
+128162,GTPv1,Out-of-state GTPv1 message,,MBMS Notification Reject Request
+128163,GTPv1,Out-of-state GTPv1 message,,MBMS Notification Reject Response
+128164,GTPv1,Out-of-state GTPv1 message,,Create MBMS Context Request
+128165,GTPv1,Out-of-state GTPv1 message,,Create MBMS Context Response
+128166,GTPv1,Out-of-state GTPv1 message,,Update MBMS Context Request
+128167,GTPv1,Out-of-state GTPv1 message,,Update MBMS Context Response
+128168,GTPv1,Out-of-state GTPv1 message,,Delete MBMS Context Request
+128169,GTPv1,Out-of-state GTPv1 message,,Delete MBMS Context Response
+12816a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12816b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12816c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12816d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12816e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+12816f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+128170,GTPv1,Out-of-state GTPv1 message,,MBMS Registration Request
+128171,GTPv1,Out-of-state GTPv1 message,,MBMS Registration Response
+128172,GTPv1,Out-of-state GTPv1 message,,MBMS De-Registration Request
+128173,GTPv1,Out-of-state GTPv1 message,,MBMS De-Registration Response
+128174,GTPv1,Out-of-state GTPv1 message,,MBMS Session Start Request
+128175,GTPv1,Out-of-state GTPv1 message,,MBMS Session Start Response
+128176,GTPv1,Out-of-state GTPv1 message,,MBMS Session Stop Request
+128177,GTPv1,Out-of-state GTPv1 message,,MBMS Session Stop Response
+128178,GTPv1,Out-of-state GTPv1 message,,MBMS Session Update Request
+128179,GTPv1,Out-of-state GTPv1 message,,MBMS Session Update Response
+12817a,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+12817b,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+12817c,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+12817d,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+12817e,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+12817f,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+128180,GTPv1,Out-of-state GTPv1 message,,MS Info Change Notification Request
+128181,GTPv1,Out-of-state GTPv1 message,,MS Info Change Notification Response
+128182,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1281f0,GTPv1,Out-of-state GTPv1 message,,Data Record Transfer Request
+1281f1,GTPv1,Out-of-state GTPv1 message,,Data Record Transfer Response
+1281f2,GTPv1,Out-of-state GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1281fe,GTPv1,Out-of-state GTPv1 message,,End Marker
+1281ff,GTPv1,Out-of-state GTPv1 message,,G-PDU

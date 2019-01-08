@@ -1,136 +1,136 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-188100, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188101, GTPv1 message matched by IMSI-Prefix filter, Echo Request
-188102, GTPv1 message matched by IMSI-Prefix filter, Echo Response
-188103, GTPv1 message matched by IMSI-Prefix filter, Version Not Supported
-188104, GTPv1 message matched by IMSI-Prefix filter, Node Alive Request
-188105, GTPv1 message matched by IMSI-Prefix filter, Node Alive Response
-188106, GTPv1 message matched by IMSI-Prefix filter, Redirection Request
-188107, GTPv1 message matched by IMSI-Prefix filter, Redirection Response
-188108, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188109, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18810f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188110, GTPv1 message matched by IMSI-Prefix filter, Create PDP Context Request
-188111, GTPv1 message matched by IMSI-Prefix filter, Create PDP Context Response
-188112, GTPv1 message matched by IMSI-Prefix filter, Update PDP Context Request
-188113, GTPv1 message matched by IMSI-Prefix filter, Update PDP Context Response
-188114, GTPv1 message matched by IMSI-Prefix filter, Delete PDP Context Request
-188115, GTPv1 message matched by IMSI-Prefix filter, Delete PDP Context Response
-188116, GTPv1 message matched by IMSI-Prefix filter, Initiate PDP Context Activation Request
-188117, GTPv1 message matched by IMSI-Prefix filter, Initiate PDP Context Activation Response
-188118, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188119, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18811a, GTPv1 message matched by IMSI-Prefix filter, Error Indication
-18811b, GTPv1 message matched by IMSI-Prefix filter, PDU Notification Request
-18811c, GTPv1 message matched by IMSI-Prefix filter, PDU Notification Response
-18811d, GTPv1 message matched by IMSI-Prefix filter, PDU Notification Reject Request
-18811e, GTPv1 message matched by IMSI-Prefix filter, PDU Notification Reject Response
-18811f, GTPv1 message matched by IMSI-Prefix filter, Supported Extension Headers Notification
-188120, GTPv1 message matched by IMSI-Prefix filter, Send Routeing Information for GPRS Request
-188121, GTPv1 message matched by IMSI-Prefix filter, Send Routeing Information for GPRS Response
-188122, GTPv1 message matched by IMSI-Prefix filter, Failure Report Request
-188123, GTPv1 message matched by IMSI-Prefix filter, Failure Report Response
-188124, GTPv1 message matched by IMSI-Prefix filter, Note MS GPRS Present Request
-188125, GTPv1 message matched by IMSI-Prefix filter, Note MS GPRS Present Response
-188126, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188127, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188128, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188129, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18812f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188130, GTPv1 message matched by IMSI-Prefix filter, Identification Request
-188131, GTPv1 message matched by IMSI-Prefix filter, Identification Response
-188132, GTPv1 message matched by IMSI-Prefix filter, SGSN Context Request
-188133, GTPv1 message matched by IMSI-Prefix filter, SGSN Context Response
-188134, GTPv1 message matched by IMSI-Prefix filter, SGSN Context Acknowledge
-188135, GTPv1 message matched by IMSI-Prefix filter, Forward Relocation Request
-188136, GTPv1 message matched by IMSI-Prefix filter, Forward Relocation Response
-188137, GTPv1 message matched by IMSI-Prefix filter, Forward Relocation Complete
-188138, GTPv1 message matched by IMSI-Prefix filter, Relocation Cancel Request
-188139, GTPv1 message matched by IMSI-Prefix filter, Relocation Cancel Response
-18813a, GTPv1 message matched by IMSI-Prefix filter, Forward SRNS Context
-18813b, GTPv1 message matched by IMSI-Prefix filter, Forward Relocation Complete Acknowledge
-18813c, GTPv1 message matched by IMSI-Prefix filter, Forward SRNS Context Acknowledge
-18813d, GTPv1 message matched by IMSI-Prefix filter, UE Registration Query Request
-18813e, GTPv1 message matched by IMSI-Prefix filter, UE Registration Query Response
-18813f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188140, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188141, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188142, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188143, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188144, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188145, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188146, GTPv1 message matched by IMSI-Prefix filter, RAN Information Relay
-188147, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188148, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188149, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18814f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188150, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188152, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188153, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188154, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188155, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188156, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188157, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188158, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188159, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18815f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188160, GTPv1 message matched by IMSI-Prefix filter, MBMS Notification Request
-188161, GTPv1 message matched by IMSI-Prefix filter, MBMS Notification Response
-188162, GTPv1 message matched by IMSI-Prefix filter, MBMS Notification Reject Request
-188163, GTPv1 message matched by IMSI-Prefix filter, MBMS Notification Reject Response
-188164, GTPv1 message matched by IMSI-Prefix filter, Create MBMS Context Request
-188165, GTPv1 message matched by IMSI-Prefix filter, Create MBMS Context Response
-188166, GTPv1 message matched by IMSI-Prefix filter, Update MBMS Context Request
-188167, GTPv1 message matched by IMSI-Prefix filter, Update MBMS Context Response
-188168, GTPv1 message matched by IMSI-Prefix filter, Delete MBMS Context Request
-188169, GTPv1 message matched by IMSI-Prefix filter, Delete MBMS Context Response
-18816a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18816b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18816c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18816d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18816e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-18816f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-188170, GTPv1 message matched by IMSI-Prefix filter, MBMS Registration Request
-188171, GTPv1 message matched by IMSI-Prefix filter, MBMS Registration Response
-188172, GTPv1 message matched by IMSI-Prefix filter, MBMS De-Registration Request
-188173, GTPv1 message matched by IMSI-Prefix filter, MBMS De-Registration Response
-188174, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Start Request
-188175, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Start Response
-188176, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Stop Request
-188177, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Stop Response
-188178, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Update Request
-188179, GTPv1 message matched by IMSI-Prefix filter, MBMS Session Update Response
-18817a, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-18817b, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-18817c, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-18817d, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-18817e, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-18817f, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message
-188180, GTPv1 message matched by IMSI-Prefix filter, MS Info Change Notification Request
-188181, GTPv1 message matched by IMSI-Prefix filter, MS Info Change Notification Response
-188182, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-1881f0, GTPv1 message matched by IMSI-Prefix filter, Data Record Transfer Request
-1881f1, GTPv1 message matched by IMSI-Prefix filter, Data Record Transfer Response
-1881f2, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
-1881fe, GTPv1 message matched by IMSI-Prefix filter, End Marker
-1881ff, GTPv1 message matched by IMSI-Prefix filter, G-PDU
+188100,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188101,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Echo Request
+188102,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Echo Response
+188103,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Version Not Supported
+188104,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Node Alive Request
+188105,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Node Alive Response
+188106,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Redirection Request
+188107,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Redirection Response
+188108,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188109,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18810f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188110,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Create PDP Context Request
+188111,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Create PDP Context Response
+188112,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Update PDP Context Request
+188113,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Update PDP Context Response
+188114,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Delete PDP Context Request
+188115,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Delete PDP Context Response
+188116,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Initiate PDP Context Activation Request
+188117,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Initiate PDP Context Activation Response
+188118,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188119,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18811a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Error Indication
+18811b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,PDU Notification Request
+18811c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,PDU Notification Response
+18811d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,PDU Notification Reject Request
+18811e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,PDU Notification Reject Response
+18811f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Supported Extension Headers Notification
+188120,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Send Routeing Information for GPRS Request
+188121,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Send Routeing Information for GPRS Response
+188122,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Failure Report Request
+188123,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Failure Report Response
+188124,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Note MS GPRS Present Request
+188125,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Note MS GPRS Present Response
+188126,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188127,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188128,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188129,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18812f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188130,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Identification Request
+188131,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Identification Response
+188132,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,SGSN Context Request
+188133,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,SGSN Context Response
+188134,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,SGSN Context Acknowledge
+188135,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward Relocation Request
+188136,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward Relocation Response
+188137,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward Relocation Complete
+188138,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Relocation Cancel Request
+188139,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Relocation Cancel Response
+18813a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward SRNS Context
+18813b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward Relocation Complete Acknowledge
+18813c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Forward SRNS Context Acknowledge
+18813d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,UE Registration Query Request
+18813e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,UE Registration Query Response
+18813f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188140,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188141,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188142,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188143,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188144,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188145,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188146,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,RAN Information Relay
+188147,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188148,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188149,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18814f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188150,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188152,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188153,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188154,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188155,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188156,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188157,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188158,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188159,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18815f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188160,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Notification Request
+188161,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Notification Response
+188162,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Notification Reject Request
+188163,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Notification Reject Response
+188164,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Create MBMS Context Request
+188165,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Create MBMS Context Response
+188166,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Update MBMS Context Request
+188167,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Update MBMS Context Response
+188168,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Delete MBMS Context Request
+188169,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Delete MBMS Context Response
+18816a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18816b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18816c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18816d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18816e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18816f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+188170,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Registration Request
+188171,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Registration Response
+188172,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS De-Registration Request
+188173,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS De-Registration Response
+188174,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Start Request
+188175,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Start Response
+188176,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Stop Request
+188177,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Stop Response
+188178,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Update Request
+188179,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MBMS Session Update Response
+18817a,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18817b,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18817c,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18817d,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18817e,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18817f,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+188180,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MS Info Change Notification Request
+188181,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,MS Info Change Notification Response
+188182,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1881f0,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Data Record Transfer Request
+1881f1,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,Data Record Transfer Response
+1881f2,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1881fe,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,End Marker
+1881ff,GTPv1,GTPv1 message matched by IMSI-Prefix filter,,G-PDU

@@ -1,136 +1,136 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-412100, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412101, Conflict with another session for GTPv1 message, Echo Request
-412102, Conflict with another session for GTPv1 message, Echo Response
-412103, Conflict with another session for GTPv1 message, Version Not Supported
-412104, Conflict with another session for GTPv1 message, Node Alive Request
-412105, Conflict with another session for GTPv1 message, Node Alive Response
-412106, Conflict with another session for GTPv1 message, Redirection Request
-412107, Conflict with another session for GTPv1 message, Redirection Response
-412108, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412109, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41210f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412110, Conflict with another session for GTPv1 message, Create PDP Context Request
-412111, Conflict with another session for GTPv1 message, Create PDP Context Response
-412112, Conflict with another session for GTPv1 message, Update PDP Context Request
-412113, Conflict with another session for GTPv1 message, Update PDP Context Response
-412114, Conflict with another session for GTPv1 message, Delete PDP Context Request
-412115, Conflict with another session for GTPv1 message, Delete PDP Context Response
-412116, Conflict with another session for GTPv1 message, Initiate PDP Context Activation Request
-412117, Conflict with another session for GTPv1 message, Initiate PDP Context Activation Response
-412118, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412119, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41211a, Conflict with another session for GTPv1 message, Error Indication
-41211b, Conflict with another session for GTPv1 message, PDU Notification Request
-41211c, Conflict with another session for GTPv1 message, PDU Notification Response
-41211d, Conflict with another session for GTPv1 message, PDU Notification Reject Request
-41211e, Conflict with another session for GTPv1 message, PDU Notification Reject Response
-41211f, Conflict with another session for GTPv1 message, Supported Extension Headers Notification
-412120, Conflict with another session for GTPv1 message, Send Routeing Information for GPRS Request
-412121, Conflict with another session for GTPv1 message, Send Routeing Information for GPRS Response
-412122, Conflict with another session for GTPv1 message, Failure Report Request
-412123, Conflict with another session for GTPv1 message, Failure Report Response
-412124, Conflict with another session for GTPv1 message, Note MS GPRS Present Request
-412125, Conflict with another session for GTPv1 message, Note MS GPRS Present Response
-412126, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412127, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412128, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412129, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41212f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412130, Conflict with another session for GTPv1 message, Identification Request
-412131, Conflict with another session for GTPv1 message, Identification Response
-412132, Conflict with another session for GTPv1 message, SGSN Context Request
-412133, Conflict with another session for GTPv1 message, SGSN Context Response
-412134, Conflict with another session for GTPv1 message, SGSN Context Acknowledge
-412135, Conflict with another session for GTPv1 message, Forward Relocation Request
-412136, Conflict with another session for GTPv1 message, Forward Relocation Response
-412137, Conflict with another session for GTPv1 message, Forward Relocation Complete
-412138, Conflict with another session for GTPv1 message, Relocation Cancel Request
-412139, Conflict with another session for GTPv1 message, Relocation Cancel Response
-41213a, Conflict with another session for GTPv1 message, Forward SRNS Context
-41213b, Conflict with another session for GTPv1 message, Forward Relocation Complete Acknowledge
-41213c, Conflict with another session for GTPv1 message, Forward SRNS Context Acknowledge
-41213d, Conflict with another session for GTPv1 message, UE Registration Query Request
-41213e, Conflict with another session for GTPv1 message, UE Registration Query Response
-41213f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412140, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412141, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412142, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412143, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412144, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412145, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412146, Conflict with another session for GTPv1 message, RAN Information Relay
-412147, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412148, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412149, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41214f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412150, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412152, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412153, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412154, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412155, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412156, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412157, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412158, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412159, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41215f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412160, Conflict with another session for GTPv1 message, MBMS Notification Request
-412161, Conflict with another session for GTPv1 message, MBMS Notification Response
-412162, Conflict with another session for GTPv1 message, MBMS Notification Reject Request
-412163, Conflict with another session for GTPv1 message, MBMS Notification Reject Response
-412164, Conflict with another session for GTPv1 message, Create MBMS Context Request
-412165, Conflict with another session for GTPv1 message, Create MBMS Context Response
-412166, Conflict with another session for GTPv1 message, Update MBMS Context Request
-412167, Conflict with another session for GTPv1 message, Update MBMS Context Response
-412168, Conflict with another session for GTPv1 message, Delete MBMS Context Request
-412169, Conflict with another session for GTPv1 message, Delete MBMS Context Response
-41216a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41216b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41216c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41216d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41216e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-41216f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-412170, Conflict with another session for GTPv1 message, MBMS Registration Request
-412171, Conflict with another session for GTPv1 message, MBMS Registration Response
-412172, Conflict with another session for GTPv1 message, MBMS De-Registration Request
-412173, Conflict with another session for GTPv1 message, MBMS De-Registration Response
-412174, Conflict with another session for GTPv1 message, MBMS Session Start Request
-412175, Conflict with another session for GTPv1 message, MBMS Session Start Response
-412176, Conflict with another session for GTPv1 message, MBMS Session Stop Request
-412177, Conflict with another session for GTPv1 message, MBMS Session Stop Response
-412178, Conflict with another session for GTPv1 message, MBMS Session Update Request
-412179, Conflict with another session for GTPv1 message, MBMS Session Update Response
-41217a, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-41217b, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-41217c, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-41217d, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-41217e, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-41217f, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message
-412180, Conflict with another session for GTPv1 message, MS Info Change Notification Request
-412181, Conflict with another session for GTPv1 message, MS Info Change Notification Response
-412182, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-4121f0, Conflict with another session for GTPv1 message, Data Record Transfer Request
-4121f1, Conflict with another session for GTPv1 message, Data Record Transfer Response
-4121f2, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
-4121fe, Conflict with another session for GTPv1 message, End Marker
-4121ff, Conflict with another session for GTPv1 message, G-PDU
+412100,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412101,GTPv1,Conflict with another session for GTPv1 message,,Echo Request
+412102,GTPv1,Conflict with another session for GTPv1 message,,Echo Response
+412103,GTPv1,Conflict with another session for GTPv1 message,,Version Not Supported
+412104,GTPv1,Conflict with another session for GTPv1 message,,Node Alive Request
+412105,GTPv1,Conflict with another session for GTPv1 message,,Node Alive Response
+412106,GTPv1,Conflict with another session for GTPv1 message,,Redirection Request
+412107,GTPv1,Conflict with another session for GTPv1 message,,Redirection Response
+412108,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412109,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41210f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412110,GTPv1,Conflict with another session for GTPv1 message,,Create PDP Context Request
+412111,GTPv1,Conflict with another session for GTPv1 message,,Create PDP Context Response
+412112,GTPv1,Conflict with another session for GTPv1 message,,Update PDP Context Request
+412113,GTPv1,Conflict with another session for GTPv1 message,,Update PDP Context Response
+412114,GTPv1,Conflict with another session for GTPv1 message,,Delete PDP Context Request
+412115,GTPv1,Conflict with another session for GTPv1 message,,Delete PDP Context Response
+412116,GTPv1,Conflict with another session for GTPv1 message,,Initiate PDP Context Activation Request
+412117,GTPv1,Conflict with another session for GTPv1 message,,Initiate PDP Context Activation Response
+412118,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412119,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41211a,GTPv1,Conflict with another session for GTPv1 message,,Error Indication
+41211b,GTPv1,Conflict with another session for GTPv1 message,,PDU Notification Request
+41211c,GTPv1,Conflict with another session for GTPv1 message,,PDU Notification Response
+41211d,GTPv1,Conflict with another session for GTPv1 message,,PDU Notification Reject Request
+41211e,GTPv1,Conflict with another session for GTPv1 message,,PDU Notification Reject Response
+41211f,GTPv1,Conflict with another session for GTPv1 message,,Supported Extension Headers Notification
+412120,GTPv1,Conflict with another session for GTPv1 message,,Send Routeing Information for GPRS Request
+412121,GTPv1,Conflict with another session for GTPv1 message,,Send Routeing Information for GPRS Response
+412122,GTPv1,Conflict with another session for GTPv1 message,,Failure Report Request
+412123,GTPv1,Conflict with another session for GTPv1 message,,Failure Report Response
+412124,GTPv1,Conflict with another session for GTPv1 message,,Note MS GPRS Present Request
+412125,GTPv1,Conflict with another session for GTPv1 message,,Note MS GPRS Present Response
+412126,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412127,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412128,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412129,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41212f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412130,GTPv1,Conflict with another session for GTPv1 message,,Identification Request
+412131,GTPv1,Conflict with another session for GTPv1 message,,Identification Response
+412132,GTPv1,Conflict with another session for GTPv1 message,,SGSN Context Request
+412133,GTPv1,Conflict with another session for GTPv1 message,,SGSN Context Response
+412134,GTPv1,Conflict with another session for GTPv1 message,,SGSN Context Acknowledge
+412135,GTPv1,Conflict with another session for GTPv1 message,,Forward Relocation Request
+412136,GTPv1,Conflict with another session for GTPv1 message,,Forward Relocation Response
+412137,GTPv1,Conflict with another session for GTPv1 message,,Forward Relocation Complete
+412138,GTPv1,Conflict with another session for GTPv1 message,,Relocation Cancel Request
+412139,GTPv1,Conflict with another session for GTPv1 message,,Relocation Cancel Response
+41213a,GTPv1,Conflict with another session for GTPv1 message,,Forward SRNS Context
+41213b,GTPv1,Conflict with another session for GTPv1 message,,Forward Relocation Complete Acknowledge
+41213c,GTPv1,Conflict with another session for GTPv1 message,,Forward SRNS Context Acknowledge
+41213d,GTPv1,Conflict with another session for GTPv1 message,,UE Registration Query Request
+41213e,GTPv1,Conflict with another session for GTPv1 message,,UE Registration Query Response
+41213f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412140,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412141,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412142,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412143,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412144,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412145,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412146,GTPv1,Conflict with another session for GTPv1 message,,RAN Information Relay
+412147,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412148,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412149,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41214f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412150,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412152,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412153,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412154,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412155,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412156,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412157,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412158,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412159,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41215f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412160,GTPv1,Conflict with another session for GTPv1 message,,MBMS Notification Request
+412161,GTPv1,Conflict with another session for GTPv1 message,,MBMS Notification Response
+412162,GTPv1,Conflict with another session for GTPv1 message,,MBMS Notification Reject Request
+412163,GTPv1,Conflict with another session for GTPv1 message,,MBMS Notification Reject Response
+412164,GTPv1,Conflict with another session for GTPv1 message,,Create MBMS Context Request
+412165,GTPv1,Conflict with another session for GTPv1 message,,Create MBMS Context Response
+412166,GTPv1,Conflict with another session for GTPv1 message,,Update MBMS Context Request
+412167,GTPv1,Conflict with another session for GTPv1 message,,Update MBMS Context Response
+412168,GTPv1,Conflict with another session for GTPv1 message,,Delete MBMS Context Request
+412169,GTPv1,Conflict with another session for GTPv1 message,,Delete MBMS Context Response
+41216a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41216b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41216c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41216d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41216e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41216f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+412170,GTPv1,Conflict with another session for GTPv1 message,,MBMS Registration Request
+412171,GTPv1,Conflict with another session for GTPv1 message,,MBMS Registration Response
+412172,GTPv1,Conflict with another session for GTPv1 message,,MBMS De-Registration Request
+412173,GTPv1,Conflict with another session for GTPv1 message,,MBMS De-Registration Response
+412174,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Start Request
+412175,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Start Response
+412176,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Stop Request
+412177,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Stop Response
+412178,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Update Request
+412179,GTPv1,Conflict with another session for GTPv1 message,,MBMS Session Update Response
+41217a,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41217b,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41217c,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41217d,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41217e,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41217f,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+412180,GTPv1,Conflict with another session for GTPv1 message,,MS Info Change Notification Request
+412181,GTPv1,Conflict with another session for GTPv1 message,,MS Info Change Notification Response
+412182,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+4121f0,GTPv1,Conflict with another session for GTPv1 message,,Data Record Transfer Request
+4121f1,GTPv1,Conflict with another session for GTPv1 message,,Data Record Transfer Response
+4121f2,GTPv1,Conflict with another session for GTPv1 message,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+4121fe,GTPv1,Conflict with another session for GTPv1 message,,End Marker
+4121ff,GTPv1,Conflict with another session for GTPv1 message,,G-PDU

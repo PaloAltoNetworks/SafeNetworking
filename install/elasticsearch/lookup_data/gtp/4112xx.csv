@@ -1,71 +1,71 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-41124a, Run out of resource for GTPv2 message For future use
-41125f, Run out of resource for GTPv2 message Create Bearer Request
-411260, Run out of resource for GTPv2 message Create Bearer Response
-411261, Run out of resource for GTPv2 message Update Bearer Request
-411262, Run out of resource for GTPv2 message Update Bearer Response
-411263, Run out of resource for GTPv2 message Delete Bearer Request
-411264, Run out of resource for GTPv2 message Delete Bearer Response
-411265, Run out of resource for GTPv2 message Delete PDN Connection Set Request
-411266, Run out of resource for GTPv2 message Delete PDN Connection Set Response
-411267, Run out of resource for GTPv2 message PGW Downlink Triggering Notification
-411268, Run out of resource for GTPv2 message PGW Downlink Triggering Acknowledge
-411269, Run out of resource for GTPv2 message For future use
-411280, Run out of resource for GTPv2 message Identification Request
-411281, Run out of resource for GTPv2 message Identification Response
-411282, Run out of resource for GTPv2 message Context Request
-411283, Run out of resource for GTPv2 message Context Response
-411284, Run out of resource for GTPv2 message Context Acknowledge
-411285, Run out of resource for GTPv2 message Forward Relocation Request
-411286, Run out of resource for GTPv2 message Forward Relocation Response
-411287, Run out of resource for GTPv2 message Forward Relocation Complete Notification
-411288, Run out of resource for GTPv2 message Forward Relocation Complete Acknowledge
-411289, Run out of resource for GTPv2 message Forward Access Context Notification
-41128a, Run out of resource for GTPv2 message Forward Access Context Acknowledge
-41128b, Run out of resource for GTPv2 message Relocation Cancel Request
-41128c, Run out of resource for GTPv2 message Relocation Cancel Response
-41128d, Run out of resource for GTPv2 message Configuration Transfer Tunnel
-41128e, Run out of resource for GTPv2 message For future use
-411298, Run out of resource for GTPv2 message RAN Information Relay
-411295, Run out of resource for GTPv2 message Detach Notification
-411296, Run out of resource for GTPv2 message Detach Acknowledge
-411297, Run out of resource for GTPv2 message CS Paging Indication
-411299, Run out of resource for GTPv2 message Alert MME Notification
-41129a, Run out of resource for GTPv2 message Alert MME Acknowledge
-41129b, Run out of resource for GTPv2 message UE Activity Notification
-41129c, Run out of resource for GTPv2 message UE Activity Acknowledge
-41129d, Run out of resource for GTPv2 message ISR Status Indication
-41129e, Run out of resource for GTPv2 message UE Registration Query Request
-41129f, Run out of resource for GTPv2 message UE Registration Query Response
-4112a2, Run out of resource for GTPv2 message Suspend Notification
-4112a3, Run out of resource for GTPv2 message Suspend Acknowledge
-4112a0, Run out of resource for GTPv2 message Create Forwarding Tunnel Request
-4112a1, Run out of resource for GTPv2 message Create Forwarding Tunnel Response
-4112a6, Run out of resource for GTPv2 message Create Indirect Data Forwarding Tunnel Request
-4112a7, Run out of resource for GTPv2 message Create Indirect Data Forwarding Tunnel Response
-4112a8, Run out of resource for GTPv2 message Delete Indirect Data Forwarding Tunnel Request
-4112a9, Run out of resource for GTPv2 message Delete Indirect Data Forwarding Tunnel Response
-4112aa, Run out of resource for GTPv2 message Release Access Bearers Request
-4112ab, Run out of resource for GTPv2 message Release Access Bearers Response
-4112ac, Run out of resource for GTPv2 message For future use
-4112b0, Run out of resource for GTPv2 message Downlink Data Notification
-4112b1, Run out of resource for GTPv2 message Downlink Data Notification Acknowledge
-4112b3, Run out of resource for GTPv2 message PGW Restart Notification
-4112b4, Run out of resource for GTPv2 message PGW Restart Notification Acknowledge
-4112b2, Run out of resource for GTPv2 message Reserved. Allocated in earlier version of the specification.
-4112b5, Run out of resource for GTPv2 message For future use
-4112c8, Run out of resource for GTPv2 message Update PDN Connection Set Request
-4112c9, Run out of resource for GTPv2 message Update PDN Connection Set Response
-4112ca, Run out of resource for GTPv2 message For future use
-4112d3, Run out of resource for GTPv2 message Modify Access Bearers Request
-4112d4, Run out of resource for GTPv2 message Modify Access Bearers Response
-4112d5, Run out of resource for GTPv2 message For future use
-4112e7, Run out of resource for GTPv2 message MBMS Session Start Request
-4112e8, Run out of resource for GTPv2 message MBMS Session Start Response
-4112e9, Run out of resource for GTPv2 message MBMS Session Update Request
-4112ea, Run out of resource for GTPv2 message MBMS Session Update Response
-4112eb, Run out of resource for GTPv2 message MBMS Session Stop Request
-4112ec, Run out of resource for GTPv2 message MBMS Session Stop Response
-4112ed, Run out of resource for GTPv2 message For future use
-4112f0, Run out of resource for GTPv2 message Reserved for Sv interface (see also types 25 to 31)
-4112f8, Run out of resource for GTPv2 message For future use
+41124a,GTPv2,Run out of resource for GTPv2 message,,For future use
+41125f,GTPv2,Run out of resource for GTPv2 message,,Create Bearer Request
+411260,GTPv2,Run out of resource for GTPv2 message,,Create Bearer Response
+411261,GTPv2,Run out of resource for GTPv2 message,,Update Bearer Request
+411262,GTPv2,Run out of resource for GTPv2 message,,Update Bearer Response
+411263,GTPv2,Run out of resource for GTPv2 message,,Delete Bearer Request
+411264,GTPv2,Run out of resource for GTPv2 message,,Delete Bearer Response
+411265,GTPv2,Run out of resource for GTPv2 message,,Delete PDN Connection Set Request
+411266,GTPv2,Run out of resource for GTPv2 message,,Delete PDN Connection Set Response
+411267,GTPv2,Run out of resource for GTPv2 message,,PGW Downlink Triggering Notification
+411268,GTPv2,Run out of resource for GTPv2 message,,PGW Downlink Triggering Acknowledge
+411269,GTPv2,Run out of resource for GTPv2 message,,For future use
+411280,GTPv2,Run out of resource for GTPv2 message,,Identification Request
+411281,GTPv2,Run out of resource for GTPv2 message,,Identification Response
+411282,GTPv2,Run out of resource for GTPv2 message,,Context Request
+411283,GTPv2,Run out of resource for GTPv2 message,,Context Response
+411284,GTPv2,Run out of resource for GTPv2 message,,Context Acknowledge
+411285,GTPv2,Run out of resource for GTPv2 message,,Forward Relocation Request
+411286,GTPv2,Run out of resource for GTPv2 message,,Forward Relocation Response
+411287,GTPv2,Run out of resource for GTPv2 message,,Forward Relocation Complete Notification
+411288,GTPv2,Run out of resource for GTPv2 message,,Forward Relocation Complete Acknowledge
+411289,GTPv2,Run out of resource for GTPv2 message,,Forward Access Context Notification
+41128a,GTPv2,Run out of resource for GTPv2 message,,Forward Access Context Acknowledge
+41128b,GTPv2,Run out of resource for GTPv2 message,,Relocation Cancel Request
+41128c,GTPv2,Run out of resource for GTPv2 message,,Relocation Cancel Response
+41128d,GTPv2,Run out of resource for GTPv2 message,,Configuration Transfer Tunnel
+41128e,GTPv2,Run out of resource for GTPv2 message,,For future use
+411298,GTPv2,Run out of resource for GTPv2 message,,RAN Information Relay
+411295,GTPv2,Run out of resource for GTPv2 message,,Detach Notification
+411296,GTPv2,Run out of resource for GTPv2 message,,Detach Acknowledge
+411297,GTPv2,Run out of resource for GTPv2 message,,CS Paging Indication
+411299,GTPv2,Run out of resource for GTPv2 message,,Alert MME Notification
+41129a,GTPv2,Run out of resource for GTPv2 message,,Alert MME Acknowledge
+41129b,GTPv2,Run out of resource for GTPv2 message,,UE Activity Notification
+41129c,GTPv2,Run out of resource for GTPv2 message,,UE Activity Acknowledge
+41129d,GTPv2,Run out of resource for GTPv2 message,,ISR Status Indication
+41129e,GTPv2,Run out of resource for GTPv2 message,,UE Registration Query Request
+41129f,GTPv2,Run out of resource for GTPv2 message,,UE Registration Query Response
+4112a2,GTPv2,Run out of resource for GTPv2 message,,Suspend Notification
+4112a3,GTPv2,Run out of resource for GTPv2 message,,Suspend Acknowledge
+4112a0,GTPv2,Run out of resource for GTPv2 message,,Create Forwarding Tunnel Request
+4112a1,GTPv2,Run out of resource for GTPv2 message,,Create Forwarding Tunnel Response
+4112a6,GTPv2,Run out of resource for GTPv2 message,,Create Indirect Data Forwarding Tunnel Request
+4112a7,GTPv2,Run out of resource for GTPv2 message,,Create Indirect Data Forwarding Tunnel Response
+4112a8,GTPv2,Run out of resource for GTPv2 message,,Delete Indirect Data Forwarding Tunnel Request
+4112a9,GTPv2,Run out of resource for GTPv2 message,,Delete Indirect Data Forwarding Tunnel Response
+4112aa,GTPv2,Run out of resource for GTPv2 message,,Release Access Bearers Request
+4112ab,GTPv2,Run out of resource for GTPv2 message,,Release Access Bearers Response
+4112ac,GTPv2,Run out of resource for GTPv2 message,,For future use
+4112b0,GTPv2,Run out of resource for GTPv2 message,,Downlink Data Notification
+4112b1,GTPv2,Run out of resource for GTPv2 message,,Downlink Data Notification Acknowledge
+4112b3,GTPv2,Run out of resource for GTPv2 message,,PGW Restart Notification
+4112b4,GTPv2,Run out of resource for GTPv2 message,,PGW Restart Notification Acknowledge
+4112b2,GTPv2,Run out of resource for GTPv2 message,,Reserved. Allocated in earlier version of the specification.
+4112b5,GTPv2,Run out of resource for GTPv2 message,,For future use
+4112c8,GTPv2,Run out of resource for GTPv2 message,,Update PDN Connection Set Request
+4112c9,GTPv2,Run out of resource for GTPv2 message,,Update PDN Connection Set Response
+4112ca,GTPv2,Run out of resource for GTPv2 message,,For future use
+4112d3,GTPv2,Run out of resource for GTPv2 message,,Modify Access Bearers Request
+4112d4,GTPv2,Run out of resource for GTPv2 message,,Modify Access Bearers Response
+4112d5,GTPv2,Run out of resource for GTPv2 message,,For future use
+4112e7,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Start Request
+4112e8,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Start Response
+4112e9,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Update Request
+4112ea,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Update Response
+4112eb,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Stop Request
+4112ec,GTPv2,Run out of resource for GTPv2 message,,MBMS Session Stop Response
+4112ed,GTPv2,Run out of resource for GTPv2 message,,For future use
+4112f0,GTPv2,Run out of resource for GTPv2 message,,Reserved for Sv interface (see also types 25 to 31)
+4112f8,GTPv2,Run out of resource for GTPv2 message,,For future use

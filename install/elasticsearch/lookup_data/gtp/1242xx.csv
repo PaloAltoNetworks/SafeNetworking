@@ -1,126 +1,126 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-124200, Unexpected sequence number in GTPv2 header, Reserved
-124201, Unexpected sequence number in GTPv2 header, Echo Request
-124202, Unexpected sequence number in GTPv2 header, Echo Response
-124203, Unexpected sequence number in GTPv2 header, Version Not Supported Indication
-124204, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124205, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124206, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124207, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124208, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124209, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420a, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420b, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420c, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420d, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420e, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-12420f, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124210, Unexpected sequence number in GTPv2 header, Reserved for S101 interface
-124211, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124212, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124213, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124214, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124215, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124216, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124217, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124218, Unexpected sequence number in GTPv2 header, Reserved for S121 interface
-124219, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421a, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421b, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421c, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421d, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421e, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-12421f, Unexpected sequence number in GTPv2 header, Reserved for Sv interface
-124220, Unexpected sequence number in GTPv2 header, Create Session Request
-124221, Unexpected sequence number in GTPv2 header, Create Session Response
-124224, Unexpected sequence number in GTPv2 header, Delete Session Request
-124225, Unexpected sequence number in GTPv2 header, Delete Session Response
-124222, Unexpected sequence number in GTPv2 header, Modify Bearer Request
-124223, Unexpected sequence number in GTPv2 header, Modify Bearer Response
-124228, Unexpected sequence number in GTPv2 header, Remote UE Report Notification
-124229, Unexpected sequence number in GTPv2 header, Remote UE Report Acknowledge
-124226, Unexpected sequence number in GTPv2 header, Change Notification Request
-124227, Unexpected sequence number in GTPv2 header, Change Notification Response
-12422a, Unexpected sequence number in GTPv2 header, For future use
-1242a4, Unexpected sequence number in GTPv2 header, Resume Notification
-1242a5, Unexpected sequence number in GTPv2 header, Resume Acknowledge
-124240, Unexpected sequence number in GTPv2 header, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unexpected sequence number in GTPv2 header, S5/S8, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124241, Unexpected sequence number in GTPv2 header, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Unexpected sequence number in GTPv2 header, S11/S4, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124242, Unexpected sequence number in GTPv2 header, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Unexpected sequence number in GTPv2 header, S5/S8)
-124243, Unexpected sequence number in GTPv2 header, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Unexpected sequence number in GTPv2 header, S11/S4))
-124244, Unexpected sequence number in GTPv2 header, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Unexpected sequence number in GTPv2 header, S5/S8, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124245, Unexpected sequence number in GTPv2 header, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Unexpected sequence number in GTPv2 header, S11/S4, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124246, Unexpected sequence number in GTPv2 header, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
-124247, Unexpected sequence number in GTPv2 header, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unexpected sequence number in GTPv2 header, S5/S8, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124248, Unexpected sequence number in GTPv2 header, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unexpected sequence number in GTPv2 header, S5/S8, Unexpected sequence number in GTPv2 header, S2a, Unexpected sequence number in GTPv2 header, S2b)
-124249, Unexpected sequence number in GTPv2 header, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
-12424a, Unexpected sequence number in GTPv2 header, For future use
-12425f, Unexpected sequence number in GTPv2 header, Create Bearer Request
-124260, Unexpected sequence number in GTPv2 header, Create Bearer Response
-124261, Unexpected sequence number in GTPv2 header, Update Bearer Request
-124262, Unexpected sequence number in GTPv2 header, Update Bearer Response
-124263, Unexpected sequence number in GTPv2 header, Delete Bearer Request
-124264, Unexpected sequence number in GTPv2 header, Delete Bearer Response
-124265, Unexpected sequence number in GTPv2 header, Delete PDN Connection Set Request
-124266, Unexpected sequence number in GTPv2 header, Delete PDN Connection Set Response
-124267, Unexpected sequence number in GTPv2 header, PGW Downlink Triggering Notification
-124268, Unexpected sequence number in GTPv2 header, PGW Downlink Triggering Acknowledge
-124269, Unexpected sequence number in GTPv2 header, For future use
-124280, Unexpected sequence number in GTPv2 header, Identification Request
-124281, Unexpected sequence number in GTPv2 header, Identification Response
-124282, Unexpected sequence number in GTPv2 header, Context Request
-124283, Unexpected sequence number in GTPv2 header, Context Response
-124284, Unexpected sequence number in GTPv2 header, Context Acknowledge
-124285, Unexpected sequence number in GTPv2 header, Forward Relocation Request
-124286, Unexpected sequence number in GTPv2 header, Forward Relocation Response
-124287, Unexpected sequence number in GTPv2 header, Forward Relocation Complete Notification
-124288, Unexpected sequence number in GTPv2 header, Forward Relocation Complete Acknowledge
-124289, Unexpected sequence number in GTPv2 header, Forward Access Context Notification
-12428a, Unexpected sequence number in GTPv2 header, Forward Access Context Acknowledge
-12428b, Unexpected sequence number in GTPv2 header, Relocation Cancel Request
-12428c, Unexpected sequence number in GTPv2 header, Relocation Cancel Response
-12428d, Unexpected sequence number in GTPv2 header, Configuration Transfer Tunnel
-12428e, Unexpected sequence number in GTPv2 header, For future use
-124298, Unexpected sequence number in GTPv2 header, RAN Information Relay
-124295, Unexpected sequence number in GTPv2 header, Detach Notification
-124296, Unexpected sequence number in GTPv2 header, Detach Acknowledge
-124297, Unexpected sequence number in GTPv2 header, CS Paging Indication
-124299, Unexpected sequence number in GTPv2 header, Alert MME Notification
-12429a, Unexpected sequence number in GTPv2 header, Alert MME Acknowledge
-12429b, Unexpected sequence number in GTPv2 header, UE Activity Notification
-12429c, Unexpected sequence number in GTPv2 header, UE Activity Acknowledge
-12429d, Unexpected sequence number in GTPv2 header, ISR Status Indication
-12429e, Unexpected sequence number in GTPv2 header, UE Registration Query Request
-12429f, Unexpected sequence number in GTPv2 header, UE Registration Query Response
-1242a2, Unexpected sequence number in GTPv2 header, Suspend Notification
-1242a3, Unexpected sequence number in GTPv2 header, Suspend Acknowledge
-1242a0, Unexpected sequence number in GTPv2 header, Create Forwarding Tunnel Request
-1242a1, Unexpected sequence number in GTPv2 header, Create Forwarding Tunnel Response
-1242a6, Unexpected sequence number in GTPv2 header, Create Indirect Data Forwarding Tunnel Request
-1242a7, Unexpected sequence number in GTPv2 header, Create Indirect Data Forwarding Tunnel Response
-1242a8, Unexpected sequence number in GTPv2 header, Delete Indirect Data Forwarding Tunnel Request
-1242a9, Unexpected sequence number in GTPv2 header, Delete Indirect Data Forwarding Tunnel Response
-1242aa, Unexpected sequence number in GTPv2 header, Release Access Bearers Request
-1242ab, Unexpected sequence number in GTPv2 header, Release Access Bearers Response
-1242ac, Unexpected sequence number in GTPv2 header, For future use
-1242b0, Unexpected sequence number in GTPv2 header, Downlink Data Notification
-1242b1, Unexpected sequence number in GTPv2 header, Downlink Data Notification Acknowledge
-1242b3, Unexpected sequence number in GTPv2 header, PGW Restart Notification
-1242b4, Unexpected sequence number in GTPv2 header, PGW Restart Notification Acknowledge
-1242b2, Unexpected sequence number in GTPv2 header, Reserved. Allocated in earlier version of the specification.
-1242b5, Unexpected sequence number in GTPv2 header, For future use
-1242c8, Unexpected sequence number in GTPv2 header, Update PDN Connection Set Request
-1242c9, Unexpected sequence number in GTPv2 header, Update PDN Connection Set Response
-1242ca, Unexpected sequence number in GTPv2 header, For future use
-1242d3, Unexpected sequence number in GTPv2 header, Modify Access Bearers Request
-1242d4, Unexpected sequence number in GTPv2 header, Modify Access Bearers Response
-1242d5, Unexpected sequence number in GTPv2 header, For future use
-1242e7, Unexpected sequence number in GTPv2 header, MBMS Session Start Request
-1242e8, Unexpected sequence number in GTPv2 header, MBMS Session Start Response
-1242e9, Unexpected sequence number in GTPv2 header, MBMS Session Update Request
-1242ea, Unexpected sequence number in GTPv2 header, MBMS Session Update Response
-1242eb, Unexpected sequence number in GTPv2 header, MBMS Session Stop Request
-1242ec, Unexpected sequence number in GTPv2 header, MBMS Session Stop Response
-1242ed, Unexpected sequence number in GTPv2 header, For future use
-1242f0, Unexpected sequence number in GTPv2 header, Reserved for Sv interface (see also types 25 to 31)
-1242f8, Unexpected sequence number in GTPv2 header, For future use
+124200,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved
+124201,GTPv2,Unexpected sequence number in GTPv2 header,,Echo Request
+124202,GTPv2,Unexpected sequence number in GTPv2 header,,Echo Response
+124203,GTPv2,Unexpected sequence number in GTPv2 header,,Version Not Supported Indication
+124204,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124205,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124206,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124207,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124208,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124209,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420a,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420b,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420c,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420d,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420e,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+12420f,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124210,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S101 interface
+124211,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124212,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124213,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124214,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124215,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124216,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124217,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124218,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for S121 interface
+124219,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421a,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421b,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421c,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421d,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421e,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+12421f,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface
+124220,GTPv2,Unexpected sequence number in GTPv2 header,,Create Session Request
+124221,GTPv2,Unexpected sequence number in GTPv2 header,,Create Session Response
+124224,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Session Request
+124225,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Session Response
+124222,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Bearer Request
+124223,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Bearer Response
+124228,GTPv2,Unexpected sequence number in GTPv2 header,,Remote UE Report Notification
+124229,GTPv2,Unexpected sequence number in GTPv2 header,,Remote UE Report Acknowledge
+124226,GTPv2,Unexpected sequence number in GTPv2 header,,Change Notification Request
+124227,GTPv2,Unexpected sequence number in GTPv2 header,,Change Notification Response
+12422a,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242a4,GTPv2,Unexpected sequence number in GTPv2 header,,Resume Notification
+1242a5,GTPv2,Unexpected sequence number in GTPv2 header,,Resume Acknowledge
+124240,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+124241,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+124242,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+124243,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+124244,GTPv2,Unexpected sequence number in GTPv2 header,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+124245,GTPv2,Unexpected sequence number in GTPv2 header,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+124246,GTPv2,Unexpected sequence number in GTPv2 header,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+124247,GTPv2,Unexpected sequence number in GTPv2 header,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+124248,GTPv2,Unexpected sequence number in GTPv2 header,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+124249,GTPv2,Unexpected sequence number in GTPv2 header,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+12424a,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+12425f,GTPv2,Unexpected sequence number in GTPv2 header,,Create Bearer Request
+124260,GTPv2,Unexpected sequence number in GTPv2 header,,Create Bearer Response
+124261,GTPv2,Unexpected sequence number in GTPv2 header,,Update Bearer Request
+124262,GTPv2,Unexpected sequence number in GTPv2 header,,Update Bearer Response
+124263,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Bearer Request
+124264,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Bearer Response
+124265,GTPv2,Unexpected sequence number in GTPv2 header,,Delete PDN Connection Set Request
+124266,GTPv2,Unexpected sequence number in GTPv2 header,,Delete PDN Connection Set Response
+124267,GTPv2,Unexpected sequence number in GTPv2 header,,PGW Downlink Triggering Notification
+124268,GTPv2,Unexpected sequence number in GTPv2 header,,PGW Downlink Triggering Acknowledge
+124269,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+124280,GTPv2,Unexpected sequence number in GTPv2 header,,Identification Request
+124281,GTPv2,Unexpected sequence number in GTPv2 header,,Identification Response
+124282,GTPv2,Unexpected sequence number in GTPv2 header,,Context Request
+124283,GTPv2,Unexpected sequence number in GTPv2 header,,Context Response
+124284,GTPv2,Unexpected sequence number in GTPv2 header,,Context Acknowledge
+124285,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Relocation Request
+124286,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Relocation Response
+124287,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Relocation Complete Notification
+124288,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Relocation Complete Acknowledge
+124289,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Access Context Notification
+12428a,GTPv2,Unexpected sequence number in GTPv2 header,,Forward Access Context Acknowledge
+12428b,GTPv2,Unexpected sequence number in GTPv2 header,,Relocation Cancel Request
+12428c,GTPv2,Unexpected sequence number in GTPv2 header,,Relocation Cancel Response
+12428d,GTPv2,Unexpected sequence number in GTPv2 header,,Configuration Transfer Tunnel
+12428e,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+124298,GTPv2,Unexpected sequence number in GTPv2 header,,RAN Information Relay
+124295,GTPv2,Unexpected sequence number in GTPv2 header,,Detach Notification
+124296,GTPv2,Unexpected sequence number in GTPv2 header,,Detach Acknowledge
+124297,GTPv2,Unexpected sequence number in GTPv2 header,,CS Paging Indication
+124299,GTPv2,Unexpected sequence number in GTPv2 header,,Alert MME Notification
+12429a,GTPv2,Unexpected sequence number in GTPv2 header,,Alert MME Acknowledge
+12429b,GTPv2,Unexpected sequence number in GTPv2 header,,UE Activity Notification
+12429c,GTPv2,Unexpected sequence number in GTPv2 header,,UE Activity Acknowledge
+12429d,GTPv2,Unexpected sequence number in GTPv2 header,,ISR Status Indication
+12429e,GTPv2,Unexpected sequence number in GTPv2 header,,UE Registration Query Request
+12429f,GTPv2,Unexpected sequence number in GTPv2 header,,UE Registration Query Response
+1242a2,GTPv2,Unexpected sequence number in GTPv2 header,,Suspend Notification
+1242a3,GTPv2,Unexpected sequence number in GTPv2 header,,Suspend Acknowledge
+1242a0,GTPv2,Unexpected sequence number in GTPv2 header,,Create Forwarding Tunnel Request
+1242a1,GTPv2,Unexpected sequence number in GTPv2 header,,Create Forwarding Tunnel Response
+1242a6,GTPv2,Unexpected sequence number in GTPv2 header,,Create Indirect Data Forwarding Tunnel Request
+1242a7,GTPv2,Unexpected sequence number in GTPv2 header,,Create Indirect Data Forwarding Tunnel Response
+1242a8,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Indirect Data Forwarding Tunnel Request
+1242a9,GTPv2,Unexpected sequence number in GTPv2 header,,Delete Indirect Data Forwarding Tunnel Response
+1242aa,GTPv2,Unexpected sequence number in GTPv2 header,,Release Access Bearers Request
+1242ab,GTPv2,Unexpected sequence number in GTPv2 header,,Release Access Bearers Response
+1242ac,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242b0,GTPv2,Unexpected sequence number in GTPv2 header,,Downlink Data Notification
+1242b1,GTPv2,Unexpected sequence number in GTPv2 header,,Downlink Data Notification Acknowledge
+1242b3,GTPv2,Unexpected sequence number in GTPv2 header,,PGW Restart Notification
+1242b4,GTPv2,Unexpected sequence number in GTPv2 header,,PGW Restart Notification Acknowledge
+1242b2,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved. Allocated in earlier version of the specification.
+1242b5,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242c8,GTPv2,Unexpected sequence number in GTPv2 header,,Update PDN Connection Set Request
+1242c9,GTPv2,Unexpected sequence number in GTPv2 header,,Update PDN Connection Set Response
+1242ca,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242d3,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Access Bearers Request
+1242d4,GTPv2,Unexpected sequence number in GTPv2 header,,Modify Access Bearers Response
+1242d5,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242e7,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Start Request
+1242e8,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Start Response
+1242e9,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Update Request
+1242ea,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Update Response
+1242eb,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Stop Request
+1242ec,GTPv2,Unexpected sequence number in GTPv2 header,,MBMS Session Stop Response
+1242ed,GTPv2,Unexpected sequence number in GTPv2 header,,For future use
+1242f0,GTPv2,Unexpected sequence number in GTPv2 header,,Reserved for Sv interface (see also types 25 to 31)
+1242f8,GTPv2,Unexpected sequence number in GTPv2 header,,For future use

@@ -1,10 +1,10 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-800, Normal GTP messages
-841, GTP session ended with a GTPv1 Delete message
-842, GTP session ended with a GTPv2 Delete message
-844, GTP session ended unexpectedly (timeout)
-881, GTPv1 session start
-882, GTPv2 session start
-101000, End User IP address spoofed
-101400, GTP-in-GTP
-101800, Overbilling protection in effect
+800,All,Normal GTP messages,,
+841,GTPv1,GTP session ended with a GTPv1 Delete message,,
+842,GTPv2,GTP session ended with a GTPv2 Delete message,,
+844,All,GTP session ended unexpectedly (timeout),,
+881,GTPv1,GTPv1 session start,,
+882,GTPv2,GTPv2 session start,,
+101000,All,End User IP address spoofed,,
+101400,All,GTP-in-GTP,,
+101800,All,Overbilling protection in effect,,

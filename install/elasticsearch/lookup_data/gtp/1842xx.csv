@@ -1,126 +1,126 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-184200, GTPv2 message matched by APN filter, Reserved
-184201, GTPv2 message matched by APN filter, Echo Request
-184202, GTPv2 message matched by APN filter, Echo Response
-184203, GTPv2 message matched by APN filter, Version Not Supported Indication
-184204, GTPv2 message matched by APN filter, Reserved for S101 interface
-184205, GTPv2 message matched by APN filter, Reserved for S101 interface
-184206, GTPv2 message matched by APN filter, Reserved for S101 interface
-184207, GTPv2 message matched by APN filter, Reserved for S101 interface
-184208, GTPv2 message matched by APN filter, Reserved for S101 interface
-184209, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420a, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420b, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420c, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420d, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420e, GTPv2 message matched by APN filter, Reserved for S101 interface
-18420f, GTPv2 message matched by APN filter, Reserved for S101 interface
-184210, GTPv2 message matched by APN filter, Reserved for S101 interface
-184211, GTPv2 message matched by APN filter, Reserved for S121 interface
-184212, GTPv2 message matched by APN filter, Reserved for S121 interface
-184213, GTPv2 message matched by APN filter, Reserved for S121 interface
-184214, GTPv2 message matched by APN filter, Reserved for S121 interface
-184215, GTPv2 message matched by APN filter, Reserved for S121 interface
-184216, GTPv2 message matched by APN filter, Reserved for S121 interface
-184217, GTPv2 message matched by APN filter, Reserved for S121 interface
-184218, GTPv2 message matched by APN filter, Reserved for S121 interface
-184219, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421a, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421b, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421c, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421d, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421e, GTPv2 message matched by APN filter, Reserved for Sv interface
-18421f, GTPv2 message matched by APN filter, Reserved for Sv interface
-184220, GTPv2 message matched by APN filter, Create Session Request
-184221, GTPv2 message matched by APN filter, Create Session Response
-184224, GTPv2 message matched by APN filter, Delete Session Request
-184225, GTPv2 message matched by APN filter, Delete Session Response
-184222, GTPv2 message matched by APN filter, Modify Bearer Request
-184223, GTPv2 message matched by APN filter, Modify Bearer Response
-184228, GTPv2 message matched by APN filter, Remote UE Report Notification
-184229, GTPv2 message matched by APN filter, Remote UE Report Acknowledge
-184226, GTPv2 message matched by APN filter, Change Notification Request
-184227, GTPv2 message matched by APN filter, Change Notification Response
-18422a, GTPv2 message matched by APN filter, For future use
-1842a4, GTPv2 message matched by APN filter, Resume Notification
-1842a5, GTPv2 message matched by APN filter, Resume Acknowledge
-184240, GTPv2 message matched by APN filter, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, GTPv2 message matched by APN filter, S5/S8, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184241, GTPv2 message matched by APN filter, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, GTPv2 message matched by APN filter, S11/S4, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184242, GTPv2 message matched by APN filter, Delete Bearer Command (MME/SGSN to PGW – S11/S4, GTPv2 message matched by APN filter, S5/S8)
-184243, GTPv2 message matched by APN filter, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, GTPv2 message matched by APN filter, S11/S4))
-184244, GTPv2 message matched by APN filter, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, GTPv2 message matched by APN filter, S5/S8, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184245, GTPv2 message matched by APN filter, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, GTPv2 message matched by APN filter, S11/S4, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184246, GTPv2 message matched by APN filter, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
-184247, GTPv2 message matched by APN filter, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, GTPv2 message matched by APN filter, S5/S8, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184248, GTPv2 message matched by APN filter, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, GTPv2 message matched by APN filter, S5/S8, GTPv2 message matched by APN filter, S2a, GTPv2 message matched by APN filter, S2b)
-184249, GTPv2 message matched by APN filter, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
-18424a, GTPv2 message matched by APN filter, For future use
-18425f, GTPv2 message matched by APN filter, Create Bearer Request
-184260, GTPv2 message matched by APN filter, Create Bearer Response
-184261, GTPv2 message matched by APN filter, Update Bearer Request
-184262, GTPv2 message matched by APN filter, Update Bearer Response
-184263, GTPv2 message matched by APN filter, Delete Bearer Request
-184264, GTPv2 message matched by APN filter, Delete Bearer Response
-184265, GTPv2 message matched by APN filter, Delete PDN Connection Set Request
-184266, GTPv2 message matched by APN filter, Delete PDN Connection Set Response
-184267, GTPv2 message matched by APN filter, PGW Downlink Triggering Notification
-184268, GTPv2 message matched by APN filter, PGW Downlink Triggering Acknowledge
-184269, GTPv2 message matched by APN filter, For future use
-184280, GTPv2 message matched by APN filter, Identification Request
-184281, GTPv2 message matched by APN filter, Identification Response
-184282, GTPv2 message matched by APN filter, Context Request
-184283, GTPv2 message matched by APN filter, Context Response
-184284, GTPv2 message matched by APN filter, Context Acknowledge
-184285, GTPv2 message matched by APN filter, Forward Relocation Request
-184286, GTPv2 message matched by APN filter, Forward Relocation Response
-184287, GTPv2 message matched by APN filter, Forward Relocation Complete Notification
-184288, GTPv2 message matched by APN filter, Forward Relocation Complete Acknowledge
-184289, GTPv2 message matched by APN filter, Forward Access Context Notification
-18428a, GTPv2 message matched by APN filter, Forward Access Context Acknowledge
-18428b, GTPv2 message matched by APN filter, Relocation Cancel Request
-18428c, GTPv2 message matched by APN filter, Relocation Cancel Response
-18428d, GTPv2 message matched by APN filter, Configuration Transfer Tunnel
-18428e, GTPv2 message matched by APN filter, For future use
-184298, GTPv2 message matched by APN filter, RAN Information Relay
-184295, GTPv2 message matched by APN filter, Detach Notification
-184296, GTPv2 message matched by APN filter, Detach Acknowledge
-184297, GTPv2 message matched by APN filter, CS Paging Indication
-184299, GTPv2 message matched by APN filter, Alert MME Notification
-18429a, GTPv2 message matched by APN filter, Alert MME Acknowledge
-18429b, GTPv2 message matched by APN filter, UE Activity Notification
-18429c, GTPv2 message matched by APN filter, UE Activity Acknowledge
-18429d, GTPv2 message matched by APN filter, ISR Status Indication
-18429e, GTPv2 message matched by APN filter, UE Registration Query Request
-18429f, GTPv2 message matched by APN filter, UE Registration Query Response
-1842a2, GTPv2 message matched by APN filter, Suspend Notification
-1842a3, GTPv2 message matched by APN filter, Suspend Acknowledge
-1842a0, GTPv2 message matched by APN filter, Create Forwarding Tunnel Request
-1842a1, GTPv2 message matched by APN filter, Create Forwarding Tunnel Response
-1842a6, GTPv2 message matched by APN filter, Create Indirect Data Forwarding Tunnel Request
-1842a7, GTPv2 message matched by APN filter, Create Indirect Data Forwarding Tunnel Response
-1842a8, GTPv2 message matched by APN filter, Delete Indirect Data Forwarding Tunnel Request
-1842a9, GTPv2 message matched by APN filter, Delete Indirect Data Forwarding Tunnel Response
-1842aa, GTPv2 message matched by APN filter, Release Access Bearers Request
-1842ab, GTPv2 message matched by APN filter, Release Access Bearers Response
-1842ac, GTPv2 message matched by APN filter, For future use
-1842b0, GTPv2 message matched by APN filter, Downlink Data Notification
-1842b1, GTPv2 message matched by APN filter, Downlink Data Notification Acknowledge
-1842b3, GTPv2 message matched by APN filter, PGW Restart Notification
-1842b4, GTPv2 message matched by APN filter, PGW Restart Notification Acknowledge
-1842b2, GTPv2 message matched by APN filter, Reserved. Allocated in earlier version of the specification.
-1842b5, GTPv2 message matched by APN filter, For future use
-1842c8, GTPv2 message matched by APN filter, Update PDN Connection Set Request
-1842c9, GTPv2 message matched by APN filter, Update PDN Connection Set Response
-1842ca, GTPv2 message matched by APN filter, For future use
-1842d3, GTPv2 message matched by APN filter, Modify Access Bearers Request
-1842d4, GTPv2 message matched by APN filter, Modify Access Bearers Response
-1842d5, GTPv2 message matched by APN filter, For future use
-1842e7, GTPv2 message matched by APN filter, MBMS Session Start Request
-1842e8, GTPv2 message matched by APN filter, MBMS Session Start Response
-1842e9, GTPv2 message matched by APN filter, MBMS Session Update Request
-1842ea, GTPv2 message matched by APN filter, MBMS Session Update Response
-1842eb, GTPv2 message matched by APN filter, MBMS Session Stop Request
-1842ec, GTPv2 message matched by APN filter, MBMS Session Stop Response
-1842ed, GTPv2 message matched by APN filter, For future use
-1842f0, GTPv2 message matched by APN filter, Reserved for Sv interface (see also types 25 to 31)
-1842f8, GTPv2 message matched by APN filter, For future use
+184200,GTPv2,GTPv2 message matched by APN filter,,Reserved
+184201,GTPv2,GTPv2 message matched by APN filter,,Echo Request
+184202,GTPv2,GTPv2 message matched by APN filter,,Echo Response
+184203,GTPv2,GTPv2 message matched by APN filter,,Version Not Supported Indication
+184204,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184205,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184206,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184207,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184208,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184209,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420a,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420b,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420c,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420d,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420e,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+18420f,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184210,GTPv2,GTPv2 message matched by APN filter,,Reserved for S101 interface
+184211,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184212,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184213,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184214,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184215,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184216,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184217,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184218,GTPv2,GTPv2 message matched by APN filter,,Reserved for S121 interface
+184219,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421a,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421b,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421c,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421d,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421e,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+18421f,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface
+184220,GTPv2,GTPv2 message matched by APN filter,,Create Session Request
+184221,GTPv2,GTPv2 message matched by APN filter,,Create Session Response
+184224,GTPv2,GTPv2 message matched by APN filter,,Delete Session Request
+184225,GTPv2,GTPv2 message matched by APN filter,,Delete Session Response
+184222,GTPv2,GTPv2 message matched by APN filter,,Modify Bearer Request
+184223,GTPv2,GTPv2 message matched by APN filter,,Modify Bearer Response
+184228,GTPv2,GTPv2 message matched by APN filter,,Remote UE Report Notification
+184229,GTPv2,GTPv2 message matched by APN filter,,Remote UE Report Acknowledge
+184226,GTPv2,GTPv2 message matched by APN filter,,Change Notification Request
+184227,GTPv2,GTPv2 message matched by APN filter,,Change Notification Response
+18422a,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842a4,GTPv2,GTPv2 message matched by APN filter,,Resume Notification
+1842a5,GTPv2,GTPv2 message matched by APN filter,,Resume Acknowledge
+184240,GTPv2,GTPv2 message matched by APN filter,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+184241,GTPv2,GTPv2 message matched by APN filter,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+184242,GTPv2,GTPv2 message matched by APN filter,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+184243,GTPv2,GTPv2 message matched by APN filter,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+184244,GTPv2,GTPv2 message matched by APN filter,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+184245,GTPv2,GTPv2 message matched by APN filter,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+184246,GTPv2,GTPv2 message matched by APN filter,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+184247,GTPv2,GTPv2 message matched by APN filter,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+184248,GTPv2,GTPv2 message matched by APN filter,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+184249,GTPv2,GTPv2 message matched by APN filter,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+18424a,GTPv2,GTPv2 message matched by APN filter,,For future use
+18425f,GTPv2,GTPv2 message matched by APN filter,,Create Bearer Request
+184260,GTPv2,GTPv2 message matched by APN filter,,Create Bearer Response
+184261,GTPv2,GTPv2 message matched by APN filter,,Update Bearer Request
+184262,GTPv2,GTPv2 message matched by APN filter,,Update Bearer Response
+184263,GTPv2,GTPv2 message matched by APN filter,,Delete Bearer Request
+184264,GTPv2,GTPv2 message matched by APN filter,,Delete Bearer Response
+184265,GTPv2,GTPv2 message matched by APN filter,,Delete PDN Connection Set Request
+184266,GTPv2,GTPv2 message matched by APN filter,,Delete PDN Connection Set Response
+184267,GTPv2,GTPv2 message matched by APN filter,,PGW Downlink Triggering Notification
+184268,GTPv2,GTPv2 message matched by APN filter,,PGW Downlink Triggering Acknowledge
+184269,GTPv2,GTPv2 message matched by APN filter,,For future use
+184280,GTPv2,GTPv2 message matched by APN filter,,Identification Request
+184281,GTPv2,GTPv2 message matched by APN filter,,Identification Response
+184282,GTPv2,GTPv2 message matched by APN filter,,Context Request
+184283,GTPv2,GTPv2 message matched by APN filter,,Context Response
+184284,GTPv2,GTPv2 message matched by APN filter,,Context Acknowledge
+184285,GTPv2,GTPv2 message matched by APN filter,,Forward Relocation Request
+184286,GTPv2,GTPv2 message matched by APN filter,,Forward Relocation Response
+184287,GTPv2,GTPv2 message matched by APN filter,,Forward Relocation Complete Notification
+184288,GTPv2,GTPv2 message matched by APN filter,,Forward Relocation Complete Acknowledge
+184289,GTPv2,GTPv2 message matched by APN filter,,Forward Access Context Notification
+18428a,GTPv2,GTPv2 message matched by APN filter,,Forward Access Context Acknowledge
+18428b,GTPv2,GTPv2 message matched by APN filter,,Relocation Cancel Request
+18428c,GTPv2,GTPv2 message matched by APN filter,,Relocation Cancel Response
+18428d,GTPv2,GTPv2 message matched by APN filter,,Configuration Transfer Tunnel
+18428e,GTPv2,GTPv2 message matched by APN filter,,For future use
+184298,GTPv2,GTPv2 message matched by APN filter,,RAN Information Relay
+184295,GTPv2,GTPv2 message matched by APN filter,,Detach Notification
+184296,GTPv2,GTPv2 message matched by APN filter,,Detach Acknowledge
+184297,GTPv2,GTPv2 message matched by APN filter,,CS Paging Indication
+184299,GTPv2,GTPv2 message matched by APN filter,,Alert MME Notification
+18429a,GTPv2,GTPv2 message matched by APN filter,,Alert MME Acknowledge
+18429b,GTPv2,GTPv2 message matched by APN filter,,UE Activity Notification
+18429c,GTPv2,GTPv2 message matched by APN filter,,UE Activity Acknowledge
+18429d,GTPv2,GTPv2 message matched by APN filter,,ISR Status Indication
+18429e,GTPv2,GTPv2 message matched by APN filter,,UE Registration Query Request
+18429f,GTPv2,GTPv2 message matched by APN filter,,UE Registration Query Response
+1842a2,GTPv2,GTPv2 message matched by APN filter,,Suspend Notification
+1842a3,GTPv2,GTPv2 message matched by APN filter,,Suspend Acknowledge
+1842a0,GTPv2,GTPv2 message matched by APN filter,,Create Forwarding Tunnel Request
+1842a1,GTPv2,GTPv2 message matched by APN filter,,Create Forwarding Tunnel Response
+1842a6,GTPv2,GTPv2 message matched by APN filter,,Create Indirect Data Forwarding Tunnel Request
+1842a7,GTPv2,GTPv2 message matched by APN filter,,Create Indirect Data Forwarding Tunnel Response
+1842a8,GTPv2,GTPv2 message matched by APN filter,,Delete Indirect Data Forwarding Tunnel Request
+1842a9,GTPv2,GTPv2 message matched by APN filter,,Delete Indirect Data Forwarding Tunnel Response
+1842aa,GTPv2,GTPv2 message matched by APN filter,,Release Access Bearers Request
+1842ab,GTPv2,GTPv2 message matched by APN filter,,Release Access Bearers Response
+1842ac,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842b0,GTPv2,GTPv2 message matched by APN filter,,Downlink Data Notification
+1842b1,GTPv2,GTPv2 message matched by APN filter,,Downlink Data Notification Acknowledge
+1842b3,GTPv2,GTPv2 message matched by APN filter,,PGW Restart Notification
+1842b4,GTPv2,GTPv2 message matched by APN filter,,PGW Restart Notification Acknowledge
+1842b2,GTPv2,GTPv2 message matched by APN filter,,Reserved. Allocated in earlier version of the specification.
+1842b5,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842c8,GTPv2,GTPv2 message matched by APN filter,,Update PDN Connection Set Request
+1842c9,GTPv2,GTPv2 message matched by APN filter,,Update PDN Connection Set Response
+1842ca,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842d3,GTPv2,GTPv2 message matched by APN filter,,Modify Access Bearers Request
+1842d4,GTPv2,GTPv2 message matched by APN filter,,Modify Access Bearers Response
+1842d5,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842e7,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Start Request
+1842e8,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Start Response
+1842e9,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Update Request
+1842ea,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Update Response
+1842eb,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Stop Request
+1842ec,GTPv2,GTPv2 message matched by APN filter,,MBMS Session Stop Response
+1842ed,GTPv2,GTPv2 message matched by APN filter,,For future use
+1842f0,GTPv2,GTPv2 message matched by APN filter,,Reserved for Sv interface (see also types 25 to 31)
+1842f8,GTPv2,GTPv2 message matched by APN filter,,For future use

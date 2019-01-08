@@ -1,126 +1,126 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-181000, Unknown GTP-U message, Reserved
-181001, Unknown GTP-U message, Echo Request
-181002, Unknown GTP-U message, Echo Response
-181003, Unknown GTP-U message, Version Not Supported Indication
-181004, Unknown GTP-U message, Reserved for S101 interface
-181005, Unknown GTP-U message, Reserved for S101 interface
-181006, Unknown GTP-U message, Reserved for S101 interface
-181007, Unknown GTP-U message, Reserved for S101 interface
-181008, Unknown GTP-U message, Reserved for S101 interface
-181009, Unknown GTP-U message, Reserved for S101 interface
-18100a, Unknown GTP-U message, Reserved for S101 interface
-18100b, Unknown GTP-U message, Reserved for S101 interface
-18100c, Unknown GTP-U message, Reserved for S101 interface
-18100d, Unknown GTP-U message, Reserved for S101 interface
-18100e, Unknown GTP-U message, Reserved for S101 interface
-18100f, Unknown GTP-U message, Reserved for S101 interface
-181010, Unknown GTP-U message, Reserved for S101 interface
-181011, Unknown GTP-U message, Reserved for S121 interface
-181012, Unknown GTP-U message, Reserved for S121 interface
-181013, Unknown GTP-U message, Reserved for S121 interface
-181014, Unknown GTP-U message, Reserved for S121 interface
-181015, Unknown GTP-U message, Reserved for S121 interface
-181016, Unknown GTP-U message, Reserved for S121 interface
-181017, Unknown GTP-U message, Reserved for S121 interface
-181018, Unknown GTP-U message, Reserved for S121 interface
-181019, Unknown GTP-U message, Reserved for Sv interface
-18101a, Unknown GTP-U message, Reserved for Sv interface
-18101b, Unknown GTP-U message, Reserved for Sv interface
-18101c, Unknown GTP-U message, Reserved for Sv interface
-18101d, Unknown GTP-U message, Reserved for Sv interface
-18101e, Unknown GTP-U message, Reserved for Sv interface
-18101f, Unknown GTP-U message, Reserved for Sv interface
-181020, Unknown GTP-U message, Create Session Request
-181021, Unknown GTP-U message, Create Session Response
-181024, Unknown GTP-U message, Delete Session Request
-181025, Unknown GTP-U message, Delete Session Response
-181022, Unknown GTP-U message, Modify Bearer Request
-181023, Unknown GTP-U message, Modify Bearer Response
-181028, Unknown GTP-U message, Remote UE Report Notification
-181029, Unknown GTP-U message, Remote UE Report Acknowledge
-181026, Unknown GTP-U message, Change Notification Request
-181027, Unknown GTP-U message, Change Notification Response
-18102a, Unknown GTP-U message, For future use
-1810a4, Unknown GTP-U message, Resume Notification
-1810a5, Unknown GTP-U message, Resume Acknowledge
-181040, Unknown GTP-U message, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTP-U message, S5/S8, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181041, Unknown GTP-U message, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Unknown GTP-U message, S11/S4, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181042, Unknown GTP-U message, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Unknown GTP-U message, S5/S8)
-181043, Unknown GTP-U message, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Unknown GTP-U message, S11/S4))
-181044, Unknown GTP-U message, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Unknown GTP-U message, S5/S8, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181045, Unknown GTP-U message, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Unknown GTP-U message, S11/S4, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181046, Unknown GTP-U message, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
-181047, Unknown GTP-U message, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTP-U message, S5/S8, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181048, Unknown GTP-U message, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Unknown GTP-U message, S5/S8, Unknown GTP-U message, S2a, Unknown GTP-U message, S2b)
-181049, Unknown GTP-U message, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
-18104a, Unknown GTP-U message, For future use
-18105f, Unknown GTP-U message, Create Bearer Request
-181060, Unknown GTP-U message, Create Bearer Response
-181061, Unknown GTP-U message, Update Bearer Request
-181062, Unknown GTP-U message, Update Bearer Response
-181063, Unknown GTP-U message, Delete Bearer Request
-181064, Unknown GTP-U message, Delete Bearer Response
-181065, Unknown GTP-U message, Delete PDN Connection Set Request
-181066, Unknown GTP-U message, Delete PDN Connection Set Response
-181067, Unknown GTP-U message, PGW Downlink Triggering Notification
-181068, Unknown GTP-U message, PGW Downlink Triggering Acknowledge
-181069, Unknown GTP-U message, For future use
-181080, Unknown GTP-U message, Identification Request
-181081, Unknown GTP-U message, Identification Response
-181082, Unknown GTP-U message, Context Request
-181083, Unknown GTP-U message, Context Response
-181084, Unknown GTP-U message, Context Acknowledge
-181085, Unknown GTP-U message, Forward Relocation Request
-181086, Unknown GTP-U message, Forward Relocation Response
-181087, Unknown GTP-U message, Forward Relocation Complete Notification
-181088, Unknown GTP-U message, Forward Relocation Complete Acknowledge
-181089, Unknown GTP-U message, Forward Access Context Notification
-18108a, Unknown GTP-U message, Forward Access Context Acknowledge
-18108b, Unknown GTP-U message, Relocation Cancel Request
-18108c, Unknown GTP-U message, Relocation Cancel Response
-18108d, Unknown GTP-U message, Configuration Transfer Tunnel
-18108e, Unknown GTP-U message, For future use
-181098, Unknown GTP-U message, RAN Information Relay
-181095, Unknown GTP-U message, Detach Notification
-181096, Unknown GTP-U message, Detach Acknowledge
-181097, Unknown GTP-U message, CS Paging Indication
-181099, Unknown GTP-U message, Alert MME Notification
-18109a, Unknown GTP-U message, Alert MME Acknowledge
-18109b, Unknown GTP-U message, UE Activity Notification
-18109c, Unknown GTP-U message, UE Activity Acknowledge
-18109d, Unknown GTP-U message, ISR Status Indication
-18109e, Unknown GTP-U message, UE Registration Query Request
-18109f, Unknown GTP-U message, UE Registration Query Response
-1810a2, Unknown GTP-U message, Suspend Notification
-1810a3, Unknown GTP-U message, Suspend Acknowledge
-1810a0, Unknown GTP-U message, Create Forwarding Tunnel Request
-1810a1, Unknown GTP-U message, Create Forwarding Tunnel Response
-1810a6, Unknown GTP-U message, Create Indirect Data Forwarding Tunnel Request
-1810a7, Unknown GTP-U message, Create Indirect Data Forwarding Tunnel Response
-1810a8, Unknown GTP-U message, Delete Indirect Data Forwarding Tunnel Request
-1810a9, Unknown GTP-U message, Delete Indirect Data Forwarding Tunnel Response
-1810aa, Unknown GTP-U message, Release Access Bearers Request
-1810ab, Unknown GTP-U message, Release Access Bearers Response
-1810ac, Unknown GTP-U message, For future use
-1810b0, Unknown GTP-U message, Downlink Data Notification
-1810b1, Unknown GTP-U message, Downlink Data Notification Acknowledge
-1810b3, Unknown GTP-U message, PGW Restart Notification
-1810b4, Unknown GTP-U message, PGW Restart Notification Acknowledge
-1810b2, Unknown GTP-U message, Reserved. Allocated in earlier version of the specification.
-1810b5, Unknown GTP-U message, For future use
-1810c8, Unknown GTP-U message, Update PDN Connection Set Request
-1810c9, Unknown GTP-U message, Update PDN Connection Set Response
-1810ca, Unknown GTP-U message, For future use
-1810d3, Unknown GTP-U message, Modify Access Bearers Request
-1810d4, Unknown GTP-U message, Modify Access Bearers Response
-1810d5, Unknown GTP-U message, For future use
-1810e7, Unknown GTP-U message, MBMS Session Start Request
-1810e8, Unknown GTP-U message, MBMS Session Start Response
-1810e9, Unknown GTP-U message, MBMS Session Update Request
-1810ea, Unknown GTP-U message, MBMS Session Update Response
-1810eb, Unknown GTP-U message, MBMS Session Stop Request
-1810ec, Unknown GTP-U message, MBMS Session Stop Response
-1810ed, Unknown GTP-U message, For future use
-1810f0, Unknown GTP-U message, Reserved for Sv interface (see also types 25 to 31)
-1810f8, Unknown GTP-U message, For future use
+181000,NA,Unknown GTP-U message,,Reserved
+181001,NA,Unknown GTP-U message,,Echo Request
+181002,NA,Unknown GTP-U message,,Echo Response
+181003,NA,Unknown GTP-U message,,Version Not Supported Indication
+181004,NA,Unknown GTP-U message,,Reserved for S101 interface
+181005,NA,Unknown GTP-U message,,Reserved for S101 interface
+181006,NA,Unknown GTP-U message,,Reserved for S101 interface
+181007,NA,Unknown GTP-U message,,Reserved for S101 interface
+181008,NA,Unknown GTP-U message,,Reserved for S101 interface
+181009,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100a,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100b,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100c,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100d,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100e,NA,Unknown GTP-U message,,Reserved for S101 interface
+18100f,NA,Unknown GTP-U message,,Reserved for S101 interface
+181010,NA,Unknown GTP-U message,,Reserved for S101 interface
+181011,NA,Unknown GTP-U message,,Reserved for S121 interface
+181012,NA,Unknown GTP-U message,,Reserved for S121 interface
+181013,NA,Unknown GTP-U message,,Reserved for S121 interface
+181014,NA,Unknown GTP-U message,,Reserved for S121 interface
+181015,NA,Unknown GTP-U message,,Reserved for S121 interface
+181016,NA,Unknown GTP-U message,,Reserved for S121 interface
+181017,NA,Unknown GTP-U message,,Reserved for S121 interface
+181018,NA,Unknown GTP-U message,,Reserved for S121 interface
+181019,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101a,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101b,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101c,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101d,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101e,NA,Unknown GTP-U message,,Reserved for Sv interface
+18101f,NA,Unknown GTP-U message,,Reserved for Sv interface
+181020,NA,Unknown GTP-U message,,Create Session Request
+181021,NA,Unknown GTP-U message,,Create Session Response
+181024,NA,Unknown GTP-U message,,Delete Session Request
+181025,NA,Unknown GTP-U message,,Delete Session Response
+181022,NA,Unknown GTP-U message,,Modify Bearer Request
+181023,NA,Unknown GTP-U message,,Modify Bearer Response
+181028,NA,Unknown GTP-U message,,Remote UE Report Notification
+181029,NA,Unknown GTP-U message,,Remote UE Report Acknowledge
+181026,NA,Unknown GTP-U message,,Change Notification Request
+181027,NA,Unknown GTP-U message,,Change Notification Response
+18102a,NA,Unknown GTP-U message,,For future use
+1810a4,NA,Unknown GTP-U message,,Resume Notification
+1810a5,NA,Unknown GTP-U message,,Resume Acknowledge
+181040,NA,Unknown GTP-U message,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+181041,NA,Unknown GTP-U message,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+181042,NA,Unknown GTP-U message,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+181043,NA,Unknown GTP-U message,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+181044,NA,Unknown GTP-U message,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+181045,NA,Unknown GTP-U message,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+181046,NA,Unknown GTP-U message,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+181047,NA,Unknown GTP-U message,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+181048,NA,Unknown GTP-U message,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+181049,NA,Unknown GTP-U message,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+18104a,NA,Unknown GTP-U message,,For future use
+18105f,NA,Unknown GTP-U message,,Create Bearer Request
+181060,NA,Unknown GTP-U message,,Create Bearer Response
+181061,NA,Unknown GTP-U message,,Update Bearer Request
+181062,NA,Unknown GTP-U message,,Update Bearer Response
+181063,NA,Unknown GTP-U message,,Delete Bearer Request
+181064,NA,Unknown GTP-U message,,Delete Bearer Response
+181065,NA,Unknown GTP-U message,,Delete PDN Connection Set Request
+181066,NA,Unknown GTP-U message,,Delete PDN Connection Set Response
+181067,NA,Unknown GTP-U message,,PGW Downlink Triggering Notification
+181068,NA,Unknown GTP-U message,,PGW Downlink Triggering Acknowledge
+181069,NA,Unknown GTP-U message,,For future use
+181080,NA,Unknown GTP-U message,,Identification Request
+181081,NA,Unknown GTP-U message,,Identification Response
+181082,NA,Unknown GTP-U message,,Context Request
+181083,NA,Unknown GTP-U message,,Context Response
+181084,NA,Unknown GTP-U message,,Context Acknowledge
+181085,NA,Unknown GTP-U message,,Forward Relocation Request
+181086,NA,Unknown GTP-U message,,Forward Relocation Response
+181087,NA,Unknown GTP-U message,,Forward Relocation Complete Notification
+181088,NA,Unknown GTP-U message,,Forward Relocation Complete Acknowledge
+181089,NA,Unknown GTP-U message,,Forward Access Context Notification
+18108a,NA,Unknown GTP-U message,,Forward Access Context Acknowledge
+18108b,NA,Unknown GTP-U message,,Relocation Cancel Request
+18108c,NA,Unknown GTP-U message,,Relocation Cancel Response
+18108d,NA,Unknown GTP-U message,,Configuration Transfer Tunnel
+18108e,NA,Unknown GTP-U message,,For future use
+181098,NA,Unknown GTP-U message,,RAN Information Relay
+181095,NA,Unknown GTP-U message,,Detach Notification
+181096,NA,Unknown GTP-U message,,Detach Acknowledge
+181097,NA,Unknown GTP-U message,,CS Paging Indication
+181099,NA,Unknown GTP-U message,,Alert MME Notification
+18109a,NA,Unknown GTP-U message,,Alert MME Acknowledge
+18109b,NA,Unknown GTP-U message,,UE Activity Notification
+18109c,NA,Unknown GTP-U message,,UE Activity Acknowledge
+18109d,NA,Unknown GTP-U message,,ISR Status Indication
+18109e,NA,Unknown GTP-U message,,UE Registration Query Request
+18109f,NA,Unknown GTP-U message,,UE Registration Query Response
+1810a2,NA,Unknown GTP-U message,,Suspend Notification
+1810a3,NA,Unknown GTP-U message,,Suspend Acknowledge
+1810a0,NA,Unknown GTP-U message,,Create Forwarding Tunnel Request
+1810a1,NA,Unknown GTP-U message,,Create Forwarding Tunnel Response
+1810a6,NA,Unknown GTP-U message,,Create Indirect Data Forwarding Tunnel Request
+1810a7,NA,Unknown GTP-U message,,Create Indirect Data Forwarding Tunnel Response
+1810a8,NA,Unknown GTP-U message,,Delete Indirect Data Forwarding Tunnel Request
+1810a9,NA,Unknown GTP-U message,,Delete Indirect Data Forwarding Tunnel Response
+1810aa,NA,Unknown GTP-U message,,Release Access Bearers Request
+1810ab,NA,Unknown GTP-U message,,Release Access Bearers Response
+1810ac,NA,Unknown GTP-U message,,For future use
+1810b0,NA,Unknown GTP-U message,,Downlink Data Notification
+1810b1,NA,Unknown GTP-U message,,Downlink Data Notification Acknowledge
+1810b3,NA,Unknown GTP-U message,,PGW Restart Notification
+1810b4,NA,Unknown GTP-U message,,PGW Restart Notification Acknowledge
+1810b2,NA,Unknown GTP-U message,,Reserved. Allocated in earlier version of the specification.
+1810b5,NA,Unknown GTP-U message,,For future use
+1810c8,NA,Unknown GTP-U message,,Update PDN Connection Set Request
+1810c9,NA,Unknown GTP-U message,,Update PDN Connection Set Response
+1810ca,NA,Unknown GTP-U message,,For future use
+1810d3,NA,Unknown GTP-U message,,Modify Access Bearers Request
+1810d4,NA,Unknown GTP-U message,,Modify Access Bearers Response
+1810d5,NA,Unknown GTP-U message,,For future use
+1810e7,NA,Unknown GTP-U message,,MBMS Session Start Request
+1810e8,NA,Unknown GTP-U message,,MBMS Session Start Response
+1810e9,NA,Unknown GTP-U message,,MBMS Session Update Request
+1810ea,NA,Unknown GTP-U message,,MBMS Session Update Response
+1810eb,NA,Unknown GTP-U message,,MBMS Session Stop Request
+1810ec,NA,Unknown GTP-U message,,MBMS Session Stop Response
+1810ed,NA,Unknown GTP-U message,,For future use
+1810f0,NA,Unknown GTP-U message,,Reserved for Sv interface (see also types 25 to 31)
+1810f8,NA,Unknown GTP-U message,,For future use

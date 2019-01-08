@@ -1,126 +1,126 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-412200, Conflict with another session for GTPv2 message, Reserved
-412201, Conflict with another session for GTPv2 message, Echo Request
-412202, Conflict with another session for GTPv2 message, Echo Response
-412203, Conflict with another session for GTPv2 message, Version Not Supported Indication
-412204, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412205, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412206, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412207, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412208, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412209, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220a, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220b, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220c, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220d, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220e, Conflict with another session for GTPv2 message, Reserved for S101 interface
-41220f, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412210, Conflict with another session for GTPv2 message, Reserved for S101 interface
-412211, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412212, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412213, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412214, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412215, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412216, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412217, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412218, Conflict with another session for GTPv2 message, Reserved for S121 interface
-412219, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221a, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221b, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221c, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221d, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221e, Conflict with another session for GTPv2 message, Reserved for Sv interface
-41221f, Conflict with another session for GTPv2 message, Reserved for Sv interface
-412220, Conflict with another session for GTPv2 message, Create Session Request
-412221, Conflict with another session for GTPv2 message, Create Session Response
-412224, Conflict with another session for GTPv2 message, Delete Session Request
-412225, Conflict with another session for GTPv2 message, Delete Session Response
-412222, Conflict with another session for GTPv2 message, Modify Bearer Request
-412223, Conflict with another session for GTPv2 message, Modify Bearer Response
-412228, Conflict with another session for GTPv2 message, Remote UE Report Notification
-412229, Conflict with another session for GTPv2 message, Remote UE Report Acknowledge
-412226, Conflict with another session for GTPv2 message, Change Notification Request
-412227, Conflict with another session for GTPv2 message, Change Notification Response
-41222a, Conflict with another session for GTPv2 message, For future use
-4122a4, Conflict with another session for GTPv2 message, Resume Notification
-4122a5, Conflict with another session for GTPv2 message, Resume Acknowledge
-412240, Conflict with another session for GTPv2 message, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Conflict with another session for GTPv2 message, S5/S8, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412241, Conflict with another session for GTPv2 message, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Conflict with another session for GTPv2 message, S11/S4, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412242, Conflict with another session for GTPv2 message, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Conflict with another session for GTPv2 message, S5/S8)
-412243, Conflict with another session for GTPv2 message, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Conflict with another session for GTPv2 message, S11/S4))
-412244, Conflict with another session for GTPv2 message, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Conflict with another session for GTPv2 message, S5/S8, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412245, Conflict with another session for GTPv2 message, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Conflict with another session for GTPv2 message, S11/S4, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412246, Conflict with another session for GTPv2 message, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
-412247, Conflict with another session for GTPv2 message, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Conflict with another session for GTPv2 message, S5/S8, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412248, Conflict with another session for GTPv2 message, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Conflict with another session for GTPv2 message, S5/S8, Conflict with another session for GTPv2 message, S2a, Conflict with another session for GTPv2 message, S2b)
-412249, Conflict with another session for GTPv2 message, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
-41224a, Conflict with another session for GTPv2 message, For future use
-41225f, Conflict with another session for GTPv2 message, Create Bearer Request
-412260, Conflict with another session for GTPv2 message, Create Bearer Response
-412261, Conflict with another session for GTPv2 message, Update Bearer Request
-412262, Conflict with another session for GTPv2 message, Update Bearer Response
-412263, Conflict with another session for GTPv2 message, Delete Bearer Request
-412264, Conflict with another session for GTPv2 message, Delete Bearer Response
-412265, Conflict with another session for GTPv2 message, Delete PDN Connection Set Request
-412266, Conflict with another session for GTPv2 message, Delete PDN Connection Set Response
-412267, Conflict with another session for GTPv2 message, PGW Downlink Triggering Notification
-412268, Conflict with another session for GTPv2 message, PGW Downlink Triggering Acknowledge
-412269, Conflict with another session for GTPv2 message, For future use
-412280, Conflict with another session for GTPv2 message, Identification Request
-412281, Conflict with another session for GTPv2 message, Identification Response
-412282, Conflict with another session for GTPv2 message, Context Request
-412283, Conflict with another session for GTPv2 message, Context Response
-412284, Conflict with another session for GTPv2 message, Context Acknowledge
-412285, Conflict with another session for GTPv2 message, Forward Relocation Request
-412286, Conflict with another session for GTPv2 message, Forward Relocation Response
-412287, Conflict with another session for GTPv2 message, Forward Relocation Complete Notification
-412288, Conflict with another session for GTPv2 message, Forward Relocation Complete Acknowledge
-412289, Conflict with another session for GTPv2 message, Forward Access Context Notification
-41228a, Conflict with another session for GTPv2 message, Forward Access Context Acknowledge
-41228b, Conflict with another session for GTPv2 message, Relocation Cancel Request
-41228c, Conflict with another session for GTPv2 message, Relocation Cancel Response
-41228d, Conflict with another session for GTPv2 message, Configuration Transfer Tunnel
-41228e, Conflict with another session for GTPv2 message, For future use
-412298, Conflict with another session for GTPv2 message, RAN Information Relay
-412295, Conflict with another session for GTPv2 message, Detach Notification
-412296, Conflict with another session for GTPv2 message, Detach Acknowledge
-412297, Conflict with another session for GTPv2 message, CS Paging Indication
-412299, Conflict with another session for GTPv2 message, Alert MME Notification
-41229a, Conflict with another session for GTPv2 message, Alert MME Acknowledge
-41229b, Conflict with another session for GTPv2 message, UE Activity Notification
-41229c, Conflict with another session for GTPv2 message, UE Activity Acknowledge
-41229d, Conflict with another session for GTPv2 message, ISR Status Indication
-41229e, Conflict with another session for GTPv2 message, UE Registration Query Request
-41229f, Conflict with another session for GTPv2 message, UE Registration Query Response
-4122a2, Conflict with another session for GTPv2 message, Suspend Notification
-4122a3, Conflict with another session for GTPv2 message, Suspend Acknowledge
-4122a0, Conflict with another session for GTPv2 message, Create Forwarding Tunnel Request
-4122a1, Conflict with another session for GTPv2 message, Create Forwarding Tunnel Response
-4122a6, Conflict with another session for GTPv2 message, Create Indirect Data Forwarding Tunnel Request
-4122a7, Conflict with another session for GTPv2 message, Create Indirect Data Forwarding Tunnel Response
-4122a8, Conflict with another session for GTPv2 message, Delete Indirect Data Forwarding Tunnel Request
-4122a9, Conflict with another session for GTPv2 message, Delete Indirect Data Forwarding Tunnel Response
-4122aa, Conflict with another session for GTPv2 message, Release Access Bearers Request
-4122ab, Conflict with another session for GTPv2 message, Release Access Bearers Response
-4122ac, Conflict with another session for GTPv2 message, For future use
-4122b0, Conflict with another session for GTPv2 message, Downlink Data Notification
-4122b1, Conflict with another session for GTPv2 message, Downlink Data Notification Acknowledge
-4122b3, Conflict with another session for GTPv2 message, PGW Restart Notification
-4122b4, Conflict with another session for GTPv2 message, PGW Restart Notification Acknowledge
-4122b2, Conflict with another session for GTPv2 message, Reserved. Allocated in earlier version of the specification.
-4122b5, Conflict with another session for GTPv2 message, For future use
-4122c8, Conflict with another session for GTPv2 message, Update PDN Connection Set Request
-4122c9, Conflict with another session for GTPv2 message, Update PDN Connection Set Response
-4122ca, Conflict with another session for GTPv2 message, For future use
-4122d3, Conflict with another session for GTPv2 message, Modify Access Bearers Request
-4122d4, Conflict with another session for GTPv2 message, Modify Access Bearers Response
-4122d5, Conflict with another session for GTPv2 message, For future use
-4122e7, Conflict with another session for GTPv2 message, MBMS Session Start Request
-4122e8, Conflict with another session for GTPv2 message, MBMS Session Start Response
-4122e9, Conflict with another session for GTPv2 message, MBMS Session Update Request
-4122ea, Conflict with another session for GTPv2 message, MBMS Session Update Response
-4122eb, Conflict with another session for GTPv2 message, MBMS Session Stop Request
-4122ec, Conflict with another session for GTPv2 message, MBMS Session Stop Response
-4122ed, Conflict with another session for GTPv2 message, For future use
-4122f0, Conflict with another session for GTPv2 message, Reserved for Sv interface (see also types 25 to 31)
-4122f8, Conflict with another session for GTPv2 message, For future use
+412200,GTPv2,Conflict with another session for GTPv2 message,,Reserved
+412201,GTPv2,Conflict with another session for GTPv2 message,,Echo Request
+412202,GTPv2,Conflict with another session for GTPv2 message,,Echo Response
+412203,GTPv2,Conflict with another session for GTPv2 message,,Version Not Supported Indication
+412204,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412205,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412206,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412207,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412208,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412209,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220a,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220b,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220c,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220d,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220e,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+41220f,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412210,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S101 interface
+412211,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412212,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412213,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412214,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412215,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412216,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412217,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412218,GTPv2,Conflict with another session for GTPv2 message,,Reserved for S121 interface
+412219,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221a,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221b,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221c,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221d,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221e,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+41221f,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface
+412220,GTPv2,Conflict with another session for GTPv2 message,,Create Session Request
+412221,GTPv2,Conflict with another session for GTPv2 message,,Create Session Response
+412224,GTPv2,Conflict with another session for GTPv2 message,,Delete Session Request
+412225,GTPv2,Conflict with another session for GTPv2 message,,Delete Session Response
+412222,GTPv2,Conflict with another session for GTPv2 message,,Modify Bearer Request
+412223,GTPv2,Conflict with another session for GTPv2 message,,Modify Bearer Response
+412228,GTPv2,Conflict with another session for GTPv2 message,,Remote UE Report Notification
+412229,GTPv2,Conflict with another session for GTPv2 message,,Remote UE Report Acknowledge
+412226,GTPv2,Conflict with another session for GTPv2 message,,Change Notification Request
+412227,GTPv2,Conflict with another session for GTPv2 message,,Change Notification Response
+41222a,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122a4,GTPv2,Conflict with another session for GTPv2 message,,Resume Notification
+4122a5,GTPv2,Conflict with another session for GTPv2 message,,Resume Acknowledge
+412240,GTPv2,Conflict with another session for GTPv2 message,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+412241,GTPv2,Conflict with another session for GTPv2 message,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+412242,GTPv2,Conflict with another session for GTPv2 message,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+412243,GTPv2,Conflict with another session for GTPv2 message,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+412244,GTPv2,Conflict with another session for GTPv2 message,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+412245,GTPv2,Conflict with another session for GTPv2 message,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+412246,GTPv2,Conflict with another session for GTPv2 message,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+412247,GTPv2,Conflict with another session for GTPv2 message,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+412248,GTPv2,Conflict with another session for GTPv2 message,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+412249,GTPv2,Conflict with another session for GTPv2 message,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+41224a,GTPv2,Conflict with another session for GTPv2 message,,For future use
+41225f,GTPv2,Conflict with another session for GTPv2 message,,Create Bearer Request
+412260,GTPv2,Conflict with another session for GTPv2 message,,Create Bearer Response
+412261,GTPv2,Conflict with another session for GTPv2 message,,Update Bearer Request
+412262,GTPv2,Conflict with another session for GTPv2 message,,Update Bearer Response
+412263,GTPv2,Conflict with another session for GTPv2 message,,Delete Bearer Request
+412264,GTPv2,Conflict with another session for GTPv2 message,,Delete Bearer Response
+412265,GTPv2,Conflict with another session for GTPv2 message,,Delete PDN Connection Set Request
+412266,GTPv2,Conflict with another session for GTPv2 message,,Delete PDN Connection Set Response
+412267,GTPv2,Conflict with another session for GTPv2 message,,PGW Downlink Triggering Notification
+412268,GTPv2,Conflict with another session for GTPv2 message,,PGW Downlink Triggering Acknowledge
+412269,GTPv2,Conflict with another session for GTPv2 message,,For future use
+412280,GTPv2,Conflict with another session for GTPv2 message,,Identification Request
+412281,GTPv2,Conflict with another session for GTPv2 message,,Identification Response
+412282,GTPv2,Conflict with another session for GTPv2 message,,Context Request
+412283,GTPv2,Conflict with another session for GTPv2 message,,Context Response
+412284,GTPv2,Conflict with another session for GTPv2 message,,Context Acknowledge
+412285,GTPv2,Conflict with another session for GTPv2 message,,Forward Relocation Request
+412286,GTPv2,Conflict with another session for GTPv2 message,,Forward Relocation Response
+412287,GTPv2,Conflict with another session for GTPv2 message,,Forward Relocation Complete Notification
+412288,GTPv2,Conflict with another session for GTPv2 message,,Forward Relocation Complete Acknowledge
+412289,GTPv2,Conflict with another session for GTPv2 message,,Forward Access Context Notification
+41228a,GTPv2,Conflict with another session for GTPv2 message,,Forward Access Context Acknowledge
+41228b,GTPv2,Conflict with another session for GTPv2 message,,Relocation Cancel Request
+41228c,GTPv2,Conflict with another session for GTPv2 message,,Relocation Cancel Response
+41228d,GTPv2,Conflict with another session for GTPv2 message,,Configuration Transfer Tunnel
+41228e,GTPv2,Conflict with another session for GTPv2 message,,For future use
+412298,GTPv2,Conflict with another session for GTPv2 message,,RAN Information Relay
+412295,GTPv2,Conflict with another session for GTPv2 message,,Detach Notification
+412296,GTPv2,Conflict with another session for GTPv2 message,,Detach Acknowledge
+412297,GTPv2,Conflict with another session for GTPv2 message,,CS Paging Indication
+412299,GTPv2,Conflict with another session for GTPv2 message,,Alert MME Notification
+41229a,GTPv2,Conflict with another session for GTPv2 message,,Alert MME Acknowledge
+41229b,GTPv2,Conflict with another session for GTPv2 message,,UE Activity Notification
+41229c,GTPv2,Conflict with another session for GTPv2 message,,UE Activity Acknowledge
+41229d,GTPv2,Conflict with another session for GTPv2 message,,ISR Status Indication
+41229e,GTPv2,Conflict with another session for GTPv2 message,,UE Registration Query Request
+41229f,GTPv2,Conflict with another session for GTPv2 message,,UE Registration Query Response
+4122a2,GTPv2,Conflict with another session for GTPv2 message,,Suspend Notification
+4122a3,GTPv2,Conflict with another session for GTPv2 message,,Suspend Acknowledge
+4122a0,GTPv2,Conflict with another session for GTPv2 message,,Create Forwarding Tunnel Request
+4122a1,GTPv2,Conflict with another session for GTPv2 message,,Create Forwarding Tunnel Response
+4122a6,GTPv2,Conflict with another session for GTPv2 message,,Create Indirect Data Forwarding Tunnel Request
+4122a7,GTPv2,Conflict with another session for GTPv2 message,,Create Indirect Data Forwarding Tunnel Response
+4122a8,GTPv2,Conflict with another session for GTPv2 message,,Delete Indirect Data Forwarding Tunnel Request
+4122a9,GTPv2,Conflict with another session for GTPv2 message,,Delete Indirect Data Forwarding Tunnel Response
+4122aa,GTPv2,Conflict with another session for GTPv2 message,,Release Access Bearers Request
+4122ab,GTPv2,Conflict with another session for GTPv2 message,,Release Access Bearers Response
+4122ac,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122b0,GTPv2,Conflict with another session for GTPv2 message,,Downlink Data Notification
+4122b1,GTPv2,Conflict with another session for GTPv2 message,,Downlink Data Notification Acknowledge
+4122b3,GTPv2,Conflict with another session for GTPv2 message,,PGW Restart Notification
+4122b4,GTPv2,Conflict with another session for GTPv2 message,,PGW Restart Notification Acknowledge
+4122b2,GTPv2,Conflict with another session for GTPv2 message,,Reserved. Allocated in earlier version of the specification.
+4122b5,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122c8,GTPv2,Conflict with another session for GTPv2 message,,Update PDN Connection Set Request
+4122c9,GTPv2,Conflict with another session for GTPv2 message,,Update PDN Connection Set Response
+4122ca,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122d3,GTPv2,Conflict with another session for GTPv2 message,,Modify Access Bearers Request
+4122d4,GTPv2,Conflict with another session for GTPv2 message,,Modify Access Bearers Response
+4122d5,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122e7,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Start Request
+4122e8,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Start Response
+4122e9,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Update Request
+4122ea,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Update Response
+4122eb,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Stop Request
+4122ec,GTPv2,Conflict with another session for GTPv2 message,,MBMS Session Stop Response
+4122ed,GTPv2,Conflict with another session for GTPv2 message,,For future use
+4122f0,GTPv2,Conflict with another session for GTPv2 message,,Reserved for Sv interface (see also types 25 to 31)
+4122f8,GTPv2,Conflict with another session for GTPv2 message,,For future use

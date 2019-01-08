@@ -1,126 +1,126 @@
 EventCode,GTPVersion,Description,InformationElement,MessageType
-128200, Out-of-state GTPv2 message, Reserved
-128201, Out-of-state GTPv2 message, Echo Request
-128202, Out-of-state GTPv2 message, Echo Response
-128203, Out-of-state GTPv2 message, Version Not Supported Indication
-128204, Out-of-state GTPv2 message, Reserved for S101 interface
-128205, Out-of-state GTPv2 message, Reserved for S101 interface
-128206, Out-of-state GTPv2 message, Reserved for S101 interface
-128207, Out-of-state GTPv2 message, Reserved for S101 interface
-128208, Out-of-state GTPv2 message, Reserved for S101 interface
-128209, Out-of-state GTPv2 message, Reserved for S101 interface
-12820a, Out-of-state GTPv2 message, Reserved for S101 interface
-12820b, Out-of-state GTPv2 message, Reserved for S101 interface
-12820c, Out-of-state GTPv2 message, Reserved for S101 interface
-12820d, Out-of-state GTPv2 message, Reserved for S101 interface
-12820e, Out-of-state GTPv2 message, Reserved for S101 interface
-12820f, Out-of-state GTPv2 message, Reserved for S101 interface
-128210, Out-of-state GTPv2 message, Reserved for S101 interface
-128211, Out-of-state GTPv2 message, Reserved for S121 interface
-128212, Out-of-state GTPv2 message, Reserved for S121 interface
-128213, Out-of-state GTPv2 message, Reserved for S121 interface
-128214, Out-of-state GTPv2 message, Reserved for S121 interface
-128215, Out-of-state GTPv2 message, Reserved for S121 interface
-128216, Out-of-state GTPv2 message, Reserved for S121 interface
-128217, Out-of-state GTPv2 message, Reserved for S121 interface
-128218, Out-of-state GTPv2 message, Reserved for S121 interface
-128219, Out-of-state GTPv2 message, Reserved for Sv interface
-12821a, Out-of-state GTPv2 message, Reserved for Sv interface
-12821b, Out-of-state GTPv2 message, Reserved for Sv interface
-12821c, Out-of-state GTPv2 message, Reserved for Sv interface
-12821d, Out-of-state GTPv2 message, Reserved for Sv interface
-12821e, Out-of-state GTPv2 message, Reserved for Sv interface
-12821f, Out-of-state GTPv2 message, Reserved for Sv interface
-128220, Out-of-state GTPv2 message, Create Session Request
-128221, Out-of-state GTPv2 message, Create Session Response
-128224, Out-of-state GTPv2 message, Delete Session Request
-128225, Out-of-state GTPv2 message, Delete Session Response
-128222, Out-of-state GTPv2 message, Modify Bearer Request
-128223, Out-of-state GTPv2 message, Modify Bearer Response
-128228, Out-of-state GTPv2 message, Remote UE Report Notification
-128229, Out-of-state GTPv2 message, Remote UE Report Acknowledge
-128226, Out-of-state GTPv2 message, Change Notification Request
-128227, Out-of-state GTPv2 message, Change Notification Response
-12822a, Out-of-state GTPv2 message, For future use
-1282a4, Out-of-state GTPv2 message, Resume Notification
-1282a5, Out-of-state GTPv2 message, Resume Acknowledge
-128240, Out-of-state GTPv2 message, Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Out-of-state GTPv2 message, S5/S8, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128241, Out-of-state GTPv2 message, Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8, Out-of-state GTPv2 message, S11/S4, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128242, Out-of-state GTPv2 message, Delete Bearer Command (MME/SGSN to PGW – S11/S4, Out-of-state GTPv2 message, S5/S8)
-128243, Out-of-state GTPv2 message, Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8, Out-of-state GTPv2 message, S11/S4))
-128244, Out-of-state GTPv2 message, Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4, Out-of-state GTPv2 message, S5/S8, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128245, Out-of-state GTPv2 message, Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8, Out-of-state GTPv2 message, S11/S4, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128246, Out-of-state GTPv2 message, Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
-128247, Out-of-state GTPv2 message, Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Out-of-state GTPv2 message, S5/S8, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128248, Out-of-state GTPv2 message, Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4, Out-of-state GTPv2 message, S5/S8, Out-of-state GTPv2 message, S2a, Out-of-state GTPv2 message, S2b)
-128249, Out-of-state GTPv2 message, Stop Paging Indication (SGW to MME/SGSN – S11/S4)
-12824a, Out-of-state GTPv2 message, For future use
-12825f, Out-of-state GTPv2 message, Create Bearer Request
-128260, Out-of-state GTPv2 message, Create Bearer Response
-128261, Out-of-state GTPv2 message, Update Bearer Request
-128262, Out-of-state GTPv2 message, Update Bearer Response
-128263, Out-of-state GTPv2 message, Delete Bearer Request
-128264, Out-of-state GTPv2 message, Delete Bearer Response
-128265, Out-of-state GTPv2 message, Delete PDN Connection Set Request
-128266, Out-of-state GTPv2 message, Delete PDN Connection Set Response
-128267, Out-of-state GTPv2 message, PGW Downlink Triggering Notification
-128268, Out-of-state GTPv2 message, PGW Downlink Triggering Acknowledge
-128269, Out-of-state GTPv2 message, For future use
-128280, Out-of-state GTPv2 message, Identification Request
-128281, Out-of-state GTPv2 message, Identification Response
-128282, Out-of-state GTPv2 message, Context Request
-128283, Out-of-state GTPv2 message, Context Response
-128284, Out-of-state GTPv2 message, Context Acknowledge
-128285, Out-of-state GTPv2 message, Forward Relocation Request
-128286, Out-of-state GTPv2 message, Forward Relocation Response
-128287, Out-of-state GTPv2 message, Forward Relocation Complete Notification
-128288, Out-of-state GTPv2 message, Forward Relocation Complete Acknowledge
-128289, Out-of-state GTPv2 message, Forward Access Context Notification
-12828a, Out-of-state GTPv2 message, Forward Access Context Acknowledge
-12828b, Out-of-state GTPv2 message, Relocation Cancel Request
-12828c, Out-of-state GTPv2 message, Relocation Cancel Response
-12828d, Out-of-state GTPv2 message, Configuration Transfer Tunnel
-12828e, Out-of-state GTPv2 message, For future use
-128298, Out-of-state GTPv2 message, RAN Information Relay
-128295, Out-of-state GTPv2 message, Detach Notification
-128296, Out-of-state GTPv2 message, Detach Acknowledge
-128297, Out-of-state GTPv2 message, CS Paging Indication
-128299, Out-of-state GTPv2 message, Alert MME Notification
-12829a, Out-of-state GTPv2 message, Alert MME Acknowledge
-12829b, Out-of-state GTPv2 message, UE Activity Notification
-12829c, Out-of-state GTPv2 message, UE Activity Acknowledge
-12829d, Out-of-state GTPv2 message, ISR Status Indication
-12829e, Out-of-state GTPv2 message, UE Registration Query Request
-12829f, Out-of-state GTPv2 message, UE Registration Query Response
-1282a2, Out-of-state GTPv2 message, Suspend Notification
-1282a3, Out-of-state GTPv2 message, Suspend Acknowledge
-1282a0, Out-of-state GTPv2 message, Create Forwarding Tunnel Request
-1282a1, Out-of-state GTPv2 message, Create Forwarding Tunnel Response
-1282a6, Out-of-state GTPv2 message, Create Indirect Data Forwarding Tunnel Request
-1282a7, Out-of-state GTPv2 message, Create Indirect Data Forwarding Tunnel Response
-1282a8, Out-of-state GTPv2 message, Delete Indirect Data Forwarding Tunnel Request
-1282a9, Out-of-state GTPv2 message, Delete Indirect Data Forwarding Tunnel Response
-1282aa, Out-of-state GTPv2 message, Release Access Bearers Request
-1282ab, Out-of-state GTPv2 message, Release Access Bearers Response
-1282ac, Out-of-state GTPv2 message, For future use
-1282b0, Out-of-state GTPv2 message, Downlink Data Notification
-1282b1, Out-of-state GTPv2 message, Downlink Data Notification Acknowledge
-1282b3, Out-of-state GTPv2 message, PGW Restart Notification
-1282b4, Out-of-state GTPv2 message, PGW Restart Notification Acknowledge
-1282b2, Out-of-state GTPv2 message, Reserved. Allocated in earlier version of the specification.
-1282b5, Out-of-state GTPv2 message, For future use
-1282c8, Out-of-state GTPv2 message, Update PDN Connection Set Request
-1282c9, Out-of-state GTPv2 message, Update PDN Connection Set Response
-1282ca, Out-of-state GTPv2 message, For future use
-1282d3, Out-of-state GTPv2 message, Modify Access Bearers Request
-1282d4, Out-of-state GTPv2 message, Modify Access Bearers Response
-1282d5, Out-of-state GTPv2 message, For future use
-1282e7, Out-of-state GTPv2 message, MBMS Session Start Request
-1282e8, Out-of-state GTPv2 message, MBMS Session Start Response
-1282e9, Out-of-state GTPv2 message, MBMS Session Update Request
-1282ea, Out-of-state GTPv2 message, MBMS Session Update Response
-1282eb, Out-of-state GTPv2 message, MBMS Session Stop Request
-1282ec, Out-of-state GTPv2 message, MBMS Session Stop Response
-1282ed, Out-of-state GTPv2 message, For future use
-1282f0, Out-of-state GTPv2 message, Reserved for Sv interface (see also types 25 to 31)
-1282f8, Out-of-state GTPv2 message, For future use
+128200,GTPv2,Out-of-state GTPv2 message,,Reserved
+128201,GTPv2,Out-of-state GTPv2 message,,Echo Request
+128202,GTPv2,Out-of-state GTPv2 message,,Echo Response
+128203,GTPv2,Out-of-state GTPv2 message,,Version Not Supported Indication
+128204,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128205,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128206,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128207,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128208,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128209,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820a,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820b,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820c,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820d,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820e,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+12820f,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128210,GTPv2,Out-of-state GTPv2 message,,Reserved for S101 interface
+128211,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128212,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128213,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128214,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128215,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128216,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128217,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128218,GTPv2,Out-of-state GTPv2 message,,Reserved for S121 interface
+128219,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821a,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821b,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821c,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821d,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821e,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+12821f,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface
+128220,GTPv2,Out-of-state GTPv2 message,,Create Session Request
+128221,GTPv2,Out-of-state GTPv2 message,,Create Session Response
+128224,GTPv2,Out-of-state GTPv2 message,,Delete Session Request
+128225,GTPv2,Out-of-state GTPv2 message,,Delete Session Response
+128222,GTPv2,Out-of-state GTPv2 message,,Modify Bearer Request
+128223,GTPv2,Out-of-state GTPv2 message,,Modify Bearer Response
+128228,GTPv2,Out-of-state GTPv2 message,,Remote UE Report Notification
+128229,GTPv2,Out-of-state GTPv2 message,,Remote UE Report Acknowledge
+128226,GTPv2,Out-of-state GTPv2 message,,Change Notification Request
+128227,GTPv2,Out-of-state GTPv2 message,,Change Notification Response
+12822a,GTPv2,Out-of-state GTPv2 message,,For future use
+1282a4,GTPv2,Out-of-state GTPv2 message,,Resume Notification
+1282a5,GTPv2,Out-of-state GTPv2 message,,Resume Acknowledge
+128240,GTPv2,Out-of-state GTPv2 message,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+128241,GTPv2,Out-of-state GTPv2 message,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+128242,GTPv2,Out-of-state GTPv2 message,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+128243,GTPvw,Out-of-state GTPv2 message,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+128244,GTPv2,Out-of-state GTPv2 message,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+128245,GTPv2,Out-of-state GTPv2 message,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S11/S4-S5/S8-S2a-S2b)
+128246,GTPv2,Out-of-state GTPv2 message,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+128247,GTPv2,Out-of-state GTPv2 message,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+128248,GTPv2,Out-of-state GTPv2 message,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+128249,GTPv2,Out-of-state GTPv2 message,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+12824a,GTPv2,Out-of-state GTPv2 message,,For future use
+12825f,GTPv2,Out-of-state GTPv2 message,,Create Bearer Request
+128260,GTPv2,Out-of-state GTPv2 message,,Create Bearer Response
+128261,GTPv2,Out-of-state GTPv2 message,,Update Bearer Request
+128262,GTPv2,Out-of-state GTPv2 message,,Update Bearer Response
+128263,GTPv2,Out-of-state GTPv2 message,,Delete Bearer Request
+128264,GTPv2,Out-of-state GTPv2 message,,Delete Bearer Response
+128265,GTPv2,Out-of-state GTPv2 message,,Delete PDN Connection Set Request
+128266,GTPv2,Out-of-state GTPv2 message,,Delete PDN Connection Set Response
+128267,GTPv2,Out-of-state GTPv2 message,,PGW Downlink Triggering Notification
+128268,GTPv2,Out-of-state GTPv2 message,,PGW Downlink Triggering Acknowledge
+128269,GTPv2,Out-of-state GTPv2 message,,For future use
+128280,GTPv2,Out-of-state GTPv2 message,,Identification Request
+128281,GTPv2,Out-of-state GTPv2 message,,Identification Response
+128282,GTPv2,Out-of-state GTPv2 message,,Context Request
+128283,GTPv2,Out-of-state GTPv2 message,,Context Response
+128284,GTPv2,Out-of-state GTPv2 message,,Context Acknowledge
+128285,GTPv2,Out-of-state GTPv2 message,,Forward Relocation Request
+128286,GTPv2,Out-of-state GTPv2 message,,Forward Relocation Response
+128287,GTPv2,Out-of-state GTPv2 message,,Forward Relocation Complete Notification
+128288,GTPv2,Out-of-state GTPv2 message,,Forward Relocation Complete Acknowledge
+128289,GTPv2,Out-of-state GTPv2 message,,Forward Access Context Notification
+12828a,GTPv2,Out-of-state GTPv2 message,,Forward Access Context Acknowledge
+12828b,GTPv2,Out-of-state GTPv2 message,,Relocation Cancel Request
+12828c,GTPv2,Out-of-state GTPv2 message,,Relocation Cancel Response
+12828d,GTPv2,Out-of-state GTPv2 message,,Configuration Transfer Tunnel
+12828e,GTPv2,Out-of-state GTPv2 message,,For future use
+128298,GTPv2,Out-of-state GTPv2 message,,RAN Information Relay
+128295,GTPv2,Out-of-state GTPv2 message,,Detach Notification
+128296,GTPv2,Out-of-state GTPv2 message,,Detach Acknowledge
+128297,GTPv2,Out-of-state GTPv2 message,,CS Paging Indication
+128299,GTPv2,Out-of-state GTPv2 message,,Alert MME Notification
+12829a,GTPv2,Out-of-state GTPv2 message,,Alert MME Acknowledge
+12829b,GTPv2,Out-of-state GTPv2 message,,UE Activity Notification
+12829c,GTPv2,Out-of-state GTPv2 message,,UE Activity Acknowledge
+12829d,GTPv2,Out-of-state GTPv2 message,,ISR Status Indication
+12829e,GTPv2,Out-of-state GTPv2 message,,UE Registration Query Request
+12829f,GTPv2,Out-of-state GTPv2 message,,UE Registration Query Response
+1282a2,GTPv2,Out-of-state GTPv2 message,,Suspend Notification
+1282a3,GTPv2,Out-of-state GTPv2 message,,Suspend Acknowledge
+1282a0,GTPv2,Out-of-state GTPv2 message,,Create Forwarding Tunnel Request
+1282a1,GTPv2,Out-of-state GTPv2 message,,Create Forwarding Tunnel Response
+1282a6,GTPv2,Out-of-state GTPv2 message,,Create Indirect Data Forwarding Tunnel Request
+1282a7,GTPv2,Out-of-state GTPv2 message,,Create Indirect Data Forwarding Tunnel Response
+1282a8,GTPv2,Out-of-state GTPv2 message,,Delete Indirect Data Forwarding Tunnel Request
+1282a9,GTPv2,Out-of-state GTPv2 message,,Delete Indirect Data Forwarding Tunnel Response
+1282aa,GTPv2,Out-of-state GTPv2 message,,Release Access Bearers Request
+1282ab,GTPv2,Out-of-state GTPv2 message,,Release Access Bearers Response
+1282ac,GTPv2,Out-of-state GTPv2 message,,For future use
+1282b0,GTPv2,Out-of-state GTPv2 message,,Downlink Data Notification
+1282b1,GTPv2,Out-of-state GTPv2 message,,Downlink Data Notification Acknowledge
+1282b3,GTPv2,Out-of-state GTPv2 message,,PGW Restart Notification
+1282b4,GTPv2,Out-of-state GTPv2 message,,PGW Restart Notification Acknowledge
+1282b2,GTPv2,Out-of-state GTPv2 message,,Reserved. Allocated in earlier version of the specification.
+1282b5,GTPv2,Out-of-state GTPv2 message,,For future use
+1282c8,GTPv2,Out-of-state GTPv2 message,,Update PDN Connection Set Request
+1282c9,GTPv2,Out-of-state GTPv2 message,,Update PDN Connection Set Response
+1282ca,GTPv2,Out-of-state GTPv2 message,,For future use
+1282d3,GTPv2,Out-of-state GTPv2 message,,Modify Access Bearers Request
+1282d4,GTPv2,Out-of-state GTPv2 message,,Modify Access Bearers Response
+1282d5,GTPv2,Out-of-state GTPv2 message,,For future use
+1282e7,GTPv2,Out-of-state GTPv2 message,,MBMS Session Start Request
+1282e8,GTPv2,Out-of-state GTPv2 message,,MBMS Session Start Response
+1282e9,GTPv2,Out-of-state GTPv2 message,,MBMS Session Update Request
+1282ea,GTPv2,Out-of-state GTPv2 message,,MBMS Session Update Response
+1282eb,GTPv2,Out-of-state GTPv2 message,,MBMS Session Stop Request
+1282ec,GTPv2,Out-of-state GTPv2 message,,MBMS Session Stop Response
+1282ed,GTPv2,Out-of-state GTPv2 message,,For future use
+1282f0,GTPv2,Out-of-state GTPv2 message,,Reserved for Sv interface (see also types 25 to 31)
+1282f8,GTPv2,Out-of-state GTPv2 message,,For future use
