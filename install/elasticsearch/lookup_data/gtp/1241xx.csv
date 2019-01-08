@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 124100, Unexpected sequence number in GTPv1 header, For future use. Shall not be sent. If received, Unexpected sequence number in GTPv1 header, shall be treated as an Unknown message.
 124101, Unexpected sequence number in GTPv1 header, Echo Request
 124102, Unexpected sequence number in GTPv1 header, Echo Response

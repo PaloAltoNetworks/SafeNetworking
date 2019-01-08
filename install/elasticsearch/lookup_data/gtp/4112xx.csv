@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 41124a, Run out of resource for GTPv2 message For future use
 41125f, Run out of resource for GTPv2 message Create Bearer Request
 411260, Run out of resource for GTPv2 message Create Bearer Response

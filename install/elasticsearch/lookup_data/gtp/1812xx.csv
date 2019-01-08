@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 181200, Unknown GTPv2-C message, Reserved
 181201, Unknown GTPv2-C message, Echo Request
 181202, Unknown GTPv2-C message, Echo Response

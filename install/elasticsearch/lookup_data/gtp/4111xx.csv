@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 411100, Run out of resource for GTPv1 message, For future use. Shall not be sent. If received, Run out of resource for GTPv1 message, shall be treated as an Unknown message.
 411101, Run out of resource for GTPv1 message, Echo Request
 411102, Run out of resource for GTPv1 message, Echo Response

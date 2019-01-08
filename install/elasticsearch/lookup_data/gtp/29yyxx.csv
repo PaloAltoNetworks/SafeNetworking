@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 290000,GTPv1,Missing mandatory IE in GTPv2 message,Reserved,Reserved
 290001,GTPv1,Missing mandatory IE in GTPv2 message,Reserved,Echo Request
 290002,GTPv1,Missing mandatory IE in GTPv2 message,Reserved,Echo Response

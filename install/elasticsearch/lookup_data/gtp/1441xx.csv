@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 144100, Incorrect reserved field in GTPv1 header, For future use. Shall not be sent. If received, Incorrect reserved field in GTPv1 header, shall be treated as an Unknown message.
 144101, Incorrect reserved field in GTPv1 header, Echo Request
 144102, Incorrect reserved field in GTPv1 header, Echo Response

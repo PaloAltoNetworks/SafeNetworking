@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 184200, GTPv2 message matched by APN filter, Reserved
 184201, GTPv2 message matched by APN filter, Echo Request
 184202, GTPv2 message matched by APN filter, Echo Response

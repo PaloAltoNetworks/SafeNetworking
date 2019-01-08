@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 108100, Tunnel alert limit reached, For future use. Shall not be sent. If received, Tunnel alert limit reached, shall be treated as an Unknown message.
 108101, Tunnel alert limit reached, Echo Request
 108102, Tunnel alert limit reached, Echo Response

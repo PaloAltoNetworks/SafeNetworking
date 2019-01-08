@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 412200, Conflict with another session for GTPv2 message, Reserved
 412201, Conflict with another session for GTPv2 message, Echo Request
 412202, Conflict with another session for GTPv2 message, Echo Response

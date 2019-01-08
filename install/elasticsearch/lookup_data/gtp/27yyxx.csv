@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 270000,GTPv1,Abnormal GTPv2 message length,Reserved,Reserved
 270001,GTPv1,Abnormal GTPv2 message length,Reserved,Echo Request
 270002,GTPv1,Abnormal GTPv2 message length,Reserved,Echo Response

@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 800, Normal GTP messages
 841, GTP session ended with a GTPv1 Delete message
 842, GTP session ended with a GTPv2 Delete message
@@ -7,38 +8,3 @@
 101000, End User IP address spoofed
 101400, GTP-in-GTP
 101800, Overbilling protection in effect
-104zxx, Tunnel block limit reached
-108zxx, Tunnel alert limit reached
-1221xx, Incorrect UDP port in GTPv1 header
-1222xx, Incorrect UDP port in GTPv2 header
-1241xx, Unexpected sequence number in GTPv1 header
-1242xx, Unexpected sequence number in GTPv2 header
-1281xx, Out-of-state GTPv1 message
-1282xx, Out-of-state GTPv2 message
-144zxx, Invalid GTP version
-1441xx, Incorrect reserved field in GTPv1 header
-1442xx, Incorrect reserved field in GTPv2 header
-1810xx, Unknown GTP-U message
-1811xx, Unknown GTPv1-C message
-1812xx, Unknown GTPv2-C message
-1821xx, GTPv1 message matched by RAT filter
-1822xx, GTPv2 message matched by RAT filter
-1841xx, GTPv1 message matched by APN filter
-1842xx, GTPv2 message matched by APN filter
-1881xx, GTPv1 message matched by IMSI-Prefix filter
-1882xx, GTPv2 message matched by IMSI-Prefix filter
-20yyxx, Out of order IEs in GTPv1 message
-21yyxx, Unknown IE in GTPv1 message (unsupported IE type)
-22yyxx, Unknown IE in GTPv2 message (unsupported IE type)
-23yyxx, Invalid IE in GTPv1 message, such as invalid IMSI
-24yyxx, Invalid IE in GTPv2 message, such as invalid IMSI
-26yyxx, Abnormal GTPv1 message length
-27yyxx, Abnormal GTPv2 message length
-28yyxx, Missing mandatory IE in GTPv1 message
-29yyxx, Missing mandatory IE in GTPv2 message
-4111xx, Run out of resource for GTPv1 message
-4112xx, Run out of resource for GTPv2 message
-4121xx, Conflict with another session for GTPv1 message
-4122xx, Conflict with another session for GTPv2 message
-4141xx, Invalid TEID in GTPv1 header (non-existent tunnel)
-4142xx, Invalid TEID in GTPv2 header (non-existent tunnel)

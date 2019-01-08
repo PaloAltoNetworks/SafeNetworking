@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 220000,GTPv1,Unknown IE in GTPv2 message (unsupported IE type),Reserved,Reserved
 220001,GTPv1,Unknown IE in GTPv2 message (unsupported IE type),Reserved,Echo Request
 220002,GTPv1,Unknown IE in GTPv2 message (unsupported IE type),Reserved,Echo Response

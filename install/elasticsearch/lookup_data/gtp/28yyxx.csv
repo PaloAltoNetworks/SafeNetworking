@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 280000,GTPv1,Missing mandatory IE in GTPv1 message,Reserved,For future use. Shall not be sent. If received shall be treated as an Unknown message. shall be treated as an Unknown message.
 280001,GTPv1,Missing mandatory IE in GTPv1 message,Reserved,Echo Request
 280002,GTPv1,Missing mandatory IE in GTPv1 message,Reserved,Echo Response

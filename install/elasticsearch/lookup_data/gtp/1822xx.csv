@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 182200, Out-of-state GTPv2 message, Reserved
 182201, Out-of-state GTPv2 message, Echo Request
 182202, Out-of-state GTPv2 message, Echo Response

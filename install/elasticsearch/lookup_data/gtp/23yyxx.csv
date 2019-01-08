@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 230000,GTPv1,Invalid IE in GTPv1 message such as invalid IMSI,Reserved,For future use. Shall not be sent. If received shall be treated as an Unknown message. shall be treated as an Unknown message.
 230001,GTPv1,Invalid IE in GTPv1 message such as invalid IMSI,Reserved,Echo Request
 230002,GTPv1,Invalid IE in GTPv1 message such as invalid IMSI,Reserved,Echo Response

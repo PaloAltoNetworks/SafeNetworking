@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 122100, Incorrect UDP port in GTPv1 header, For future use. Shall not be sent. If received, Incorrect UDP port in GTPv1 header, shall be treated as an Unknown message.
 122101, Incorrect UDP port in GTPv1 header, Echo Request
 122102, Incorrect UDP port in GTPv1 header, Echo Response

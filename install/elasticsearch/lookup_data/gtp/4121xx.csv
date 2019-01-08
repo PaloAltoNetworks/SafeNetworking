@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 412100, Conflict with another session for GTPv1 message, For future use. Shall not be sent. If received, Conflict with another session for GTPv1 message, shall be treated as an Unknown message.
 412101, Conflict with another session for GTPv1 message, Echo Request
 412102, Conflict with another session for GTPv1 message, Echo Response

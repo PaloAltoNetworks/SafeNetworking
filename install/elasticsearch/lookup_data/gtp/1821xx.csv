@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 182100, GTPv1 message matched by RAT filter, For future use. Shall not be sent. If received, GTPv1 message matched by RAT filter, shall be treated as an Unknown message.
 182101, GTPv1 message matched by RAT filter, Echo Request
 182102, GTPv1 message matched by RAT filter, Echo Response

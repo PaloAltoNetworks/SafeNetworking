@@ -1,0 +1,128 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+104200,Reserved
+104201,Echo Request
+104202,Echo Response
+104203,Version Not Supported Indication
+104204,Reserved for S101 interface
+104205,Reserved for S101 interface
+104206,Reserved for S101 interface
+104207,Reserved for S101 interface
+104208,Reserved for S101 interface
+104209,Reserved for S101 interface
+10420a,Reserved for S101 interface
+10420b,Reserved for S101 interface
+10420c,Reserved for S101 interface
+10420d,Reserved for S101 interface
+10420e,Reserved for S101 interface
+10420f,Reserved for S101 interface
+104210,Reserved for S101 interface
+104211,Reserved for S121 interface
+104212,Reserved for S121 interface
+104213,Reserved for S121 interface
+104214,Reserved for S121 interface
+104215,Reserved for S121 interface
+104216,Reserved for S121 interface
+104217,Reserved for S121 interface
+104218,Reserved for S121 interface
+104219,Reserved for Sv interface
+10421a,Reserved for Sv interface
+10421b,Reserved for Sv interface
+10421c,Reserved for Sv interface
+10421d,Reserved for Sv interface
+10421e,Reserved for Sv interface
+10421f,Reserved for Sv interface
+104220,Create Session Request
+104221,Create Session Response
+104224,Delete Session Request
+104225,Delete Session Response
+104222,Modify Bearer Request
+104223,Modify Bearer Response
+104228,Remote UE Report Notification
+104229,Remote UE Report Acknowledge
+104226,Change Notification Request
+104227,Change Notification Response
+10422a,For future use
+1042a4,Resume Notification
+1042a5,Resume Acknowledge
+104240,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4,S5/S8,S2a,S2b)
+104241,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8,S11/S4,S2a,S2b)
+104242,Delete Bearer Command (MME/SGSN to PGW – S11/S4,S5/S8)
+104243,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8,S11/S4))
+104244,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4,S5/S8,S2a,S2b)
+104245,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8,S11/S4,S2a,S2b)
+104246,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+104247,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4,S5/S8,S2a,S2b)
+104248,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4,S5/S8,S2a,S2b)
+104249,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+10424a,For future use
+10425f,Create Bearer Request
+104260,Create Bearer Response
+104261,Update Bearer Request
+104262,Update Bearer Response
+104263,Delete Bearer Request
+104264,Delete Bearer Response
+104265,Delete PDN Connection Set Request
+104266,Delete PDN Connection Set Response
+104267,PGW Downlink Triggering Notification
+104268,PGW Downlink Triggering Acknowledge
+104269,For future use
+104280,Identification Request
+104281,Identification Response
+104282,Context Request
+104283,Context Response
+104284,Context Acknowledge
+104285,Forward Relocation Request
+104286,Forward Relocation Response
+104287,Forward Relocation Complete Notification
+104288,Forward Relocation Complete Acknowledge
+104289,Forward Access Context Notification
+10428a,Forward Access Context Acknowledge
+10428b,Relocation Cancel Request
+10428c,Relocation Cancel Response
+10428d,Configuration Transfer Tunnel
+10428e,For future use
+104298,RAN Information Relay
+104295,Detach Notification
+104296,Detach Acknowledge
+104297,CS Paging Indication
+104299,Alert MME Notification
+10429a,Alert MME Acknowledge
+10429b,UE Activity Notification
+10429c,UE Activity Acknowledge
+10429d,ISR Status Indication
+10429e,UE Registration Query Request
+10429f,UE Registration Query Response
+1042a2,Suspend Notification
+1042a3,Suspend Acknowledge
+1042a0,Create Forwarding Tunnel Request
+1042a1,Create Forwarding Tunnel Response
+1042a6,Create Indirect Data Forwarding Tunnel Request
+1042a7,Create Indirect Data Forwarding Tunnel Response
+1042a8,Delete Indirect Data Forwarding Tunnel Request
+1042a9,Delete Indirect Data Forwarding Tunnel Response
+1042aa,Release Access Bearers Request
+1042ab,Release Access Bearers Response
+1042ac,For future use
+1042b0,Downlink Data Notification
+1042b1,Downlink Data Notification Acknowledge
+1042b3,PGW Restart Notification
+1042b4,PGW Restart Notification Acknowledge
+1042b2,Reserved. Allocated in earlier version of the specification.
+1042b5,For future use
+1042c8,Update PDN Connection Set Request
+1042c9,Update PDN Connection Set Response
+1042ca,For future use
+1042d3,Modify Access Bearers Request
+1042d4,Modify Access Bearers Response
+1042d5,For future use
+1042e7,MBMS Session Start Request
+1042e8,MBMS Session Start Response
+1042e9,MBMS Session Update Request
+1042ea,MBMS Session Update Response
+1042eb,MBMS Session Stop Request
+1042ec,MBMS Session Stop Response
+1042ed,For future use
+1042f0,Reserved for Sv interface (see also types 25 to 31)
+1042f8,For future use
+
+**************************************************************************************************************

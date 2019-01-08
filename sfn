@@ -7,11 +7,14 @@
  channels to alert external systems that they are, indeed, intact and
  functioning
 """
+import csv
 import time
+import json
 import click
 import requests
 import threading
-from project import app
+from project import app, es
+from elasticsearch import helpers
 from project.dns.runner import processDNS
 from project.dns.dnsutils import updateAfStats
 
@@ -30,11 +33,11 @@ def start():
     """
     Start SafeNetworking 
     Initializes the background procs - DNS, IOT, etc.
-    The starts the flask app so SFN can take advantage of the processing
+    This starts the flask app so SFN can take advantage of the processing
     """
-    app.logger.info(f"INIT - SafeNetworking application initializing with log "
+    app.logger.info(f"INIT - SafeNetworking application initializing with log" +
                     f"level of {app.config['LOG_LEVEL']}")
-    app.logger.info(f"ElasticSearch host is: {app.config['ELASTICSEARCH_HOST']}"
+    app.logger.info(f"ElasticSearch host is: {app.config['ELASTICSEARCH_HOST']}" +
                     f":{app.config['ELASTICSEARCH_PORT']}")
     initBackgroundProcs()
     app.logger.info(f"INIT - Background processes initialized")
@@ -47,6 +50,19 @@ def admin():
     """
     pass
 
+@click.command()
+@click.argument('csvfile')
+@click.argument('index')
+# @click.option('--host', help='Host to send generated log messages to <localhost>', default='localhost')
+# @click.option('--port', help='Host port to connect <5514>', default=5514)
+def load(csvfile,index):
+    """
+    Load csv file into elasticsearch as docs 
+    """
+    with open(csvfile, 'r') as outfile:
+        reader = csv.DictReader(outfile)
+        helpers.bulk(es, reader, index=f"{index}", doc_type="type")
+    
 
 @app.before_first_request
 def activate_job():
@@ -155,10 +171,38 @@ def initBackgroundProcs():
     thread.start()
 
 
+def loadLog(file,index):
+    '''
+    Used with the ES bulkloader utility method to convert and serialize the csv
+    log file to json and loaded into specified index in ES DB
+    
+    Arguments:
+        hashJSON {dict} -- The JSON to be stored in the DB
+    '''
+    csv_rows = []
+    with open(file) as csvfile:
+        reader = csv.DictReader(csvfile)
+        field = reader.fieldnames
+        for row in reader:
+            csv_rows.extend([{field[i]:row[field[i]] for i in range(len(field))}])
+            print(f"{csv_rows}")
+        yield {
+            "_index":f"{index}",
+            "_type":"document",
+            #"_id": f"{hashJSON['hashvalue']}",
+            "_source": json.dumps(csv_rows)
+        }
+            
+            
+
+    
+
+
 from project.views import *
 
 cli.add_command(start)
 cli.add_command(admin)
+cli.add_command(load)
 
 if __name__ == '__main__':
     cli()

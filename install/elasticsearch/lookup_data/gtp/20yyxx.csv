@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 200000,GTPv1,Out of order IEs in GTPv1 message,Reserved,For future use. Shall not be sent. If received shall be treated as an Unknown message. shall be treated as an Unknown message.
 200001,GTPv1,Out of order IEs in GTPv1 message,Reserved,Echo Request
 200002,GTPv1,Out of order IEs in GTPv1 message,Reserved,Echo Response

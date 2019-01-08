@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 144200, Incorrect reserved field in GTPv2 header, Reserved
 144201, Incorrect reserved field in GTPv2 header, Echo Request
 144202, Incorrect reserved field in GTPv2 header, Echo Response

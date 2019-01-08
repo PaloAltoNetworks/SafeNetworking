@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 414200, Invalid TEID in GTPv2 header (non-existent tunnel), Reserved
 414201, Invalid TEID in GTPv2 header (non-existent tunnel), Echo Request
 414202, Invalid TEID in GTPv2 header (non-existent tunnel), Echo Response

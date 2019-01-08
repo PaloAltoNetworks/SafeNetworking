@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 122200, Incorrect UDP port in GTPv2 header, Reserved
 122201, Incorrect UDP port in GTPv2 header, Echo Request
 122202, Incorrect UDP port in GTPv2 header, Echo Response

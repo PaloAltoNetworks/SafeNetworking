@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 188100, GTPv1 message matched by IMSI-Prefix filter, For future use. Shall not be sent. If received, GTPv1 message matched by IMSI-Prefix filter, shall be treated as an Unknown message.
 188101, GTPv1 message matched by IMSI-Prefix filter, Echo Request
 188102, GTPv1 message matched by IMSI-Prefix filter, Echo Response

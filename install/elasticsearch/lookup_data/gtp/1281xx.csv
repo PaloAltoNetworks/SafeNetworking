@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 128100, Out-of-state GTPv1 message, For future use. Shall not be sent. If received, Out-of-state GTPv1 message, shall be treated as an Unknown message.
 128101, Out-of-state GTPv1 message, Echo Request
 128102, Out-of-state GTPv1 message, Echo Response

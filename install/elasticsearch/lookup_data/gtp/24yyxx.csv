@@ -1,3 +1,5 @@
+
+EventCode,GTPVersion,Description,InformationElement,MessageType
 240000,GTPv1,Invalid IE in GTPv2 message such as invalid IMSI,Reserved,Reserved
 240001,GTPv1,Invalid IE in GTPv2 message such as invalid IMSI,Reserved,Echo Request
 240002,GTPv1,Invalid IE in GTPv2 message such as invalid IMSI,Reserved,Echo Response

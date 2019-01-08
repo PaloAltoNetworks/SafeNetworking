@@ -1,3 +1,4 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
 124200, Unexpected sequence number in GTPv2 header, Reserved
 124201, Unexpected sequence number in GTPv2 header, Echo Request
 124202, Unexpected sequence number in GTPv2 header, Echo Response
