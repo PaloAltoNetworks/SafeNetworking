@@ -134,4 +134,3 @@ EventCode,GTPVersion,Description,InformationElement,MessageType
 1241f2,GTPv1,Unexpected sequence number in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
 1241fe,GTPv1,Unexpected sequence number in GTPv1 header,,End Marker
 1241ff,GTPv1,Unexpected sequence number in GTPv1 header,,G-PDU
-************************************************************************************************************

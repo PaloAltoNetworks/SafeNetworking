@@ -124,5 +124,3 @@ EventCode,GTPVersion,Description,InformationElement,MessageType
 1042ed,GTPv2,Tunnel block limit reached,,For future use
 1042f0,GTPv2,Tunnel block limit reached,,Reserved for Sv interface (see also types 25 to 31)
 1042f8,GTPv2,Tunnel block limit reached,,For future use
-
-**************************************************************************************************************

@@ -134,4 +134,3 @@ EventCode,GTPVersion,Description,InformationElement,MessageType
 1221f2,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
 1221fe,GTPv1,Incorrect UDP port in GTPv1 header,,End Marker
 1221ff,GTPv1,Incorrect UDP port in GTPv1 header,,G-PDU
-*********************************************************************************************************
