@@ -1,0 +1,136 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+414100,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414101,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Echo Request
+414102,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Echo Response
+414103,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Version Not Supported
+414104,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Node Alive Request
+414105,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Node Alive Response
+414106,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Redirection Request
+414107,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Redirection Response
+414108,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414109,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41410f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414110,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Create PDP Context Request
+414111,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Create PDP Context Response
+414112,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Update PDP Context Request
+414113,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Update PDP Context Response
+414114,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Delete PDP Context Request
+414115,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Delete PDP Context Response
+414116,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Initiate PDP Context Activation Request
+414117,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Initiate PDP Context Activation Response
+414118,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414119,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41411a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Error Indication
+41411b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,PDU Notification Request
+41411c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,PDU Notification Response
+41411d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,PDU Notification Reject Request
+41411e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,PDU Notification Reject Response
+41411f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Supported Extension Headers Notification
+414120,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Send Routeing Information for GPRS Request
+414121,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Send Routeing Information for GPRS Response
+414122,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Failure Report Request
+414123,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Failure Report Response
+414124,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Note MS GPRS Present Request
+414125,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Note MS GPRS Present Response
+414126,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414127,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414128,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414129,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41412f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414130,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Identification Request
+414131,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Identification Response
+414132,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,SGSN Context Request
+414133,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,SGSN Context Response
+414134,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,SGSN Context Acknowledge
+414135,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward Relocation Request
+414136,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward Relocation Response
+414137,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward Relocation Complete
+414138,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Relocation Cancel Request
+414139,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Relocation Cancel Response
+41413a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward SRNS Context
+41413b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward Relocation Complete Acknowledge
+41413c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Forward SRNS Context Acknowledge
+41413d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,UE Registration Query Request
+41413e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,UE Registration Query Response
+41413f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414140,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414141,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414142,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414143,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414144,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414145,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414146,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,RAN Information Relay
+414147,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414148,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414149,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41414f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414150,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414152,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414153,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414154,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414155,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414156,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414157,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414158,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414159,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41415f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414160,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Notification Request
+414161,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Notification Response
+414162,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Notification Reject Request
+414163,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Notification Reject Response
+414164,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Create MBMS Context Request
+414165,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Create MBMS Context Response
+414166,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Update MBMS Context Request
+414167,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Update MBMS Context Response
+414168,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Delete MBMS Context Request
+414169,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Delete MBMS Context Response
+41416a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41416b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41416c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41416d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41416e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+41416f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+414170,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Registration Request
+414171,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Registration Response
+414172,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS De-Registration Request
+414173,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS De-Registration Response
+414174,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Start Request
+414175,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Start Response
+414176,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Stop Request
+414177,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Stop Response
+414178,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Update Request
+414179,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MBMS Session Update Response
+41417a,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41417b,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41417c,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41417d,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41417e,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+41417f,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message
+414180,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MS Info Change Notification Request
+414181,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,MS Info Change Notification Response
+414182,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+4141f0,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Data Record Transfer Request
+4141f1,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,Data Record Transfer Response
+4141f2,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+4141fe,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,End Marker
+4141ff,GTPv1,Invalid TEID in GTPv1 header (non-existent tunnel),,G-PDU

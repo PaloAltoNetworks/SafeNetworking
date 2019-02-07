@@ -1,0 +1,8 @@
+- pipeline.id: threat
+  path.config: "/etc/logstash/pipelines/threat.conf"
+- pipeline.id: iot
+  path.config: "/etc/logstash/pipelines/iot.conf"
+- pipeline.id: gtp
+  path.config: "/etc/logstash/pipelines/gtp.conf"
+- pipeline.id: customer
+  path.config: "/etc/logstash/pipelines/customer.conf"

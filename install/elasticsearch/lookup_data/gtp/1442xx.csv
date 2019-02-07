@@ -1,0 +1,126 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+144200,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved
+144201,GTPv2,Incorrect reserved field in GTPv2 header,,Echo Request
+144202,GTPv2,Incorrect reserved field in GTPv2 header,,Echo Response
+144203,GTPv2,Incorrect reserved field in GTPv2 header,,Version Not Supported Indication
+144204,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144205,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144206,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144207,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144208,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144209,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420a,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420b,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420c,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420d,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420e,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+14420f,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144210,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S101 interface
+144211,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144212,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144213,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144214,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144215,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144216,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144217,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144218,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for S121 interface
+144219,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421a,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421b,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421c,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421d,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421e,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+14421f,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface
+144220,GTPv2,Incorrect reserved field in GTPv2 header,,Create Session Request
+144221,GTPv2,Incorrect reserved field in GTPv2 header,,Create Session Response
+144224,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Session Request
+144225,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Session Response
+144222,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Bearer Request
+144223,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Bearer Response
+144228,GTPv2,Incorrect reserved field in GTPv2 header,,Remote UE Report Notification
+144229,GTPv2,Incorrect reserved field in GTPv2 header,,Remote UE Report Acknowledge
+144226,GTPv2,Incorrect reserved field in GTPv2 header,,Change Notification Request
+144227,GTPv2,Incorrect reserved field in GTPv2 header,,Change Notification Response
+14422a,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442a4,GTPv2,Incorrect reserved field in GTPv2 header,,Resume Notification
+1442a5,GTPv2,Incorrect reserved field in GTPv2 header,,Resume Acknowledge
+144240,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Bearer Command (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+144241,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Bearer Failure Indication (PGW to MME/SGSN/ TWAN/ePDG – S5/S8-S2a-S2b)
+144242,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Bearer Command (MME/SGSN to PGW – S11/S4-S5/S8)
+144243,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Bearer Failure Indication (PGW to MME/SGSN – S5/S8-S11/S4))
+144244,GTPv2,Incorrect reserved field in GTPv2 header,,Bearer Resource Command (MME/SGSN/TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+144245,GTPv2,Incorrect reserved field in GTPv2 header,,Bearer Resource Failure Indication (PGW to MME/SGSN/TWAN/ePDG – S5/S8-S2a-S2b)
+144246,GTPv2,Incorrect reserved field in GTPv2 header,,Downlink Data Notification Failure Indication (SGSN/MME to SGW – S4/S11)
+144247,GTPv2,Incorrect reserved field in GTPv2 header,,Trace Session Activation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+144248,GTPv2,Incorrect reserved field in GTPv2 header,,Trace Session Deactivation (MME/SGSN/ TWAN/ePDG to PGW – S11/S4-S5/S8-S2a-S2b)
+144249,GTPv2,Incorrect reserved field in GTPv2 header,,Stop Paging Indication (SGW to MME/SGSN – S11/S4)
+14424a,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+14425f,GTPv2,Incorrect reserved field in GTPv2 header,,Create Bearer Request
+144260,GTPv2,Incorrect reserved field in GTPv2 header,,Create Bearer Response
+144261,GTPv2,Incorrect reserved field in GTPv2 header,,Update Bearer Request
+144262,GTPv2,Incorrect reserved field in GTPv2 header,,Update Bearer Response
+144263,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Bearer Request
+144264,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Bearer Response
+144265,GTPv2,Incorrect reserved field in GTPv2 header,,Delete PDN Connection Set Request
+144266,GTPv2,Incorrect reserved field in GTPv2 header,,Delete PDN Connection Set Response
+144267,GTPv2,Incorrect reserved field in GTPv2 header,,PGW Downlink Triggering Notification
+144268,GTPv2,Incorrect reserved field in GTPv2 header,,PGW Downlink Triggering Acknowledge
+144269,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+144280,GTPv2,Incorrect reserved field in GTPv2 header,,Identification Request
+144281,GTPv2,Incorrect reserved field in GTPv2 header,,Identification Response
+144282,GTPv2,Incorrect reserved field in GTPv2 header,,Context Request
+144283,GTPv2,Incorrect reserved field in GTPv2 header,,Context Response
+144284,GTPv2,Incorrect reserved field in GTPv2 header,,Context Acknowledge
+144285,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Relocation Request
+144286,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Relocation Response
+144287,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Relocation Complete Notification
+144288,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Relocation Complete Acknowledge
+144289,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Access Context Notification
+14428a,GTPv2,Incorrect reserved field in GTPv2 header,,Forward Access Context Acknowledge
+14428b,GTPv2,Incorrect reserved field in GTPv2 header,,Relocation Cancel Request
+14428c,GTPv2,Incorrect reserved field in GTPv2 header,,Relocation Cancel Response
+14428d,GTPv2,Incorrect reserved field in GTPv2 header,,Configuration Transfer Tunnel
+14428e,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+144298,GTPv2,Incorrect reserved field in GTPv2 header,,RAN Information Relay
+144295,GTPv2,Incorrect reserved field in GTPv2 header,,Detach Notification
+144296,GTPv2,Incorrect reserved field in GTPv2 header,,Detach Acknowledge
+144297,GTPv2,Incorrect reserved field in GTPv2 header,,CS Paging Indication
+144299,GTPv2,Incorrect reserved field in GTPv2 header,,Alert MME Notification
+14429a,GTPv2,Incorrect reserved field in GTPv2 header,,Alert MME Acknowledge
+14429b,GTPv2,Incorrect reserved field in GTPv2 header,,UE Activity Notification
+14429c,GTPv2,Incorrect reserved field in GTPv2 header,,UE Activity Acknowledge
+14429d,GTPv2,Incorrect reserved field in GTPv2 header,,ISR Status Indication
+14429e,GTPv2,Incorrect reserved field in GTPv2 header,,UE Registration Query Request
+14429f,GTPv2,Incorrect reserved field in GTPv2 header,,UE Registration Query Response
+1442a2,GTPv2,Incorrect reserved field in GTPv2 header,,Suspend Notification
+1442a3,GTPv2,Incorrect reserved field in GTPv2 header,,Suspend Acknowledge
+1442a0,GTPv2,Incorrect reserved field in GTPv2 header,,Create Forwarding Tunnel Request
+1442a1,GTPv2,Incorrect reserved field in GTPv2 header,,Create Forwarding Tunnel Response
+1442a6,GTPv2,Incorrect reserved field in GTPv2 header,,Create Indirect Data Forwarding Tunnel Request
+1442a7,GTPv2,Incorrect reserved field in GTPv2 header,,Create Indirect Data Forwarding Tunnel Response
+1442a8,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Indirect Data Forwarding Tunnel Request
+1442a9,GTPv2,Incorrect reserved field in GTPv2 header,,Delete Indirect Data Forwarding Tunnel Response
+1442aa,GTPv2,Incorrect reserved field in GTPv2 header,,Release Access Bearers Request
+1442ab,GTPv2,Incorrect reserved field in GTPv2 header,,Release Access Bearers Response
+1442ac,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442b0,GTPv2,Incorrect reserved field in GTPv2 header,,Downlink Data Notification
+1442b1,GTPv2,Incorrect reserved field in GTPv2 header,,Downlink Data Notification Acknowledge
+1442b3,GTPv2,Incorrect reserved field in GTPv2 header,,PGW Restart Notification
+1442b4,GTPv2,Incorrect reserved field in GTPv2 header,,PGW Restart Notification Acknowledge
+1442b2,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved. Allocated in earlier version of the specification.
+1442b5,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442c8,GTPv2,Incorrect reserved field in GTPv2 header,,Update PDN Connection Set Request
+1442c9,GTPv2,Incorrect reserved field in GTPv2 header,,Update PDN Connection Set Response
+1442ca,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442d3,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Access Bearers Request
+1442d4,GTPv2,Incorrect reserved field in GTPv2 header,,Modify Access Bearers Response
+1442d5,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442e7,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Start Request
+1442e8,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Start Response
+1442e9,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Update Request
+1442ea,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Update Response
+1442eb,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Stop Request
+1442ec,GTPv2,Incorrect reserved field in GTPv2 header,,MBMS Session Stop Response
+1442ed,GTPv2,Incorrect reserved field in GTPv2 header,,For future use
+1442f0,GTPv2,Incorrect reserved field in GTPv2 header,,Reserved for Sv interface (see also types 25 to 31)
+1442f8,GTPv2,Incorrect reserved field in GTPv2 header,,For future use

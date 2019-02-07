@@ -42,7 +42,7 @@ app = Flask(__name__)
 # ---------- APPLICATION SETTINGS --------------
 #
 # Current version number of SafeNetworking
-app.config['VERSION'] = "v3.4"
+app.config['VERSION'] = "v3.5"
 #
 # When set to True, this slows down the logging by only processing 1 event at a
 # time and allows us to see what is going on if there are bugs
@@ -56,10 +56,9 @@ app.config['SECRET_KEY'] = "\xfd{H\xe5<\x95\xf9\xe3\x96.5\xd1\x01O<!\xd5"
 #
 # Sets the base directory for the application
 app.config['BASE_DIR'] = os.path.abspath(os.path.dirname(__file__))
-print(app.config['BASE_DIR'])
 #
 # Set the number of seconds for multi-threading to wait between processing calls
-app.config['DNS_POOL_TIME'] = 10
+app.config['DNS_POOL_TIME'] = 5
 app.config['URL_POOL_TIME'] = 10
 app.config['AF_POOL_TIME'] = 600
 #
@@ -192,8 +191,7 @@ sfnFormatter = SFNFormatter()
 handler.setLevel(app.config["LOG_LEVEL"])
 handler.setFormatter(sfnFormatter)
 app.logger.addHandler(handler)
-app.logger.info(f"INIT - SafeNetworking application initializing with log level of {app.config['LOG_LEVEL']}")
-app.logger.info(f"ElasticSearch host is: {app.config['ELASTICSEARCH_HOST']}:{app.config['ELASTICSEARCH_PORT']}")
+
 
 # Register blueprints
 from project.views import sfn_blueprint

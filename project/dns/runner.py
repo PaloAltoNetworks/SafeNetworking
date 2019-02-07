@@ -48,27 +48,33 @@ def processDNS():
     # the event and the doc ID for that event.
     for hit in searchResponse.hits:
         entry = dict()
-        domainName = hit['SFN']['domain_name']
-        eventDoc = hit.meta.id
-        eventIndex = hit.meta.index
-        
-        # Check to see if we have a domain doc for it already.  If we do,
-        # add it to be processed first, if not, add it to the AF lookup
-        # queue (secDocIds)
-        domainSearch = Search(index="sfn-domain-details") \
-                        .query("match", name=domainName)
-        if domainSearch.execute():
-            entry['document'] = eventDoc
-            entry['index'] = eventIndex
-            entry['domain_name'] = domainName
-            priDocIds.append(entry)
-            
-        else:
-            entry['document'] = eventDoc
-            entry['index'] = eventIndex
-            entry['domain_name'] = domainName
-            secDocIds.append(entry)
-            app.logger.debug(f"{eventDoc} : {entry}")
+        try:
+            domainName = hit['SFN']['domain_name']
+            eventDoc = hit.meta.id
+            eventIndex = hit.meta.index
+        except Exception as e:
+            app.logger.debug(f"Error - no domain name defined in hit {hit}")    
+            domainName = "INVALID"
+
+        # If we got the exception that the domain name is invalid, just skip it
+        if not (domainName == "INVALID"):
+            # Check to see if we have a domain doc for it already.  If we do,
+            # add it to be processed first, if not, add it to the AF lookup
+            # queue (secDocIds)
+            domainSearch = Search(index="sfn-domain-details") \
+                            .query("match", name=domainName)
+            if domainSearch.execute():
+                entry['document'] = eventDoc
+                entry['index'] = eventIndex
+                entry['domain_name'] = domainName
+                priDocIds.append(entry)
+                
+            else:
+                entry['document'] = eventDoc
+                entry['index'] = eventIndex
+                entry['domain_name'] = domainName
+                secDocIds.append(entry)
+                app.logger.debug(f"{eventDoc} : {entry}")
 
     app.logger.debug(f"priDocIds are {priDocIds}")
     app.logger.debug(f"secDocIds are {secDocIds}")

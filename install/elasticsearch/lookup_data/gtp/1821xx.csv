@@ -1,0 +1,136 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+182100,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182101,GTPv1,GTPv1 message matched by RAT filter,,Echo Request
+182102,GTPv1,GTPv1 message matched by RAT filter,,Echo Response
+182103,GTPv1,GTPv1 message matched by RAT filter,,Version Not Supported
+182104,GTPv1,GTPv1 message matched by RAT filter,,Node Alive Request
+182105,GTPv1,GTPv1 message matched by RAT filter,,Node Alive Response
+182106,GTPv1,GTPv1 message matched by RAT filter,,Redirection Request
+182107,GTPv1,GTPv1 message matched by RAT filter,,Redirection Response
+182108,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182109,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18210f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182110,GTPv1,GTPv1 message matched by RAT filter,,Create PDP Context Request
+182111,GTPv1,GTPv1 message matched by RAT filter,,Create PDP Context Response
+182112,GTPv1,GTPv1 message matched by RAT filter,,Update PDP Context Request
+182113,GTPv1,GTPv1 message matched by RAT filter,,Update PDP Context Response
+182114,GTPv1,GTPv1 message matched by RAT filter,,Delete PDP Context Request
+182115,GTPv1,GTPv1 message matched by RAT filter,,Delete PDP Context Response
+182116,GTPv1,GTPv1 message matched by RAT filter,,Initiate PDP Context Activation Request
+182117,GTPv1,GTPv1 message matched by RAT filter,,Initiate PDP Context Activation Response
+182118,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182119,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18211a,GTPv1,GTPv1 message matched by RAT filter,,Error Indication
+18211b,GTPv1,GTPv1 message matched by RAT filter,,PDU Notification Request
+18211c,GTPv1,GTPv1 message matched by RAT filter,,PDU Notification Response
+18211d,GTPv1,GTPv1 message matched by RAT filter,,PDU Notification Reject Request
+18211e,GTPv1,GTPv1 message matched by RAT filter,,PDU Notification Reject Response
+18211f,GTPv1,GTPv1 message matched by RAT filter,,Supported Extension Headers Notification
+182120,GTPv1,GTPv1 message matched by RAT filter,,Send Routeing Information for GPRS Request
+182121,GTPv1,GTPv1 message matched by RAT filter,,Send Routeing Information for GPRS Response
+182122,GTPv1,GTPv1 message matched by RAT filter,,Failure Report Request
+182123,GTPv1,GTPv1 message matched by RAT filter,,Failure Report Response
+182124,GTPv1,GTPv1 message matched by RAT filter,,Note MS GPRS Present Request
+182125,GTPv1,GTPv1 message matched by RAT filter,,Note MS GPRS Present Response
+182126,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182127,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182128,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182129,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18212f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182130,GTPv1,GTPv1 message matched by RAT filter,,Identification Request
+182131,GTPv1,GTPv1 message matched by RAT filter,,Identification Response
+182132,GTPv1,GTPv1 message matched by RAT filter,,SGSN Context Request
+182133,GTPv1,GTPv1 message matched by RAT filter,,SGSN Context Response
+182134,GTPv1,GTPv1 message matched by RAT filter,,SGSN Context Acknowledge
+182135,GTPv1,GTPv1 message matched by RAT filter,,Forward Relocation Request
+182136,GTPv1,GTPv1 message matched by RAT filter,,Forward Relocation Response
+182137,GTPv1,GTPv1 message matched by RAT filter,,Forward Relocation Complete
+182138,GTPv1,GTPv1 message matched by RAT filter,,Relocation Cancel Request
+182139,GTPv1,GTPv1 message matched by RAT filter,,Relocation Cancel Response
+18213a,GTPv1,GTPv1 message matched by RAT filter,,Forward SRNS Context
+18213b,GTPv1,GTPv1 message matched by RAT filter,,Forward Relocation Complete Acknowledge
+18213c,GTPv1,GTPv1 message matched by RAT filter,,Forward SRNS Context Acknowledge
+18213d,GTPv1,GTPv1 message matched by RAT filter,,UE Registration Query Request
+18213e,GTPv1,GTPv1 message matched by RAT filter,,UE Registration Query Response
+18213f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182140,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182141,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182142,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182143,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182144,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182145,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182146,GTPv1,GTPv1 message matched by RAT filter,,RAN Information Relay
+182147,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182148,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182149,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18214f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182150,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182152,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182153,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182154,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182155,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182156,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182157,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182158,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182159,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18215f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182160,GTPv1,GTPv1 message matched by RAT filter,,MBMS Notification Request
+182161,GTPv1,GTPv1 message matched by RAT filter,,MBMS Notification Response
+182162,GTPv1,GTPv1 message matched by RAT filter,,MBMS Notification Reject Request
+182163,GTPv1,GTPv1 message matched by RAT filter,,MBMS Notification Reject Response
+182164,GTPv1,GTPv1 message matched by RAT filter,,Create MBMS Context Request
+182165,GTPv1,GTPv1 message matched by RAT filter,,Create MBMS Context Response
+182166,GTPv1,GTPv1 message matched by RAT filter,,Update MBMS Context Request
+182167,GTPv1,GTPv1 message matched by RAT filter,,Update MBMS Context Response
+182168,GTPv1,GTPv1 message matched by RAT filter,,Delete MBMS Context Request
+182169,GTPv1,GTPv1 message matched by RAT filter,,Delete MBMS Context Response
+18216a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18216b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18216c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18216d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18216e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+18216f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+182170,GTPv1,GTPv1 message matched by RAT filter,,MBMS Registration Request
+182171,GTPv1,GTPv1 message matched by RAT filter,,MBMS Registration Response
+182172,GTPv1,GTPv1 message matched by RAT filter,,MBMS De-Registration Request
+182173,GTPv1,GTPv1 message matched by RAT filter,,MBMS De-Registration Response
+182174,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Start Request
+182175,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Start Response
+182176,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Stop Request
+182177,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Stop Response
+182178,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Update Request
+182179,GTPv1,GTPv1 message matched by RAT filter,,MBMS Session Update Response
+18217a,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18217b,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18217c,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18217d,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18217e,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+18217f,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+182180,GTPv1,GTPv1 message matched by RAT filter,,MS Info Change Notification Request
+182181,GTPv1,GTPv1 message matched by RAT filter,,MS Info Change Notification Response
+182182,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1821f0,GTPv1,GTPv1 message matched by RAT filter,,Data Record Transfer Request
+1821f1,GTPv1,GTPv1 message matched by RAT filter,,Data Record Transfer Response
+1821f2,GTPv1,GTPv1 message matched by RAT filter,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1821fe,GTPv1,GTPv1 message matched by RAT filter,,End Marker
+1821ff,GTPv1,GTPv1 message matched by RAT filter,,G-PDU

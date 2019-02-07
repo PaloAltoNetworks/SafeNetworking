@@ -87,6 +87,7 @@ celerybeat-schedule
 venv/
 ENV/
 env/
+sfn-env/
 
 # Spyder project settings
 .spyderproject
@@ -105,11 +106,12 @@ env/
 .vscode
 
 # Safe-networking project specific
-scratch
+scratch/
 instance/.panrc
 project/.panrc
 .panrc
 install/sfn/sfn.sh
+install/elasticsearch/config/elasticsearch.yml
 project/utils/udc*
 
 # Node + npm Stuff

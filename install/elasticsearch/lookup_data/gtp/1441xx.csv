@@ -1,0 +1,136 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+144100,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144101,GTPv1,Incorrect reserved field in GTPv1 header,,Echo Request
+144102,GTPv1,Incorrect reserved field in GTPv1 header,,Echo Response
+144103,GTPv1,Incorrect reserved field in GTPv1 header,,Version Not Supported
+144104,GTPv1,Incorrect reserved field in GTPv1 header,,Node Alive Request
+144105,GTPv1,Incorrect reserved field in GTPv1 header,,Node Alive Response
+144106,GTPv1,Incorrect reserved field in GTPv1 header,,Redirection Request
+144107,GTPv1,Incorrect reserved field in GTPv1 header,,Redirection Response
+144108,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144109,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14410f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144110,GTPv1,Incorrect reserved field in GTPv1 header,,Create PDP Context Request
+144111,GTPv1,Incorrect reserved field in GTPv1 header,,Create PDP Context Response
+144112,GTPv1,Incorrect reserved field in GTPv1 header,,Update PDP Context Request
+144113,GTPv1,Incorrect reserved field in GTPv1 header,,Update PDP Context Response
+144114,GTPv1,Incorrect reserved field in GTPv1 header,,Delete PDP Context Request
+144115,GTPv1,Incorrect reserved field in GTPv1 header,,Delete PDP Context Response
+144116,GTPv1,Incorrect reserved field in GTPv1 header,,Initiate PDP Context Activation Request
+144117,GTPv1,Incorrect reserved field in GTPv1 header,,Initiate PDP Context Activation Response
+144118,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144119,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14411a,GTPv1,Incorrect reserved field in GTPv1 header,,Error Indication
+14411b,GTPv1,Incorrect reserved field in GTPv1 header,,PDU Notification Request
+14411c,GTPv1,Incorrect reserved field in GTPv1 header,,PDU Notification Response
+14411d,GTPv1,Incorrect reserved field in GTPv1 header,,PDU Notification Reject Request
+14411e,GTPv1,Incorrect reserved field in GTPv1 header,,PDU Notification Reject Response
+14411f,GTPv1,Incorrect reserved field in GTPv1 header,,Supported Extension Headers Notification
+144120,GTPv1,Incorrect reserved field in GTPv1 header,,Send Routeing Information for GPRS Request
+144141,GTPv1,Incorrect reserved field in GTPv1 header,,Send Routeing Information for GPRS Response
+144122,GTPv1,Incorrect reserved field in GTPv1 header,,Failure Report Request
+144123,GTPv1,Incorrect reserved field in GTPv1 header,,Failure Report Response
+144124,GTPv1,Incorrect reserved field in GTPv1 header,,Note MS GPRS Present Request
+144125,GTPv1,Incorrect reserved field in GTPv1 header,,Note MS GPRS Present Response
+144126,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144127,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144128,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144129,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14412f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144130,GTPv1,Incorrect reserved field in GTPv1 header,,Identification Request
+144131,GTPv1,Incorrect reserved field in GTPv1 header,,Identification Response
+144132,GTPv1,Incorrect reserved field in GTPv1 header,,SGSN Context Request
+144133,GTPv1,Incorrect reserved field in GTPv1 header,,SGSN Context Response
+144134,GTPv1,Incorrect reserved field in GTPv1 header,,SGSN Context Acknowledge
+144135,GTPv1,Incorrect reserved field in GTPv1 header,,Forward Relocation Request
+144136,GTPv1,Incorrect reserved field in GTPv1 header,,Forward Relocation Response
+144137,GTPv1,Incorrect reserved field in GTPv1 header,,Forward Relocation Complete
+144138,GTPv1,Incorrect reserved field in GTPv1 header,,Relocation Cancel Request
+144139,GTPv1,Incorrect reserved field in GTPv1 header,,Relocation Cancel Response
+14413a,GTPv1,Incorrect reserved field in GTPv1 header,,Forward SRNS Context
+14413b,GTPv1,Incorrect reserved field in GTPv1 header,,Forward Relocation Complete Acknowledge
+14413c,GTPv1,Incorrect reserved field in GTPv1 header,,Forward SRNS Context Acknowledge
+14413d,GTPv1,Incorrect reserved field in GTPv1 header,,UE Registration Query Request
+14413e,GTPv1,Incorrect reserved field in GTPv1 header,,UE Registration Query Response
+14413f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144140,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144141,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144142,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144143,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144144,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144145,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144146,GTPv1,Incorrect reserved field in GTPv1 header,,RAN Information Relay
+144147,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144148,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144149,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14414f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144150,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144152,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144153,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144154,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144155,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144156,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144157,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144158,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144159,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14415f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144160,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Notification Request
+144161,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Notification Response
+144162,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Notification Reject Request
+144163,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Notification Reject Response
+144164,GTPv1,Incorrect reserved field in GTPv1 header,,Create MBMS Context Request
+144165,GTPv1,Incorrect reserved field in GTPv1 header,,Create MBMS Context Response
+144166,GTPv1,Incorrect reserved field in GTPv1 header,,Update MBMS Context Request
+144167,GTPv1,Incorrect reserved field in GTPv1 header,,Update MBMS Context Response
+144168,GTPv1,Incorrect reserved field in GTPv1 header,,Delete MBMS Context Request
+144169,GTPv1,Incorrect reserved field in GTPv1 header,,Delete MBMS Context Response
+14416a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14416b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14416c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14416d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14416e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+14416f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+144170,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Registration Request
+144171,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Registration Response
+144172,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS De-Registration Request
+144173,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS De-Registration Response
+144174,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Start Request
+144175,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Start Response
+144176,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Stop Request
+144177,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Stop Response
+144178,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Update Request
+144179,GTPv1,Incorrect reserved field in GTPv1 header,,MBMS Session Update Response
+14417a,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+14417b,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+14417c,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+14417d,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+14417e,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+14417f,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+144180,GTPv1,Incorrect reserved field in GTPv1 header,,MS Info Change Notification Request
+144181,GTPv1,Incorrect reserved field in GTPv1 header,,MS Info Change Notification Response
+144182,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1441f0,GTPv1,Incorrect reserved field in GTPv1 header,,Data Record Transfer Request
+1441f1,GTPv1,Incorrect reserved field in GTPv1 header,,Data Record Transfer Response
+1441f2,GTPv1,Incorrect reserved field in GTPv1 header,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1441fe,GTPv1,Incorrect reserved field in GTPv1 header,,End Marker
+1441ff,GTPv1,Incorrect reserved field in GTPv1 header,,G-PDU

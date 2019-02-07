@@ -1,0 +1,136 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+122100,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122101,GTPv1,Incorrect UDP port in GTPv1 header,,Echo Request
+122102,GTPv1,Incorrect UDP port in GTPv1 header,,Echo Response
+122103,GTPv1,Incorrect UDP port in GTPv1 header,,Version Not Supported
+122104,GTPv1,Incorrect UDP port in GTPv1 header,,Node Alive Request
+122105,GTPv1,Incorrect UDP port in GTPv1 header,,Node Alive Response
+122106,GTPv1,Incorrect UDP port in GTPv1 header,,Redirection Request
+122107,GTPv1,Incorrect UDP port in GTPv1 header,,Redirection Response
+122108,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122109,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12210f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122110,GTPv1,Incorrect UDP port in GTPv1 header,,Create PDP Context Request
+122111,GTPv1,Incorrect UDP port in GTPv1 header,,Create PDP Context Response
+122112,GTPv1,Incorrect UDP port in GTPv1 header,,Update PDP Context Request
+122113,GTPv1,Incorrect UDP port in GTPv1 header,,Update PDP Context Response
+122114,GTPv1,Incorrect UDP port in GTPv1 header,,Delete PDP Context Request
+122115,GTPv1,Incorrect UDP port in GTPv1 header,,Delete PDP Context Response
+122116,GTPv1,Incorrect UDP port in GTPv1 header,,Initiate PDP Context Activation Request
+122117,GTPv1,Incorrect UDP port in GTPv1 header,,Initiate PDP Context Activation Response
+122118,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122119,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12211a,GTPv1,Incorrect UDP port in GTPv1 header,,Error Indication
+12211b,GTPv1,Incorrect UDP port in GTPv1 header,,PDU Notification Request
+12211c,GTPv1,Incorrect UDP port in GTPv1 header,,PDU Notification Response
+12211d,GTPv1,Incorrect UDP port in GTPv1 header,,PDU Notification Reject Request
+12211e,GTPv1,Incorrect UDP port in GTPv1 header,,PDU Notification Reject Response
+12211f,GTPv1,Incorrect UDP port in GTPv1 header,,Supported Extension Headers Notification
+122120,GTPv1,Incorrect UDP port in GTPv1 header,,Send Routeing Information for GPRS Request
+122121,GTPv1,Incorrect UDP port in GTPv1 header,,Send Routeing Information for GPRS Response
+122122,GTPv1,Incorrect UDP port in GTPv1 header,,Failure Report Request
+122123,GTPv1,Incorrect UDP port in GTPv1 header,,Failure Report Response
+122124,GTPv1,Incorrect UDP port in GTPv1 header,,Note MS GPRS Present Request
+122125,GTPv1,Incorrect UDP port in GTPv1 header,,Note MS GPRS Present Response
+122126,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122127,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122128,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122129,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12212f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122130,GTPv1,Incorrect UDP port in GTPv1 header,,Identification Request
+122131,GTPv1,Incorrect UDP port in GTPv1 header,,Identification Response
+122132,GTPv1,Incorrect UDP port in GTPv1 header,,SGSN Context Request
+122133,GTPv1,Incorrect UDP port in GTPv1 header,,SGSN Context Response
+122134,GTPv1,Incorrect UDP port in GTPv1 header,,SGSN Context Acknowledge
+122135,GTPv1,Incorrect UDP port in GTPv1 header,,Forward Relocation Request
+122136,GTPv1,Incorrect UDP port in GTPv1 header,,Forward Relocation Response
+122137,GTPv1,Incorrect UDP port in GTPv1 header,,Forward Relocation Complete
+122138,GTPv1,Incorrect UDP port in GTPv1 header,,Relocation Cancel Request
+122139,GTPv1,Incorrect UDP port in GTPv1 header,,Relocation Cancel Response
+12213a,GTPv1,Incorrect UDP port in GTPv1 header,,Forward SRNS Context
+12213b,GTPv1,Incorrect UDP port in GTPv1 header,,Forward Relocation Complete Acknowledge
+12213c,GTPv1,Incorrect UDP port in GTPv1 header,,Forward SRNS Context Acknowledge
+12213d,GTPv1,Incorrect UDP port in GTPv1 header,,UE Registration Query Request
+12213e,GTPv1,Incorrect UDP port in GTPv1 header,,UE Registration Query Response
+12213f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122140,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122141,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122142,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122143,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122144,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122145,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122146,GTPv1,Incorrect UDP port in GTPv1 header,,RAN Information Relay
+122147,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122148,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122149,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12214f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122150,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122152,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122153,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122154,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122155,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122156,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122157,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122158,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122159,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12215f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122160,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Notification Request
+122161,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Notification Response
+122162,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Notification Reject Request
+122163,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Notification Reject Response
+122164,GTPv1,Incorrect UDP port in GTPv1 header,,Create MBMS Context Request
+122165,GTPv1,Incorrect UDP port in GTPv1 header,,Create MBMS Context Response
+122166,GTPv1,Incorrect UDP port in GTPv1 header,,Update MBMS Context Request
+122167,GTPv1,Incorrect UDP port in GTPv1 header,,Update MBMS Context Response
+122168,GTPv1,Incorrect UDP port in GTPv1 header,,Delete MBMS Context Request
+122169,GTPv1,Incorrect UDP port in GTPv1 header,,Delete MBMS Context Response
+12216a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12216b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12216c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12216d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12216e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+12216f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+122170,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Registration Request
+122171,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Registration Response
+122172,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS De-Registration Request
+122173,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS De-Registration Response
+122174,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Start Request
+122175,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Start Response
+122176,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Stop Request
+122177,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Stop Response
+122178,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Update Request
+122179,GTPv1,Incorrect UDP port in GTPv1 header,,MBMS Session Update Response
+12217a,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+12217b,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+12217c,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+12217d,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+12217e,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+12217f,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message
+122180,GTPv1,Incorrect UDP port in GTPv1 header,,MS Info Change Notification Request
+122181,GTPv1,Incorrect UDP port in GTPv1 header,,MS Info Change Notification Response
+122182,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+1221f0,GTPv1,Incorrect UDP port in GTPv1 header,,Data Record Transfer Request
+1221f1,GTPv1,Incorrect UDP port in GTPv1 header,,Data Record Transfer Response
+1221f2,GTPv1,Incorrect UDP port in GTPv1 header,,For future use. Shall not be sent. Ifreceived shall be treated as an Unknown message.
+1221fe,GTPv1,Incorrect UDP port in GTPv1 header,,End Marker
+1221ff,GTPv1,Incorrect UDP port in GTPv1 header,,G-PDU

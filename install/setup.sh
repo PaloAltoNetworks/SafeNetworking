@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
+# Figure out who we are so we write the correct paths
+userName=$(echo $SUDO_USER)
+userHome=$(eval echo "~$userName" )
+printf "\n>>> $(tput setaf 3)Setting up for user $userName in $userHome directory $(tput sgr 0)\n"
 ################################################################################
 #                          SYSTEM SETUP
 ################################################################################
 # Create backup directory and make world writeable so elasticsearch can use it.
-install -d -m 0777 -o pan -g pan /home/pan/es_backup
+if [ ! -d "$userHome/es_backup" ]; then
+  install -d -m 0777 -o $userName -g $(id -gn $userName) $userHome/es_backup
+fi
 
 ################################################################################
 #                           ELASTICSTACK SETUP
@@ -12,19 +18,28 @@ install -d -m 0777 -o pan -g pan /home/pan/es_backup
 #                       ELASTICSEARCH SETUP
 #
 # Copy over the config files that are needed for SFN to work in a PoC env
+# First thing we do is 
 printf "\n>>> $(tput setaf 6)Backing up elasticsearch config files$(tput sgr 0)"
-cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.orig
-cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.orig
+find ./elasticsearch/config/elasticsearch_template.yml -exec sed "s#_USER_HOME_#$userHome#g" {} \; > ./elasticsearch/config/elasticsearch.yml 
+cp /etc/elasticsearch/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml.$(date +%F_%R)
+cp /etc/elasticsearch/jvm.options /etc/elasticsearch/jvm.options.$(date +%F_%R)
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new elasticsearch config files$(tput sgr 0)"
 cp ./elasticsearch/config/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 cp ./elasticsearch/config/jvm.options /etc/elasticsearch/jvm.options
 printf " - COMPLETE\n"
-printf ">>> $(tput setaf 6)Installing logstash config files$(tput sgr 0)"
-cp ./logstash/pan-sfn.conf /etc/logstash/conf.d/pan-sfn.conf
+printf ">>> $(tput setaf 6)Installing logstash pipelines and config files$(tput sgr 0)"
+if [ ! -d "/etc/logstash/pipelines" ]; then
+    install -d -m 0777 -o $userName -g $(id -gn $userName) /etc/logstash/pipelines 
+fi
+cp ./logstash/*.conf /etc/logstash/pipelines/
+cp /etc/logstash/pipelines.yml /etc/logstash/pipelines.yml.$(date +%F_%R)
+cp ./logstash/pipelines.yml /etc/logstash/pipelines.yml
+cp /etc/logstash/logstash.yml /etc/logstash/logstash.yml.$(date +%F_%R)
+cp ./logstash/logstash.yml /etc/logstash/logstash.yml
 printf " - COMPLETE\n"
 printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
-cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.orig
+cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.$(date +%F_%R)
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
 cp ./kibana/kibana.yml /etc/kibana/kibana.yml

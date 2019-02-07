@@ -1,0 +1,136 @@
+EventCode,GTPVersion,Description,InformationElement,MessageType
+104100,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104101,GTPv1,Tunnel block limit reached,,Echo Request
+104102,GTPv1,Tunnel block limit reached,,Echo Response
+104103,GTPv1,Tunnel block limit reached,,Version Not Supported
+104104,GTPv1,Tunnel block limit reached,,Node Alive Request
+104105,GTPv1,Tunnel block limit reached,,Node Alive Response
+104106,GTPv1,Tunnel block limit reached,,Redirection Request
+104107,GTPv1,Tunnel block limit reached,,Redirection Response
+104108,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104109,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10410f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104110,GTPv1,Tunnel block limit reached,,Create PDP Context Request
+104111,GTPv1,Tunnel block limit reached,,Create PDP Context Response
+104112,GTPv1,Tunnel block limit reached,,Update PDP Context Request
+104113,GTPv1,Tunnel block limit reached,,Update PDP Context Response
+104114,GTPv1,Tunnel block limit reached,,Delete PDP Context Request
+104115,GTPv1,Tunnel block limit reached,,Delete PDP Context Response
+104116,GTPv1,Tunnel block limit reached,,Initiate PDP Context Activation Request
+104117,GTPv1,Tunnel block limit reached,,Initiate PDP Context Activation Response
+104118,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104119,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10411a,GTPv1,Tunnel block limit reached,,Error Indication
+10411b,GTPv1,Tunnel block limit reached,,PDU Notification Request
+10411c,GTPv1,Tunnel block limit reached,,PDU Notification Response
+10411d,GTPv1,Tunnel block limit reached,,PDU Notification Reject Request
+10411e,GTPv1,Tunnel block limit reached,,PDU Notification Reject Response
+10411f,GTPv1,Tunnel block limit reached,,Supported Extension Headers Notification
+104120,GTPv1,Tunnel block limit reached,,Send Routeing Information for GPRS Request
+104141,GTPv1,Tunnel block limit reached,,Send Routeing Information for GPRS Response
+104122,GTPv1,Tunnel block limit reached,,Failure Report Request
+104123,GTPv1,Tunnel block limit reached,,Failure Report Response
+104124,GTPv1,Tunnel block limit reached,,Note MS GPRS Present Request
+104125,GTPv1,Tunnel block limit reached,,Note MS GPRS Present Response
+104126,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104127,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104128,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104129,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10412f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104130,GTPv1,Tunnel block limit reached,,Identification Request
+104131,GTPv1,Tunnel block limit reached,,Identification Response
+104132,GTPv1,Tunnel block limit reached,,SGSN Context Request
+104133,GTPv1,Tunnel block limit reached,,SGSN Context Response
+104134,GTPv1,Tunnel block limit reached,,SGSN Context Acknowledge
+104135,GTPv1,Tunnel block limit reached,,Forward Relocation Request
+104136,GTPv1,Tunnel block limit reached,,Forward Relocation Response
+104137,GTPv1,Tunnel block limit reached,,Forward Relocation Complete
+104138,GTPv1,Tunnel block limit reached,,Relocation Cancel Request
+104139,GTPv1,Tunnel block limit reached,,Relocation Cancel Response
+10413a,GTPv1,Tunnel block limit reached,,Forward SRNS Context
+10413b,GTPv1,Tunnel block limit reached,,Forward Relocation Complete Acknowledge
+10413c,GTPv1,Tunnel block limit reached,,Forward SRNS Context Acknowledge
+10413d,GTPv1,Tunnel block limit reached,,UE Registration Query Request
+10413e,GTPv1,Tunnel block limit reached,,UE Registration Query Response
+10413f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104140,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104141,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104142,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104143,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104144,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104145,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104146,GTPv1,Tunnel block limit reached,,RAN Information Relay
+104147,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104148,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104149,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10414f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104150,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104152,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104153,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104154,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104155,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104156,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104157,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104158,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104159,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10415f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104160,GTPv1,Tunnel block limit reached,,MBMS Notification Request
+104161,GTPv1,Tunnel block limit reached,,MBMS Notification Response
+104162,GTPv1,Tunnel block limit reached,,MBMS Notification Reject Request
+104163,GTPv1,Tunnel block limit reached,,MBMS Notification Reject Response
+104164,GTPv1,Tunnel block limit reached,,Create MBMS Context Request
+104165,GTPv1,Tunnel block limit reached,,Create MBMS Context Response
+104166,GTPv1,Tunnel block limit reached,,Update MBMS Context Request
+104167,GTPv1,Tunnel block limit reached,,Update MBMS Context Response
+104168,GTPv1,Tunnel block limit reached,,Delete MBMS Context Request
+104169,GTPv1,Tunnel block limit reached,,Delete MBMS Context Response
+10416a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10416b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10416c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10416d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10416e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+10416f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+104170,GTPv1,Tunnel block limit reached,,MBMS Registration Request
+104171,GTPv1,Tunnel block limit reached,,MBMS Registration Response
+104172,GTPv1,Tunnel block limit reached,,MBMS De-Registration Request
+104173,GTPv1,Tunnel block limit reached,,MBMS De-Registration Response
+104174,GTPv1,Tunnel block limit reached,,MBMS Session Start Request
+104175,GTPv1,Tunnel block limit reached,,MBMS Session Start Response
+104176,GTPv1,Tunnel block limit reached,,MBMS Session Stop Request
+104177,GTPv1,Tunnel block limit reached,,MBMS Session Stop Response
+104178,GTPv1,Tunnel block limit reached,,MBMS Session Update Request
+104179,GTPv1,Tunnel block limit reached,,MBMS Session Update Response
+10417a,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+10417b,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+10417c,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+10417d,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+10417e,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+10417f,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message
+104180,GTPv1,Tunnel block limit reached,,MS Info Change Notification Request
+104181,GTPv1,Tunnel block limit reached,,MS Info Change Notification Response
+104182,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1041f0,GTPv1,Tunnel block limit reached,,Data Record Transfer Request
+1041f1,GTPv1,Tunnel block limit reached,,Data Record Transfer Response
+1041f2,GTPv1,Tunnel block limit reached,,For future use. Shall not be sent. If received shall be treated as an Unknown message.
+1041fe,GTPv1,Tunnel block limit reached,,End Marker
+1041ff,GTPv1,Tunnel block limit reached,,G-PDU
