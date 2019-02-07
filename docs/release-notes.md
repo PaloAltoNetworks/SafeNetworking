@@ -1,17 +1,29 @@
 # Version 3.5
-Release Date: TBD
+Release Date: 05 Feb 2019
 <br/>
 ### New Features
 1.) Support for non-PANOS IoT known threat events parsed through logstash and tagged in elasticsearch<br/>
-2.) <br/>
-3.) <br/>
-4.) <br/>
-5.) <br/>
-6.) <br/>
+2.) Support for GTP and SCTP logs with EventCode enrichment<br/>
+3.) Separate pipelines for Logstash listeners<br/>
+4.) Further automated installation<br/>
+5.) ***BETA*** - Cloud-DNS logging from NGFW - ***BETA***<br/>
+6.) ***BETA*** - IoT IP syslog from external devices - ***BETA***<br/>
 
 ### Issues resolved
 [Use pipeline functionality in logstash to separate listeners to individual pipelines](https://github.com/PaloAltoNetworks/safe-networking/issues/48)<br/>
-[FILLER](https://github.com/PaloAltoNetworks/safe-networking/issues/40)<br/>
+[Fix setup to use current UID](https://github.com/PaloAltoNetworks/safe-networking/issues/57)<br/>
+[Threat doc classified as SFN-DNS has no domain name](https://github.com/PaloAltoNetworks/safe-networking/issues/56)<br/>
+[TunnelID_IMSI is mapped to a long but should be text](https://github.com/PaloAltoNetworks/safe-networking/issues/52)<br/>
+[Upgrade to ElasticStack 6.5](https://github.com/PaloAltoNetworks/safe-networking/issues/50)<br/>
+[Add GTP events to be stored in SFN](https://github.com/PaloAltoNetworks/safe-networking/issues/49)<br/>
+[Use pipeline functionality in logstash to separate listeners to individual pipelines](https://github.com/PaloAltoNetworks/safe-networking/issues/48)<br/>
+[Logstash for external IP IoT ](https://github.com/PaloAltoNetworks/safe-networking/issues/47)<br/>
+[setup.sh checks issue](https://github.com/PaloAltoNetworks/safe-networking/issues/39)<br/>
+[Add relevant tag to domain document](https://github.com/PaloAltoNetworks/safe-networking/issues/36)<br/>
+[sfn.log written as root when run as a service](https://github.com/PaloAltoNetworks/safe-networking/issues/20)<br/>
+[Update doc examples to use new indexes](https://github.com/PaloAltoNetworks/safe-networking/issues/12)<br/>
+[Owner/Subscriber information](https://github.com/PaloAltoNetworks/safe-networking/issues/10)<br/>
+
 
 
 # Version 3.4
