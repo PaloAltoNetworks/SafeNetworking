@@ -12,6 +12,12 @@ if [ ! -d "$userHome/es_backup" ]; then
   install -d -m 0777 -o $userName -g $(id -gn $userName) $userHome/es_backup
 fi
 
+if [ ! -d "$userHome/safe-networking/env" ]; then
+  cd $userHome/safe-networking
+  python3.6 -m venv env
+  source env/bin/activate
+fi
+
 ################################################################################
 #                           ELASTICSTACK SETUP
 ################################################################################
@@ -137,6 +143,11 @@ curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
 # curl -XPUT -H'Content-Type: application/json' \
 #      'http://localhost:9200/_template/traffic?pretty' \
 #      -d @./elasticsearch/mappings/traffic_template_mapping.json
+
+################################################################################
+# Load the GTP and IoT databases for enrichment
+
+for file in `ls elasticsearch/lookup_data/gtp/*.csv`;do ./sfn load $file test-gtp-codes;done
 
 
 ################################################################################
