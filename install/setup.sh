@@ -16,6 +16,8 @@ if [ ! -d "$userHome/safe-networking/env" ]; then
   cd $userHome/safe-networking
   python3.6 -m venv env
   source env/bin/activate
+  pip install --upgrade pip
+  pip install -r requirements
 fi
 
 ################################################################################
@@ -147,7 +149,7 @@ curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
 ################################################################################
 # Load the GTP and IoT databases for enrichment
 
-for file in `ls elasticsearch/lookup_data/gtp/*.csv`;do ./sfn load $file test-gtp-codes;done
+for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`;do ./sfn load $file test-gtp-codes;done
 
 
 ################################################################################
