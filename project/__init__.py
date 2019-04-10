@@ -132,9 +132,14 @@ app.config['CONFIDENCE_LEVELS'] = "{'15':90,'25':80,'40':70,'50':60,'60':50}"
 #
 # Log level for Flask
 app.config['FLASK_LOGGING_LEVEL'] = "ERROR"
+#
+# Set the system to automatically start with DEBUG on.  This changed in 3.6 as
+# all installs are using DEBUG.
+app.config['DEBUG'] = True
+#
 # Log level for the SafeNetworking application itself.  All files are written
 # to log/sfn.log
-app.config['LOG_LEVEL'] = "INFO"
+app.config['LOG_LEVEL'] = "DEBUG"
 #
 # Size of Log file before rotating - in bytes
 app.config['LOG_SIZE'] = 10000000

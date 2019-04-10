@@ -1,27 +1,40 @@
 #!/usr/bin/env bash
 
+# Check to see if we need to install the gtp DB.
+installGTP=0
+
+for arg in "$@"
+do
+    if [ "$arg" == "--gtp" ] || [ "$arg" == "-g" ]
+    then
+        installGTP=1
+    fi
+done
+
+################################################################################
+#                          SYSTEM SETUP
+################################################################################
+
 # Figure out who we are so we write the correct paths
 userName=$(echo $SUDO_USER)
 userHome=$(eval echo "~$userName" )
 printf "\n>>> $(tput setaf 3)Setting up for user $userName in $userHome directory $(tput sgr 0)\n"
-################################################################################
-#                          SYSTEM SETUP
-################################################################################
+
 # Create backup directory and make world writeable so elasticsearch can use it.
 if [ ! -d "$userHome/es_backup" ]; then
   install -d -m 0777 -o $userName -g $(id -gn $userName) $userHome/es_backup
 fi
 
-if [ ! -d "$userHome/safe-networking/env" ]; then
-  cd $userHome/safe-networking
-  python3.6 -m venv env
-  source env/bin/activate
-  pip install --upgrade pip
-  pip install -r requirements
-fi
+#if [ ! -d "$userHome/safe-networking/env" ]; then
+#  cd $userHome/safe-networking
+#  python3.6 -m venv env
+#  source env/bin/activate
+#  pip install --upgrade pip
+#  pip install -r requirements
+#fi
 
 ################################################################################
-#                           ELASTICSTACK SETUP
+#                       ELASTICSTACK SETUP
 ################################################################################
 #                       ELASTICSEARCH SETUP
 #
@@ -147,9 +160,16 @@ curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
 #      -d @./elasticsearch/mappings/traffic_template_mapping.json
 
 ################################################################################
-# Load the GTP and IoT databases for enrichment
 
-for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`;do ./sfn load $file test-gtp-codes;done
+# Load the GTP and IoT databases for enrichment
+if [ installGTP ]
+    printf "\n\n$(tput setaf 6)Installing GTP Event Code Documents$(tput sgr 0)\n"
+    then
+        for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`
+            do
+                ./sfn load $file test-gtp-codes
+            done
+fi
 
 
 ################################################################################
