@@ -105,15 +105,23 @@ cp ./logstash/config/jvm.options /etc/logstash/jvm.options
 cp /etc/logstash/startup.options /etc/logstash/startup.options.$(date +%F_%R)
 cp ./logstash/config/startup.options /etc/logstash/startup.options
 printf " - COMPLETE\n"
-printf "\n>>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
+
+################################################################################
+#                                 KIBANA SETUP  
+printf ">>> $(tput setaf 6)Backing up kibana config files$(tput sgr 0)"
 cp /etc/kibana/kibana.yml /etc/kibana/kibana.yml.$(date +%F_%R)
 printf " - COMPLETE\n"
 printf ">>> $(tput setaf 6)Installing new kibana config files$(tput sgr 0)"
 cp ./kibana/kibana.yml /etc/kibana/kibana.yml
 printf " - COMPLETE\n"
 
-printf "\n>>> $(tput setaf 6)Setting up ELK services$(tput sgr 0)\n"
-printf "  >>> $(tput setaf 6)Setting up Elasticsearch auto-start$(tput sgr 0)\n"
+
+################################################################################
+#                   ELASTICSTACK AUTO START SETTINGS
+printf "\n>>>> $(tput setaf 7)SETTING UP ELK SERVICES$(tput sgr 0) <<<<\n"
+
+# CONFIGURE ELASTICSEARCH STARTUP
+printf ">>> $(tput setaf 3)Setting up Elasticsearch auto-start$(tput sgr 0) <<<\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable elasticsearch.service
 /bin/systemctl restart elasticsearch.service
@@ -137,26 +145,29 @@ else
     fi
 fi
 # Test the limits set above
+printf "\n>>> $(tput setaf 6)Checking max file descriptors$(tput sgr 0)\n\t"
 curl -X GET "localhost:9200/_nodes/stats/process?filter_path=**.max_file_descriptors"
+printf "\n>>> $(tput setaf 6)Checking mlock$(tput sgr 0)\n\t"
 curl -X GET "localhost:9200/_nodes?filter_path=**.mlockall"
 
 
 
-printf "  >>> $(tput setaf 6)Setting up logstash auto-start$(tput sgr 0)\n"
+#  LOGSTASH'S TURN
+printf "  \n\n>>> $(tput setaf 3)Setting up logstash auto-start$(tput sgr 0) <<<\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable logstash.service
 /bin/systemctl restart logstash.service
 # sleep for 30 seconds so logstash can come up
 printf "\t- Waiting 30 seconds for Logstash to start\n"
 sleep 30
-(echo >/dev/tcp/localhost/5514) >/dev/null 2>&1
+(echo >/dev/udp/localhost/5514) >/dev/null 2>&1
 if [ $? -eq 0 ]; then
     printf "\t* $(tput setaf 10)Logstash is up and running on port 5514"
     printf "$(tput sgr 0) - COMPLETE\n"
 else
     printf "\t- Logstash not up yet, waiting 30 more seconds\n"
     sleep 30
-    (echo >/dev/tcp/localhost/5514) >/dev/null 2>&1
+    (echo >/dev/udp/localhost/5514) >/dev/null 2>&1
     if [ $? -eq 0 ]; then
         printf "\t* $(tput setaf 10)Logstash is up and running on port 5514"
         printf "$(tput sgr 0) - COMPLETE\n"
@@ -166,14 +177,14 @@ else
     fi
 fi
 
-printf "  >>> $(tput setaf 6)Setting up kibana auto-start$(tput sgr 0)\n"
+# FINALLY, SETUP KIBANA TOO
+printf "\n>>> $(tput setaf 3)Setting up kibana auto-start$(tput sgr 0) <<<\n"
 /bin/systemctl daemon-reload
 /bin/systemctl enable kibana.service
 /bin/systemctl restart kibana.service
 printf "  >>> Kibana service installed. To test, goto http://<your-ip> to verify\n"
 
-
-
+################################################################################
 # Push the ElasticSearch index mappings into the ElasticSearch DB
 # NOTE: If you are using something other than the default install, you may need
 # change the elasticsearch settings below to your IP address
@@ -212,19 +223,8 @@ curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
 
 ################################################################################
 
-# Load the GTP and IoT databases for enrichment
-if [ installGTP ]
-    then
-        printf "\n\n$(tput setaf 6)Installing GTP Event Code Documents$(tput sgr 0)\n"
-        for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`
-            do
-                ./sfn load $file test-gtp-codes
-            done
-fi
-
 ################################################################################
 #                           SFN SETUP
-#
 # check to see if we need to install the .panrc in the home directory, otherwise
 # just link it
 if [ ! -f $userHome/.panrc ]
@@ -232,10 +232,26 @@ if [ ! -f $userHome/.panrc ]
         printf "\n\n$(tput setaf 6)Installing .panrc file to home directory$(tput sgr 0)\n"
         cp sfn/.panrc $userHome
 fi
-printf "\n\n$(tput setaf 6)Linking .panrc to project$(tput sgr 0)\n"
-cd $userHome/safe-networking/project
-ln -s ~/.panrc
-printf " - COMPLETE\n"
+
+if [ ! -L $userHome/safe0networking/project/.panrc ]
+    then
+        printf "\n\n$(tput setaf 6)Linking .panrc to project$(tput sgr 0)\n"
+        cd $userHome/safe-networking/project
+        ln -s ~/.panrc
+        printf " - COMPLETE\n"
+fi
+
+# OPTIONAL - Load the GTP and IoT databases for enrichment
+if [ $installGTP -eq 1 ]
+    then
+        printf "\n\n$(tput setaf 6)Installing GTP Event Code Documents$(tput sgr 0)\n"
+        for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`
+            do
+                $userHome/safe-networking/sfn load $file test-gtp-codes
+            done
+fi
+
+
 
 # ################################################################################
 # # THE FOLLOWING IS DEPRECATED AND THE SFN APPLICATION WILL NO LONGER BE RUN AS
