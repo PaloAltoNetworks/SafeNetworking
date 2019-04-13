@@ -5,7 +5,6 @@
     "index.refresh_interval" : "5s"
   },
   "mappings": {
-    "_default_": {
       "properties": {
         "@timestamp": {
           "type": "date"
@@ -960,6 +959,6 @@
           }
         }
       }
-    }
+
   }
 }
