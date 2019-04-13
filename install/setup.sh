@@ -145,9 +145,9 @@ else
     fi
 fi
 # Test the limits set above
-printf "\n>>> $(tput setaf 6)Checking max file descriptors$(tput sgr 0)\n\t"
+printf "\n>>> $(tput setaf 6)Checking max file descriptors - should be 65535$(tput sgr 0)\n\t"
 curl -X GET "localhost:9200/_nodes/stats/process?filter_path=**.max_file_descriptors"
-printf "\n>>> $(tput setaf 6)Checking mlock$(tput sgr 0)\n\t"
+printf "\n>>> $(tput setaf 6)Checking mlock - we want this to be false$(tput sgr 0)\n\t"
 curl -X GET "localhost:9200/_nodes?filter_path=**.mlockall"
 
 
@@ -233,7 +233,7 @@ if [ ! -f $userHome/.panrc ]
         cp sfn/.panrc $userHome
 fi
 
-if [ ! -L $userHome/safe0networking/project/.panrc ]
+if [ ! -L $userHome/safe-networking/project/.panrc ]
     then
         printf "\n\n$(tput setaf 6)Linking .panrc to project$(tput sgr 0)\n"
         cd $userHome/safe-networking/project
