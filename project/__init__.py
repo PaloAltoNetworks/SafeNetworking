@@ -8,7 +8,7 @@ from flask_elasticsearch import Elasticsearch
 from logging.handlers import RotatingFileHandler
 
 class SFNFormatter(logging.Formatter):
-    width = 45
+    width = 55
     datefmt='%Y-%m-%d %H:%M:%S'
 
     def format(self, record):
