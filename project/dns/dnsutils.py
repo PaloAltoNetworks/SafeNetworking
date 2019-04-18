@@ -4,6 +4,7 @@ import time
 from ast import literal_eval
 
 import requests
+from elasticsearch_dsl import Search
 from elasticsearch.exceptions import NotFoundError
 
 from project import app
@@ -508,7 +509,6 @@ def getDomainDoc(domainName):
             # Don't mess with the doc_created field if we are updating
             if "Creating" in updateType:
                 domainDoc.doc_created = now
-
             domainDoc.save()
 
         except Exception as e:
