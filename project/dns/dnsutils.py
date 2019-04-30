@@ -448,11 +448,9 @@ def getDomainInfo(threatDomain):
                 domainObj.append((hits['_source']['finish_date'],
                                   hits['_source']['filetype'],
                                   tagList))
-
         else:
             app.logger.info(f"No samples found for {threatDomain} in time "
                             f"allotted")
-
 
     else:
         app.logger.error(f"Unable to retrieve domain info from AutoFocus. "
@@ -475,7 +473,7 @@ def getDomainDoc(domainName):
                  datetime.timedelta(days=app.config['DNS_DOMAIN_INFO_MAX_AGE']))
 
     app.logger.debug(f"Querying local cache for {domainName}")
-
+    
     try:
         domainDoc = DomainDetailsDoc.get(id=domainName)
 
@@ -494,6 +492,10 @@ def getDomainDoc(domainName):
 
     except NotFoundError as nfe:
         app.logger.info(f"No local cache doc found for domain {domainName}")
+        updateDetails = True
+        updateType = "Creating"
+    except ValueError as ve:
+        app.logger.error(f"{ve} what the fuck is going on?")
         updateDetails = True
         updateType = "Creating"
 

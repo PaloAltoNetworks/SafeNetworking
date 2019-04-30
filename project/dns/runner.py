@@ -3,7 +3,7 @@ import datetime
 
 from multiprocessing.dummy import Pool
 from elasticsearch import TransportError, ConnectionError
-from elasticsearch_dsl import Search, connections
+from elasticsearch_dsl import Search
 
 from project import app
 from project.dns.dns import DNSEventDoc
@@ -28,8 +28,6 @@ def unprocessedEventSearch():
     
     app.logger.debug(f"Gathering {qSize} THREAT events from ElasticSearch")
 
-    # Define the default Elasticsearch client
-    connections.create_connection(hosts=[app.config['ELASTICSEARCH_HOST']])
 
     # Create search for all unprocessed events
     try:
@@ -148,13 +146,13 @@ def searchDomain(event):
         app.logger.debug(f"calling getDomainDoc() for {eventDomainName}")
         
         domainDoc = getDomainDoc(eventDomainName)
+        
         app.logger.debug(f"domainDoc is {domainDoc}")
 
         if "NULL" in domainDoc:
             app.logger.error(f"Unable to process event {eventID} beacause" +
                                f" of problem with domain-doc for" + 
                                f" {eventDomainName}")
-            app.logger.error(f"Domain doc for {eventDomainName}")
         else:
             app.logger.debug(f"Assessing tags for domain-doc {domainDoc.name}")
             
