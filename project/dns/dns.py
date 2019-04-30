@@ -12,8 +12,8 @@ class DomainDetailsDoc(DocType):
     doc_updated = Date()
     processed = Integer()
 
-    class Meta:
-        index = 'sfn-domain-details'
+    class Index:
+        name = 'sfn-domain-details'
 
     @classmethod
     def get_indexable(cls):
@@ -61,8 +61,8 @@ class DNSEventDoc(DocType):
     '''
     SFN = Object(SFNDNS)
     
-    class Meta:
-         index = 'threat-*'
+    class Index:
+         name = 'threat-*'
 
     @classmethod
     def get_indexable(cls):
@@ -99,8 +99,8 @@ class AFDetailsDoc(DocType):
     minute_bucket_start = Date()
     daily_bucket_start = Date()
 
-    class Meta:
-        index = 'af-details'
+    class Index:
+        name = 'af-details'
         id = 'af-details'
 
     @classmethod
@@ -134,8 +134,8 @@ class TagDetailsDoc(DocType):
     doc_updated = Date()
     processed = Integer()
 
-    class Meta:
-        index = 'sfn-tag-details'
+    class Index:
+        name = 'sfn-tag-details'
 
     @classmethod
     def get_indexable(cls):
