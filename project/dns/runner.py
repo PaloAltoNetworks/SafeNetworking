@@ -1,13 +1,76 @@
 import time
 import datetime
-from project import app
-from elasticsearch_dsl import Search
+
 from multiprocessing.dummy import Pool
+from elasticsearch import TransportError, ConnectionError
+from elasticsearch_dsl import Search
+
+from project import app
 from project.dns.dns import DNSEventDoc
-from elasticsearch import TransportError
-from elasticsearch_dsl import connections
 from project.dns.dnsutils import getDomainDoc, assessTags
 
+
+def unprocessedEventSearch():
+    '''
+    Search for DNS_EVENT_QUERY_SIZE specified number of docs, newest first, 
+    that have not been processed through the DNS module yet.
+    For each hit, classify the event as either primary (we have the domain cached)
+    or secondary (need to look it up). There will be a list for primary and 
+    secondary lookups.  Each list has entries of dictionaires which contain the 
+    domain name, the index of the event and the doc ID for that event.
+
+    :return: priDocIds, secDocIds
+    '''
+    now = datetime.datetime.now()
+    priDocIds = list()
+    secDocIds = list()
+    qSize = app.config["DNS_EVENT_QUERY_SIZE"]
+    
+    app.logger.debug(f"Gathering {qSize} THREAT events from ElasticSearch")
+
+
+    # Create search for all unprocessed events
+    try:
+        eventSearch = Search(index="threat-*") \
+                .query("match", tags="DNS") \
+                .query("match", ** { "SFN.processed":0})  \
+                .sort({"@timestamp": {"order" : "desc"}})
+        eventSearch = eventSearch[:qSize]
+        searchResponse = eventSearch.execute()
+
+        app.logger.debug(searchResponse)
+
+        for hit in searchResponse.hits:
+            entry = dict()
+            try:
+                domainName = hit['SFN']['domain_name']
+                eventDoc = hit.meta.id
+                eventIndex = hit.meta.index
+            except Exception as e:
+                app.logger.debug(f"Error - no domain name defined in hit {hit}")    
+                domainName = "INVALID"
+
+            if not (domainName == "INVALID"):
+                domainSearch = Search(index="sfn-domain-details") \
+                                .query("match", name=domainName)
+                if domainSearch.execute():
+                    entry['document'] = eventDoc
+                    entry['index'] = eventIndex
+                    entry['domain_name'] = domainName
+                    priDocIds.append(entry)
+                else:
+                    entry['document'] = eventDoc
+                    entry['index'] = eventIndex
+                    entry['domain_name'] = domainName
+                    secDocIds.append(entry)
+                    app.logger.debug(f"{eventDoc} : {entry}")
+
+        return priDocIds, secDocIds
+
+    except ConnectionTimeout as ct:
+        app.logger.error(f"Received a connection timeout error to elasticsearch: {ct}")
+    except Exception as e:
+        app.logger.debug(f"Received an error connecting to elasticsearch: {e}")    
 
 def processDNS():
     '''
@@ -18,67 +81,8 @@ def processDNS():
     be processed in real-time using multiprocessing.  The generic threats will be
     processed after the primary threats are done.
     '''
-    now = datetime.datetime.now()
-    priDocIds = list()
-    secDocIds = list()
-    qSize = app.config["DNS_EVENT_QUERY_SIZE"]
-    
-    app.logger.debug(f"Gathering {qSize} THREAT events from ElasticSearch")
 
-    # Define the default Elasticsearch client
-    connections.create_connection(hosts=[app.config['ELASTICSEARCH_HOST']])
-
-    # Create search for all unprocessed events
-    eventSearch = Search(index="threat-*") \
-                .query("match", tags="DNS") \
-                .query("match", ** { "SFN.processed":0})  \
-                .sort({"@timestamp": {"order" : "desc"}})
-
-    # Limit the size of the returned docs to the specified config paramter and 
-    # then exec the search
-    eventSearch = eventSearch[:qSize]
-    searchResponse = eventSearch.execute()
-
-    app.logger.debug(searchResponse)
-
-    # For each hit, classify the event as either primary (we have the domain
-    # info cached) or secondary (need to look it up).
-    # There will be a list for primary and secondary lookups.  Each list
-    # has entries of dictionaires which contain the domain name, the index of
-    # the event and the doc ID for that event.
-    for hit in searchResponse.hits:
-        entry = dict()
-        try:
-            domainName = hit['SFN']['domain_name']
-            eventDoc = hit.meta.id
-            eventIndex = hit.meta.index
-        except Exception as e:
-            app.logger.debug(f"Error - no domain name defined in hit {hit}")    
-            domainName = "INVALID"
-
-        # If we got the exception that the domain name is invalid, just skip it
-        if not (domainName == "INVALID"):
-            # Check to see if we have a domain doc for it already.  If we do,
-            # add it to be processed first, if not, add it to the AF lookup
-            # queue (secDocIds)
-            domainSearch = Search(index="sfn-domain-details") \
-                            .query("match", name=domainName)
-            if domainSearch.execute():
-                entry['document'] = eventDoc
-                entry['index'] = eventIndex
-                entry['domain_name'] = domainName
-                priDocIds.append(entry)
-                
-            else:
-                entry['document'] = eventDoc
-                entry['index'] = eventIndex
-                entry['domain_name'] = domainName
-                secDocIds.append(entry)
-                app.logger.debug(f"{eventDoc} : {entry}")
-
-    app.logger.debug(f"priDocIds are {priDocIds}")
-    app.logger.debug(f"secDocIds are {secDocIds}")
-
+    priDocIds, secDocIds = unprocessedEventSearch()
     # The lists are made, now continue to process each entry in the list(s)
     # If we aren't in DEBUG mode (.panrc setting)
     if not (app.config['DEBUG_MODE']) or (app.config['AF_POINTS_MODE']):
@@ -142,13 +146,13 @@ def searchDomain(event):
         app.logger.debug(f"calling getDomainDoc() for {eventDomainName}")
         
         domainDoc = getDomainDoc(eventDomainName)
+        
         app.logger.debug(f"domainDoc is {domainDoc}")
 
         if "NULL" in domainDoc:
             app.logger.error(f"Unable to process event {eventID} beacause" +
                                f" of problem with domain-doc for" + 
                                f" {eventDomainName}")
-            app.logger.error(f"Domain doc for {eventDomainName}")
         else:
             app.logger.debug(f"Assessing tags for domain-doc {domainDoc.name}")
             

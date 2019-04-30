@@ -6,9 +6,10 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_elasticsearch import Elasticsearch
 from logging.handlers import RotatingFileHandler
+from elasticsearch_dsl import connections
 
 class SFNFormatter(logging.Formatter):
-    width = 45
+    width = 55
     datefmt='%Y-%m-%d %H:%M:%S'
 
     def format(self, record):
@@ -186,6 +187,8 @@ app.config.from_pyfile('.panrc')
 bs = Bootstrap(app)
 # Add Elasticsearch object for our instance of ES
 es = Elasticsearch(f"{app.config['ELASTICSEARCH_HOST']}:{app.config['ELASTICSEARCH_PORT']}")
+# Define the default Elasticsearch client
+connections.create_connection(hosts=[app.config['ELASTICSEARCH_HOST']])
 
 # Set up logging for the application - we may want to revisit this
 # see issue #10 in repo

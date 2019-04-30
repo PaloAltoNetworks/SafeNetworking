@@ -4,6 +4,7 @@ import time
 from ast import literal_eval
 
 import requests
+from elasticsearch_dsl import Search
 from elasticsearch.exceptions import NotFoundError
 
 from project import app
@@ -447,11 +448,9 @@ def getDomainInfo(threatDomain):
                 domainObj.append((hits['_source']['finish_date'],
                                   hits['_source']['filetype'],
                                   tagList))
-
         else:
             app.logger.info(f"No samples found for {threatDomain} in time "
                             f"allotted")
-
 
     else:
         app.logger.error(f"Unable to retrieve domain info from AutoFocus. "
@@ -474,7 +473,7 @@ def getDomainDoc(domainName):
                  datetime.timedelta(days=app.config['DNS_DOMAIN_INFO_MAX_AGE']))
 
     app.logger.debug(f"Querying local cache for {domainName}")
-
+    
     try:
         domainDoc = DomainDetailsDoc.get(id=domainName)
 
@@ -495,6 +494,10 @@ def getDomainDoc(domainName):
         app.logger.info(f"No local cache doc found for domain {domainName}")
         updateDetails = True
         updateType = "Creating"
+    except ValueError as ve:
+        app.logger.error(f"{ve} what the fuck is going on?")
+        updateDetails = True
+        updateType = "Creating"
 
     # Either we don't have it or we determined that it's too old
     if updateDetails:
@@ -508,7 +511,6 @@ def getDomainDoc(domainName):
             # Don't mess with the doc_created field if we are updating
             if "Creating" in updateType:
                 domainDoc.doc_created = now
-
             domainDoc.save()
 
         except Exception as e:
