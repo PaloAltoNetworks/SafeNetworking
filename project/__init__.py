@@ -62,6 +62,14 @@ app.config['BASE_DIR'] = os.path.abspath(os.path.dirname(__file__))
 app.config['DNS_POOL_TIME'] = 5
 app.config['URL_POOL_TIME'] = 10
 app.config['AF_POOL_TIME'] = 600
+app.config['IOT_POOL_TIME'] = 600
+#
+# Turn off DNS processing.
+app.config["DNS_PROCESSING"] = True
+# Turn off IoT processing.  
+app.config["IOT_PROCESSING"] = False
+# Turn off URL processing.  
+app.config["URL_PROCESSING"] = False
 #
 # This is an internal flag that will probably never show up in the .panrc file
 # It is used to slow execution when it is True

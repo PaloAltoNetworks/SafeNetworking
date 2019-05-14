@@ -15,6 +15,7 @@ import requests
 import threading
 from project import app, es
 from elasticsearch import helpers
+from project.iot.runner import processIOT
 from project.dns.runner import processDNS
 from project.dns.dnsutils import updateAfStats
 
@@ -77,19 +78,21 @@ def activate_job():
         process and then sends a call to the dns handler to process them with
         AF, do lookups, etc.
         """
-        while True:
+        while app.config["DNS_PROCESSING"] == True:
             app.logger.debug(f"Processing new DNS events")
             processDNS()
             time.sleep(app.config["DNS_POOL_TIME"])
 
     def runIoT():
         """
-        DOES NOTHING AS OF NOW - but will do this eventually:
-        Searches for any unprocessed sfn-iot documents and
-        then sends a call to the iot handler to process them.
+        Retrieves the IoT Honeypot team's DB that has all info on known IoT 
+        bad IPs and domains.  Stuffs it into our DB so we can enrich the IoT 
+        events as they come in. 
         """
-        app.logger.debug(f"Processing new IoT Events")
-        pass
+       while app.config["IOT_PROCESSING"] == True:
+            app.logger.debug(f"Processing new IoT events")
+            processIoT()
+            time.sleep(app.config["IOT_POOL_TIME"])
 
     def runURL():
         """
@@ -115,13 +118,13 @@ def activate_job():
     # Start the IoT processing routines
     threadIoT = threading.Thread(target=runIoT)
     threadIoT.start()
-     # Start the URL processing routines
-    threadURL = threading.Thread(target=runURL)
-    threadURL.start()
-     # Start the IoT processing routines
+    # Start the AF point lookup routines
     threadAF = threading.Thread(target=runAfPoints)
     threadAF.start()
-
+    # Start the URL processing routines
+    # threadURL = threading.Thread(target=runURL)
+    # threadURL.start()
+    #
 
 def initBackgroundProcs():
     """
