@@ -210,11 +210,6 @@ curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/sfn-tag-details/' \
     -d @./elasticsearch/mappings/sfn-tag-details.json
 
-printf "\n\n$(tput setaf 6)Installing IoT detail mapping$(tput sgr 0)\n"
-curl -XPUT -H'Content-Type: application/json' \
-    'http://localhost:9200/sfn-iot-details/' \
-    -d @./elasticsearch/mappings/sfn-iot-details.json
-
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
     -d '{"index" : {"number_of_replicas" : 0}}'

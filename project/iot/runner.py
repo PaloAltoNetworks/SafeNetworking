@@ -6,7 +6,7 @@ from elasticsearch import TransportError, ConnectionError
 from elasticsearch_dsl import Search
 
 from project import app
-from project.utils.sfnutils import getLatestTime
+from project.lib.sfnutils import getLatestTime
 from project.iot.iot import IoTEventDoc
 
 
@@ -20,6 +20,7 @@ def processIoT():
     
     # Get the last update and calculate the time diff for the API call
     latestTime = getLatestTime("sfn-iot-details")
+    print(f"{latestTime}")
 
     # Get DB Update
 

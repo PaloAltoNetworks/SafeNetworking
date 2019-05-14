@@ -1,38 +1,22 @@
 {
-    "sfn-iot-details" : {
-        "aliases" : { },
-        "mappings" : {
-          "properties" : {
-            "@timestamp" : {
-              "type" : "date"
-            },
-            "name" : {
-              "type" : "text",
-              "fields" : {
-                "keyword" : {
-                  "type" : "keyword",
-                  "ignore_above" : 256
-                }
-              }
-            },
-            "processed" : {
-              "type" : "text",
-              "fields" : {
-                "keyword" : {
-                  "type" : "keyword",
-                  "ignore_above" : 256
-                }
-              }
-            },
-            "tags" : {
-              "type" : "text",
-              "fields" : {
-                "keyword" : {
-                  "type" : "keyword",
-                  "ignore_above" : 256
-                }
-              }
-            }
+  "mappings" : {
+    "properties" : {
+      "familyinfo" : {
+        "type" : "text"
+      },
+      "ip" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
           }
         }
+      },
+      "@timestamp" : {
+        "type" : "date",
+        "format" : "yyyy-MM-dd HH:mm:ss"
+      }
+    }
   }
+}
