@@ -210,6 +210,11 @@ curl -XPUT -H'Content-Type: application/json' \
     'http://localhost:9200/sfn-tag-details/' \
     -d @./elasticsearch/mappings/sfn-tag-details.json
 
+printf "\n\n$(tput setaf 6)Installing IoT detail mapping$(tput sgr 0)\n"
+curl -XPUT -H'Content-Type: application/json' \
+    'http://localhost:9200/sfn-iot-details/' \
+    -d @./elasticsearch/mappings/sfn-iot-details.json
+
 printf "\n\n$(tput setaf 6)Updating number of replicas to 0$(tput sgr 0)\n"
 curl -XPUT -H'Content-Type: application/json' 'localhost:9200/_settings' \
     -d '{"index" : {"number_of_replicas" : 0}}'
@@ -240,6 +245,9 @@ if [ ! -L $userHome/safe-networking/project/.panrc ]
         ln -s ~/.panrc
         printf " - COMPLETE\n"
 fi
+
+# Init the IoT index
+$userHome/safe-networking/sfn load $userHome/safe-networking/install/elasticsearch/lookup_data/iot/init.csv sfn-iot-details
 
 # OPTIONAL - Load the GTP and IoT databases for enrichment
 if [ $installGTP -eq 1 ]

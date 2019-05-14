@@ -15,7 +15,7 @@ import requests
 import threading
 from project import app, es
 from elasticsearch import helpers
-from project.iot.runner import processIOT
+from project.iot.runner import processIoT
 from project.dns.runner import processDNS
 from project.dns.dnsutils import updateAfStats
 
@@ -89,7 +89,7 @@ def activate_job():
         bad IPs and domains.  Stuffs it into our DB so we can enrich the IoT 
         events as they come in. 
         """
-       while app.config["IOT_PROCESSING"] == True:
+        while app.config["IOT_PROCESSING"] == True:
             app.logger.debug(f"Processing new IoT events")
             processIoT()
             time.sleep(app.config["IOT_POOL_TIME"])

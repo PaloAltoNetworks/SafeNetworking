@@ -151,7 +151,7 @@ app.config['DEBUG'] = True
 app.config['LOG_LEVEL'] = "DEBUG"
 #
 # Size of Log file before rotating - in bytes
-app.config['LOG_SIZE'] = 10000000
+app.config['LOG_SIZE'] = 1000000000
 #
 # Number of log files to keep in log rotation
 app.config['LOG_BACKUPS'] = 10
