@@ -186,6 +186,7 @@ app.config['AUTOFOCUS_HOSTNAME'] = "autofocus.paloaltonetworks.com"
 app.config['AUTOFOCUS_SEARCH_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/search"
 app.config['AUTOFOCUS_RESULTS_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/results/"
 app.config['AUTOFOCUS_TAG_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/tag/"
+app.config['IOT_DB_URL'] = "https://35.160.110.244:58888/api/v1"
 #
 #
 
