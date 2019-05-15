@@ -62,6 +62,14 @@ app.config['BASE_DIR'] = os.path.abspath(os.path.dirname(__file__))
 app.config['DNS_POOL_TIME'] = 5
 app.config['URL_POOL_TIME'] = 10
 app.config['AF_POOL_TIME'] = 600
+app.config['IOT_POOL_TIME'] = 600
+#
+# Turn off DNS processing.
+app.config["DNS_PROCESSING"] = True
+# Turn off IoT processing.  
+app.config["IOT_PROCESSING"] = False
+# Turn off URL processing.  
+app.config["URL_PROCESSING"] = False
 #
 # This is an internal flag that will probably never show up in the .panrc file
 # It is used to slow execution when it is True
@@ -143,7 +151,7 @@ app.config['DEBUG'] = True
 app.config['LOG_LEVEL'] = "DEBUG"
 #
 # Size of Log file before rotating - in bytes
-app.config['LOG_SIZE'] = 10000000
+app.config['LOG_SIZE'] = 1000000000
 #
 # Number of log files to keep in log rotation
 app.config['LOG_BACKUPS'] = 10
@@ -178,6 +186,7 @@ app.config['AUTOFOCUS_HOSTNAME'] = "autofocus.paloaltonetworks.com"
 app.config['AUTOFOCUS_SEARCH_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/search"
 app.config['AUTOFOCUS_RESULTS_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/results/"
 app.config['AUTOFOCUS_TAG_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/tag/"
+app.config['IOT_DB_URL'] = "http://35.160.110.244:58888/api/v1"
 #
 #
 

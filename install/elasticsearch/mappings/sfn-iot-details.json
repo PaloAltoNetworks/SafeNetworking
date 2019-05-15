@@ -1,0 +1,22 @@
+{
+  "mappings" : {
+    "properties" : {
+      "familyinfo" : {
+        "type" : "text"
+      },
+      "ip" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "@timestamp" : {
+        "type" : "date",
+        "format" : "yyyy-MM-dd HH:mm:ss"
+      }
+    }
+  }
+}

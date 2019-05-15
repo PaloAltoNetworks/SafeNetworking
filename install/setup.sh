@@ -241,6 +241,9 @@ if [ ! -L $userHome/safe-networking/project/.panrc ]
         printf " - COMPLETE\n"
 fi
 
+# Init the IoT index
+$userHome/safe-networking/sfn load $userHome/safe-networking/install/elasticsearch/lookup_data/iot/init.csv sfn-iot-details
+
 # OPTIONAL - Load the GTP and IoT databases for enrichment
 if [ $installGTP -eq 1 ]
     then

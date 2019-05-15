@@ -166,8 +166,7 @@ def processTag(tagName):
                      "description": "Tag has not been assigned to a group"}]
 
     app.logger.debug(f"Querying local cache for {tagName}")
-    # import pdb
-    # pdb.set_trace()
+    
     try:
         tagDoc = TagDetailsDoc.get(id=tagName)
         
