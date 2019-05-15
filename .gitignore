@@ -113,6 +113,7 @@ project/.panrc
 install/sfn/sfn.sh
 install/elasticsearch/config/elasticsearch.yml
 project/utils/udc*
+!project/lib
 
 # Node + npm Stuff
 node_modules/
