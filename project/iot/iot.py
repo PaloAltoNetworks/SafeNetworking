@@ -6,11 +6,10 @@ class IoTDetailsDoc(DocType):
     '''
     Document storage for IoT IP cache
     '''
-    name = Text(analyzer='snowball', fields={'raw': Keyword()})
-    tags = Keyword()
-    doc_created = Date()
-    doc_updated = Date()
-    processed = Integer()
+    id = Text(analyzer='snowball', fields={'raw': Keyword()})
+    time = Keyword()
+    ip = Ip()
+    familyinfo = Text()
 
     class Index:
         name = 'sfn-iot-details'
@@ -23,15 +22,14 @@ class IoTDetailsDoc(DocType):
     def from_obj(cls, obj):
         return cls(
             id=obj.id,
-            name=obj.name,
-            tags=obj.tags,
-            doc_created=obj.doc_created,
-            doc_updated=obj.doc_updated,
-            processed=obj.processed,
-        )
+            time=obj.time,
+            ip=obj.ip,
+            familyinfo=obj.familyinfo
+            )
 
     def save(self, **kwargs):
         return super(IoTDetailsDoc, self).save(**kwargs)
+
 
 
 class SFNIOT(InnerDoc):
@@ -86,37 +84,3 @@ class IoTEventDoc(DocType):
 
     def save(self, **kwargs):
         return super(IoTEventDoc, self).save(**kwargs)
-
-
-class TagDetailsDoc(DocType):
-    '''
-    Stores/caches information about each tag in the DB
-    '''
-    name = Text(analyzer='snowball', fields={'raw': Keyword()})
-    tag = Keyword()
-    tag_groups = Keyword()
-    doc_created = Date()
-    doc_updated = Date()
-    processed = Integer()
-
-    class Index:
-        name = 'sfn-tag-details'
-
-    @classmethod
-    def get_indexable(cls):
-        return cls.get_model().get_objects()
-
-    @classmethod
-    def from_obj(cls, obj):
-        return cls(
-            id=obj.id,
-            name=obj.name,
-            tag=obj.tag,
-            tag_groups=obj.tag_groups,
-            doc_created=obj.doc_created,
-            doc_updated=obj.doc_updated,
-            processed=obj.processed,
-        )
-
-    def save(self, **kwargs):
-        return super(TagDetailsDoc, self).save(**kwargs)
