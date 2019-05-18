@@ -9,7 +9,8 @@ class IoTDetailsDoc(DocType):
     id = Text(analyzer='snowball', fields={'raw': Keyword()})
     time = Keyword()
     ip = Ip()
-    familyinfo = Text()
+    filetype = Text()
+    malware = Text()
 
     class Index:
         name = 'sfn-iot-details'
@@ -24,7 +25,8 @@ class IoTDetailsDoc(DocType):
             id=obj.id,
             time=obj.time,
             ip=obj.ip,
-            familyinfo=obj.familyinfo
+            filetype=obj.filetype,
+            malware=obj.malware
             )
 
     def save(self, **kwargs):

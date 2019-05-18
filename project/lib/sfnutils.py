@@ -41,4 +41,12 @@ def getLatestTime(indexName):
         app.logger.error(f"Trying to find timestamp in {latestDoc} resulted in {e}")    
 
     return (now - timeStamp).total_seconds() / 60.0
+
+
+
+def indexDump(indexName, sortField="@timestamp"):
+
+    definedSearch = Search(index=indexName).sort({sortField: {"order" : "desc"}})
+    return definedSearch[0:9999].execute()
+
     

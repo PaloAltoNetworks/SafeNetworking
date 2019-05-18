@@ -49,7 +49,8 @@ def updateLocalIoTDB(updateDict):
             iotDoc.meta.id = item['id']
             iotDoc.ip = item['ip']
             iotDoc.time = item['time']
-            iotDoc.familyinfo = item['familyinfo']
+            iotDoc.filetype = item['familyinfo']['filetype']
+            iotDoc.malware = item['familyinfo']['family']
             iotDoc.save()
         except Exception as e:
             app.logger.error(f"Unable to save IoT DB document because of error {e}")
