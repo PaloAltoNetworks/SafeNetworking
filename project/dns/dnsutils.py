@@ -8,6 +8,7 @@ from elasticsearch_dsl import Search
 from elasticsearch.exceptions import NotFoundError
 
 from project import app
+from project.lib.sfnutils import getTagInfo, processTag
 from project.dns.dns import AFDetailsDoc, TagDetailsDoc, DomainDetailsDoc
 
 
@@ -103,28 +104,28 @@ def checkAfPoints(bucketInfo):
         app.config['AF_POINTS_MODE'] = False
 
 
-def getTagInfo(tagName):
-    '''
-    Method that uses user supplied api key (.panrc) and gets back the info on
-    the tag specified as tagName.  This doesn't take very long so we don't have
-    to do all the crap we did when getting domain info
-    Calls:
-        calcCacheTimeout()
+# def getTagInfo(tagName):
+#     '''
+#     Method that uses user supplied api key (.panrc) and gets back the info on
+#     the tag specified as tagName.  This doesn't take very long so we don't have
+#     to do all the crap we did when getting domain info
+#     Calls:
+#         calcCacheTimeout()
 
-    '''
-    searchURL = app.config["AUTOFOCUS_TAG_URL"] + f"{tagName}"
-    headers = {"Content-Type": "application/json"}
-    data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
+#     '''
+#     searchURL = app.config["AUTOFOCUS_TAG_URL"] + f"{tagName}"
+#     headers = {"Content-Type": "application/json"}
+#     data = {"apiKey": app.config['AUTOFOCUS_API_KEY']}
 
-    # Query AF and get the tag info to be stored in our local ES cache
-    app.logger.debug(f'Gathering tag info for {tagName} (2 API-points)')
-    queryResponse = requests.post(url=searchURL, headers=headers,
-                                  data=json.dumps(data))
-    queryData = queryResponse.json()
+#     # Query AF and get the tag info to be stored in our local ES cache
+#     app.logger.debug(f'Gathering tag info for {tagName} (2 API-points)')
+#     queryResponse = requests.post(url=searchURL, headers=headers,
+#                                   data=json.dumps(data))
+#     queryData = queryResponse.json()
 
-    app.logger.debug(f"getTagInfo() returns: {queryData}")
+#     app.logger.debug(f"getTagInfo() returns: {queryData}")
 
-    return queryData
+#     return queryData
 
 
 def processTagList(tagObj):
@@ -149,94 +150,94 @@ def processTagList(tagObj):
     return tagList
 
 
-def processTag(tagName):
-    '''
-    Method determines if we have a local tag info cache or we need to go to AF
-    and gather the info.  Returns the data for manipulation by the calling
-    method
-    '''
-    tagDoc = False
-    updateDetails = False
-    afApiKey = app.config['AUTOFOCUS_API_KEY']
-    retStatusFail = f'Failed to get info for {tagName} - FAIL'
-    now = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
-    timeLimit = (datetime.datetime.now() -
-                 datetime.timedelta(days=app.config['DOMAIN_TAG_INFO_MAX_AGE']))
-    tagGroupDict = [{"tag_group_name": "Undefined",
-                     "description": "Tag has not been assigned to a group"}]
+# def processTag(tagName):
+#     '''
+#     Method determines if we have a local tag info cache or we need to go to AF
+#     and gather the info.  Returns the data for manipulation by the calling
+#     method
+#     '''
+#     tagDoc = False
+#     updateDetails = False
+#     afApiKey = app.config['AUTOFOCUS_API_KEY']
+#     retStatusFail = f'Failed to get info for {tagName} - FAIL'
+#     now = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
+#     timeLimit = (datetime.datetime.now() -
+#                  datetime.timedelta(days=app.config['DOMAIN_TAG_INFO_MAX_AGE']))
+#     tagGroupDict = [{"tag_group_name": "Undefined",
+#                      "description": "Tag has not been assigned to a group"}]
 
-    app.logger.debug(f"Querying local cache for {tagName}")
+#     app.logger.debug(f"Querying local cache for {tagName}")
     
-    try:
-        tagDoc = TagDetailsDoc.get(id=tagName)
+#     try:
+#         tagDoc = TagDetailsDoc.get(id=tagName)
         
         
-        # check age of doc and set to update the details
-        if timeLimit > tagDoc.doc_updated:
-            app.logger.debug(f"Last updated can't be older than {timeLimit} " +
-                             f"but it is {tagDoc.doc_updated} and we need to " +
-                             f"update cache")
-            updateDetails = True
-            updateType = "Updating"
-        else:
-            # If the tag groups are empty send back Undefined
-            if not tagDoc.tag_groups or tagDoc.tag_groups == "":
-                app.logger.debug(f"No tag group found, setting to undefined")
-                tagDoc.tag_groups = tagGroupDict
-            # else:
-            #     tagDoc.tag_groups = afTagData['tag_groups']
+#         # check age of doc and set to update the details
+#         if timeLimit > tagDoc.doc_updated:
+#             app.logger.debug(f"Last updated can't be older than {timeLimit} " +
+#                              f"but it is {tagDoc.doc_updated} and we need to " +
+#                              f"update cache")
+#             updateDetails = True
+#             updateType = "Updating"
+#         else:
+#             # If the tag groups are empty send back Undefined
+#             if not tagDoc.tag_groups or tagDoc.tag_groups == "":
+#                 app.logger.debug(f"No tag group found, setting to undefined")
+#                 tagDoc.tag_groups = tagGroupDict
+#             # else:
+#             #     tagDoc.tag_groups = afTagData['tag_groups']
 
-            app.logger.debug(f"Last updated can't be older than {timeLimit} " +
-                             f"and {tagDoc.doc_updated} isn't, will not update cache")
+#             app.logger.debug(f"Last updated can't be older than {timeLimit} " +
+#                              f"and {tagDoc.doc_updated} isn't, will not update cache")
 
 
-    except NotFoundError as nfe:
-        app.logger.info(f"No local cache found for tag {tagName} - Creating")
-        updateDetails = True
-        updateType = "Creating"
+#     except NotFoundError as nfe:
+#         app.logger.info(f"No local cache found for tag {tagName} - Creating")
+#         updateDetails = True
+#         updateType = "Creating"
         
         
 
-    if updateDetails:
-        afTagData = getTagInfo(tagName)
-        # If we get the word 'message' in the return it means something went
-        # wrong, so just return False
-        if "message" not in afTagData:
-            app.logger.debug(f"{updateType} doc for {tagName}")
+#     if updateDetails:
+#         afTagData = getTagInfo(tagName)
+#         # If we get the word 'message' in the return it means something went
+#         # wrong, so just return False
+#         if "message" not in afTagData:
+#             app.logger.debug(f"{updateType} doc for {tagName}")
 
-            tagDoc = TagDetailsDoc(meta={'id': tagName}, name=tagName)
-            tagDoc.tag = afTagData['tag']
-            tagDoc.doc_updated = now
-            tagDoc.type_of_doc = "tag-doc"
-            tagDoc.processed = 1
+#             tagDoc = TagDetailsDoc(meta={'id': tagName}, name=tagName)
+#             tagDoc.tag = afTagData['tag']
+#             tagDoc.doc_updated = now
+#             tagDoc.type_of_doc = "tag-doc"
+#             tagDoc.processed = 1
 
-            # If the tag groups are empty send back Undefined
-            if not afTagData['tag_groups'] or afTagData['tag_groups'] == "":
-                tagDoc.tag_groups = tagGroupDict
-            else:
-                tagDoc.tag_groups = afTagData['tag_groups']
+#             # If the tag groups are empty send back Undefined
+#             if not afTagData['tag_groups'] or afTagData['tag_groups'] == "":
+#                 tagDoc.tag_groups = tagGroupDict
+#             else:
+#                 tagDoc.tag_groups = afTagData['tag_groups']
 
-            # Only set the doc_created attribute if we aren't updating
-            if updateType == "Creating":
-                tagDoc.doc_created = now
+#             # Only set the doc_created attribute if we aren't updating
+#             if updateType == "Creating":
+#                 tagDoc.doc_created = now
 
-            app.logger.debug(f"tagDoc is {tagDoc.to_dict()} ")
+#             app.logger.debug(f"tagDoc is {tagDoc.to_dict()} ")
 
-            tagDoc.save()
+#             tagDoc.save()
 
-            tagDoc = TagDetailsDoc.get(id=tagName)
+#             tagDoc = TagDetailsDoc.get(id=tagName)
 
-        else:
-            return False
-    app.logger.debug(f"{tagDoc}")
-    app.logger.debug(f"processTag() returns: " +
-                     f"{tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name']}" +
-                     f"{tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name']}," +
-                     f"{tagDoc.tag['description']}")
+#         else:
+#             return False
+#     app.logger.debug(f"{tagDoc}")
+#     app.logger.debug(f"processTag() returns: " +
+#                      f"{tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name']}" +
+#                      f"{tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name']}," +
+#                      f"{tagDoc.tag['description']}")
 
-    return (tagDoc.tag['tag_name'], tagDoc.tag['public_tag_name'],
-            tagDoc.tag['tag_class'], tagDoc.tag_groups[0]['tag_group_name'],
-            tagDoc.tag['description'])
+#     return (tagDoc.tag['tag_name'], tagDoc.tag['public_tag_name'],
+#             tagDoc.tag['tag_class'], tagDoc.tag_groups[0]['tag_group_name'],
+#             tagDoc.tag['description'])
 
 
 def assessTags(tagsObj):
@@ -257,7 +258,6 @@ def assessTags(tagsObj):
     #  Find the *first* malware
     #    Set the tagInfo to this but keep going in case we find a campaign
     #      or an actor
-    #import pdb;pdb.set_trace()
     for entry in tagsObj:
         while not taggedEvent:
             sampleDate = entry[0]
@@ -271,7 +271,6 @@ def assessTags(tagsObj):
                 app.logger.debug(f"Working on tag {tagName} " +
                                  f"with class of {tagClass}")
 
-                #import pdb;pdb.set_trace()
                 if tagClass == "campaign":
                     tagInfo = {"tag_name": tagName, "public_tag_name": tag[0],
                                "tag_class": tagClass, "sample_date": sampleDate,
