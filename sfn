@@ -62,8 +62,7 @@ def iot(datadump):
         indexData = indexDump("sfn-iot-details","time.keyword")
 
         for hit in indexData:
-            for info in hit['familyinfo']:
-                click.echo(f"{hit['ip']},{info['family']}")
+            click.echo(f"{hit['ip']},{hit['public_tag_name']}")
             
 
 

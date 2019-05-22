@@ -10,7 +10,11 @@ class IoTDetailsDoc(DocType):
     time = Keyword()
     ip = Ip()
     filetype = Text()
-    malware = Text()
+    tag_name = Text()
+    public_tag_name = Text()
+    tag_description = Text()
+    tag_class = Text()
+    tag_group_name = Text()
 
     class Index:
         name = 'sfn-iot-details'
@@ -26,7 +30,11 @@ class IoTDetailsDoc(DocType):
             time=obj.time,
             ip=obj.ip,
             filetype=obj.filetype,
-            malware=obj.malware
+            tag_name=obj.tag_name,
+            public_tag_name=obj.public_tag_name,
+            tag_description=obj.family_description,
+            tag_class=obj.tag_class,
+            tag_group_name=obj.tag_group_name
             )
 
     def save(self, **kwargs):

@@ -88,8 +88,7 @@ def processTag(tagName):
     
     try:
         tagDoc = TagDetailsDoc.get(id=tagName)
-        
-        
+
         # check age of doc and set to update the details
         if timeLimit > tagDoc.doc_updated:
             app.logger.debug(f"Last updated can't be older than {timeLimit} " +
@@ -113,9 +112,10 @@ def processTag(tagName):
         app.logger.info(f"No local cache found for tag {tagName} - Creating")
         updateDetails = True
         updateType = "Creating"
+        time.sleep(5) 
         
         
-
+    
     if updateDetails:
         afTagData = getTagInfo(tagName)
         # If we get the word 'message' in the return it means something went
@@ -146,8 +146,17 @@ def processTag(tagName):
             tagDoc = TagDetailsDoc.get(id=tagName)
 
         else:
-            return False
-    app.logger.debug(f"{tagDoc}")
+            if "not found" in afTagData['message']:
+                tagDoc = TagDetailsDoc(meta={'id': tagName}, name=tagName)
+                print(f"{tagDoc} and {tagName}")
+                tagDoc.tag = {"tag_name":tagName,"public_tag_name":tagName,
+                              "tag_class":"Tag not found in AF",
+                              "description":"Tag not found in AF"}
+                tagDoc.tag_groups = tagGroupDict
+                tagDoc.doc_updated = "2019-05-19T21:49:41"
+                
+                tagDoc.save()
+    
     app.logger.debug(f"processTag() returns: " +
                      f"{tagDoc.tag['tag_name'],tagDoc.tag['public_tag_name']}" +
                      f"{tagDoc.tag['tag_class'],tagDoc.tag_groups[0]['tag_group_name']}," +
