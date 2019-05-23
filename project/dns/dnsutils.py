@@ -493,7 +493,7 @@ def getDomainDoc(domainName):
         updateDetails = True
         updateType = "Creating"
     except ValueError as ve:
-        app.logger.error(f"{ve} what the fuck is going on?")
+        app.logger.error(f"{ve}")
         updateDetails = True
         updateType = "Creating"
 
