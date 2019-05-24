@@ -110,6 +110,7 @@ scratch/
 instance/.panrc
 project/.panrc
 .panrc
+!install/sfn/.panrc
 install/sfn/sfn.sh
 install/elasticsearch/config/elasticsearch.yml
 project/utils/udc*
