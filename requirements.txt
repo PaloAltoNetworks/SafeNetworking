@@ -11,8 +11,9 @@ Flask-WTF==0.14.2
 idna==2.6
 ipaddress==1.0.19
 itsdangerous==0.24
-Jinja2>=2.10.1
+Jinja2==2.10.1
 MarkupSafe==1.0
+pep8==1.7.1
 python-dateutil==2.6.1
 requests==2.21.0
 six==1.11.0
