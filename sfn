@@ -213,10 +213,6 @@ def loadLog(file,index):
         }
             
             
-
-    
-
-
 from project.views import *
 
 cli.add_command(start)
