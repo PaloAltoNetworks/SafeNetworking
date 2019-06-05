@@ -211,8 +211,8 @@ def loadLog(file,index):
             #"_id": f"{hashJSON['hashvalue']}",
             "_source": json.dumps(csv_rows)
         }
-            
-            
+
+
 from project.views import *
 
 cli.add_command(start)
