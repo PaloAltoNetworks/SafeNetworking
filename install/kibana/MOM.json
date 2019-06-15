@@ -1,0 +1,77 @@
+[
+
+  {
+    "_id": "ca947e20-16e2-11e9-b13f-cfce2d2b592e",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Navigation_WhereUserLoggedIn",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":  {\"x\":0,\"y\":0,\"w\":9,\"h\":41,\"i\":\"1\"},\"version\":\"6.5.4\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"id\":\"73e3ea80-16e1-11e9-b13f-cfce2d2b592e\",\"embeddableConfig\":{},\"title\":\"\"},{\"gridData\":{\"x\":9,\"y\":0,\"w\":38,\"h\":10,\"i\":\"2\"},\"version\":\"6.5.4\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"229ec040-16e2-11e9-b13f-cfce2d2b592e\",\"embeddableConfig\":{},\"title\":\"\"},{\"gridData\":{\"x\":9,\"y\":10,\"w\":38,\"h\":31,\"i\":\"3\"},\"version\":\"6.5.4\",\"panelIndex\":\"3\",\"type\":\"search\",\"id\":\"533d7f70-16e2-11e9-b13f-cfce2d2b592e\",\"embeddableConfig\":{},\"title\":\"\"}]",
+  "optionsJSON": "{\"darkTheme\":true,\"useMargins\":false,\"hidePanelTitles\":false}",
+  "version": 1,
+  "timeRestore": false,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "47ce6780-16e2-11e9-b13f-cfce2d2b592e",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Navigation_HowFindX",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":    {\"x\":0,\"y\":0,\"w\":8,\"h\":30,\"i\":\"1\"},\"id\":\"73e3ea80-16e1-11e9-b13f-cfce2d2b592e\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.5.4\",\"title\":\"\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":8,\"y\":0,\"w\":40,\"h\":10,\"i\":\"2\"},\"id\":\"fb8a2c60-16e1-11e9-b13f-cfce2d2b592e\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.5.4\",\"title\":\"\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":8,\"y\":10,\"w\":40,\"h\":32,\"i\":\"3\"},\"id\":\"533d7f70-16e2-11e9-b13f-cfce2d2b592e\",\"panelIndex\":\"3\",\"type\":\"search\",\"version\":\"6.5.4\",\"title\":\"\"}]",
+  "optionsJSON": "{\"darkTheme\":true,\"hidePanelTitles\":false,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "229ec040-16e2-11e9-b13f-cfce2d2b592e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Directions_Markdown_WhereUserLoggedIn",
+      "visState": "    {\"title\":\"Directions_Markdown_WhereUserLoggedIn\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"### Directions - Where was user X logged in?\\n\\nTo find user X you simply put in the string or strings you are looking for in the search bar. If you want to speed up your search specify a field. In this instance the valid fields are **user.id.keyword**, OR **user.name.keyword** .\\n\\nSo a valid query in the discover bar might be **user.name.keyword:jonsmith**\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "fb8a2c60-16e1-11e9-b13f-cfce2d2b592e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Directions_Markdown_HowFindX",
+      "visState": "{\"title\":\"Directions_Markdown_HowFindX\",\"type\":\"markdown\",\"params\":    {\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"### Directions - How do I find X?\\n\\nTo find X you simply put in the string or strings you are looking for in the search bar. If you want to speed up your search specify a field. In this instance the valid fields are **host.name.keyword**, **host.ip**, **user.id.keyword**, OR **user.name.keyword** .\\n\\nSo a valid query in the discover bar might be **host.name.keyword:windows7abc111**\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "73e3ea80-16e1-11e9-b13f-cfce2d2b592e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Navigation_Markdown",
+      "visState": "{\"title\":\"Navigation_Markdown\",\"type\":\"markdown\",\"params\":    {\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"### Dashboard Navigation\\n\\n[How do I find X?](https://myuuid.us-east-1.aws.found.io:9243/app/kibana#/dashboard/47ce6780-16e2-11e9-b13f-cfce2d2b592e?_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A900000)%2Ctime%3A(from%3Anow-7d%2Cmode%3Aquick%2Cto%3Anow)))\\n\\n[Where was user X logged in?](https://myuuid.us-east-1.aws.found.io:9243/app/kibana#/dashboard/ca947e20-16e2-11e9-b13f-cfce2d2b592e?_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A900000)%2Ctime%3A(from%3Anow-7d%2Cmode%3Aquick%2Cto%3Anow)))\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]
