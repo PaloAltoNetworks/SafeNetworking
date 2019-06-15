@@ -171,7 +171,10 @@ def processTag(tagName):
 def indexDump(indexName, sortField="@timestamp"):
 
     definedSearch = Search(index=indexName).sort({sortField: {"order" : "desc"}})
-    return definedSearch.scan()
+    indexData = definedSearch.scan()
+   # for doc in indexData['hits']['hits']:
+    #    print("%s) %s" % (doc['_id'], doc['_source']))
+    return indexData
 
 
     

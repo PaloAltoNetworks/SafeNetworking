@@ -46,11 +46,21 @@ def start():
     app.run(host=app.config['FLASK_HOST'],port=app.config['FLASK_PORT'])
 
 @click.command()
-def admin():
+@click.option('--datadump', help='Get all docs - must also specify --index and --sortfield for it to work', is_flag=True)
+@click.option('--index', help='Index we are working with', default='.kibana')
+@click.option('--sortfield', help='All docs returned from --index setting sorted by this field', default='@timestamp')
+@click.option('--outfile', help='Save output of command to <filename>', default="admin_out.txt")
+def admin(datadump,index,sortfield,outfile):
     """
     Admin CLI for curating SFN 
     """
-    pass
+    if datadump:
+        indexData = list(indexDump(index,sortfield))
+        with open(outfile, "w") as file:
+            for hit in indexData:
+                file.write(str(hit))
+                    
+                
 
 @click.command()
 @click.option('--datadump', help='Returns last 9999 entries of internal Honeypot info', is_flag=True)
