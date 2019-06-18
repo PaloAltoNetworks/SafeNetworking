@@ -20,7 +20,7 @@ cluster.name: safe-networking
 #
 # Use a descriptive name for the node:
 #
-#node.name: node-1
+node.name: ${HOSTNAME}
 #
 # Add custom attributes to the node:
 #
@@ -55,7 +55,7 @@ path.repo: _USER_HOME_/es_backup
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 0.0.0.0
+# network.host: 0.0.0.0
 #
 # Set a custom port for HTTP:
 #

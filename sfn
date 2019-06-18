@@ -15,7 +15,9 @@ import requests
 import threading
 from project import app, es
 from elasticsearch import helpers
+from project.iot.runner import processIoT
 from project.dns.runner import processDNS
+from project.lib.sfnutils import indexDump
 from project.dns.dnsutils import updateAfStats
 
 
@@ -44,11 +46,36 @@ def start():
     app.run(host=app.config['FLASK_HOST'],port=app.config['FLASK_PORT'])
 
 @click.command()
-def admin():
+@click.option('--datadump', help='Get all docs - must also specify --index and --sortfield for it to work', is_flag=True)
+@click.option('--index', help='Index we are working with', default='.kibana')
+@click.option('--sortfield', help='All docs returned from --index setting sorted by this field', default='@timestamp')
+@click.option('--outfile', help='Save output of command to <filename>', default="admin_out.txt")
+def admin(datadump,index,sortfield,outfile):
     """
     Admin CLI for curating SFN 
     """
-    pass
+    if datadump:
+        indexData = list(indexDump(index,sortfield))
+        with open(outfile, "w") as file:
+            for hit in indexData:
+                file.write(str(hit))
+                    
+                
+
+@click.command()
+@click.option('--datadump', help='Returns last 9999 entries of internal Honeypot info', is_flag=True)
+def iot(datadump):
+    """
+    CLI for getting IoT information
+    """
+    if datadump:
+        indexData = indexDump("sfn-iot-details","time.keyword")
+
+        for hit in indexData:
+            click.echo(f"{hit['ip']},{hit['public_tag_name']}")
+            
+
+
 
 @click.command()
 @click.argument('csvfile')
@@ -77,19 +104,21 @@ def activate_job():
         process and then sends a call to the dns handler to process them with
         AF, do lookups, etc.
         """
-        while True:
+        while app.config["DNS_PROCESSING"] == True:
             app.logger.debug(f"Processing new DNS events")
             processDNS()
             time.sleep(app.config["DNS_POOL_TIME"])
 
     def runIoT():
         """
-        DOES NOTHING AS OF NOW - but will do this eventually:
-        Searches for any unprocessed sfn-iot documents and
-        then sends a call to the iot handler to process them.
+        Retrieves the IoT Honeypot team's DB that has all info on known IoT 
+        bad IPs and domains.  Stuffs it into our DB so we can enrich the IoT 
+        events as they come in. 
         """
-        app.logger.debug(f"Processing new IoT Events")
-        pass
+        while app.config["IOT_PROCESSING"] == True:
+            app.logger.debug(f"Processing new IoT events")
+            processIoT()
+            time.sleep(app.config["IOT_POOL_TIME"])
 
     def runURL():
         """
@@ -115,13 +144,13 @@ def activate_job():
     # Start the IoT processing routines
     threadIoT = threading.Thread(target=runIoT)
     threadIoT.start()
-     # Start the URL processing routines
-    threadURL = threading.Thread(target=runURL)
-    threadURL.start()
-     # Start the IoT processing routines
+    # Start the AF point lookup routines
     threadAF = threading.Thread(target=runAfPoints)
     threadAF.start()
-
+    # Start the URL processing routines
+    # threadURL = threading.Thread(target=runURL)
+    # threadURL.start()
+    #
 
 def initBackgroundProcs():
     """
@@ -192,16 +221,13 @@ def loadLog(file,index):
             #"_id": f"{hashJSON['hashvalue']}",
             "_source": json.dumps(csv_rows)
         }
-            
-            
-
-    
 
 
 from project.views import *
 
 cli.add_command(start)
 cli.add_command(admin)
+cli.add_command(iot)
 cli.add_command(load)
 
 if __name__ == '__main__':

@@ -6,9 +6,10 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_elasticsearch import Elasticsearch
 from logging.handlers import RotatingFileHandler
+from elasticsearch_dsl import connections
 
 class SFNFormatter(logging.Formatter):
-    width = 45
+    width = 55
     datefmt='%Y-%m-%d %H:%M:%S'
 
     def format(self, record):
@@ -61,6 +62,14 @@ app.config['BASE_DIR'] = os.path.abspath(os.path.dirname(__file__))
 app.config['DNS_POOL_TIME'] = 5
 app.config['URL_POOL_TIME'] = 10
 app.config['AF_POOL_TIME'] = 600
+app.config['IOT_POOL_TIME'] = 600
+#
+# Turn off DNS processing.
+app.config["DNS_PROCESSING"] = True
+# Turn off IoT processing.  
+app.config["IOT_PROCESSING"] = False
+# Turn off URL processing.  
+app.config["URL_PROCESSING"] = False
 #
 # This is an internal flag that will probably never show up in the .panrc file
 # It is used to slow execution when it is True
@@ -132,12 +141,17 @@ app.config['CONFIDENCE_LEVELS'] = "{'15':90,'25':80,'40':70,'50':60,'60':50}"
 #
 # Log level for Flask
 app.config['FLASK_LOGGING_LEVEL'] = "ERROR"
+#
+# Set the system to automatically start with DEBUG on.  This changed in 3.6 as
+# all installs are using DEBUG.
+app.config['DEBUG'] = True
+#
 # Log level for the SafeNetworking application itself.  All files are written
 # to log/sfn.log
-app.config['LOG_LEVEL'] = "INFO"
+app.config['LOG_LEVEL'] = "DEBUG"
 #
 # Size of Log file before rotating - in bytes
-app.config['LOG_SIZE'] = 10000000
+app.config['LOG_SIZE'] = 1000000000
 #
 # Number of log files to keep in log rotation
 app.config['LOG_BACKUPS'] = 10
@@ -172,6 +186,7 @@ app.config['AUTOFOCUS_HOSTNAME'] = "autofocus.paloaltonetworks.com"
 app.config['AUTOFOCUS_SEARCH_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/search"
 app.config['AUTOFOCUS_RESULTS_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/samples/results/"
 app.config['AUTOFOCUS_TAG_URL'] = "https://autofocus.paloaltonetworks.com/api/v1.0/tag/"
+app.config['IOT_DB_URL'] = "http://35.160.110.244:58888/api/v1"
 #
 #
 
@@ -181,6 +196,8 @@ app.config.from_pyfile('.panrc')
 bs = Bootstrap(app)
 # Add Elasticsearch object for our instance of ES
 es = Elasticsearch(f"{app.config['ELASTICSEARCH_HOST']}:{app.config['ELASTICSEARCH_PORT']}")
+# Define the default Elasticsearch client
+connections.create_connection(hosts=[app.config['ELASTICSEARCH_HOST']])
 
 # Set up logging for the application - we may want to revisit this
 # see issue #10 in repo

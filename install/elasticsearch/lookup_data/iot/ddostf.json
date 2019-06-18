@@ -1,0 +1,27 @@
+{
+    "_id" : "Unit42.DDoSTF",
+    "_source" :
+    { 
+        "name" : "Unit42.DDoSTF",
+        "tag" : {
+            "tag_name" : "DDoSTF",
+            "public_tag_name" : "Unit42.DDoSTF",
+            "description" : "ElasticSearch exploitation for Linux boxes AND also aiming Windows machines via a malicious MOF (Managed Object Format) coded in a malicious PHP-MySQL webshell to exploit the WMI (Windows Management Instrumentation) architecture to remotely upload/execute any desired payload for infection",
+            "customer_name" : "Palo Alto Networks Unit42",
+            "tag_class" : "malware_family",
+            "source" : "Unit 42",
+            "created_at" : "2016-01-01 00:00:00",
+            "updated_at" : "2019-03-15 07:27:30"
+        },
+        "doc_updated" : "2019-05-19T20:24:53",
+        "type_of_doc" : "tag-doc",
+        "processed" : 1,
+        "tag_class" : "malware_family",
+        "tag_groups" : [
+            {
+                "tag_group_name" : "Trojan",
+                "description" : "A trojan is a type of malware that performs activites without the user’s knowledge. These activities commonly include establishing remote access connections, capturing keyboard input, collecting system information, downloading/uploading files, dropping other malware into the infected system, performing denial-of-service (DoS) attacks, and running/terminating processes."
+            }],
+        "doc_created" : "2019-05-19T20:24:53"
+    }
+}

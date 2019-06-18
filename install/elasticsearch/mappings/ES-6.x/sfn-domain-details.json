@@ -1,5 +1,6 @@
 {
     "mappings": {
+      "doc": {
         "dynamic": true,
         "properties": {
           "@timestamp": {
@@ -36,5 +37,6 @@
             }
           }
         }
+      }
     }
   }
