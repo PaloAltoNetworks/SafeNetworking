@@ -1,3 +1,43 @@
+# Version 4.0
+Release Date: 15 Jun 2019
+<br/>
+### New Features
+1.) Full support for non-PANOS IoT known threat events parsed through logstash and tagged in elasticsearch via HoneyPot DB information<br/>
+2.) Full support for GTP and SCTP logs with EventCode enrichment<br/>
+3.) Upgrades to ELK 7.1.1 and Ubuntu 18.04 LTS<br/>
+4.) Separate Workspaces and visualizations for DNS Threat, IoT Threat, GTP/SCTP and System Logging<br/>
+5.) Full support of PAN-OS 9.x logging messages<br/>
+6.) Cloud-DNS logging from NGFW with separate categorization for DGA and DNS tunneling events<br/>
+7.) <br/>
+
+### Issues resolved
+[Remove stdout { codec => rubydebug } from all logstash outputs](https://github.com/PaloAltoNetworks/safe-networking/issues/65)<br/>
+[Add logstash tuning to installation procedures and scripts](https://github.com/PaloAltoNetworks/safe-networking/issues/67)<br/>
+[ConnectionTimeout caused by - ReadTimeoutError](https://github.com/PaloAltoNetworks/safe-networking/issues/73)<br/>
+[Elasticsearch mapping change for ELK 7.x](https://github.com/PaloAltoNetworks/safe-networking/issues/75)<br/>
+[Update mappings for PANOS 9.0](https://github.com/PaloAltoNetworks/safe-networking/issues/77)<br/>
+[Determine DGAs in cloud-dns and set to be enriched later](https://github.com/PaloAltoNetworks/safe-networking/issues/78)<br/>
+[Port to ELK 7.x causes ValueError thrown if Domain doc doesn't exist](https://github.com/PaloAltoNetworks/safe-networking/issues/81)<br/>
+[TransportError - cluster_block_exception when updating index](https://github.com/PaloAltoNetworks/safe-networking/issues/88)<br/>
+[During heavy load, ES times out and processing halts](https://github.com/PaloAltoNetworks/safe-networking/issues/71)<br/>
+[Remove TCP inputs for all NGFW logging in pipelines](https://github.com/PaloAltoNetworks/safe-networking/issues/64)<br/>
+[(admin,load,start) parameters for start-up script (sfn) need to be documented](https://github.com/PaloAltoNetworks/safe-networking/issues/72)<br/>
+[Kibana uses elasticsearch.hosts rather than elasticsearch.url in 7.x](https://github.com/PaloAltoNetworks/safe-networking/issues/74)<br/>
+[Add .panrc to setup.sh](https://github.com/PaloAltoNetworks/safe-networking/issues/68)<br/>
+[Add elasticsearch tuning to installation procedures and scripts](https://github.com/PaloAltoNetworks/safe-networking/issues/66)<br/>
+[Add external IP IoT log events to SFN](https://github.com/PaloAltoNetworks/safe-networking/issues/46)<br/>
+[Visualizations for URL filtering module ](https://github.com/PaloAltoNetworks/safe-networking/issues/22)<br/>
+[Create classes and search code for URL events](https://github.com/PaloAltoNetworks/safe-networking/issues/21)<br/>
+[Upgrade of flask to 0.12.3 for CVE fix creates json encoder error](https://github.com/PaloAltoNetworks/safe-networking/issues/84)<br/>
+[Update logfields in conf files for PANOS 9.0](https://github.com/PaloAltoNetworks/safe-networking/issues/76)<br/>
+[Update elasticsearch-dsl.py for changes to ELK 7.x](https://github.com/PaloAltoNetworks/safe-networking/issues/80)<br/>
+[Github ALERT: Jinja2 vulnerability found in requirements.txt](https://github.com/PaloAltoNetworks/safe-networking/issues/82)<br/>
+[Github ALERT: Vulnerability found in urllib3 import ](https://github.com/PaloAltoNetworks/safe-networking/issues/83)<br/>
+[](https://github.com/PaloAltoNetworks/safe-networking/issues/)<br/>
+[](https://github.com/PaloAltoNetworks/safe-networking/issues/)<br/>
+
+
+
 # Version 3.5
 Release Date: 05 Feb 2019
 <br/>
