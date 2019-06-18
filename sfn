@@ -46,6 +46,14 @@ def start():
     app.run(host=app.config['FLASK_HOST'],port=app.config['FLASK_PORT'])
 
 @click.command()
+def version():
+    """
+    Print SafeNetworking version to screen
+    """
+    print(f"{app.config['VERSION']}")
+
+
+@click.command()
 @click.option('--datadump', help='Get all docs - must also specify --index and --sortfield for it to work', is_flag=True)
 @click.option('--index', help='Index we are working with', default='.kibana')
 @click.option('--sortfield', help='All docs returned from --index setting sorted by this field', default='@timestamp')
@@ -226,6 +234,7 @@ def loadLog(file,index):
 from project.views import *
 
 cli.add_command(start)
+cli.add_command(version)
 cli.add_command(admin)
 cli.add_command(iot)
 cli.add_command(load)
