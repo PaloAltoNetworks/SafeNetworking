@@ -8,7 +8,7 @@ Release Date: 15 Jun 2019
 4.) Separate Workspaces and visualizations for DNS Threat, IoT Threat, GTP/SCTP and System Logging<br/>
 5.) Full support of PAN-OS 9.x logging messages<br/>
 6.) Cloud-DNS logging from NGFW with separate categorization for DGA and DNS tunneling events<br/>
-7.) <br/>
+
 
 ### Issues resolved
 [Remove stdout { codec => rubydebug } from all logstash outputs](https://github.com/PaloAltoNetworks/safe-networking/issues/65)<br/>
@@ -33,8 +33,6 @@ Release Date: 15 Jun 2019
 [Update elasticsearch-dsl.py for changes to ELK 7.x](https://github.com/PaloAltoNetworks/safe-networking/issues/80)<br/>
 [Github ALERT: Jinja2 vulnerability found in requirements.txt](https://github.com/PaloAltoNetworks/safe-networking/issues/82)<br/>
 [Github ALERT: Vulnerability found in urllib3 import ](https://github.com/PaloAltoNetworks/safe-networking/issues/83)<br/>
-[](https://github.com/PaloAltoNetworks/safe-networking/issues/)<br/>
-[](https://github.com/PaloAltoNetworks/safe-networking/issues/)<br/>
 
 
 

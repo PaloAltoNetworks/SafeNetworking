@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/PaloAltoNetworks/safe-networking.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking/releases)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg?style=for-the-badge)](https://github.com/PaloAltoNetworks/safe-networking)
-![Issues](https://img.shields.io/github/issues/PaloAltoNetworks/safe-networking.svg?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/PaloAltoNetworks/SafeNetworking.svg?style=for-the-badge)
 
 SafeNetworking is a software application that recevies both THREAT and TRAFFIC syslogs events from Palo Alto Networks NGFWs.  Using the Palo Alto Networks Threat Intelligence Cloud, SafeNetworking is able to correlate some of the threat logs (DNS queires mainly) with malware known to be associated with the event in question.  SafeNetworking utilizes ElasticStack's open-source version to gather, store and visualize these enriched events.
 
