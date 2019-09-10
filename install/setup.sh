@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
 
-# Check to see if we need to install the gtp DB.
-installGTP=0
-
-for arg in "$@"
-do
-    if [ "$arg" == "--gtp" ] || [ "$arg" == "-g" ]
-    then
-        installGTP=1
-    fi
-done
 
 ################################################################################
 #                          SYSTEM SETUP
@@ -29,8 +19,8 @@ else
   printf "\n>>> $(tput setaf 1)Backup directory already exists, skipping$(tput sgr 0)\n"
 fi
 
-if [ ! -d "$userHome/safe-networking/.env" ]; then
- cd $userHome/safe-networking
+if [ ! -d "$userHome/SafeNetworking/.env" ]; then
+ cd $userHome/SafeNetworking
  python3.6 -m venv .env
  source .env/bin/activate
  pip install --upgrade pip
@@ -233,24 +223,24 @@ if [ ! -f $userHome/.panrc ]
         cp sfn/.panrc $userHome
 fi
 
-if [ ! -L $userHome/safe-networking/project/.panrc ]
+if [ ! -L $userHome/SafeNetworking/project/.panrc ]
     then
         printf "\n\n$(tput setaf 6)Linking .panrc to project$(tput sgr 0)\n"
-        cd $userHome/safe-networking/project
+        cd $userHome/SafeNetworking/project
         ln -s ~/.panrc
         printf " - COMPLETE\n"
 fi
 
 # Init the IoT index
-$userHome/safe-networking/.env/bin/python $userHome/safe-networking/sfn load $userHome/safe-networking/install/elasticsearch/lookup_data/iot/init.csv sfn-iot-details
+$userHome/SafeNetworking/.env/bin/python $userHome/SafeNetworking/sfn load $userHome/SafeNetworking/install/elasticsearch/lookup_data/iot/init.csv sfn-iot-details
 
 # OPTIONAL - Load the GTP and IoT databases for enrichment
 if [ $installGTP -eq 1 ]
     then
         printf "\n\n$(tput setaf 6)Installing GTP Event Code Documents$(tput sgr 0)\n"
-        for file in `ls $userHome/safe-networking/install/elasticsearch/lookup_data/gtp/*.csv`
+        for file in `ls $userHome/SafeNetworking/install/elasticsearch/lookup_data/gtp/*.csv`
             do
-                $userHome/safe-networking/sfn load $file test-gtp-codes
+                $userHome/SafeNetworking/sfn load $file test-gtp-codes
             done
 fi
 
