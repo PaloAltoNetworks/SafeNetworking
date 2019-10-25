@@ -1,3 +1,5 @@
+import os
+import csv
 import time
 import json
 import requests
@@ -43,6 +45,26 @@ def getLatestTime(indexName):
         return (now - timeStamp).total_seconds() / 60.0
     except Exception as e:
         raise Exception("Local DB may not exist: trying to find timestamp in {latestDoc} resulted in {e}")
+
+
+def convertDate(epochMilli,timeFormat='%Y-%m-%dT%H:%M:%S'):
+    """Convert milliseconds from epoch to a timestamp
+    
+    Take in the milliseconds from epoch, get the milliseconds left over after 
+    conversion and then mush the milliseconds onto the conversion to GMT time. 
+    
+    Parameters:
+    epochMilli (string): Milliseconds since epoch
+    timeFormat (string):  This defaults to the format we use in ELK, but can be 
+                      overridden with another format
+    
+    Returns:
+    formatted data string
+    """
+    
+    # We only want the milliseconds for later said mushing
+    s,milliSeconds = divmod(epochMilli,1000)
+    return time.strftime(f'{timeFormat}.{milliSeconds}', time.gmtime(epochMilli/1000.0))
 
 
 def getTagInfo(tagName):
@@ -175,6 +197,20 @@ def indexDump(indexName, sortField="@timestamp"):
    # for doc in indexData['hits']['hits']:
     #    print("%s) %s" % (doc['_id'], doc['_source']))
     return indexData
+
+def find(name, path):
+    for root, dirs, files in os.walk(path):
+        if name in files:
+            return os.path.abspath(root)
+
+
+def loadCSV(csvfile,index):
+    """
+    Load csv file into elasticsearch as docs. 
+    """
+    with open(csvfile, 'r') as outfile:
+        reader = csv.DictReader(outfile)
+        helpers.bulk(es, reader, index=f"{index}", doc_type="type")
 
 
     
