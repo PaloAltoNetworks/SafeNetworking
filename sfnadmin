@@ -5,6 +5,7 @@
  itself
 """
 import csv
+import glob
 import time
 import json
 import click
@@ -14,41 +15,25 @@ from project import app, es
 from elasticsearch import helpers
 from project.iot.runner import processIoT
 from project.dns.runner import processDNS
-from project.lib.sfnutils import indexDump
+from project.lib.sfnutils import indexDump, find, loadCSV
 from project.dns.dnsutils import updateAfStats
 
 
 @click.group()
 def cli():
     """
-    Generic pass if someone just types in "sfn" with nothing under it - prints
-    help message to command line
+    The sfnadmin utility is used to manipulate the database and configuration of
+    the SafeNetworking system.  For more information, type ./sfnadmin --help
     """
     pass
 
 
-@click.command()
-@click.option('--datadump', help='Get all docs - must also specify --index and --sortfield for it to work', is_flag=True)
-@click.option('--index', help='Index we are working with', default='.kibana')
-@click.option('--sortfield', help='All docs returned from --index setting sorted by this field', default='@timestamp')
-@click.option('--outfile', help='Save output of command to <filename>', default="admin_out.txt")
-def admin(datadump,index,sortfield,outfile):
-    """
-    Admin CLI for curating SFN 
-    """
-    if datadump:
-        indexData = list(indexDump(index,sortfield))
-        with open(outfile, "w") as file:
-            for hit in indexData:
-                file.write(str(hit))
-                    
-                
 
 @click.command()
 @click.option('--datadump', help='Returns last 9999 entries of internal Honeypot info', is_flag=True)
 def iot(datadump):
     """
-    CLI for getting IoT information
+    Perform admin tasks against the IoT section of the Elasticsearch DB
     """
     if datadump:
         indexData = indexDump("sfn-iot-details","time.keyword")
@@ -57,49 +42,79 @@ def iot(datadump):
             click.echo(f"{hit['ip']},{hit['public_tag_name']}")
             
 
-
-
+@click.command()
+@click.option('--load_ec', help='Load event codes database ', is_flag=True)
+def gtp(load_ec):
+    """
+    Perform admin tasks against the GTP section of the Elasticsearch DB
+    """
+    
+    if load_ec:
+        thePath = find("20yyxx.csv","/home")
+        files = [f for f in glob.glob(thePath + "**/*.csv", recursive=False)]
+        for fileName in files:
+            print(f"Loading {fileName} into test-gtp-codes")
+            loadCSV(fileName, "test-gtp-codes")
+    
+    
+    
 @click.command()
 @click.argument('csvfile')
 @click.argument('index')
-# @click.option('--host', help='Host to send generated log messages to <localhost>', default='localhost')
-# @click.option('--port', help='Host port to connect <5514>', default=5514)
 def load(csvfile,index):
     """
-    Load csv file into elasticsearch as docs 
+    Load csv file into elasticsearch as docs. Needs csvfile and index name
     """
     with open(csvfile, 'r') as outfile:
         reader = csv.DictReader(outfile)
         helpers.bulk(es, reader, index=f"{index}", doc_type="type")
     
 
-def loadLog(file,index):
-    '''
-    Used with the ES bulkloader utility method to convert and serialize the csv
-    log file to json and loaded into specified index in ES DB
+
+
+
+# The could be useful but we aren't needing them right now
+
+# @click.command()
+# @click.option('--datadump', help='Get all docs - must also specify --index and --sortfield for it to work', is_flag=True)
+# @click.option('--index', help='Index we are working with', default='.kibana')
+# @click.option('--sortfield', help='All docs returned from --index setting sorted by this field', default='@timestamp')
+# @click.option('--outfile', help='Save output of command to <filename>', default="admin_out.txt")
+# def admin(datadump,index,sortfield,outfile):
+#     """
+#     Admin CLI for curating SFN 
+#     """
+#     if datadump:
+#         indexData = list(indexDump(index,sortfield))
+#         with open(outfile, "w") as file:
+#             for hit in indexData:
+#                 file.write(str(hit))
+                    
+                    
+# def loadLog(file,index):
+#     '''
+#     Used with the ES bulkloader utility method to convert and serialize the csv
+#     log file to json and loaded into specified index in ES DB
     
-    Arguments:
-        hashJSON {dict} -- The JSON to be stored in the DB
-    '''
-    csv_rows = []
-    with open(file) as csvfile:
-        reader = csv.DictReader(csvfile)
-        field = reader.fieldnames
-        for row in reader:
-            csv_rows.extend([{field[i]:row[field[i]] for i in range(len(field))}])
-            print(f"{csv_rows}")
-        yield {
-            "_index":f"{index}",
-            "_type":"document",
-            #"_id": f"{hashJSON['hashvalue']}",
-            "_source": json.dumps(csv_rows)
-        }
+#     Arguments:
+#         hashJSON {dict} -- The JSON to be stored in the DB
+#     '''
+#     csv_rows = []
+#     with open(file) as csvfile:
+#         reader = csv.DictReader(csvfile)
+#         field = reader.fieldnames
+#         for row in reader:
+#             csv_rows.extend([{field[i]:row[field[i]] for i in range(len(field))}])
+#             print(f"{csv_rows}")
+#         yield {
+#             "_index":f"{index}",
+#             "_type":"document",
+#             "_source": json.dumps(csv_rows)
+#         }
 
 
-from project.views import *
-
-cli.add_command(admin)
 cli.add_command(iot)
+cli.add_command(gtp)
 cli.add_command(load)
 
 if __name__ == '__main__':
