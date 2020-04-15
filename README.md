@@ -14,6 +14,8 @@ If you want to use SafeNetworking (not develop against it) it is suggested to ge
 
 If you are looking to install a dev copy and develop against the code or do not have an account team, please take a look at instructions in the [wiki](https://github.com/PaloAltoNetworks/safe-networking/wiki) on how to install and run.  
 
+If wanting to submit a pull-request, please see the contributing guidelines.
+
 
 
 ## Support Policy
