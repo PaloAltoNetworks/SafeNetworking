@@ -10,5 +10,5 @@ echo "deb http://download.opensuse.org/repositories/home:/laszlo_budai:/syslog-n
 
 #### Install the syslog-ng software
 ```
-sudo apt-get update && sudo apt-get install syslog-ng-core
+sudo apt-get update && sudo apt-get install syslog-ng-core 
 ```
