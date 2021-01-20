@@ -31,7 +31,7 @@ fi
 
 if [ ! -d "$userHome/safe-networking/.env" ]; then
  cd $userHome/safe-networking
- python3.6 -m venv .env
+ python3.6 -m venv sfn-env
  source .env/bin/activate
  pip install --upgrade pip
  pip install -r requirements
