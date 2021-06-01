@@ -17,7 +17,7 @@ pep8==1.7.1
 python-dateutil==2.6.1
 requests==2.21.0
 six==1.11.0
-urllib3==1.24.2
+urllib3==1.26.5
 visitor==0.1.3
 Werkzeug==0.13
 WTForms==2.1
